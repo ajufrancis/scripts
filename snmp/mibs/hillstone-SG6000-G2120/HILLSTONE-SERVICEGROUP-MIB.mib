@@ -1,0 +1,91 @@
+-- **************************************************************************
+-- HILLSTONE-SERVICEGROUP-MIB 
+--
+-- Copyright (c) 2009 by Hillstone Networks, Inc.
+-- All rights reserved.
+-- 
+-- Version:      V3   
+-- Description:	 Hillstone Networks SERVICEGROUP MIB Object Identifier Assignments
+-- **************************************************************************
+--
+
+HILLSTONE-SERVICEGROUP-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+	hillstoneServiceGroup
+		FROM HILLSTONE-SMI
+	OBJECT-TYPE
+		FROM RFC-1212	
+	RowStatus		
+		FROM SNMPv2-TC;
+
+hillstoneServiceGroupObjects OBJECT IDENTIFIER ::= { hillstoneServiceGroup 1 }
+
+hillstoneServiceGroupTable OBJECT-TYPE
+	SYNTAX SEQUENCE OF hillstoneServiceGroupEntry
+	MAX-ACCESS not-accessible
+	STATUS current
+	DESCRIPTION
+	    "This table contains all the ServiceGroup defined in the system."
+::= { hillstoneServiceGroupObjects 1 }
+
+hillstoneServiceGroupEntry OBJECT-TYPE
+	SYNTAX hillstoneServiceGroupEntry
+	MAX-ACCESS not-accessible
+	STATUS current
+	DESCRIPTION
+		"Defined the parameters of ServiceGroup."
+INDEX { hillstoneServiceGroupName }
+::= { hillstoneServiceGroupTable 1 }
+	
+hillstoneServiceGroupEntry ::=
+SEQUENCE { 
+	hillstoneServiceGroupName
+		OCTET STRING,
+	hillstoneServiceGroupIsUserdef
+		INTEGER,
+	hillstoneServiceGroupDescription
+		OCTET STRING,
+	hillstoneServiceGroupRowStatus
+		RowStatus
+	}
+
+hillstoneServiceGroupName OBJECT-TYPE
+	SYNTAX OCTET STRING (SIZE (1..31))
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "The name of ServiceGroup.
+	    Different ServiceGroup has different name."
+::= { hillstoneServiceGroupEntry 1 }
+
+hillstoneServiceGroupIsUserdef OBJECT-TYPE
+	SYNTAX INTEGER 
+	{
+		predefined(1),
+		userdefined(2)
+	}
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION
+	    "The attribute of ServiceGroup.
+	    Userdefined or Predefined."
+::= { hillstoneServiceGroupEntry 2 }
+
+hillstoneServiceGroupDescription OBJECT-TYPE
+	SYNTAX OCTET STRING (SIZE (1..255))
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "The description of service group."
+::= { hillstoneServiceGroupEntry 3 }
+
+hillstoneServiceGroupRowStatus OBJECT-TYPE
+	SYNTAX RowStatus
+	MAX-ACCESS read-create
+	STATUS current
+	DESCRIPTION
+	 "The status of this service group row. support: active, createandgo, destory"
+::= { hillstoneServiceGroupEntry 4 }
+
+END

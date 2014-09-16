@@ -1,0 +1,81 @@
+uuid ( RO)                          : 542a0488-55d2-8fd9-78ef-61fa75ff6c4c
+                    name-label ( RW): i-8-122-VM
+              name-description ( RW): Clones of this template will automatically provision their storage when first booted and then reconfigure themselves with the optimal settings for Windows Server 2003 (32-bit).
+                  user-version ( RW): 1
+                 is-a-template ( RW): false
+                 is-a-snapshot ( RO): false
+                   snapshot-of ( RO): <not in database>
+                     snapshots ( RO): 
+                 snapshot-time ( RO): 19700101T00:00:00Z
+                 snapshot-info ( RO): 
+                        parent ( RO): <not in database>
+                      children ( RO): 
+             is-control-domain ( RO): false
+                   power-state ( RO): running
+                 memory-actual ( RO): 4294922240
+                 memory-target ( RO): 4294967296
+               memory-overhead ( RO): 37748736
+             memory-static-max ( RW): 4294967296
+            memory-dynamic-max ( RW): 4294967296
+            memory-dynamic-min ( RW): 4294967296
+             memory-static-min ( RW): 4294967296
+              suspend-VDI-uuid ( RW): <not in database>
+               suspend-SR-uuid ( RW): <not in database>
+                  VCPUs-params (MRW): weight: 253; cap: 0
+                     VCPUs-max ( RW): 2
+              VCPUs-at-startup ( RW): 2
+        actions-after-shutdown ( RW): Destroy
+          actions-after-reboot ( RW): Restart
+           actions-after-crash ( RW): Destroy
+                 console-uuids (SRO): 4a664d64-5a39-4493-703a-7973477666f6
+                      platform (MRW): timeoffset: -1; viridian: true; acpi: true; apic: true; pae: true; nx: false
+            allowed-operations (SRO): changing_dynamic_range; pool_migrate; changing_VCPUs_live; suspend; hard_reboot; hard_shutdown; clean_reboot; clean_shutdown; pause; checkpoint; snapshot
+            current-operations (SRO): 
+            blocked-operations (MRW): 
+           allowed-VBD-devices (SRO): 1; 2; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15
+           allowed-VIF-devices (SRO): 1; 2; 3; 4; 5; 6
+                possible-hosts ( RO): 1930bd72-3a2a-4a67-9752-467f51a56302; 9f3574d5-b38e-472e-929f-e2ee557269d1
+               HVM-boot-policy ( RW): BIOS order
+               HVM-boot-params (MRW): order: dc
+         HVM-shadow-multiplier ( RW): 1.000
+                     PV-kernel ( RW): 
+                    PV-ramdisk ( RW): 
+                       PV-args ( RW): 
+                PV-legacy-args ( RW): 
+                 PV-bootloader ( RW): 
+            PV-bootloader-args ( RW): 
+           last-boot-CPU-flags ( RO): features: 17bee3ff-bfebfbff-00000001-2c100800; vendor: GenuineIntel
+              last-boot-record ( RO): '('struct' ('uuid' '542a0488-55d2-8fd9-78ef-61fa75ff6c4c') ('allowed_operations' ('array')) ('current_operations' ('struct' ('OpaqueRef:5fb3a87e-ae7a-9d57-ff5c-8c18c667dcf1' 'start_on'))) ('power_state' 'Halted') ('name_label' 'i-8-122-VM') ('name_description' 'Clones of this template will automatically provision their storage when first booted and then reconfigure themselves with the optimal settings for Windows Server 2003 (32-bit).') ('user_version' '1') ('is_a_template' ('boolean' '0')) ('suspend_VDI' 'OpaqueRef:NULL') ('resident_on' 'OpaqueRef:NULL') ('affinity' 'OpaqueRef:7a404921-790e-6412-f69e-45ef5cad1182') ('memory_overhead' '37748736') ('memory_target' '4294967296') ('memory_static_max' '4294967296') ('memory_dynamic_max' '4294967296') ('memory_dynamic_min' '4294967296') ('memory_static_min' '4294967296') ('VCPUs_params' ('struct' ('weight' '253') ('cap' '0'))) ('VCPUs_max' '2') ('VCPUs_at_startup' '2') ('actions_after_shutdown' 'destroy') ('actions_after_reboot' 'restart') ('actions_after_crash' 'destroy') ('consoles' ('array')) ('VIFs' ('array' 'OpaqueRef:f01fa611-843d-6d94-b45c-bef4898b013c')) ('VBDs' ('array' 'OpaqueRef:1ed35bbf-88f5-080a-959c-34de0afbf3c7' 'OpaqueRef:5d74bea4-dfc0-067e-c268-bd8f7d86aae4')) ('crash_dumps' ('array')) ('VTPMs' ('array')) ('PV_bootloader' '') ('PV_kernel' '') ('PV_ramdisk' '') ('PV_args' '') ('PV_bootloader_args' '') ('PV_legacy_args' '') ('HVM_boot_policy' 'BIOS order') ('HVM_boot_params' ('struct' ('order' 'dc'))) ('HVM_shadow_multiplier' ('double' '1')) ('platform' ('struct' ('viridian' 'true') ('acpi' 'true') ('apic' 'true') ('pae' 'true') ('nx' 'false'))) ('PCI_bus' '') ('other_config' ('struct' ('mac_seed' '4b710c40-19fe-c669-2ad3-85933208f703') ('install-methods' 'cdrom'))) ('domid' '-1') ('domarch' '') ('last_boot_CPU_flags' ('struct')) ('is_control_domain' ('boolean' '0')) ('metrics' 'OpaqueRef:477acd5b-a9ff-0124-1c5a-2655fcc008b3') ('guest_metrics' 'OpaqueRef:NULL') ('last_booted_record' '') ('recommendations' '<restrictions><restriction field=\"memory-static-max\" max=\"68719476736\" /><restriction field=\"vcpus-max\" max=\"16\" /><restriction property=\"number-of-vbds\" max=\"7\" /><restriction property=\"number-of-vifs\" max=\"7\" /></restrictions>') ('xenstore_data' ('struct')) ('ha_always_run' ('boolean' '0')) ('ha_restart_priority' '') ('is_a_snapshot' ('boolean' '0')) ('snapshot_of' 'OpaqueRef:NULL') ('snapshots' ('array')) ('snapshot_time' ('dateTime.iso8601' '19700101T00:00:00Z')) ('transportable_snapshot_id' '') ('blobs' ('struct')) ('tags' ('array')) ('blocked_operations' ('struct')) ('snapshot_info' ('struct')) ('snapshot_metadata' '') ('parent' 'OpaqueRef:NULL') ('children' ('array')) ('bios_strings' ('struct')) ('protection_policy' 'OpaqueRef:NULL') ('is_snapshot_from_vmpp' ('boolean' '0')) ('appliance' 'OpaqueRef:NULL') ('start_delay' '0') ('shutdown_delay' '0') ('order' '0') ('VGPUs' ('array')) ('attached_PCIs' ('array')) ('suspend_SR' 'OpaqueRef:NULL') ('version' '0'))'
+                   resident-on ( RO): 9f3574d5-b38e-472e-929f-e2ee557269d1
+                      affinity ( RW): 9f3574d5-b38e-472e-929f-e2ee557269d1
+                  other-config (MRW): mac_seed: 4b710c40-19fe-c669-2ad3-85933208f703; install-methods: cdrom
+                        dom-id ( RO): 803
+               recommendations ( RO): <restrictions><restriction field="memory-static-max" max="68719476736" /><restriction field="vcpus-max" max="16" /><restriction property="number-of-vbds" max="7" /><restriction property="number-of-vifs" max="7" /></restrictions>
+                 xenstore-data (MRW): 
+    ha-always-run ( RW) [DEPRECATED]: false
+           ha-restart-priority ( RW): 
+                         blobs ( RO): 
+                    start-time ( RO): 20140228T05:52:46Z
+                  install-time ( RO): 19700101T00:00:00Z
+                  VCPUs-number ( RO): 2
+             VCPUs-utilisation (MRO): 0: 0.807; 1: 0.973
+                    os-version (MRO): name: Microsoft Windows Server 2003 R2 Enterprise Edition|C:\WINDOWS|\Device\Harddisk0\Partition1; distro: windows; major: 5; minor: 2; spmajor: 2; spminor: 0
+            PV-drivers-version (MRO): xenvbd: 1.0boot; xennet: 1.0; major: 6; minor: 1; micro: 0; build: 59235
+         PV-drivers-up-to-date ( RO): true
+                        memory (MRO): 
+                         disks (MRO): 
+                      networks (MRO): 0/ip: 10.1.1.105
+                         other (MRO): platform-feature-multiprocessor-suspend: 1; feature-balloon: 1; balloon-active: 0; feature-suspend: 1; error: CreateProcessAsUser : 6 failed.; feature-shutdown: 1; feature-ts: 1
+                          live ( RO): true
+    guest-metrics-last-updated ( RO): 20140228T05:53:44Z
+                   cooperative ( RO): true
+             protection-policy ( RW): <not in database>
+         is-snapshot-from-vmpp ( RO): false
+                          tags (SRW): 
+                     appliance ( RW): <not in database>
+                   start-delay ( RW): 0
+                shutdown-delay ( RW): 0
+                         order ( RW): 0
+                       version ( RO): 0
+
+

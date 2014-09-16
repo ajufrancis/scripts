@@ -1,0 +1,19 @@
+#import vs from import
+  - http://woodpecker.org.cn/diveintopython/object_oriented_framework/importing_modules.html
+# API
+# - http://www.cloudstack-china.org/2012/12/1465.html
+# - http://cloud.kelceydamage.com/cloudfire/blog/2012/10/19/cloudstack-api-calls-in-python/
+# 4.2.0
+# - http://cloud.kelceydamage.com/cloudfire/blog/2013/10/29/recipe-cloudstack-advanced-networking-ubuntukvm-acs-4-2-6-nics/
+# - http://cloud.kelceydamage.com/cloudfire/blog/2013/08/28/networking-and-the-cloud/
+# http://events.linuxfoundation.org/sites/events/files/slides/CCNA14.pdf
+# http://www.sdfengxi.com/?p=91
+# http://qpleple.com/cloudstack-client-generator/
+#AD: http://www.cloudstack-china.org/2013/03/1751.html
+#VR: http://www.cloudstack-china.org/2012/09/650.html#comment-15230
+#download cs: http://mirrors.aliyun.com/apache/cloudstack/releases/
+#GFS + CloudStack: http://www.cloudstack-china.org/2014/05/3420.html
+#http://www.cloudstack-china.org/2014/05/3377.html
+#http://www.cloudstack-china.org/2014/05/3375.html
+#http://www.cloudstack-china.org/2014/05/3365.html
+#http://www.slideshare.net/gavin_lee/cloud-stack-overview

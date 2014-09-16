@@ -1,0 +1,86 @@
+-- **************************************************************************
+-- HILLSTONE-ADDRESSBOOK-MIB 
+--
+-- Copyright (c) 2009 by Hillstone Networks, Inc.
+-- All rights reserved.
+-- 
+-- Version:      V3   
+-- Description:	 Hillstone Networks Address Book MIB Object Identifier Assignments
+-- **************************************************************************
+--
+
+HILLSTONE-ADDRESSBOOK-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+	hillstoneAddressBook
+		FROM HILLSTONE-SMI
+	OBJECT-TYPE
+		FROM RFC-1212	
+	RowStatus		
+		FROM SNMPv2-TC;
+
+hillstoneAddressBookObjects OBJECT IDENTIFIER ::= { hillstoneAddressBook 1 }
+
+hillstoneAddressBookTable OBJECT-TYPE
+	SYNTAX SEQUENCE OF hillstoneAddressBookEntry
+	MAX-ACCESS not-accessible
+	STATUS current
+	DESCRIPTION
+	    "This table contains all the Addresses defined in the system."
+::= { hillstoneAddressBookObjects 1 }
+
+hillstoneAddressBookEntry OBJECT-TYPE
+	SYNTAX hillstoneAddressBookEntry
+	MAX-ACCESS not-accessible
+	STATUS current
+	DESCRIPTION
+		"Defined the parameters of an Address."
+INDEX { hillstoneAddressBookName }
+::= { hillstoneAddressBookTable 1 }
+	
+hillstoneAddressBookEntry ::=
+SEQUENCE { 
+	hillstoneAddressBookName
+		OCTET STRING,
+	hillstoneAddressBookDescription
+		OCTET STRING,
+	hillstoneAddressBookReferenceZone
+		INTEGER,
+	hillstoneAddressBookRowStatus
+		RowStatus
+	}
+
+hillstoneAddressBookName OBJECT-TYPE
+	SYNTAX OCTET STRING (SIZE (1..31))
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "The name of Address.
+	    Different Address has different name."
+::= { hillstoneAddressBookEntry 1 }
+
+hillstoneAddressBookDescription OBJECT-TYPE
+	SYNTAX OCTET STRING (SIZE (1..255))
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "The description of Address."
+::= { hillstoneAddressBookEntry 2 }
+
+hillstoneAddressBookReferenceZone OBJECT-TYPE
+	SYNTAX OCTET STRING (SIZE (1..31)) 
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION
+	    "An reference zone of the address"
+::= { hillstoneAddressBookEntry 3 }
+
+hillstoneAddressBookRowStatus OBJECT-TYPE
+	SYNTAX RowStatus
+	MAX-ACCESS read-create
+	STATUS current
+	DESCRIPTION
+	 "The status of this address book row. support: active, createandgo, destory"
+::= { hillstoneAddressBookEntry 4 }
+
+END

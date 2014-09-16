@@ -1,0 +1,3 @@
+#class IP domain
+nfsd 192.168.11.13 *
+nfsd 0.0.0.0 -test-client-

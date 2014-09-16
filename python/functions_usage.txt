@@ -1,0 +1,5 @@
+http://youngsterxyf.github.io/2013/01/26/python-string-format/
+map() http://my.oschina.net/zyzzy/blog/115096
+decorator http://www.cnblogs.com/babykick/archive/2011/12/07/2279991.html
+http://blog.sina.com.cn/s/blog_7a9cc59301014xza.html
+configparser: http://www.cnblogs.com/ljhero/archive/2011/11/10/2244932.html

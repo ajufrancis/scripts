@@ -1,0 +1,94 @@
+Temp             | na         | degrees C  | na    | na        | na        | na        | 85.000    | 90.000    | na        
+Temp             | na         | degrees C  | na    | na        | na        | na        | 85.000    | 90.000    | na        
+Temp             | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+Temp             | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+Ambient Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+Ambient Temp     | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+Temp             | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+Temp             | na         | degrees C  | na    | na        | 3.000     | 8.000     | 42.000    | 47.000    | na        
+Temp             | na         | degrees C  | na    | na        | 3.000     | 8.000     | 42.000    | 47.000    | na        
+Ambient Temp     | 19.000     | degrees C  | ok    | na        | 3.000     | 8.000     | 42.000    | 47.000    | na        
+Planar Temp      | na         | degrees C  | na    | na        | 3.000     | 8.000     | 92.000    | 97.000    | na        
+CMOS Battery     | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+ROMB Battery     | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+VCORE            | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+VCORE            | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+CPU2 0.75VTT PG  | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+CPU1 0.75 VTT PG | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+CPU VTT          | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+1.5V PG          | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+1.8V PG          | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+5V PG            | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+CPU2 MEM PG      | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+CPU1 MEM PG      | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+CPU2 VTT PG      | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+CPU1 VTT PG      | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+0.9V PG          | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+CPU2 1.8 PLL PG  | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+CPU1 1.8 PLL PG  | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+1.1V PG          | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+1.0V LOM PG      | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+1.0V AUX PG      | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+FAN 1 RPM        | 1080.000   | RPM        | ok    | na        | 720.000   | na        | na        | na        | na        
+Presence         | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+Presence         | 0x0        | discrete   | 0x0280| na        | na        | na        | na        | na        | na        
+HEATSINK PRES    | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+Presence         | 0x0        | discrete   | 0x0280| na        | na        | na        | na        | na        | na        
+Presence         | 0x0        | discrete   | 0x0280| na        | na        | na        | na        | na        | na        
+Presence         | 0x0        | discrete   | 0x0280| na        | na        | na        | na        | na        | na        
+PFault Fail Safe | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Status           | 0x0        | discrete   | 0x8080| na        | na        | na        | na        | na        | na        
+Status           | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+Status           | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Status           | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Status           | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+iDRAC6 Ent PRES  | 0x0        | discrete   | 0x0280| na        | na        | na        | na        | na        | na        
+OS Watchdog      | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+SEL              | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Intrusion        | 0x0        | discrete   | 0x0080| na        | na        | na        | na        | na        | na        
+PS Redundancy    | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Fan Redundancy   | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+CPU Temp Interf  | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Drive            | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Cable SAS A      | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Cable SAS B      | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Current 1        | na         | Amps       | na    | na        | na        | na        | na        | na        | na        
+Current 2        | na         | Amps       | na    | na        | na        | na        | na        | na        | na        
+Voltage 1        | na         | Volts      | na    | na        | na        | na        | na        | na        | na        
+Voltage 2        | na         | Volts      | na    | na        | na        | na        | na        | na        | na        
+System Level     | na         | Watts      | na    | na        | na        | na        | 735.000   | 777.000   | na        
+Power Optimized  | 0x0        | discrete   | 0x0180| na        | na        | na        | na        | na        | na        
+ECC Corr Err     | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+ECC Uncorr Err   | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+I/O Channel Chk  | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+PCI Parity Err   | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+PCI System Err   | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+SBE Log Disabled | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Logging Disabled | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Unknown          | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+CPU Protocol Err | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+CPU Bus PERR     | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+CPU Init Err     | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+CPU Machine Chk  | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Memory Spared    | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Memory Mirrored  | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Memory RAID      | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Memory Added     | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Memory Removed   | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Memory Cfg Err   | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Mem Redun Gain   | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+PCIE Fatal Err   | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Chipset Err      | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Err Reg Pointer  | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Mem ECC Warning  | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Mem CRC Err      | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+USB Over-current | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+POST Err         | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Hdwr version err | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Mem Overtemp     | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Mem Fatal SB CRC | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Mem Fatal NB CRC | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+OS Watchdog Time | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Non Fatal PCI Er | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+Fatal IO Error   | na         | discrete   | na    | na        | na        | na        | na        | na        | na        
+MSR Info Log     | na         | discrete   | na    | na        | na        | na        | na        | na        | na        

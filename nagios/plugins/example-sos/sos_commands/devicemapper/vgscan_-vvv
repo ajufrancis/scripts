@@ -1,0 +1,466 @@
+File descriptor 4 (/tmp/nagios01-2013030422051362405942/sos_logs/sos.log) leaked on vgscan invocation. Parent PID 553: /usr/bin/python
+        Processing: /sbin/vgscan -vvv
+        O_DIRECT will be used
+      Setting global/locking_type to 1
+      Setting global/wait_for_locks to 1
+      File-based locking selected.
+      Setting global/locking_dir to /var/lock/lvm
+      Locking /var/lock/lvm/P_global WB
+        _do_flock /var/lock/lvm/P_global:aux WB
+        _do_flock /var/lock/lvm/P_global WB
+        _undo_flock /var/lock/lvm/P_global:aux
+    Wiping cache of LVM-capable devices
+        /dev/sda: Added to device cache
+        /dev/block/8:0: Aliased to /dev/sda in device cache
+        /dev/disk/by-id/ata-ST500DM002-1BD142_Z2ACCGLX: Aliased to /dev/sda in device cache
+        /dev/disk/by-id/scsi-SATA_ST500DM002-1BD1_Z2ACCGLX: Aliased to /dev/sda in device cache
+        /dev/disk/by-path/pci-0000:00:1f.2-scsi-0:0:0:0: Aliased to /dev/sda in device cache
+        /dev/disk/by-id/wwn-0x5000c500363ce2d8: Aliased to /dev/sda in device cache
+        /dev/sda1: Added to device cache
+        /dev/block/8:1: Aliased to /dev/sda1 in device cache
+        /dev/disk/by-id/ata-ST500DM002-1BD142_Z2ACCGLX-part1: Aliased to /dev/sda1 in device cache
+        /dev/disk/by-id/scsi-SATA_ST500DM002-1BD1_Z2ACCGLX-part1: Aliased to /dev/sda1 in device cache
+        /dev/disk/by-path/pci-0000:00:1f.2-scsi-0:0:0:0-part1: Aliased to /dev/sda1 in device cache
+        /dev/disk/by-uuid/298df946-1e4b-4589-aab1-8b1339b45d9c: Aliased to /dev/sda1 in device cache
+        /dev/disk/by-id/wwn-0x5000c500363ce2d8-part1: Aliased to /dev/sda1 in device cache
+        /dev/sda2: Added to device cache
+        /dev/block/8:2: Aliased to /dev/sda2 in device cache
+        /dev/disk/by-id/ata-ST500DM002-1BD142_Z2ACCGLX-part2: Aliased to /dev/sda2 in device cache
+        /dev/disk/by-id/scsi-SATA_ST500DM002-1BD1_Z2ACCGLX-part2: Aliased to /dev/sda2 in device cache
+        /dev/disk/by-path/pci-0000:00:1f.2-scsi-0:0:0:0-part2: Aliased to /dev/sda2 in device cache
+        /dev/disk/by-id/wwn-0x5000c500363ce2d8-part2: Aliased to /dev/sda2 in device cache
+        /dev/sdb: Added to device cache
+        /dev/block/8:16: Aliased to /dev/sdb in device cache
+        /dev/disk/by-id/ata-ST500DM002-1BD142_Z2ACCGFK: Aliased to /dev/sdb in device cache
+        /dev/disk/by-id/scsi-SATA_ST500DM002-1BD1_Z2ACCGFK: Aliased to /dev/sdb in device cache
+        /dev/disk/by-path/pci-0000:00:1f.2-scsi-1:0:0:0: Aliased to /dev/sdb in device cache
+        /dev/disk/by-id/wwn-0x5000c500363cd561: Aliased to /dev/sdb in device cache
+        /dev/sdb1: Added to device cache
+        /dev/block/8:17: Aliased to /dev/sdb1 in device cache
+        /dev/disk/by-id/ata-ST500DM002-1BD142_Z2ACCGFK-part1: Aliased to /dev/sdb1 in device cache
+        /dev/disk/by-id/scsi-SATA_ST500DM002-1BD1_Z2ACCGFK-part1: Aliased to /dev/sdb1 in device cache
+        /dev/disk/by-path/pci-0000:00:1f.2-scsi-1:0:0:0-part1: Aliased to /dev/sdb1 in device cache
+        /dev/disk/by-uuid/e67c8e13-3551-43c5-b82e-de808caf09ca: Aliased to /dev/sdb1 in device cache
+        /dev/disk/by-id/wwn-0x5000c500363cd561-part1: Aliased to /dev/sdb1 in device cache
+        /dev/sr0: Added to device cache
+        /dev/block/11:0: Aliased to /dev/sr0 in device cache
+        /dev/scd0: Aliased to /dev/sr0 in device cache (preferred name)
+        /dev/disk/by-path/pci-0000:00:1f.2-scsi-4:0:0:0: Aliased to /dev/scd0 in device cache
+        /dev/cdrom: Aliased to /dev/scd0 in device cache (preferred name)
+        /dev/dvd: Aliased to /dev/cdrom in device cache
+        /dev/loop0: Added to device cache
+        /dev/block/7:0: Aliased to /dev/loop0 in device cache
+        /dev/loop1: Added to device cache
+        /dev/block/7:1: Aliased to /dev/loop1 in device cache
+        /dev/loop2: Added to device cache
+        /dev/block/7:2: Aliased to /dev/loop2 in device cache
+        /dev/loop3: Added to device cache
+        /dev/block/7:3: Aliased to /dev/loop3 in device cache
+        /dev/loop4: Added to device cache
+        /dev/block/7:4: Aliased to /dev/loop4 in device cache
+        /dev/loop5: Added to device cache
+        /dev/block/7:5: Aliased to /dev/loop5 in device cache
+        /dev/loop6: Added to device cache
+        /dev/block/7:6: Aliased to /dev/loop6 in device cache
+        /dev/loop7: Added to device cache
+        /dev/block/7:7: Aliased to /dev/loop7 in device cache
+        /dev/ram0: Added to device cache
+        /dev/block/1:0: Aliased to /dev/ram0 in device cache
+        /dev/ram1: Added to device cache
+        /dev/block/1:1: Aliased to /dev/ram1 in device cache
+        /dev/ram10: Added to device cache
+        /dev/block/1:10: Aliased to /dev/ram10 in device cache
+        /dev/ram11: Added to device cache
+        /dev/block/1:11: Aliased to /dev/ram11 in device cache
+        /dev/ram12: Added to device cache
+        /dev/block/1:12: Aliased to /dev/ram12 in device cache
+        /dev/ram13: Added to device cache
+        /dev/block/1:13: Aliased to /dev/ram13 in device cache
+        /dev/ram14: Added to device cache
+        /dev/block/1:14: Aliased to /dev/ram14 in device cache
+        /dev/ram15: Added to device cache
+        /dev/block/1:15: Aliased to /dev/ram15 in device cache
+        /dev/ram2: Added to device cache
+        /dev/block/1:2: Aliased to /dev/ram2 in device cache
+        /dev/ram3: Added to device cache
+        /dev/block/1:3: Aliased to /dev/ram3 in device cache
+        /dev/ram4: Added to device cache
+        /dev/block/1:4: Aliased to /dev/ram4 in device cache
+        /dev/ram5: Added to device cache
+        /dev/block/1:5: Aliased to /dev/ram5 in device cache
+        /dev/ram6: Added to device cache
+        /dev/block/1:6: Aliased to /dev/ram6 in device cache
+        /dev/ram7: Added to device cache
+        /dev/block/1:7: Aliased to /dev/ram7 in device cache
+        /dev/ram8: Added to device cache
+        /dev/block/1:8: Aliased to /dev/ram8 in device cache
+        /dev/ram9: Added to device cache
+        /dev/block/1:9: Aliased to /dev/ram9 in device cache
+        /dev/dm-0: Added to device cache
+        /dev/mapper/VolGroup-lv_root: Aliased to /dev/dm-0 in device cache (preferred name)
+        /dev/VolGroup/lv_root: Aliased to /dev/mapper/VolGroup-lv_root in device cache (preferred name)
+        /dev/disk/by-id/dm-name-VolGroup-lv_root: Aliased to /dev/VolGroup/lv_root in device cache
+        /dev/disk/by-id/dm-uuid-LVM-Bdy6odGMJufB9lMzpdVAFmcXWda8Rb3pNA1LONU4kGpmuhIW8WS1R7YTSUMHYzVI: Aliased to /dev/VolGroup/lv_root in device cache
+        /dev/disk/by-uuid/48b1f1e0-b2f9-4547-a4d8-9bb7c165fee2: Aliased to /dev/VolGroup/lv_root in device cache
+        /dev/block/253:0: Aliased to /dev/VolGroup/lv_root in device cache
+        /dev/root: Aliased to /dev/VolGroup/lv_root in device cache (preferred name)
+        /dev/dm-1: Added to device cache
+        /dev/mapper/VolGroup-lv_swap: Aliased to /dev/dm-1 in device cache (preferred name)
+        /dev/VolGroup/lv_swap: Aliased to /dev/mapper/VolGroup-lv_swap in device cache (preferred name)
+        /dev/disk/by-id/dm-name-VolGroup-lv_swap: Aliased to /dev/VolGroup/lv_swap in device cache
+        /dev/disk/by-id/dm-uuid-LVM-Bdy6odGMJufB9lMzpdVAFmcXWda8Rb3pCrmAVIGf993aQu1tYRIws0uUdQahTKDG: Aliased to /dev/VolGroup/lv_swap in device cache
+        /dev/disk/by-uuid/8c47ba7d-57b7-49fd-8783-4ca81e84f1de: Aliased to /dev/VolGroup/lv_swap in device cache
+        /dev/block/253:1: Aliased to /dev/VolGroup/lv_swap in device cache
+        /dev/dm-2: Added to device cache
+        /dev/mapper/VolGroup-lv_home: Aliased to /dev/dm-2 in device cache (preferred name)
+        /dev/VolGroup/lv_home: Aliased to /dev/mapper/VolGroup-lv_home in device cache (preferred name)
+        /dev/disk/by-id/dm-name-VolGroup-lv_home: Aliased to /dev/VolGroup/lv_home in device cache
+        /dev/disk/by-id/dm-uuid-LVM-Bdy6odGMJufB9lMzpdVAFmcXWda8Rb3p3JNyHLVeuRJsfiNktLWnu3LpDLLeoHaP: Aliased to /dev/VolGroup/lv_home in device cache
+        /dev/disk/by-uuid/7a0d29af-1337-4d0a-920f-e10a58d890ca: Aliased to /dev/VolGroup/lv_home in device cache
+        /dev/block/253:2: Aliased to /dev/VolGroup/lv_home in device cache
+    Wiping internal VG cache
+        lvmcache: initialised VG #orphans_lvm1
+        lvmcache: initialised VG #orphans_pool
+        lvmcache: initialised VG #orphans_lvm2
+  Reading all physical volumes.  This may take a while...
+    Finding all volume groups
+        Opened /dev/ram0 RO O_DIRECT
+      /dev/ram0: size is 32768 sectors
+        Closed /dev/ram0
+      /dev/ram0: size is 32768 sectors
+        Opened /dev/ram0 RO O_DIRECT
+        /dev/ram0: block size is 4096 bytes
+        Closed /dev/ram0
+        Using /dev/ram0
+        Opened /dev/ram0 RO O_DIRECT
+        /dev/ram0: block size is 4096 bytes
+      /dev/ram0: No label detected
+        Closed /dev/ram0
+        Opened /dev/loop0 RO O_DIRECT
+      /dev/loop0: size is 0 sectors
+        /dev/loop0: Skipping: Too small to hold a PV
+        Closed /dev/loop0
+        Opened /dev/sda RO O_DIRECT
+      /dev/sda: size is 976773168 sectors
+        /dev/sda: block size is 4096 bytes
+        /dev/sda: Skipping: Partition table signature found
+        Closed /dev/sda
+        /dev/cdrom: Skipping: Unrecognised LVM device type 11
+        dm status   (253:0) OF   [16384]
+        Opened /dev/root RO O_DIRECT
+      /dev/root: size is 104857600 sectors
+        Closed /dev/root
+      /dev/root: size is 104857600 sectors
+        Opened /dev/root RO O_DIRECT
+        /dev/root: block size is 4096 bytes
+        Closed /dev/root
+        Using /dev/root
+        Opened /dev/root RO O_DIRECT
+        /dev/root: block size is 4096 bytes
+      /dev/root: No label detected
+        Closed /dev/root
+        Opened /dev/ram1 RO O_DIRECT
+      /dev/ram1: size is 32768 sectors
+        Closed /dev/ram1
+      /dev/ram1: size is 32768 sectors
+        Opened /dev/ram1 RO O_DIRECT
+        /dev/ram1: block size is 4096 bytes
+        Closed /dev/ram1
+        Using /dev/ram1
+        Opened /dev/ram1 RO O_DIRECT
+        /dev/ram1: block size is 4096 bytes
+      /dev/ram1: No label detected
+        Closed /dev/ram1
+        Opened /dev/loop1 RO O_DIRECT
+      /dev/loop1: size is 0 sectors
+        /dev/loop1: Skipping: Too small to hold a PV
+        Closed /dev/loop1
+        Opened /dev/sda1 RO O_DIRECT
+      /dev/sda1: size is 1024000 sectors
+        Closed /dev/sda1
+      /dev/sda1: size is 1024000 sectors
+        Opened /dev/sda1 RO O_DIRECT
+        /dev/sda1: block size is 1024 bytes
+        Closed /dev/sda1
+        Using /dev/sda1
+        Opened /dev/sda1 RO O_DIRECT
+        /dev/sda1: block size is 1024 bytes
+      /dev/sda1: No label detected
+        Closed /dev/sda1
+        dm status   (253:1) OF   [16384]
+        Opened /dev/VolGroup/lv_swap RO O_DIRECT
+      /dev/VolGroup/lv_swap: size is 12288000 sectors
+        Closed /dev/VolGroup/lv_swap
+      /dev/VolGroup/lv_swap: size is 12288000 sectors
+        Opened /dev/VolGroup/lv_swap RO O_DIRECT
+        /dev/VolGroup/lv_swap: block size is 4096 bytes
+        Closed /dev/VolGroup/lv_swap
+        Using /dev/VolGroup/lv_swap
+        Opened /dev/VolGroup/lv_swap RO O_DIRECT
+        /dev/VolGroup/lv_swap: block size is 4096 bytes
+      /dev/VolGroup/lv_swap: No label detected
+        Closed /dev/VolGroup/lv_swap
+        Opened /dev/ram2 RO O_DIRECT
+      /dev/ram2: size is 32768 sectors
+        Closed /dev/ram2
+      /dev/ram2: size is 32768 sectors
+        Opened /dev/ram2 RO O_DIRECT
+        /dev/ram2: block size is 4096 bytes
+        Closed /dev/ram2
+        Using /dev/ram2
+        Opened /dev/ram2 RO O_DIRECT
+        /dev/ram2: block size is 4096 bytes
+      /dev/ram2: No label detected
+        Closed /dev/ram2
+        Opened /dev/loop2 RO O_DIRECT
+      /dev/loop2: size is 0 sectors
+        /dev/loop2: Skipping: Too small to hold a PV
+        Closed /dev/loop2
+        Opened /dev/sda2 RO O_DIRECT
+      /dev/sda2: size is 975747072 sectors
+        Closed /dev/sda2
+      /dev/sda2: size is 975747072 sectors
+        Opened /dev/sda2 RO O_DIRECT
+        /dev/sda2: block size is 4096 bytes
+        Closed /dev/sda2
+        Using /dev/sda2
+        Opened /dev/sda2 RO O_DIRECT
+        /dev/sda2: block size is 4096 bytes
+      /dev/sda2: lvm2 label detected at sector 1
+        lvmcache: /dev/sda2: now in VG #orphans_lvm2 (#orphans_lvm2)
+        /dev/sda2: Found metadata at 8192 size 1484 (in area at 4096 size 1044480) for VolGroup (Bdy6od-GMJu-fB9l-Mzpd-VAFm-cXWd-a8Rb3p)
+        lvmcache: /dev/sda2: now in VG VolGroup with 1 mdas
+        lvmcache: /dev/sda2: setting VolGroup VGID to Bdy6odGMJufB9lMzpdVAFmcXWda8Rb3p
+        lvmcache: /dev/sda2: VG VolGroup: Set creation host to localhost.localdomain.
+        Closed /dev/sda2
+        dm status   (253:2) OF   [16384]
+        Opened /dev/VolGroup/lv_home RO O_DIRECT
+      /dev/VolGroup/lv_home: size is 858595328 sectors
+        Closed /dev/VolGroup/lv_home
+      /dev/VolGroup/lv_home: size is 858595328 sectors
+        Opened /dev/VolGroup/lv_home RO O_DIRECT
+        /dev/VolGroup/lv_home: block size is 4096 bytes
+        Closed /dev/VolGroup/lv_home
+        Using /dev/VolGroup/lv_home
+        Opened /dev/VolGroup/lv_home RO O_DIRECT
+        /dev/VolGroup/lv_home: block size is 4096 bytes
+      /dev/VolGroup/lv_home: No label detected
+        Closed /dev/VolGroup/lv_home
+        Opened /dev/ram3 RO O_DIRECT
+      /dev/ram3: size is 32768 sectors
+        Closed /dev/ram3
+      /dev/ram3: size is 32768 sectors
+        Opened /dev/ram3 RO O_DIRECT
+        /dev/ram3: block size is 4096 bytes
+        Closed /dev/ram3
+        Using /dev/ram3
+        Opened /dev/ram3 RO O_DIRECT
+        /dev/ram3: block size is 4096 bytes
+      /dev/ram3: No label detected
+        Closed /dev/ram3
+        Opened /dev/loop3 RO O_DIRECT
+      /dev/loop3: size is 0 sectors
+        /dev/loop3: Skipping: Too small to hold a PV
+        Closed /dev/loop3
+        Opened /dev/ram4 RO O_DIRECT
+      /dev/ram4: size is 32768 sectors
+        Closed /dev/ram4
+      /dev/ram4: size is 32768 sectors
+        Opened /dev/ram4 RO O_DIRECT
+        /dev/ram4: block size is 4096 bytes
+        Closed /dev/ram4
+        Using /dev/ram4
+        Opened /dev/ram4 RO O_DIRECT
+        /dev/ram4: block size is 4096 bytes
+      /dev/ram4: No label detected
+        Closed /dev/ram4
+        Opened /dev/loop4 RO O_DIRECT
+      /dev/loop4: size is 0 sectors
+        /dev/loop4: Skipping: Too small to hold a PV
+        Closed /dev/loop4
+        Opened /dev/ram5 RO O_DIRECT
+      /dev/ram5: size is 32768 sectors
+        Closed /dev/ram5
+      /dev/ram5: size is 32768 sectors
+        Opened /dev/ram5 RO O_DIRECT
+        /dev/ram5: block size is 4096 bytes
+        Closed /dev/ram5
+        Using /dev/ram5
+        Opened /dev/ram5 RO O_DIRECT
+        /dev/ram5: block size is 4096 bytes
+      /dev/ram5: No label detected
+        Closed /dev/ram5
+        Opened /dev/loop5 RO O_DIRECT
+      /dev/loop5: size is 0 sectors
+        /dev/loop5: Skipping: Too small to hold a PV
+        Closed /dev/loop5
+        Opened /dev/ram6 RO O_DIRECT
+      /dev/ram6: size is 32768 sectors
+        Closed /dev/ram6
+      /dev/ram6: size is 32768 sectors
+        Opened /dev/ram6 RO O_DIRECT
+        /dev/ram6: block size is 4096 bytes
+        Closed /dev/ram6
+        Using /dev/ram6
+        Opened /dev/ram6 RO O_DIRECT
+        /dev/ram6: block size is 4096 bytes
+      /dev/ram6: No label detected
+        Closed /dev/ram6
+        Opened /dev/loop6 RO O_DIRECT
+      /dev/loop6: size is 0 sectors
+        /dev/loop6: Skipping: Too small to hold a PV
+        Closed /dev/loop6
+        Opened /dev/ram7 RO O_DIRECT
+      /dev/ram7: size is 32768 sectors
+        Closed /dev/ram7
+      /dev/ram7: size is 32768 sectors
+        Opened /dev/ram7 RO O_DIRECT
+        /dev/ram7: block size is 4096 bytes
+        Closed /dev/ram7
+        Using /dev/ram7
+        Opened /dev/ram7 RO O_DIRECT
+        /dev/ram7: block size is 4096 bytes
+      /dev/ram7: No label detected
+        Closed /dev/ram7
+        Opened /dev/loop7 RO O_DIRECT
+      /dev/loop7: size is 0 sectors
+        /dev/loop7: Skipping: Too small to hold a PV
+        Closed /dev/loop7
+        Opened /dev/ram8 RO O_DIRECT
+      /dev/ram8: size is 32768 sectors
+        Closed /dev/ram8
+      /dev/ram8: size is 32768 sectors
+        Opened /dev/ram8 RO O_DIRECT
+        /dev/ram8: block size is 4096 bytes
+        Closed /dev/ram8
+        Using /dev/ram8
+        Opened /dev/ram8 RO O_DIRECT
+        /dev/ram8: block size is 4096 bytes
+      /dev/ram8: No label detected
+        Closed /dev/ram8
+        Opened /dev/ram9 RO O_DIRECT
+      /dev/ram9: size is 32768 sectors
+        Closed /dev/ram9
+      /dev/ram9: size is 32768 sectors
+        Opened /dev/ram9 RO O_DIRECT
+        /dev/ram9: block size is 4096 bytes
+        Closed /dev/ram9
+        Using /dev/ram9
+        Opened /dev/ram9 RO O_DIRECT
+        /dev/ram9: block size is 4096 bytes
+      /dev/ram9: No label detected
+        Closed /dev/ram9
+        Opened /dev/ram10 RO O_DIRECT
+      /dev/ram10: size is 32768 sectors
+        Closed /dev/ram10
+      /dev/ram10: size is 32768 sectors
+        Opened /dev/ram10 RO O_DIRECT
+        /dev/ram10: block size is 4096 bytes
+        Closed /dev/ram10
+        Using /dev/ram10
+        Opened /dev/ram10 RO O_DIRECT
+        /dev/ram10: block size is 4096 bytes
+      /dev/ram10: No label detected
+        Closed /dev/ram10
+        Opened /dev/ram11 RO O_DIRECT
+      /dev/ram11: size is 32768 sectors
+        Closed /dev/ram11
+      /dev/ram11: size is 32768 sectors
+        Opened /dev/ram11 RO O_DIRECT
+        /dev/ram11: block size is 4096 bytes
+        Closed /dev/ram11
+        Using /dev/ram11
+        Opened /dev/ram11 RO O_DIRECT
+        /dev/ram11: block size is 4096 bytes
+      /dev/ram11: No label detected
+        Closed /dev/ram11
+        Opened /dev/ram12 RO O_DIRECT
+      /dev/ram12: size is 32768 sectors
+        Closed /dev/ram12
+      /dev/ram12: size is 32768 sectors
+        Opened /dev/ram12 RO O_DIRECT
+        /dev/ram12: block size is 4096 bytes
+        Closed /dev/ram12
+        Using /dev/ram12
+        Opened /dev/ram12 RO O_DIRECT
+        /dev/ram12: block size is 4096 bytes
+      /dev/ram12: No label detected
+        Closed /dev/ram12
+        Opened /dev/ram13 RO O_DIRECT
+      /dev/ram13: size is 32768 sectors
+        Closed /dev/ram13
+      /dev/ram13: size is 32768 sectors
+        Opened /dev/ram13 RO O_DIRECT
+        /dev/ram13: block size is 4096 bytes
+        Closed /dev/ram13
+        Using /dev/ram13
+        Opened /dev/ram13 RO O_DIRECT
+        /dev/ram13: block size is 4096 bytes
+      /dev/ram13: No label detected
+        Closed /dev/ram13
+        Opened /dev/ram14 RO O_DIRECT
+      /dev/ram14: size is 32768 sectors
+        Closed /dev/ram14
+      /dev/ram14: size is 32768 sectors
+        Opened /dev/ram14 RO O_DIRECT
+        /dev/ram14: block size is 4096 bytes
+        Closed /dev/ram14
+        Using /dev/ram14
+        Opened /dev/ram14 RO O_DIRECT
+        /dev/ram14: block size is 4096 bytes
+      /dev/ram14: No label detected
+        Closed /dev/ram14
+        Opened /dev/ram15 RO O_DIRECT
+      /dev/ram15: size is 32768 sectors
+        Closed /dev/ram15
+      /dev/ram15: size is 32768 sectors
+        Opened /dev/ram15 RO O_DIRECT
+        /dev/ram15: block size is 4096 bytes
+        Closed /dev/ram15
+        Using /dev/ram15
+        Opened /dev/ram15 RO O_DIRECT
+        /dev/ram15: block size is 4096 bytes
+      /dev/ram15: No label detected
+        Closed /dev/ram15
+        Opened /dev/sdb RO O_DIRECT
+      /dev/sdb: size is 976773168 sectors
+        /dev/sdb: block size is 4096 bytes
+        /dev/sdb: Skipping: Partition table signature found
+        Closed /dev/sdb
+        Opened /dev/sdb1 RO O_DIRECT
+      /dev/sdb1: size is 195312500 sectors
+        Closed /dev/sdb1
+      /dev/sdb1: size is 195312500 sectors
+        Opened /dev/sdb1 RO O_DIRECT
+        /dev/sdb1: block size is 4096 bytes
+        Closed /dev/sdb1
+        Using /dev/sdb1
+        Opened /dev/sdb1 RO O_DIRECT
+        /dev/sdb1: block size is 4096 bytes
+      /dev/sdb1: No label detected
+        Closed /dev/sdb1
+    Finding volume group "VolGroup"
+      Locking /var/lock/lvm/V_VolGroup RB
+        _do_flock /var/lock/lvm/V_VolGroup:aux WB
+        _undo_flock /var/lock/lvm/V_VolGroup:aux
+        _do_flock /var/lock/lvm/V_VolGroup RB
+        Using cached label for /dev/sda2
+        Opened /dev/sda2 RO O_DIRECT
+        /dev/sda2: block size is 4096 bytes
+        Allocated VG VolGroup at 0x13bfcf0.
+        Using cached label for /dev/sda2
+        Read VolGroup metadata (4) from /dev/sda2 at 8192 size 1484
+        /dev/sda2 0:      0  12800: lv_root(0:0)
+        /dev/sda2 1:  12800 104809: lv_home(0:0)
+        /dev/sda2 2: 117609   1500: lv_swap(0:0)
+  Found volume group "VolGroup" using metadata type lvm2
+        Freeing VG VolGroup at 0x13c7d10.
+        Unlock: Memlock counters: locked:0 critical:0 daemon:0 suspended:0
+        Syncing device names
+      Unlocking /var/lock/lvm/V_VolGroup
+        _undo_flock /var/lock/lvm/V_VolGroup
+        Closed /dev/sda2
+        Freeing VG VolGroup at 0x13bfcf0.
+      Unlocking /var/lock/lvm/P_global
+        _undo_flock /var/lock/lvm/P_global
+

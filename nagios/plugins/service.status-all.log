@@ -1,0 +1,131 @@
+auditd (pid  1240) is running...
+automount (pid  1488) is running...
+carbon-aggregator is stopped
+carbon-cache is stopped
+carbon-relay is stopped
+cgred is stopped
+crond (pid  2209) is running...
+denyhosts.py is stopped
+dhcpd is stopped
+dhcpd is stopped
+dropbox
+dhcrelay is stopped
+dnsmasq is stopped
+flow-capture is stopped
+hald (pid  1414) is running...
+hsflowd status: stopped
+htcacheclean is stopped
+httpd (pid  15818) is running...
+ip6tables: Firewall is not running.
+ipmidetectd is stopped
+ipmievd is stopped
+ipmi_port is stopped
+ipmiutil_asy bridge agent is stopped
+ipmiutil_evt is stopped
+ipmiutil ver 2.82
+iwdt ver 2.82
+-- BMC version 1.70, IPMI version 2.0 
+wdt data: 00 00 01 00 96 00 96 00 
+Watchdog timer is stopped for use with reserved. Logging
+               pretimeout is 1 seconds, pre-action is None
+               timeout is 15 seconds, counter is 15 seconds
+               action is No action
+
+ipmiutil wdt, completed successfully
+ipmiutil_wdt is stopped
+iptables: Firewall is not running.
+iscsid dead but pid file exists
+Kdump is not operational
+coretemp-isa-0000
+Adapter: ISA adapter
+Core 0:      +35.0°C  (high = +87.0°C, crit = +97.0°C)  
+Core 1:      +33.0°C  (high = +87.0°C, crit = +97.0°C)  
+Core 2:      +37.0°C  (high = +87.0°C, crit = +97.0°C)  
+Core 3:      +34.0°C  (high = +87.0°C, crit = +97.0°C)  
+
+qpidd is stopped
+matahari-qmf-hostd is stopped
+matahari-qmf-networkd is stopped
+matahari-qmf-serviced is stopped
+matahari-qmf-sysconfigd is stopped
+mdmonitor is stopped
+memcached is stopped
+messagebus (pid  1376) is running...
+mldonkey is stopped
+monit is stopped
+munin-node is stopped
+mysqld is stopped
+Nessus not properly installed
+No open transaction
+netconsole module not loaded
+Active NFS mountpoints: 
+/mnt/nfs
+Configured devices:
+lo em1 em2
+Currently active devices:
+lo em1
+rpc.svcgssd is stopped
+rpc.mountd (pid 1532) is running...
+nfsd (pid 1599 1598 1597 1596 1595 1594 1593 1592) is running...
+rpc.statd (pid  1317) is running...
+services.pl is stopped
+nmbd is stopped
+ntop is stopped
+ntpd (pid  2024) is running...
+numad is stopped
+Checking state of all OMD monitoring sites:
+Doing 'status' on site site01:
+mkeventd:       running
+apache:         running
+gearmand:       running
+rrdcached:      running
+gearman_worker: running
+npcd:           running
+nagios:         running
+nsca:           running
+xinetd:         running
+crontab:        running
+-----------------------
+Overall state:  running
+
+Pandora FMS Server is not running.
+portreserve (pid  1258) is running...
+master (pid  796) is running...
+proftpd (pid 2150) is running...
+Process accounting is disabled.
+qpidd (pid  2176) is running...
+radvd is stopped
+rdisc is stopped
+redis-server (pid  1365) is running...
+rpcbind (pid  1297) is running...
+rpc.gssd is stopped
+rpc.idmapd (pid 1581) is running...
+rpc.svcgssd is stopped
+rrdcached (pid 29253) is running...
+rsyslogd (pid  1265) is running...
+salt-api is stopped
+salt-master (pid  2711) is running...
+salt-minion is stopped
+salt-syndic (pid 3039) is running...
+sandbox is stopped
+saslauthd is stopped
+sflowovsd status: stopped
+Status sFlow-RT: Not running
+smartd is stopped
+smbd (pid  2605) is running...
+smsd is stopped
+snmpd is stopped
+snmptrapd is stopped
+snmptt is stopped
+spawn-fcgi is stopped
+spice-vdagentd is stopped
+openssh-daemon (pid  2006) is running...
+Tentacle Server is not running.
+vmpsd is stopped
+Xvnc is stopped
+wdaemon is stopped
+winbindd is stopped
+xenwebmanager dead but pid file exists
+xinetd (pid  2016) is running...
+xrdp is stopped
+xrdp-sesman is stopped

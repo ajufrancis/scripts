@@ -1,0 +1,4 @@
+syntax: glob
+*.pyc
+schema.*
+ocs2rack.conf

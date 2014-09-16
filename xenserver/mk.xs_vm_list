@@ -1,0 +1,4 @@
+#!/bin/bash
+test -f /etc/xensource-inventory || exit
+echo "<<<vm-list>>>"
+xe vm-list is-control-domain=false params=

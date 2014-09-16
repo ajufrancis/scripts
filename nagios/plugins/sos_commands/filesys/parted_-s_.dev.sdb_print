@@ -1,0 +1,9 @@
+Model: ATA ST500DM002-1BD14 (scsi)
+Disk /dev/sdb: 500GB
+Sector size (logical/physical): 512B/4096B
+Partition Table: msdos
+
+Number  Start  End    Size   Type     File system  Flags
+ 1      512B   100GB  100GB  primary  ext4
+
+

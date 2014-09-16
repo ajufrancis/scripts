@@ -1,0 +1,53 @@
+[INFO] SMARTA 28 Feb 21:32:12 collected port: 7070
+[INFO] SMARTA 28 Feb 21:32:12 schedule sensor 'Ping localhost' after 107 seconds
+[INFO] SMARTA 28 Feb 21:32:12 schedule sensor 'CPU' after 205 seconds
+[INFO] SMARTA 28 Feb 21:32:12 schedule sensor '负载' after 192 seconds
+[INFO] SMARTA 28 Feb 21:32:12 schedule sensor '内存' after 196 seconds
+[INFO] SMARTA 28 Feb 21:32:12 schedule sensor 'SWAP' after 208 seconds
+[INFO] SMARTA 28 Feb 21:32:12 schedule sensor '磁盘 /' after 96 seconds
+[INFO] SMARTA 28 Feb 21:32:12 schedule sensor '磁盘 /usr' after 287 seconds
+[INFO] SMARTA 28 Feb 21:32:12 schedule sensor '磁盘 /opt' after 163 seconds
+[INFO] SMARTA 28 Feb 21:32:12 schedule sensor '进程CPU' after 295 seconds
+[INFO] SMARTA 28 Feb 21:32:12 schedule sensor '进程内存' after 23 seconds
+[INFO] SMARTA 28 Feb 21:32:12 schedule sensor '进程总数' after 168 seconds
+[INFO] SMARTA 28 Feb 21:32:16 authenticating...
+[INFO] SMARTA 28 Feb 21:32:16 authenticate successfully.
+[INFO] SMARTA 28 Feb 21:32:21 session established.
+[INFO] SMARTA 28 Feb 21:32:21 smarta is started successfully.
+[INFO] ROSTER 28 Feb 21:32:22 status.nodebus.com is available
+[INFO] ROSTER 28 Feb 21:32:22 event.nodebus.com is available
+[INFO] SMARTA 28 Feb 21:33:14 SIGTERM, scheduling shutdown...
+[INFO] SMARTA 28 Feb 21:33:15 shutdown.
+[INFO] SMARTA 28 Feb 21:35:01 collected port: 0
+[INFO] SMARTA 28 Feb 21:35:01 collected on 127.0.0.1:47478
+[INFO] SMARTA 28 Feb 21:35:01 schedule sensor 'Ping localhost' after 277 seconds
+[INFO] SMARTA 28 Feb 21:35:01 schedule sensor 'CPU' after 26 seconds
+[INFO] SMARTA 28 Feb 21:35:01 schedule sensor '负载' after 79 seconds
+[INFO] SMARTA 28 Feb 21:35:01 schedule sensor '内存' after 49 seconds
+[INFO] SMARTA 28 Feb 21:35:01 schedule sensor 'SWAP' after 272 seconds
+[INFO] SMARTA 28 Feb 21:35:01 schedule sensor '磁盘 /' after 256 seconds
+[INFO] SMARTA 28 Feb 21:35:01 schedule sensor '磁盘 /usr' after 51 seconds
+[INFO] SMARTA 28 Feb 21:35:01 schedule sensor '磁盘 /opt' after 133 seconds
+[INFO] SMARTA 28 Feb 21:35:01 schedule sensor '进程CPU' after 252 seconds
+[INFO] SMARTA 28 Feb 21:35:01 schedule sensor '进程内存' after 236 seconds
+[INFO] SMARTA 28 Feb 21:35:01 schedule sensor '进程总数' after 80 seconds
+[INFO] SMARTA 28 Feb 21:35:02 authenticating...
+[INFO] SMARTA 28 Feb 21:35:02 authenticate successfully.
+[INFO] SMARTA 28 Feb 21:35:04 session established.
+[INFO] SMARTA 28 Feb 21:35:04 smarta is started successfully.
+[INFO] ROSTER 28 Feb 21:35:05 event.nodebus.com is available
+[INFO] ROSTER 28 Feb 21:35:05 status.nodebus.com is available
+[WARNING] SENSOR 28 Feb 21:35:27 error sensor result: 127, output: 
+
+[WARNING] SENSOR 28 Feb 21:35:50 error sensor result: 127, output: 
+
+[WARNING] SENSOR 28 Feb 21:35:52 error sensor result: 127, output: 
+
+[WARNING] SENSOR 28 Feb 21:36:20 error sensor result: 127, output: 
+
+[WARNING] SENSOR 28 Feb 21:36:21 error sensor result: 127, output: 
+
+[WARNING] SENSOR 28 Feb 21:37:14 error sensor result: 127, output: 
+
+[INFO] SMARTA 28 Feb 21:38:36 SIGTERM, scheduling shutdown...
+[INFO] SMARTA 28 Feb 21:38:37 shutdown.

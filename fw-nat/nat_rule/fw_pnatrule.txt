@@ -1,0 +1,163 @@
+  dnatrule id 52 from "Any" to "10.24.4.28" service "udp20507" trans-to "192.168.31.45" port 20507 
+  dnatrule id 53 from "Any" to "10.24.4.28" service "tcp20607" trans-to "192.168.31.45" port 20607 track-tcp 20607 
+  dnatrule id 122 from "Any" to "10.24.4.24" service "ssh12206" trans-to "192.168.12.206" port 22 track-tcp 22 
+  dnatrule id 121 from "Any" to "10.24.4.24" service "ssh12205" trans-to "192.168.12.205" port 22 track-tcp 22 
+  dnatrule id 3 from "Any" to "10.24.4.24" service "ssh12204" trans-to "192.168.12.204" port 22 track-tcp 22 
+  dnatrule id 10 from "Any" to "114.251.196.108" service "tcp28080" trans-to "192.168.31.165" port 80 track-ping 
+  dnatrule id 120 from "Any" to "114.251.196.108" service "ssh16522" trans-to "192.168.31.165" port 22 track-tcp 22 
+  dnatrule id 29 from "Any" to "114.251.196.108" service "tcp13306" trans-to "192.168.31.165" port 3306 
+  dnatrule id 5 from "Any" to "114.251.196.108" service "tcp180" trans-to "192.168.32.67" port 80 
+  dnatrule id 6 from "Any" to "114.251.196.108" service "tcp1443" trans-to "192.168.32.67" port 443 
+  dnatrule id 15 from "Any" to "114.251.196.108" service "web-ServerRDP" trans-to "192.168.31.158" port 3389 
+  dnatrule id 13 from "Any" to "114.251.196.114" service "tcp13389" trans-to "192.168.31.83" port 3389 
+  dnatrule id 55 from "Any" to "10.24.4.29" service "fengce-tcp1221" trans-to "192.168.31.127" port 22 
+  dnatrule id 56 from "Any" to "10.24.4.29" service "fengce-tcp1222" trans-to "192.168.31.128" port 3389 
+  dnatrule id 57 from "Any" to "10.24.4.29" service "fengce-tcp1225" trans-to "192.168.31.129" port 3389 
+  dnatrule id 58 from "Any" to "10.24.4.29" service "fengce-tcp1223" trans-to "192.168.31.130" port 22 
+  dnatrule id 60 from "Any" to "10.24.4.29" service "fengce-tcp2221" trans-to "192.168.31.134" port 22 
+  dnatrule id 61 from "Any" to "10.24.4.29" service "fengce-tcp2222" trans-to "192.168.31.135" port 3389 
+  dnatrule id 62 from "Any" to "10.24.4.29" service "fengce-tcp2223" trans-to "192.168.31.136" port 22 
+  dnatrule id 63 from "Any" to "10.24.4.29" service "fengce-tcp2224" trans-to "192.168.31.137" port 3389 
+  dnatrule id 64 from "Any" to "10.24.4.29" service "fengce-tcp3221" trans-to "192.168.31.161" port 22 
+  dnatrule id 65 from "Any" to "10.24.4.29" service "fengce-tcp3222" trans-to "192.168.31.162" port 3389 
+  dnatrule id 66 from "Any" to "10.24.4.29" service "fengce-tcp3223" trans-to "192.168.31.163" port 22 
+  dnatrule id 67 from "Any" to "10.24.4.29" service "fengce-tcp3224" trans-to "192.168.31.164" port 3389 
+  dnatrule id 68 from "Any" to "10.24.4.29" service "fengce-tcp4221" trans-to "192.168.31.166" port 22 
+  dnatrule id 69 from "Any" to "10.24.4.29" service "fengce-tcp4222" trans-to "192.168.31.167" port 3389 
+  dnatrule id 70 from "Any" to "10.24.4.29" service "fengce-tcp4223" trans-to "192.168.31.168" port 22 
+  dnatrule id 71 from "Any" to "10.24.4.29" service "fengce-tcp4224" trans-to "192.168.31.169" port 3389 
+  dnatrule id 72 from "Any" to "10.24.4.29" service "fengce-tcp5221" trans-to "192.168.31.20" port 22 
+  dnatrule id 73 from "Any" to "10.24.4.29" service "fengce-tcp5222" trans-to "192.168.31.21" port 3389 
+  dnatrule id 74 from "Any" to "10.24.4.29" service "fengce-tcp5223" trans-to "192.168.31.22" port 22 
+  dnatrule id 75 from "Any" to "10.24.4.29" service "fengce-tcp5224" trans-to "192.168.31.23" port 3389 
+  dnatrule id 76 from "Any" to "10.24.4.29" service "fengce-tcp6221" trans-to "192.168.31.25" port 22 
+  dnatrule id 77 from "Any" to "10.24.4.29" service "fengce-tcp6222" trans-to "192.168.31.26" port 3389 
+  dnatrule id 78 from "Any" to "10.24.4.29" service "fengce-tcp6223" trans-to "192.168.31.27" port 22 
+  dnatrule id 79 from "Any" to "10.24.4.29" service "fengce-tcp6224" trans-to "192.168.31.28" port 3389 
+  dnatrule id 80 from "Any" to "114.251.196.109" service "fengce-tcp1211" trans-to "192.168.31.128" port 121 
+  dnatrule id 81 from "Any" to "114.251.196.109" service "fengce-tcp801" trans-to "192.168.31.130" port 80 
+  dnatrule id 82 from "Any" to "114.251.196.109" service "fengce-tcp10251" trans-to "192.168.31.131" port 40000 
+  dnatrule id 83 from "Any" to "114.251.196.109" service "fengce-tcp1212" trans-to "192.168.31.135" port 121 
+  dnatrule id 84 from "Any" to "114.251.196.109" service "fengce-tcp802" trans-to "192.168.31.136" port 80 
+  dnatrule id 85 from "Any" to "114.251.196.109" service "fengce-tcp10252" trans-to "192.168.31.137" port 40000 
+  dnatrule id 86 from "Any" to "114.251.196.109" service "fengce-tcp1213" trans-to "192.168.31.162" port 121 
+  dnatrule id 87 from "Any" to "114.251.196.109" service "fengce-tcp803" trans-to "192.168.31.163" port 80 
+  dnatrule id 88 from "Any" to "114.251.196.109" service "fengce-tcp10253" trans-to "192.168.31.164" port 40000 
+  dnatrule id 89 from "Any" to "114.251.196.109" service "fengce-tcp1214" trans-to "192.168.31.167" port 121 
+  dnatrule id 91 from "Any" to "114.251.196.109" service "fengce-tcp10254" trans-to "192.168.31.169" port 40000 
+  dnatrule id 92 from "Any" to "114.251.196.109" service "fengce-tcp1215" trans-to "192.168.31.21" port 121 
+  dnatrule id 93 from "Any" to "114.251.196.109" service "fengce-tcp805" trans-to "192.168.31.22" port 80 
+  dnatrule id 94 from "Any" to "114.251.196.109" service "fengce-tcp10255" trans-to "192.168.31.23" port 40000 
+  dnatrule id 95 from "Any" to "114.251.196.109" service "fengce-tcp1216" trans-to "192.168.31.26" port 121 
+  dnatrule id 96 from "Any" to "114.251.196.109" service "fengce-tcp806" trans-to "192.168.31.27" port 80 
+  dnatrule id 97 from "Any" to "114.251.196.109" service "fengce-tcp10256" trans-to "192.168.31.28" port 40000 
+  dnatrule id 100 from "Any" to "114.251.196.108" service "udp20507" trans-to "192.168.31.4" port 20507 track-tcp 20507 
+  dnatrule id 102 from "Any" to "10.24.4.28" service "gdupc-rdp3188" trans-to "192.168.31.88" port 3389 
+  dnatrule id 103 from "Any" to "10.24.4.28" service "gdupc-rdp3170" trans-to "192.168.31.70" port 3389 
+  dnatrule id 104 from "Any" to "10.24.4.28" service "gdupc-rdp3168" trans-to "192.168.31.68" port 3389 
+  dnatrule id 105 from "Any" to "10.24.4.28" service "gdupc-rdp3167" trans-to "192.168.31.67" port 3389 
+  dnatrule id 106 from "Any" to "10.24.4.28" service "gdupc-rdp3146" trans-to "192.168.31.46" port 3389 
+  dnatrule id 107 from "Any" to "10.24.4.28" service "gdupc-rdp3104" trans-to "192.168.31.4" port 3389 
+  dnatrule id 109 from "Any" to "10.24.4.28" service "gdupc-rdp31197" trans-to "192.168.31.197" port 3389 
+  dnatrule id 110 from "Any" to "10.24.4.28" service "gdupc-rdp31193" trans-to "192.168.31.193" port 3389 
+  dnatrule id 111 from "Any" to "10.24.4.28" service "gdupc-rdp31192" trans-to "192.168.31.192" port 3389 
+  dnatrule id 112 from "Any" to "10.24.4.28" service "gdupc-rdp31186" trans-to "192.168.31.186" port 3389 
+  dnatrule id 114 from "Any" to "10.24.4.28" service "gdupc-rdp31176" trans-to "192.168.31.176" port 3389 
+  dnatrule id 115 from "Any" to "10.24.4.28" service "gdupc-rdp31173" trans-to "192.168.31.173" port 3389 
+  dnatrule id 116 from "Any" to "10.24.4.28" service "gdupc-rdp31172" trans-to "192.168.31.172" port 3389 
+  dnatrule id 117 from "Any" to "10.24.4.28" service "gdupc-rdp31171" trans-to "192.168.31.171" port 3389 
+  dnatrule id 118 from "Any" to "10.24.4.28" service "gdupc-rdp31146" trans-to "192.168.31.146" port 3389 
+  dnatrule id 127 from "Any" to "114.251.196.114" service "jituanmis1-tcp1081" trans-to "192.168.32.161" port 80 
+  dnatrule id 128 from "Any" to "114.251.196.114" service "jituanmis1-tcp9081" trans-to "192.168.32.161" port 9080 
+  dnatrule id 129 from "Any" to "114.251.196.114" service "jituanmis1-tcp9061" trans-to "192.168.32.161" port 9060 
+  dnatrule id 130 from "Any" to "114.251.196.114" service "jituanmis2-tcp1082" trans-to "192.168.32.134" port 80 
+  dnatrule id 131 from "Any" to "114.251.196.114" service "jituanmis2-tcp9082" trans-to "192.168.32.134" port 9080 
+  dnatrule id 132 from "Any" to "114.251.196.114" service "jituanmis2-tcp9062" trans-to "192.168.32.134" port 9060 
+  dnatrule id 133 from "Any" to "114.251.196.114" service "jituanmis3-tcp1083" trans-to "192.168.32.133" port 80 
+  dnatrule id 134 from "Any" to "114.251.196.114" service "jituanmis3-tcp9083" trans-to "192.168.32.133" port 9080 
+  dnatrule id 135 from "Any" to "114.251.196.114" service "jituanmis3-tcp9063" trans-to "192.168.32.133" port 9060 
+  dnatrule id 139 from "Any" to "10.24.4.30" service "jituanmis2-tcp1082" trans-to "192.168.32.134" port 80 
+  dnatrule id 140 from "Any" to "10.24.4.30" service "jituanmis2-tcp9082" trans-to "192.168.32.134" port 9080 
+  dnatrule id 141 from "Any" to "10.24.4.30" service "jituanmis2-tcp9062" trans-to "192.168.32.134" port 9060 
+  dnatrule id 142 from "Any" to "10.24.4.30" service "jituanmis3-tcp1083" trans-to "192.168.32.133" port 80 
+  dnatrule id 143 from "Any" to "10.24.4.30" service "jituanmis3-tcp9083" trans-to "192.168.32.133" port 9080 
+  dnatrule id 144 from "Any" to "10.24.4.30" service "jituanmis3-tcp9063" trans-to "192.168.32.133" port 9060 
+  dnatrule id 145 from "Any" to "10.24.4.30" service "jituanmis1-tcp1081" trans-to "192.168.32.161" port 80 
+  dnatrule id 146 from "Any" to "10.24.4.30" service "jituanmis1-tcp9081" trans-to "192.168.32.161" port 9080 
+  dnatrule id 147 from "Any" to "10.24.4.30" service "jituanmis1-tcp9061" trans-to "192.168.32.161" port 9060 
+  dnatrule id 148 from "Any" to "10.24.4.30" service "jituanmis2-tcp33892" trans-to "192.168.32.134" port 3389 
+  dnatrule id 150 from "Any" to "10.24.4.30" service "jituanmis3-tcp33893" trans-to "192.168.32.133" port 3389 
+  dnatrule id 90 from "Any" to "10.24.4.28" service "gdupc-rdp3187" trans-to "192.168.31.87" port 3389 
+  dnatrule id 108 from "Any" to "10.24.4.28" service "modbus1-tcp3107" trans-to "192.168.31.7" port 3389 
+  dnatrule id 152 from "Any" to "10.24.4.28" service "modbus2-tcp31170" trans-to "192.168.31.170" port 3389 
+  dnatrule id 149 from "Any" to "10.24.4.30" service "jituanmis1-tcp33891" trans-to "192.168.32.161" port 3389 
+  dnatrule id 154 from "Any" to "10.24.4.28" service "HTTP" trans-to "192.168.31.87" port 80 
+  dnatrule id 1 from "Any" to "10.24.4.86" service "RDP" trans-to "192.168.31.199" port 3389 
+  dnatrule id 155 from "Any" to "10.24.4.86" service "FTP" trans-to "192.168.31.199" port 21 
+  dnatrule id 157 from "Any" to "10.24.4.30" service "jituanmis2-15211" trans-to "192.168.31.134" port 1521 
+  dnatrule id 160 from "Any" to "10.24.4.28" service "modbus-tcp4004" trans-to "192.168.31.170" port 4004 
+  dnatrule id 101 from "Any" to "10.24.4.28" service "tcp8080" trans-to "192.168.31.87" port 8080 
+  dnatrule id 164 from "Any" to "114.251.196.108" service "gdupc-tcp20607" trans-to "192.168.31.4" port 20607 
+  dnatrule id 176 from "Any" to "10.24.4.30" service "tcp1521" trans-to "172.17.0.18" port 1521 
+  dnatrule id 178 from "Any" to "111.205.44.21" service "HTTP" trans-to "172.17.0.18" port 80 track-tcp 80 track-ping 
+  dnatrule id 179 from "Any" to "10.24.4.30" service "http2080" trans-to "172.17.0.18" port 22 track-tcp 80 track-ping 
+  dnatrule id 175 from "Any" to "10.24.4.30" service "rdp43891" trans-to "172.17.0.18" port 3389 track-tcp 3389 
+  dnatrule id 183 from "Any" to "10.24.4.30" service "rdp43892" trans-to "172.17.0.20" port 3389 track-tcp 3389 
+  dnatrule id 184 from "Any" to "10.24.4.30" service "rdp43893" trans-to "172.17.0.21" port 3389 track-tcp 3389 
+  dnatrule id 185 from "Any" to "10.24.4.30" service "ssh1720" trans-to "172.17.0.20" port 22 track-tcp 22 
+  dnatrule id 186 from "Any" to "10.24.4.30" service "ssh1721" trans-to "172.17.0.21" port 22 track-tcp 22 
+  dnatrule id 215 from "Any" to "111.205.44.40" service "tcp8888" trans-to "172.17.0.7" port 8888 
+  dnatrule id 211 from "Any" to "10.24.4.30" service "tcp3200" trans-to "172.17.0.21" port 3200 track-tcp 3200 
+  dnatrule id 212 from "Any" to "10.24.4.30" service "tcp3299" trans-to "172.17.0.21" port 3299 track-tcp 3299 
+  dnatrule id 221 from "Any" to "10.24.4.28" service "rdp3156" trans-to "192.168.31.56" port 3389 track-tcp 3389 
+  dnatrule id 220 from "Any" to "10.24.4.28" service "rdp3157" trans-to "192.168.31.57" port 3389 track-tcp 3389 
+  dnatrule id 124 from "Any" to "10.24.4.30" service "ssh221" trans-to "192.168.32.162" port 22 track-tcp 22 
+  dnatrule id 125 from "Any" to "10.24.4.30" service "http1080" trans-to "192.168.32.162" port 80 track-tcp 80 
+  dnatrule id 126 from "Any" to "114.251.196.114" service "http1080" trans-to "192.168.32.162" port 80 track-tcp 80 
+  dnatrule id 137 from "Any" to "114.251.196.114" service "ssh221" trans-to "192.168.32.162" port 22 track-tcp 22 
+  dnatrule id 138 from "Any" to "10.24.4.30" service "rdp3390" trans-to "192.168.32.162" port 3389 track-tcp 3389 
+  dnatrule id 136 from "Any" to "114.251.196.114" service "tcp9060" trans-to "192.168.32.162" port 9060 track-tcp 9060 
+  dnatrule id 151 from "Any" to "10.24.4.30" service "tcp9060" trans-to "192.168.32.162" port 9060 track-tcp 9060 
+  dnatrule id 165 from "Any" to "10.24.4.30" service "tcp9080" trans-to "192.168.32.162" port 9080 track-tcp 9080 
+  dnatrule id 166 from "Any" to "114.251.196.114" service "tcp9080" trans-to "192.168.32.162" port 9080 track-tcp 9080 
+  dnatrule id 159 from "Any" to "10.24.4.30" service "http8081" trans-to "192.168.32.162" port 8080 track-tcp 8080 
+  dnatrule id 222 from "Any" to "114.251.196.114" service "http8081" trans-to "192.168.32.162" port 8080 
+  dnatrule id 223 from "Any" to "10.24.4.28" service "rdp31150" trans-to "192.168.31.150" port 3389 track-tcp 3389 
+  dnatrule id 224 from "Any" to "10.24.4.28" service "rdp3144" trans-to "192.168.31.44" port 3389 track-tcp 3389 
+  dnatrule id 225 from "Any" to "10.24.4.28" service "rdp3142" trans-to "192.168.31.42" port 3389 track-tcp 3389 
+  dnatrule id 230 from "Any" to "10.24.4.28" service "gdupc-rdp3145" trans-to "192.168.31.45" port 3389 
+  dnatrule id 213 from "Any" to "10.24.4.24" service "cmk6556" trans-to "192.168.12.204" port 6556 track-tcp 6556 
+  dnatrule id 214 from "Any" to "10.24.4.24" service "cmk6557" trans-to "192.168.12.205" port 6556 
+  dnatrule id 231 from "Any" to "10.24.4.24" service "cmk6558" trans-to "192.168.12.206" port 6556 
+  dnatrule id 232 from "Any" to "10.24.4.30" service "rdp43894" trans-to "172.17.0.24" port 3389 
+  dnatrule id 234 from "Any" to "10.24.4.30" service "rdp43895" trans-to "172.17.0.25" port 3389 
+  dnatrule id 219 from "Any" to "10.24.4.28" service "rdp31139" trans-to "192.168.31.139" port 3389 
+  dnatrule id 235 from "Any" to "10.24.4.30" service "http801" trans-to "172.17.0.24" port 80 
+  dnatrule id 238 from "Any" to "114.251.196.108" service "udp20508" trans-to "192.168.31.139" port 20507 track-tcp 20507 
+  dnatrule id 242 from "Any" to "114.251.196.108" service "tcp20608" trans-to "192.168.31.139" port 20607 track-tcp 20607 
+  dnatrule id 243 from "Any" to "10.24.4.28" service "rdp31151" trans-to "192.168.31.151" port 3389 
+  dnatrule id 153 from "Any" to "10.24.4.28" service "gdupc-rdp31221" trans-to "192.168.31.221" port 3389 
+  dnatrule id 54 from "Any" to "10.24.4.28" service "gdupc-rdp31222" trans-to "192.168.31.222" port 3389 
+  dnatrule id 249 from "Any" to "10.24.4.28" service "rdp3116" trans-to "192.168.31.16" port 3389 
+  dnatrule id 250 from "Any" to "10.24.4.28" service "rdp3117" trans-to "192.168.31.17" port 3389 
+  dnatrule id 251 from "Any" to "10.24.4.28" service "rdp3118" trans-to "192.168.31.18" port 3389 
+  dnatrule id 252 from "Any" to "10.24.4.28" service "rdp3119" trans-to "192.168.31.19" port 3389 
+  dnatrule id 253 from "Any" to "10.24.4.28" service "rdp3147" trans-to "192.168.31.47" port 3389 
+  dnatrule id 254 from "Any" to "10.24.4.28" service "rdp3148" trans-to "192.168.31.48" port 3389 
+  dnatrule id 255 from "Any" to "10.24.4.28" service "rdp3162" trans-to "192.168.31.62" port 3389 
+  dnatrule id 256 from "Any" to "10.24.4.28" service "rdp3124" trans-to "192.168.31.24" port 3389 
+  dnatrule id 260 from "Any" to "114.251.196.108" service "http8080" trans-to "192.168.31.150" port 8080 track-tcp 8080 
+  dnatrule id 261 from "Any" to "10.24.4.28" service "rdp3131" trans-to "192.168.31.31" port 3389 track-tcp 3389 
+  dnatrule id 262 from "Any" to "10.24.4.28" service "rdp3132" trans-to "192.168.31.32" port 3389 track-tcp 3389 
+  dnatrule id 263 from "Any" to "10.24.4.28" service "rdp3133" trans-to "192.168.31.33" port 3389 track-tcp 3389 
+  dnatrule id 287 from "Any" to "114.251.196.108" service "rdp31191" trans-to "192.168.31.191" port 3389 track-tcp 3389 
+  dnatrule id 99 from "Any" to "106.120.237.141" service "http8088" trans-to "172.17.0.22" port 80 
+  dnatrule id 299 from "Any" to "106.120.237.141" service "http8086" trans-to "172.17.0.26" port 80 
+  dnatrule id 304 from "Any" to "111.205.44.23" service "rdp44901" trans-to "172.17.0.46" port 44901 track-tcp 44901 
+  dnatrule id 38 from "Any" to "111.205.44.23" service "rdp44902" trans-to "172.17.0.45" port 44901 
+  dnatrule id 187 from "Any" to "10.24.4.28" service "rdp3115" trans-to "192.168.31.15" port 3389 
+  dnatrule id 227 from "Any" to "111.205.44.1" service "tcp3299" trans-to "172.17.0.34" port 3299 
+  dnatrule id 46 from "Any" to "111.205.44.13" service "gdupc-111-rdp-demo-44901" trans-to "192.168.31.171" port 3389 
+  dnatrule id 59 from "Any" to "10.24.4.29" service "fengce-tcp1224" trans-to "192.168.31.131" port 3389 log 
+  dnatrule id 295 from "Any" to "111.205.44.71" service "rdp44901" trans-to "192.168.31.13" port 3389 
+  dnatrule id 320 from "Any" to "111.205.44.71" service "http8080" trans-to "192.168.31.13" port 8080 

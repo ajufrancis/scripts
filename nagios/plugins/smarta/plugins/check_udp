@@ -1,0 +1,70 @@
+#! lua
+
+-- check tcp socket
+-- author: ery.lee@gmail.com from monit.cn
+
+require("plugin")
+
+-- do check
+function check(opts) 
+  local socket = require("socket")
+  t1 = socket.gettime()
+  udp = socket.udp()
+  udp:settimeout(6)
+  udp:setpeername(opts["host"], opts["port"])
+  ok,err = udp:send(opts["send"])
+  if not ok then
+    print("CRITICAL - "..err.."\r\n")
+    return STATUS_CRITICAL
+  end
+  receive = udp:receive()
+  t2 = socket.gettime()
+  if receive ~= opts["receive"] then
+    print("CRITICAL - message not match\r\n")
+    return STATUS_CRITICAL
+  end
+  escaped_time = (t2 - t1) * 1000
+  print(string.format("OK - port = %s, response time = %.2fms\r\n", 
+    opts["port"], escaped_time))
+  print(string.format("metric:time: %.3fms", escaped_time))
+  return STATUS_OK
+end
+
+-- usage
+function usage() 
+  print("Usage: check_udp -H host -p port -s send -r receive")
+  os.exit(0) 
+end
+
+-- parse arguments
+local long_opts = {
+   help = "h",
+   host = "H",
+   port = "p",
+   send = "s",
+   receive = "r"
+}
+local opts,optind = getopts(arg, "hH:p:s:r:", long_opts)
+if opts["h"] then
+  usage()
+end
+if not opts["H"] then
+  print("UNKNOWN - miss argument 'host'\n")
+  usage()
+end
+if not opts["p"] then
+  print("UNKNOWN - miss argument 'port'\n")
+  usage()
+end
+if not opts["s"] then
+  print("UNKNOWN - miss argument 'send'\n")
+  usage()
+end
+if not opts["r"] then
+  print("UNKNOWN - miss argument 'receive'\n")
+  usage()
+end
+
+status = check(opts)
+
+os.exit(status)

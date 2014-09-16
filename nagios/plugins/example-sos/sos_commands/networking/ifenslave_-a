@@ -1,0 +1,7 @@
+The result of SIOCGIFFLAGS on lo is 49.
+The result of SIOCGIFADDR is 7f.00.00.01.
+The result of SIOCGIFHWADDR is type 772  00:00:00:00:00:00.
+The result of SIOCGIFFLAGS on em1 is 1043.
+The result of SIOCGIFADDR is ffffffc0.ffffffa8.0b.09.
+The result of SIOCGIFHWADDR is type 1  d4:ae:52:6f:9b:99.
+

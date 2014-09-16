@@ -1,0 +1,25 @@
+init-+-auditd---{auditd}
+     |-console-kit-dae---63*[{console-kit-da}]
+     |-crond
+     |-dbus-daemon
+     |-dnsmasq
+     |-httpd---12*[httpd]
+     |-httpd-+-5*[httpd]
+     |       `-httpd---3*[php-cgi]
+     |-master-+-pickup
+     |        `-qmgr
+     |-6*[mingetty]
+     |-miniserv.pl
+     |-nagios---12*[{nagios}]
+     |-npcd
+     |-ntop---9*[{ntop}]
+     |-qpidd---5*[{qpidd}]
+     |-rpc.mountd
+     |-rpcbind
+     |-rrdcached---5*[{rrdcached}]
+     |-rsyslogd---3*[{rsyslogd}]
+     |-smsd---smsd
+     |-sshd---sshd---bash---sosreport---pstree
+     |-udevd---2*[udevd]
+     `-xinetd
+

@@ -1,0 +1,16 @@
+--2013-08-13 20:27:44--  https://github.com/heince/nagios-cloudstack/archive/master.zip
+Resolving github.com... 204.232.175.90
+Connecting to github.com|204.232.175.90|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/heince/nagios-cloudstack/zip/master [following]
+--2013-08-13 20:27:45--  https://codeload.github.com/heince/nagios-cloudstack/zip/master
+Resolving codeload.github.com... 192.30.252.144
+Connecting to codeload.github.com|192.30.252.144|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/zip]
+Saving to: “./nagios/plugins/master”
+
+     0K .........                                               950M=0s
+
+2013-08-13 20:27:46 (950 MB/s) - “./nagios/plugins/master” saved [9770]
+

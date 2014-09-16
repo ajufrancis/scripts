@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if ! type xe > /dev/null 2>&1
+then
+  exit
+fi
+mode=`xe host-is-in-emergency-mode`
+if [ $mode = 'false' ]
+then
+  echo "host is running OK"
+  exit 0
+elif [ $mode = 'true' ]
+then
+  echo "Crit!, host is in EMERGENCY mode"
+  exit 2
+else
+  echo "UNKNOWN"
+  exit 3
+fi

@@ -1,0 +1,1 @@
+salt-run manage.down

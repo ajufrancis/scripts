@@ -1,0 +1,36 @@
+Module                  Size  Used by
+ipt_REJECT              2383  0 
+ipt_LOG                 5845  0 
+bluetooth              99548  0 
+rfkill                 19735  1 bluetooth
+nfsd                  305799  11 
+lockd                  74270  1 nfsd
+nfs_acl                 2647  1 nfsd
+auth_rpcgss            44895  1 nfsd
+sunrpc                243758  13 nfsd,lockd,nfs_acl,auth_rpcgss
+exportfs                4236  1 nfsd
+pl2303                 17792  1 
+usbserial              38620  3 pl2303
+ipv6                  322029  103 
+power_meter             9343  0 
+dcdbas                  9219  0 
+serio_raw               4818  0 
+sg                     30124  0 
+iTCO_wdt               13662  0 
+iTCO_vendor_support     3088  1 iTCO_wdt
+i7core_edac            18184  0 
+edac_core              46773  1 i7core_edac
+bnx2                   79618  0 
+ext4                  364410  4 
+mbcache                 8144  1 ext4
+jbd2                   88738  1 ext4
+sr_mod                 16228  0 
+cdrom                  39771  1 sr_mod
+sd_mod                 39488  5 
+crc_t10dif              1541  1 sd_mod
+ahci                   40455  3 
+dm_mirror              14101  0 
+dm_region_hash         12170  1 dm_mirror
+dm_log                 10122  2 dm_mirror,dm_region_hash
+dm_mod                 81500  11 dm_mirror,dm_log
+

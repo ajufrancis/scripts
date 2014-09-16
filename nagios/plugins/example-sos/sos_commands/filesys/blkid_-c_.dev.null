@@ -1,0 +1,7 @@
+/dev/sda1: UUID="298df946-1e4b-4589-aab1-8b1339b45d9c" TYPE="ext4" 
+/dev/sda2: UUID="Gh6hfk-sT4a-D7fZ-wyBd-ZvF9-lRib-9wdCEE" TYPE="LVM2_member" 
+/dev/sdb1: UUID="e67c8e13-3551-43c5-b82e-de808caf09ca" TYPE="ext4" 
+/dev/mapper/VolGroup-lv_root: UUID="48b1f1e0-b2f9-4547-a4d8-9bb7c165fee2" TYPE="ext4" 
+/dev/mapper/VolGroup-lv_swap: UUID="8c47ba7d-57b7-49fd-8783-4ca81e84f1de" TYPE="swap" 
+/dev/mapper/VolGroup-lv_home: UUID="7a0d29af-1337-4d0a-920f-e10a58d890ca" TYPE="ext4" 
+

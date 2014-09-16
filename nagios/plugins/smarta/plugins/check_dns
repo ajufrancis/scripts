@@ -1,0 +1,72 @@
+#! lua
+
+-- check ping
+-- author: ery.lee@gmail.com from monit.cn
+
+require("plugin")
+
+-- do check
+function check(opts) 
+  local status = STATUS_OK
+  local socket = require("socket")
+  local t1 = socket.gettime()
+  local output = os.cmd("nslookup "..opts["n"])
+  local t2 = socket.gettime()
+  local escaped_time = (t2 - t1) * 1000
+  lines = string.split(output, "\n\n")
+  if #lines < 2 then
+    print("UNKNOWN - "..lines[1])
+    return STATUS_UNKNOWN
+  end
+  addrs = {}
+  for _,line in pairs(string.split(lines[2],"\n")) do
+    addr = string.match(line, "Address:%s+([%d.]+)") 
+    if addr then table.insert(addrs, addr) end
+  end
+  if #addrs == 0 then
+    print("CRITICAL - no address found\n")
+    return STATUS_CRITICAL
+  end
+  local is_ok = (opts["a"] == "")
+  if opts["a"] ~= "" then
+    for _,addr in pairs(addrs) do
+      if string.find(opts["a"], addr) then
+        is_ok = true
+        break
+      end
+    end
+  end
+  if is_ok then
+	status = STATUS_OK
+    print(string.format("OK - returns = %s, response time = %.2f(ms)",
+		string.join(addrs, "|"), escaped_time))
+  else
+    status = STATUS_CRITICAL
+    print(string.format("CRITICAL - expected = '%s', got = '%s'",
+		string.gsub(opts["a"],",", "|"), string.join(addrs, "|")))
+  end
+  print("metric:time: "..escaped_time)
+  return status
+end
+
+-- usage
+function usage() 
+  print("Usage: check_dns -n Name -a Addr1,Addr2,..,Addrn")
+  os.exit(0)
+end
+
+-- parse arguments
+local long_opts = {
+   help = "h",
+   name = "n",
+   addrs = "a"
+}
+-- parse arguments
+local opts,optind = getopts(arg, "hn:a:", long_opts)
+if opts["h"] then
+  usage()
+end
+
+status=check(opts)
+
+os.exit(status);

@@ -1,0 +1,3 @@
+# http://wiki.xen.org/wiki/Xen_Cloud_Platform:_Access_to_VM_console
+ /opt/xensource/libexec/vncterm-wrapper
+freeNAC + VNC+ LDAP

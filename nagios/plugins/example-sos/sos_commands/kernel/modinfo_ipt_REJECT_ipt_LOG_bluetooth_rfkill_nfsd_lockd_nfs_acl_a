@@ -1,0 +1,647 @@
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/net/ipv4/netfilter/ipt_REJECT.ko
+description:    Xtables: packet "rejection" target for IPv4
+author:         Netfilter Core Team <coreteam@netfilter.org>
+license:        GPL
+srcversion:     F9876DB1CC19CE20C078B26
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/net/ipv4/netfilter/ipt_LOG.ko
+description:    Xtables: IPv4 packet logging to syslog
+author:         Netfilter Core Team <coreteam@netfilter.org>
+license:        GPL
+srcversion:     6C6A24A450D4766C7B52FEA
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/net/bluetooth/bluetooth.ko
+alias:          net-pf-31
+license:        GPL
+version:        2.15
+description:    Bluetooth Core ver 2.15
+author:         Marcel Holtmann <marcel@holtmann.org>
+srcversion:     6A619863886C20825D5C042
+depends:        rfkill
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/net/rfkill/rfkill.ko
+license:        GPL
+description:    RF switch support
+author:         Johannes Berg <johannes@sipsolutions.net>
+author:         Ivo van Doorn <IvDoorn@gmail.com>
+srcversion:     33A473DE414DF6C535D8D57
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           master_switch_mode:SW_RFKILL_ALL ON should: 0=do nothing (only unlock); 1=restore; 2=unblock all (uint)
+parm:           default_state:Default initial state for all radio types, 0 = radio off (uint)
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/fs/nfsd/nfsd.ko
+license:        GPL
+author:         Olaf Kirch <okir@monad.swb.de>
+srcversion:     1BD438FE94E8B11478271E1
+depends:        auth_rpcgss,sunrpc,lockd,exportfs,nfs_acl
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/fs/lockd/lockd.ko
+license:        GPL
+description:    NFS file locking service version 0.5.
+author:         Olaf Kirch <okir@monad.swb.de>
+srcversion:     38E0982CEA7A1B44857AA9D
+depends:        sunrpc
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           nsm_use_hostnames:bool
+parm:           nlm_max_connections:uint
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/fs/nfs_common/nfs_acl.ko
+license:        GPL
+srcversion:     B5EC32589F2B9866A19B633
+depends:        sunrpc
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/net/sunrpc/auth_gss/auth_rpcgss.ko
+license:        GPL
+srcversion:     F6329BD97C9729F6BAB9B36
+depends:        sunrpc
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           expired_cred_retry_delay:Timeout (in seconds) until the RPC engine retries an expired credential (uint)
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/net/sunrpc/sunrpc.ko
+license:        GPL
+srcversion:     F7DD0C61CC5917CF332BF8D
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           auth_hashtable_size:RPC credential cache hashtable size (hashtbl_sz)
+parm:           min_resvport:portnr
+parm:           max_resvport:portnr
+parm:           tcp_slot_table_entries:slot_table_size
+parm:           udp_slot_table_entries:slot_table_size
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/fs/exportfs/exportfs.ko
+license:        GPL
+srcversion:     1CA651A66F2E2EBCEAD08AC
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/usb/serial/pl2303.ko
+license:        GPL
+description:    Prolific PL2303 USB to serial adaptor driver
+srcversion:     EEBE595F0AFE6E77DC8F700
+alias:          usb:v11ADp0001d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v054Cp0437d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v04B8p0521d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v03F0p3524d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v5372p2303d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v05ADp0FBAd*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v07AAp002Ad*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v11F6p2001d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v058Fp9720d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v050Dp0257d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v0731p2003d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v0E55p110Bd*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v0413p2101d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v079Bp0027d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v10B5pAC70d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v078Bp1234d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v0745p0001d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v04A5p4027d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v11F5p0005d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v11F5p0004d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v11F5p0003d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v11F5p0001d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v04E8p8001d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v11F7p02DFd*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v6189p2068d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v0731p0528d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v1453p4026d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v2478p2008d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v0584pB000d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v0DF7p0620d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v0EBAp2080d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v0EBAp1080d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v056Ep5004d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v056Ep5003d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v0547p2008d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v0557p2008d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v04BBp0A0Ed*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v04BBp0A03d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v067Bp0609d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v067Bp0612d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v067Bp0611d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v067BpAAA0d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v067BpAAA2d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v067Bp1234d*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v067Bp04BBd*dc*dsc*dp*ic*isc*ip*
+alias:          usb:v067Bp2303d*dc*dsc*dp*ic*isc*ip*
+depends:        usbserial
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           debug:Debug enabled or not (bool)
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/usb/serial/usbserial.ko
+license:        GPL
+description:    USB Serial Driver core
+author:         Greg Kroah-Hartman, greg@kroah.com, http://www.kroah.com/linux/
+srcversion:     CE6C326D541B3866FE20F5E
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           vendor:User specified USB idVendor (ushort)
+parm:           product:User specified USB idProduct (ushort)
+parm:           debug:Debug enabled or not (bool)
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/net/ipv6/ipv6.ko
+alias:          net-pf-10
+license:        GPL
+description:    IPv6 protocol stack for Linux
+author:         Cast of dozens
+srcversion:     40D545FCF4D5C871B424672
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           disable:Disable IPv6 module such that it is non-functional (int)
+parm:           disable_ipv6:Disable IPv6 on all interfaces (int)
+parm:           autoconf:Enable IPv6 address autoconfiguration on all interfaces (int)
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/acpi/power_meter.ko
+license:        GPL
+description:    ACPI 4.0 power meter driver
+author:         Darrick J. Wong <djwong@us.ibm.com>
+srcversion:     0C21A9C4DB4233E02CBC335
+alias:          acpi*:ACPI000D:*
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           force_cap_on:Unused module parameter (bool)
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/firmware/dcdbas.ko
+alias:          dmi:*:[bs]vnD[Ee][Ll][Ll]*:*
+license:        GPL
+author:         Dell Inc.
+version:        5.6.0-3.2
+description:    Dell Systems Management Base Driver (version 5.6.0-3.2)
+srcversion:     0AFF90155EABD0524320AF0
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/input/serio/serio_raw.ko
+license:        GPL
+description:    Raw serio driver
+author:         Dmitry Torokhov <dtor@mail.ru>
+srcversion:     1267C030CADFA478E7DB900
+alias:          serio:ty06pr*id*ex*
+alias:          serio:ty01pr*id*ex*
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/scsi/sg.ko
+alias:          char-major-21-*
+version:        3.5.34
+license:        GPL
+description:    SCSI generic (sg) driver
+author:         Douglas Gilbert
+srcversion:     BD5E4FC33B6E0ABE20D3FB4
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           scatter_elem_sz:scatter gather element size (default: max(SG_SCATTER_SZ, PAGE_SIZE)) (int)
+parm:           def_reserved_size:size of buffer reserved for each fd (int)
+parm:           allow_dio:allow direct I/O (default: 0 (disallow)) (int)
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/watchdog/iTCO_wdt.ko
+alias:          char-major-10-130
+license:        GPL
+version:        1.05
+description:    Intel TCO WatchDog Timer Driver
+author:         Wim Van Sebroeck <wim@iguana.be>
+srcversion:     0218668A6B79B68D3EC6D33
+alias:          pci:v00008086d00001E5Fsv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E5Esv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E5Dsv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E5Csv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E5Bsv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E5Asv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E59sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E58sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E57sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E56sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E55sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E54sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E53sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E52sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E51sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E50sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E4Fsv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E4Esv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E4Dsv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E4Csv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E4Bsv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E4Asv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E49sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E48sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E47sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E46sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E45sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E44sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E43sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E42sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E41sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E40sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001D41sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001D40sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C5Fsv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C5Esv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C5Dsv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C5Csv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C5Bsv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C5Asv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C59sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C58sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C57sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C56sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C55sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C54sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C53sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C52sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C51sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C50sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C4Fsv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C4Esv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C4Dsv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C4Csv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C4Bsv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C4Asv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C49sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C48sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C47sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C46sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C45sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C44sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C43sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C42sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C41sv*sd*bc*sc*i*
+alias:          pci:v00008086d00005031sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B16sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B14sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B12sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B0Fsv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B0Dsv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B0Bsv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B0Asv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B09sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B08sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B07sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B06sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B03sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B02sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B01sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B00sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003A14sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003A1Asv*sd*bc*sc*i*
+alias:          pci:v00008086d00003A16sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003A18sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002917sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002919sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002914sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002912sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002916sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002918sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002811sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002815sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002814sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002812sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002810sv*sd*bc*sc*i*
+alias:          pci:v00008086d000027BDsv*sd*bc*sc*i*
+alias:          pci:v00008086d000027B9sv*sd*bc*sc*i*
+alias:          pci:v00008086d000027B0sv*sd*bc*sc*i*
+alias:          pci:v00008086d000027B8sv*sd*bc*sc*i*
+alias:          pci:v00008086d0000267Fsv*sd*bc*sc*i*
+alias:          pci:v00008086d0000267Esv*sd*bc*sc*i*
+alias:          pci:v00008086d0000267Dsv*sd*bc*sc*i*
+alias:          pci:v00008086d0000267Csv*sd*bc*sc*i*
+alias:          pci:v00008086d0000267Bsv*sd*bc*sc*i*
+alias:          pci:v00008086d0000267Asv*sd*bc*sc*i*
+alias:          pci:v00008086d00002679sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002678sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002677sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002676sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002675sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002674sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002673sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002672sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002671sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002670sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002642sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002641sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002640sv*sd*bc*sc*i*
+alias:          pci:v00008086d000025A1sv*sd*bc*sc*i*
+alias:          pci:v00008086d000024D0sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002450sv*sd*bc*sc*i*
+alias:          pci:v00008086d000024CCsv*sd*bc*sc*i*
+alias:          pci:v00008086d000024C0sv*sd*bc*sc*i*
+alias:          pci:v00008086d0000248Csv*sd*bc*sc*i*
+alias:          pci:v00008086d00002480sv*sd*bc*sc*i*
+alias:          pci:v00008086d0000244Csv*sd*bc*sc*i*
+alias:          pci:v00008086d00002440sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002420sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002410sv*sd*bc*sc*i*
+depends:        iTCO_vendor_support
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           heartbeat:Watchdog heartbeat in seconds. (2<heartbeat<39 (TCO v1) or 613 (TCO v2), default=30) (int)
+parm:           nowayout:Watchdog cannot be stopped once started (default=0) (int)
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/watchdog/iTCO_vendor_support.ko
+license:        GPL
+version:        1.04
+description:    Intel TCO Vendor Specific WatchDog Timer Driver Support
+author:         Wim Van Sebroeck <wim@iguana.be>, R. Seretny <lkpatches@paypc.com>
+srcversion:     01790A26C163F8B0DB81CE9
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           vendorsupport:iTCO vendor specific support mode, default=0 (none), 1=SuperMicro Pent3, 2=SuperMicro Pent4+, 911=Broken SMI BIOS (int)
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/edac/i7core_edac.ko
+description:    MC Driver for Intel i7 Core memory controllers -  Ver: 1.0.0 Dec  6 2011
+author:         Red Hat Inc. (http://www.redhat.com)
+author:         Mauro Carvalho Chehab <mchehab@redhat.com>
+license:        GPL
+srcversion:     A559F500625203F6F767DC8
+alias:          pci:v00008086d00002C90sv*sd*bc*sc*i*
+alias:          pci:v00008086d0000342Esv*sd*bc*sc*i*
+depends:        edac_core
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           use_pci_fixup:Enable PCI fixup to seek for hidden devices (int)
+parm:           edac_op_state:EDAC Error Reporting state: 0=Poll,1=NMI (int)
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/edac/edac_core.ko
+description:    Core library routines for EDAC reporting
+author:         Doug Thompson www.softwarebitmaker.com, et al
+license:        GPL
+srcversion:     DEB2A4FF9AC7049ADDFEFD7
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           check_pci_errors:Check for PCI bus parity errors: 0=off 1=on (int)
+parm:           edac_pci_panic_on_pe:Panic on PCI Bus Parity error: 0=off 1=on (int)
+parm:           edac_mc_panic_on_ue:Panic on uncorrected error: 0=off 1=on (int)
+parm:           edac_mc_log_ue:Log uncorrectable error to console: 0=off 1=on (int)
+parm:           edac_mc_log_ce:Log correctable error to console: 0=off 1=on (int)
+parm:           edac_mc_poll_msec:Polling period in milliseconds
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/net/bnx2.ko
+firmware:       bnx2/bnx2-rv2p-09ax-6.0.17.fw
+firmware:       bnx2/bnx2-rv2p-09-6.0.17.fw
+firmware:       bnx2/bnx2-mips-09-6.2.1a.fw
+firmware:       bnx2/bnx2-rv2p-06-6.0.15.fw
+firmware:       bnx2/bnx2-mips-06-6.2.1.fw
+version:        2.1.11
+license:        GPL
+description:    Broadcom NetXtreme II BCM5706/5708/5709/5716 Driver
+author:         Michael Chan <mchan@broadcom.com>
+srcversion:     61BD2699C6587068253C2BB
+alias:          pci:v000014E4d0000163Csv*sd*bc*sc*i*
+alias:          pci:v000014E4d0000163Bsv*sd*bc*sc*i*
+alias:          pci:v000014E4d0000163Asv*sd*bc*sc*i*
+alias:          pci:v000014E4d00001639sv*sd*bc*sc*i*
+alias:          pci:v000014E4d000016ACsv*sd*bc*sc*i*
+alias:          pci:v000014E4d000016AAsv*sd*bc*sc*i*
+alias:          pci:v000014E4d000016AAsv0000103Csd00003102bc*sc*i*
+alias:          pci:v000014E4d0000164Csv*sd*bc*sc*i*
+alias:          pci:v000014E4d0000164Asv*sd*bc*sc*i*
+alias:          pci:v000014E4d0000164Asv0000103Csd00003106bc*sc*i*
+alias:          pci:v000014E4d0000164Asv0000103Csd00003101bc*sc*i*
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           disable_msi:Disable Message Signaled Interrupt (MSI) (int)
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/fs/ext4/ext4.ko
+license:        GPL
+description:    Fourth Extended Filesystem
+author:         Remy Card, Stephen Tweedie, Andrew Morton, Andreas Dilger, Theodore Ts'o and others
+srcversion:     A80608676B83D55514B450E
+depends:        mbcache,jbd2
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/fs/mbcache.ko
+license:        GPL
+description:    Meta block cache (for extended attributes)
+author:         Andreas Gruenbacher <a.gruenbacher@computer.org>
+srcversion:     50B1CF23EE69909B85A6509
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/fs/jbd2/jbd2.ko
+license:        GPL
+srcversion:     F814258F7DFB8B565ED63EB
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/scsi/sr_mod.ko
+license:        GPL
+alias:          scsi:t-0x04*
+alias:          scsi:t-0x05*
+alias:          block-major-11-*
+license:        GPL
+description:    SCSI cdrom (sr) driver
+srcversion:     4E9BBFEC88A9F4C928EF837
+depends:        cdrom
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           xa_test:int
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/cdrom/cdrom.ko
+license:        GPL
+srcversion:     EA46535D273499C0A0C54A3
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           debug:bool
+parm:           autoclose:bool
+parm:           autoeject:bool
+parm:           lockdoor:bool
+parm:           check_media_type:bool
+parm:           mrw_format_restart:bool
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/scsi/sd_mod.ko
+alias:          scsi:t-0x0e*
+alias:          scsi:t-0x07*
+alias:          scsi:t-0x00*
+alias:          block-major-135-*
+alias:          block-major-134-*
+alias:          block-major-133-*
+alias:          block-major-132-*
+alias:          block-major-131-*
+alias:          block-major-130-*
+alias:          block-major-129-*
+alias:          block-major-128-*
+alias:          block-major-71-*
+alias:          block-major-70-*
+alias:          block-major-69-*
+alias:          block-major-68-*
+alias:          block-major-67-*
+alias:          block-major-66-*
+alias:          block-major-65-*
+alias:          block-major-8-*
+license:        GPL
+description:    SCSI disk (sd) driver
+author:         Eric Youngdale
+srcversion:     3722B45D33051438676DC13
+depends:        crc-t10dif
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/lib/crc-t10dif.ko
+license:        GPL
+description:    T10 DIF CRC calculation
+srcversion:     2BFFAEEAFEE1D281F32B314
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/ata/ahci.ko
+version:        3.0
+license:        GPL
+description:    AHCI SATA low-level driver
+author:         Jeff Garzik
+srcversion:     8A33FE74849452D66FB2507
+alias:          pci:v*d*sv*sd*bc01sc06i01*
+alias:          pci:v0000105Ad00003F20sv*sd*bc*sc*i*
+alias:          pci:v000011ABd00006121sv*sd*bc*sc*i*
+alias:          pci:v000011ABd00006145sv*sd*bc*sc*i*
+alias:          pci:v00001039d00000186sv*sd*bc*sc*i*
+alias:          pci:v00001039d00001185sv*sd*bc*sc*i*
+alias:          pci:v00001039d00001184sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000D8Fsv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000D8Esv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000D8Dsv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000D8Csv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000D8Bsv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000D8Asv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000D89sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000D88sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000D87sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000D86sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000D85sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000D84sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000ABFsv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000ABEsv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000ABDsv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000ABCsv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000ABBsv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000ABAsv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AB9sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AB8sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AB7sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AB6sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AB5sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AB4sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000ADBsv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000ADAsv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AD9sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AD8sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AD7sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AD6sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AD5sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AD4sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AD3sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AD2sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AD1sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000AD0sv*sd*bc*sc*i*
+alias:          pci:v000010DEd000007FBsv*sd*bc*sc*i*
+alias:          pci:v000010DEd000007FAsv*sd*bc*sc*i*
+alias:          pci:v000010DEd000007F9sv*sd*bc*sc*i*
+alias:          pci:v000010DEd000007F8sv*sd*bc*sc*i*
+alias:          pci:v000010DEd000007F7sv*sd*bc*sc*i*
+alias:          pci:v000010DEd000007F6sv*sd*bc*sc*i*
+alias:          pci:v000010DEd000007F5sv*sd*bc*sc*i*
+alias:          pci:v000010DEd000007F4sv*sd*bc*sc*i*
+alias:          pci:v000010DEd000007F3sv*sd*bc*sc*i*
+alias:          pci:v000010DEd000007F2sv*sd*bc*sc*i*
+alias:          pci:v000010DEd000007F1sv*sd*bc*sc*i*
+alias:          pci:v000010DEd000007F0sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000580sv*sd*bc*sc*i*
+alias:          pci:v000010DEd0000055Bsv*sd*bc*sc*i*
+alias:          pci:v000010DEd0000055Asv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000559sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000558sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000557sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000556sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000555sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000554sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000553sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000552sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000551sv*sd*bc*sc*i*
+alias:          pci:v000010DEd00000550sv*sd*bc*sc*i*
+alias:          pci:v000010DEd0000045Fsv*sd*bc*sc*i*
+alias:          pci:v000010DEd0000045Esv*sd*bc*sc*i*
+alias:          pci:v000010DEd0000045Dsv*sd*bc*sc*i*
+alias:          pci:v000010DEd0000045Csv*sd*bc*sc*i*
+alias:          pci:v000010DEd0000044Fsv*sd*bc*sc*i*
+alias:          pci:v000010DEd0000044Esv*sd*bc*sc*i*
+alias:          pci:v000010DEd0000044Dsv*sd*bc*sc*i*
+alias:          pci:v000010DEd0000044Csv*sd*bc*sc*i*
+alias:          pci:v00001106d00006287sv*sd*bc*sc*i*
+alias:          pci:v00001106d00003349sv*sd*bc*sc*i*
+alias:          pci:v00001022d*sv*sd*bc01sc04i00*
+alias:          pci:v00001022d00007800sv*sd*bc*sc*i*
+alias:          pci:v00001002d00004395sv*sd*bc*sc*i*
+alias:          pci:v00001002d00004394sv*sd*bc*sc*i*
+alias:          pci:v00001002d00004393sv*sd*bc*sc*i*
+alias:          pci:v00001002d00004392sv*sd*bc*sc*i*
+alias:          pci:v00001002d00004391sv*sd*bc*sc*i*
+alias:          pci:v00001002d00004390sv*sd*bc*sc*i*
+alias:          pci:v00001002d00004380sv*sd*bc*sc*i*
+alias:          pci:v0000197Bd*sv*sd*bc01sc06i01*
+alias:          pci:v00008086d00001E0Esv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E07sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E06sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E05sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E04sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E03sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001E02sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002826sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001D06sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001D04sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001D02sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C07sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C06sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C05sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C04sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C03sv*sd*bc*sc*i*
+alias:          pci:v00008086d00001C02sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B2Fsv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B2Csv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B2Bsv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B29sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B25sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B24sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B23sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003B22sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003A25sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003A22sv*sd*bc*sc*i*
+alias:          pci:v00008086d00003A05sv*sd*bc*sc*i*
+alias:          pci:v00008086d0000502Bsv*sd*bc*sc*i*
+alias:          pci:v00008086d0000502Asv*sd*bc*sc*i*
+alias:          pci:v00008086d0000294Esv*sd*bc*sc*i*
+alias:          pci:v00008086d0000294Dsv*sd*bc*sc*i*
+alias:          pci:v00008086d0000292Fsv*sd*bc*sc*i*
+alias:          pci:v00008086d0000292Csv*sd*bc*sc*i*
+alias:          pci:v00008086d0000292Bsv*sd*bc*sc*i*
+alias:          pci:v00008086d0000292Asv*sd*bc*sc*i*
+alias:          pci:v00008086d00002929sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002927sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002925sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002924sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002923sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002922sv*sd*bc*sc*i*
+alias:          pci:v00008086d0000282Asv*sd*bc*sc*i*
+alias:          pci:v00008086d00002829sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002824sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002822sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002821sv*sd*bc*sc*i*
+alias:          pci:v00008086d000027C6sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002683sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002682sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002681sv*sd*bc*sc*i*
+alias:          pci:v000010B9d00005288sv*sd*bc*sc*i*
+alias:          pci:v00008086d000027C3sv*sd*bc*sc*i*
+alias:          pci:v00008086d000027C5sv*sd*bc*sc*i*
+alias:          pci:v00008086d000027C1sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002653sv*sd*bc*sc*i*
+alias:          pci:v00008086d00002652sv*sd*bc*sc*i*
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           skip_host_reset:skip global host reset (0=don't skip, 1=skip) (int)
+parm:           ignore_sss:Ignore staggered spinup flag (0=don't ignore, 1=ignore) (int)
+parm:           ahci_em_messages:AHCI Enclosure Management Message control (0 = off, 1 = on) (int)
+parm:           marvell_enable:Marvell SATA via AHCI (1 = enabled) (int)
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/md/dm-mirror.ko
+license:        GPL
+author:         Joe Thornber
+description:    device-mapper mirror target
+srcversion:     84C4FF236EC7949FFDA87E1
+depends:        dm-region-hash,dm-mod,dm-log
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/md/dm-region-hash.ko
+license:        GPL
+author:         Joe Thornber/Heinz Mauelshagen <dm-devel@redhat.com>
+description:    device-mapper region hash
+srcversion:     D4E734BD9A61ADA90CD0F55
+depends:        dm-log
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/md/dm-log.ko
+license:        GPL
+author:         Joe Thornber, Heinz Mauelshagen <dm-devel@redhat.com>
+description:    device-mapper dirty region log
+srcversion:     CA8E93923CA456E250E10B1
+depends:        dm-mod
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+filename:       /lib/modules/2.6.32-220.el6.x86_64/kernel/drivers/md/dm-mod.ko
+license:        GPL
+author:         Joe Thornber <dm-devel@redhat.com>
+description:    device-mapper driver
+srcversion:     9AD5061E7047891EA9592A2
+depends:        
+vermagic:       2.6.32-220.el6.x86_64 SMP mod_unload modversions 
+parm:           major:The major number of the device mapper (uint)
+

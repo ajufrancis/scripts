@@ -1,0 +1,64 @@
+#!/usr/bin/python
+# -*- encoding: utf-8; py-indent-offset: 4 -*-
+# +------------------------------------------------------------------+
+# |             ____ _               _        __  __ _  __           |
+# |            / ___| |__   ___  ___| | __   |  \/  | |/ /           |
+# |           | |   | '_ \ / _ \/ __| |/ /   | |\/| | ' /            |
+# |           | |___| | | |  __/ (__|   <    | |  | | . \            |
+# |            \____|_| |_|\___|\___|_|\_\___|_|  |_|_|\_\           |
+# |                                                                  |
+# | Copyright Mathias Kettner 2013             mk@mathias-kettner.de |
+# +------------------------------------------------------------------+
+#
+# This file is part of Check_MK.
+# The official homepage is at http://mathias-kettner.de/check_mk.
+#
+# check_mk is free software;  you can redistribute it and/or modify it
+# under the  terms of the  GNU General Public License  as published by
+# the Free Software Foundation in version 2.  check_mk is  distributed
+# in the hope that it will be useful, but WITHOUT ANY WARRANTY;  with-
+# out even the implied warranty of  MERCHANTABILITY  or  FITNESS FOR A
+# PARTICULAR PURPOSE. See the  GNU General Public License for more de-
+# ails.  You should have  received  a copy of the  GNU  General Public
+# License along with GNU Make; see the file  COPYING.  If  not,  write
+# to the Free Software Foundation, Inc., 51 Franklin St,  Fifth Floor,
+# Boston, MA 02110-1301 USA.
+
+#<<<ipmi_info>>>
+#IP Address Source       : Static Address
+#IP Address              : 192.168.10.9
+#Subnet Mask             : 255.255.255.0
+#MAC Address             : d4:ae:52:6f:9b:9b
+#SNMP Community String   : public
+#IP Header               : TTL=0x40 Flags=0x40 Precedence=0x00 TOS=0x10
+#Default Gateway IP      : 192.168.10.254
+#Default Gateway MAC     : 00:00:00:00:00:00
+#Backup Gateway IP       : 0.0.0.0
+#Backup Gateway MAC      : 00:00:00:00:00:00
+#802.1q VLAN ID          : 10
+#802.1q VLAN Priority    : 0
+
+
+def inventory_ipmi_info(info):
+    if len(info) > 0:
+        return [(None, None)]
+def check_ipmi_info(item, param, info):
+    data = {} 
+    if len(info) > 1:
+        for line in info:
+            line = " ".join(line) 
+            key,value = line.split(':',1)
+            data[key.strip()] = value.strip()
+        return (0, "%s,IP:%s,MASK:%s,MAC:%s,SNMP_COMMUNITY:%s,Default_Gateway_IP:%s,VLAN_ID:%s" % (
+                     data.get("IP Address Source", "Unknown"),
+                     data.get("IP Address", "Unknown"),
+                     data.get("Subnet Mask", "Unknown"),
+                     data.get("MAC Address", "Unknown"),
+                     data.get("SNMP Community String", "Unknown"),
+                     data.get("Default Gateway IP", "Unknown"),
+                     data.get("802.1q VLAN ID","Unknown"),
+                ))
+    else:
+        return (1, "IPMI INFO LOST!")
+
+check_info['ipmi_info'] = (check_ipmi_info, "IPMI Sensor Info", 0, inventory_ipmi_info)

@@ -1,0 +1,42 @@
+config
+nat
+dnat from any to 10.24.56.229 trans-to 172.17.0.101
+end
+
+
+config
+nat
+dnat from any to 10.24.56.230 trans-to 172.17.0.102
+end
+
+
+config
+nat
+dnat from any to 10.24.56.231 trans-to 172.17.0.103
+end
+
+
+config
+nat
+dnat from any to 10.24.56.232 trans-to 172.17.0.104
+end
+
+
+config
+nat
+dnat from any to 10.24.56.233 trans-to 172.17.0.105
+end
+
+
+config
+nat
+dnat from any to 10.24.56.234 trans-to 172.17.0.106
+end
+
+
+config
+nat
+dnat from any to 10.24.56.235 trans-to 172.17.0.107
+end
+
+

@@ -1,0 +1,159 @@
+File descriptor 4 (/tmp/nagios01-2013030422111362406315/sos_logs/sos.log) leaked on vgdisplay invocation. Parent PID 2300: /usr/bin/python
+      Setting global/locking_type to 1
+      Setting global/wait_for_locks to 1
+      File-based locking selected.
+      Setting global/locking_dir to /var/lock/lvm
+    Finding all volume groups
+      /dev/ram0: size is 32768 sectors
+      /dev/ram0: size is 32768 sectors
+      /dev/ram0: No label detected
+      /dev/loop0: size is 0 sectors
+      /dev/sda: size is 976773168 sectors
+      /dev/root: size is 104857600 sectors
+      /dev/root: size is 104857600 sectors
+      /dev/root: No label detected
+      /dev/ram1: size is 32768 sectors
+      /dev/ram1: size is 32768 sectors
+      /dev/ram1: No label detected
+      /dev/loop1: size is 0 sectors
+      /dev/sda1: size is 1024000 sectors
+      /dev/sda1: size is 1024000 sectors
+      /dev/sda1: No label detected
+      /dev/VolGroup/lv_swap: size is 12288000 sectors
+      /dev/VolGroup/lv_swap: size is 12288000 sectors
+      /dev/VolGroup/lv_swap: No label detected
+      /dev/ram2: size is 32768 sectors
+      /dev/ram2: size is 32768 sectors
+      /dev/ram2: No label detected
+      /dev/loop2: size is 0 sectors
+      /dev/sda2: size is 975747072 sectors
+      /dev/sda2: size is 975747072 sectors
+      /dev/sda2: lvm2 label detected at sector 1
+      /dev/VolGroup/lv_home: size is 858595328 sectors
+      /dev/VolGroup/lv_home: size is 858595328 sectors
+      /dev/VolGroup/lv_home: No label detected
+      /dev/ram3: size is 32768 sectors
+      /dev/ram3: size is 32768 sectors
+      /dev/ram3: No label detected
+      /dev/loop3: size is 0 sectors
+      /dev/ram4: size is 32768 sectors
+      /dev/ram4: size is 32768 sectors
+      /dev/ram4: No label detected
+      /dev/loop4: size is 0 sectors
+      /dev/ram5: size is 32768 sectors
+      /dev/ram5: size is 32768 sectors
+      /dev/ram5: No label detected
+      /dev/loop5: size is 0 sectors
+      /dev/ram6: size is 32768 sectors
+      /dev/ram6: size is 32768 sectors
+      /dev/ram6: No label detected
+      /dev/loop6: size is 0 sectors
+      /dev/ram7: size is 32768 sectors
+      /dev/ram7: size is 32768 sectors
+      /dev/ram7: No label detected
+      /dev/loop7: size is 0 sectors
+      /dev/ram8: size is 32768 sectors
+      /dev/ram8: size is 32768 sectors
+      /dev/ram8: No label detected
+      /dev/ram9: size is 32768 sectors
+      /dev/ram9: size is 32768 sectors
+      /dev/ram9: No label detected
+      /dev/ram10: size is 32768 sectors
+      /dev/ram10: size is 32768 sectors
+      /dev/ram10: No label detected
+      /dev/ram11: size is 32768 sectors
+      /dev/ram11: size is 32768 sectors
+      /dev/ram11: No label detected
+      /dev/ram12: size is 32768 sectors
+      /dev/ram12: size is 32768 sectors
+      /dev/ram12: No label detected
+      /dev/ram13: size is 32768 sectors
+      /dev/ram13: size is 32768 sectors
+      /dev/ram13: No label detected
+      /dev/ram14: size is 32768 sectors
+      /dev/ram14: size is 32768 sectors
+      /dev/ram14: No label detected
+      /dev/ram15: size is 32768 sectors
+      /dev/ram15: size is 32768 sectors
+      /dev/ram15: No label detected
+      /dev/sdb: size is 976773168 sectors
+      /dev/sdb1: size is 195312500 sectors
+      /dev/sdb1: size is 195312500 sectors
+      /dev/sdb1: No label detected
+    Finding volume group "VolGroup"
+      Locking /var/lock/lvm/V_VolGroup RB
+      /dev/sda2: lvm2 label detected at sector 1
+  --- Volume group ---
+  VG Name               VolGroup
+  System ID             
+  Format                lvm2
+  Metadata Areas        1
+  Metadata Sequence No  4
+  VG Access             read/write
+  VG Status             resizable
+  MAX LV                0
+  Cur LV                3
+  Open LV               3
+  Max PV                0
+  Cur PV                1
+  Act PV                1
+  VG Size               465.27 GiB
+  PE Size               4.00 MiB
+  Total PE              119109
+  Alloc PE / Size       119109 / 465.27 GiB
+  Free  PE / Size       0 / 0   
+  VG UUID               Bdy6od-GMJu-fB9l-Mzpd-VAFm-cXWd-a8Rb3p
+   
+  --- Logical volume ---
+  LV Name                /dev/VolGroup/lv_root
+  VG Name                VolGroup
+  LV UUID                NA1LON-U4kG-pmuh-IW8W-S1R7-YTSU-MHYzVI
+  LV Write Access        read/write
+  LV Status              available
+  # open                 1
+  LV Size                50.00 GiB
+  Current LE             12800
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:0
+   
+  --- Logical volume ---
+  LV Name                /dev/VolGroup/lv_home
+  VG Name                VolGroup
+  LV UUID                3JNyHL-VeuR-Jsfi-NktL-Wnu3-LpDL-LeoHaP
+  LV Write Access        read/write
+  LV Status              available
+  # open                 1
+  LV Size                409.41 GiB
+  Current LE             104809
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:2
+   
+  --- Logical volume ---
+  LV Name                /dev/VolGroup/lv_swap
+  VG Name                VolGroup
+  LV UUID                CrmAVI-Gf99-3aQu-1tYR-Iws0-uUdQ-ahTKDG
+  LV Write Access        read/write
+  LV Status              available
+  # open                 1
+  LV Size                5.86 GiB
+  Current LE             1500
+  Segments               1
+  Allocation             inherit
+  Read ahead sectors     auto
+  - currently set to     256
+  Block device           253:1
+   
+  --- Physical volumes ---
+  PV Name               /dev/sda2     
+  PV UUID               Gh6hfk-sT4a-D7fZ-wyBd-ZvF9-lRib-9wdCEE
+  PV Status             allocatable
+  Total PE / Free PE    119109 / 0
+   
+      Unlocking /var/lock/lvm/V_VolGroup
+

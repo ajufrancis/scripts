@@ -1,0 +1,62 @@
+Version 1.6
+===========
+
+Added an option for short message output on quota/threshold checks. Corrected
+documentation for threshold check.
+
+Version 1.5
+===========
+
+Output cleaned up and simplified.
+
+Version 1.4
+===========
+
+Since I made the check of fsOverallStatus optional it would have been a good
+idea to initialize that variable :-) Bug fixed.
+
+Version 1.3
+===========
+
+Jim's request is now implemented:
+
+"In the long run, I think adding switches to exclude any of the checks would be
+good. For example, I have one filer where we have Exchange maintaining a
+fixed-size database on one volume with no snapshots. So that volume always
+appears full, but that state is ok in our book."
+
+So far so good... this should be working now. There is an INCLUDE switch, that
+you may use in order to activate just the checks you need (see --help for more
+information).
+
+Version 1.2
+===========
+
+Another useful comment by Jim:
+
+"This weekend our regularly scheduled disk scrubbing caused check_netapp to go
+into warning state, because the plugin regards any response to the raid check
+that isn't '1' or '6' to be a warning state. The truth is that most of the
+possible states are OK states — just a couple are problems."
+
+So this has now changed to regard the RAID states as follows:
+
+ crit = 6
+ warn = 2 3
+ ok   = 1 4 5 7 8
+
+Thanks again!
+
+Version 1.1
+===========
+
+This is an update to correct a "it's a feature not a bug" situation reported
+by Jim King, where filers with disabled quotas would cause the plugin to bail
+out giving an error message.
+
+Thanks to Jim King for pointing out this issue!
+
+Version 1.0
+===========
+
+First public release.

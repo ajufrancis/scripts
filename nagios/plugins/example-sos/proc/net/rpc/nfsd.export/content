@@ -1,0 +1,2 @@
+#path domain(flags)
+/mnt/isos	*(ro,no_root_squash,async,wdelay,no_subtree_check,uuid=e67c8e13:355143c5:b82ede80:8caf09ca)

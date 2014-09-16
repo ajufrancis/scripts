@@ -1,0 +1,79 @@
+#!/bin/bash
+#: Title       : check_nbif
+#: Date        : 2011-12-21
+#: Author      : zhangwh
+#: Version     : 1.0 
+#: Description : check nbif 
+
+#script metadata
+version=1.0
+scriptname=${0##*/}
+timestamp=`date +%s`
+description="check north file num"
+date_of_creation=2011-12-21
+usage="$scriptname [-v |-h]"
+author="zhangwh"
+
+source "plugin.sh"
+
+usage() #@ DESCRIPTION: print usage information 
+{       #@ USAGE: usage 
+        #@ REQUIRES: variable defined: $scriptname 
+  printf "%s - %s\n" "$scriptname" "$description" 
+  printf "USAGE: %s\n" "$usage" 
+} 
+ 
+version() #@ DESCRIPTION: print version information 
+{         #@ USAGE: version 
+          #@ REQUIRES: variables defined: $scriptname, $author and $version 
+  printf "%s version %s\n" "$scriptname" "$version" 
+  printf "by %s, %d\n" "$author"  "${date_of_creation%%-*}" 
+} 
+
+## parse cli options, -v
+while getopts vh var 
+do 
+  case $var in 
+    h) usage; exit ;; 
+    v) version; exit ;; 
+  esac 
+done 
+shift $(( $OPTIND - 1 )) 
+
+
+## ftp file num and dir config
+AC_CM=1
+AP_CM=1
+HP_CM=1
+AP_FM=96
+AP_PM=24
+AUTH=1
+CW=1
+dir=/oradata/ftp/
+## ftp file num and dir config
+
+start_num=1
+today=`date -d yesterday +"%Y%m%d"`
+rm -rf  /tmp/nbif.tmp
+for folder in "AC_CM" "AP_CM" "HP_CM" "AP_FM" "AP_PM" "AUTH" "C+W"
+do
+        cd $dir$folder
+        if [ $folder == "C+W" ];then
+            folder=CW
+        fi
+        file_num=`ls -l *$today* 2>&1 | grep -v ls | wc -l`
+        if [ $file_num -lt $(($folder)) ]; then
+            start_num=$(($start_num+1))
+            echo "$folder is Missing $(($(($folder))-$file_num))" >> /tmp/nbif.tmp
+        elif [ $file_num -gt $(($folder)) ]; then
+            start_num=$(($start_num+1))
+            echo "$folder is Increase $(($file_num-$(($folder))))" >> /tmp/nbif.tmp
+        fi
+done
+if [ $start_num -gt 1 ]; then
+    echo -e "CRITICAL - North File Is Missing.\n\n`cat /tmp/nbif.tmp`"
+    exit $STATUS_CRITICAL
+else
+    echo "OK - North File  Is OK."
+    exit $STATUS_OK
+fi

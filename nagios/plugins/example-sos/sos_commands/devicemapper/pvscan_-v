@@ -1,0 +1,7 @@
+File descriptor 4 (/tmp/nagios01-2013030422051362405942/sos_logs/sos.log) leaked on pvscan invocation. Parent PID 553: /usr/bin/python
+    Wiping cache of LVM-capable devices
+    Wiping internal VG cache
+    Walking through all physical volumes
+  PV /dev/sda2   VG VolGroup   lvm2 [465.27 GiB / 0    free]
+  Total: 1 [465.27 GiB] / in use: 1 [465.27 GiB] / in no VG: 0 [0   ]
+

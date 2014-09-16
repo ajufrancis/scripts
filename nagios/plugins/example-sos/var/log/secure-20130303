@@ -1,0 +1,331 @@
+Feb 25 09:16:37 localhost login: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Feb 25 09:16:38 localhost login: ROOT LOGIN ON tty1
+Feb 25 09:23:25 localhost login: pam_unix(login:session): session closed for user root
+Feb 25 09:23:28 localhost login: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Feb 25 09:23:28 localhost login: ROOT LOGIN ON tty1
+Feb 25 09:23:37 localhost login: pam_unix(login:session): session closed for user root
+Feb 25 09:24:15 localhost login: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Feb 25 09:24:15 localhost login: ROOT LOGIN ON tty1
+Feb 25 09:24:26 localhost login: pam_unix(login:session): session closed for user root
+Feb 25 09:24:30 localhost login: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Feb 25 09:24:30 localhost login: ROOT LOGIN ON tty1
+Feb 25 09:25:48 localhost login: pam_unix(login:session): session closed for user root
+Feb 25 09:30:09 localhost sshd[6564]: Accepted password for root from 192.168.113.220 port 1656 ssh2
+Feb 25 09:30:09 localhost sshd[6564]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 25 09:30:54 localhost sshd[981]: Received signal 15; terminating.
+Feb 25 09:30:57 localhost sshd[6616]: Server listening on 0.0.0.0 port 22.
+Feb 25 09:30:57 localhost sshd[6616]: Server listening on :: port 22.
+Feb 25 09:34:31 localhost sshd[6661]: Accepted password for root from 192.168.110.1 port 57338 ssh2
+Feb 25 09:34:31 localhost sshd[6661]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 25 09:34:31 localhost sshd[6661]: Received disconnect from 192.168.110.1: 11: disconnected by user
+Feb 25 09:34:31 localhost sshd[6661]: pam_unix(sshd:session): session closed for user root
+Feb 25 09:35:15 localhost groupadd[6681]: group added to /etc/group: name=gnokii, GID=498
+Feb 25 09:35:15 localhost groupadd[6681]: group added to /etc/gshadow: name=gnokii
+Feb 25 09:35:15 localhost groupadd[6681]: new group: name=gnokii, GID=498
+Feb 25 09:35:35 localhost groupadd[6690]: group added to /etc/group: name=smstools, GID=497
+Feb 25 09:35:35 localhost groupadd[6690]: group added to /etc/gshadow: name=smstools
+Feb 25 09:35:35 localhost groupadd[6690]: new group: name=smstools, GID=497
+Feb 25 09:35:35 localhost useradd[6696]: new user: name=smstools, UID=497, GID=497, home=/var/lib/smstools, shell=/bin/bash
+Feb 25 09:35:35 localhost useradd[6696]: add 'smstools' to group 'dialout'
+Feb 25 09:35:35 localhost useradd[6696]: add 'smstools' to shadow group 'dialout'
+Feb 25 09:40:48 localhost sshd[6745]: Accepted password for root from 192.168.113.220 port 1661 ssh2
+Feb 25 09:40:48 localhost sshd[6745]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 25 09:40:48 localhost sshd[6745]: subsystem request for sftp
+Feb 25 09:42:33 localhost sshd[6745]: pam_unix(sshd:session): session closed for user root
+Feb 25 09:44:02 localhost groupadd[6819]: group added to /etc/group: name=mysql, GID=27
+Feb 25 09:44:02 localhost groupadd[6819]: group added to /etc/gshadow: name=mysql
+Feb 25 09:44:02 localhost groupadd[6819]: new group: name=mysql, GID=27
+Feb 25 09:44:02 localhost useradd[6823]: new user: name=mysql, UID=27, GID=27, home=/var/lib/mysql, shell=/bin/bash
+Feb 25 09:44:12 localhost groupadd[6854]: group added to /etc/group: name=apache, GID=48
+Feb 25 09:44:12 localhost groupadd[6854]: group added to /etc/gshadow: name=apache
+Feb 25 09:44:12 localhost groupadd[6854]: new group: name=apache, GID=48
+Feb 25 09:44:12 localhost useradd[6859]: new user: name=apache, UID=48, GID=48, home=/var/www, shell=/sbin/nologin
+Feb 25 09:44:19 localhost groupadd[6896]: group added to /etc/group: name=omd, GID=496
+Feb 25 09:44:19 localhost groupadd[6896]: group added to /etc/gshadow: name=omd
+Feb 25 09:44:19 localhost groupadd[6896]: new group: name=omd, GID=496
+Feb 25 11:59:06 localhost sshd[7933]: Connection closed by 192.168.113.220
+Feb 25 14:07:52 localhost login: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=tty1 ruser= rhost=  user=root
+Feb 25 14:07:53 localhost login: FAILED LOGIN 1 FROM (null) FOR root, Authentication failure
+Feb 25 14:07:56 localhost login: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Feb 25 14:07:56 localhost login: ROOT LOGIN ON tty1
+Feb 25 14:12:49 localhost login: pam_unix(login:session): session closed for user root
+Feb 26 14:35:17 localhost groupadd[24736]: group added to /etc/group: name=site01, GID=500
+Feb 26 14:35:17 localhost groupadd[24736]: group added to /etc/gshadow: name=site01
+Feb 26 14:35:17 localhost groupadd[24736]: new group: name=site01, GID=500
+Feb 26 14:35:17 localhost useradd[24740]: new user: name=site01, UID=496, GID=500, home=/omd/sites/site01, shell=/bin/bash
+Feb 26 14:35:17 localhost useradd[24740]: add 'site01' to group 'omd'
+Feb 26 14:35:17 localhost useradd[24740]: add 'site01' to shadow group 'omd'
+Feb 26 14:35:17 localhost gpasswd[24746]: user apache added by root to group site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:18 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:19 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:19 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:19 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:19 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:19 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:19 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:19 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:19 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:19 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:35:28 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:35:36 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:36:06 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:36:53 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:38:23 localhost sshd[6616]: Received signal 15; terminating.
+Feb 26 14:38:26 localhost sshd[25931]: Server listening on 0.0.0.0 port 22.
+Feb 26 14:38:26 localhost sshd[25931]: Server listening on :: port 22.
+Feb 26 14:39:17 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:39:39 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:40:39 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:41:16 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 14:41:34 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 14:42:27 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 15:12:42 localhost su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 26 17:54:41 localhost su: pam_unix(su-l:session): session closed for user site01
+Feb 26 17:54:42 localhost sshd[6564]: pam_unix(sshd:session): session closed for user root
+Feb 27 09:15:35 localhost sshd[31648]: Accepted password for root from 192.168.113.220 port 2783 ssh2
+Feb 27 09:15:35 localhost sshd[31648]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 27 09:20:07 localhost sshd[32075]: Accepted password for root from 192.168.113.220 port 2802 ssh2
+Feb 27 09:20:07 localhost sshd[32075]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 27 09:20:07 localhost sshd[32075]: subsystem request for sftp
+Feb 27 09:26:40 localhost sshd[32075]: pam_unix(sshd:session): session closed for user root
+Feb 27 09:28:10 localhost sshd[31648]: pam_unix(sshd:session): session closed for user root
+Feb 27 10:01:34 localhost login: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Feb 27 10:01:34 localhost login: ROOT LOGIN ON tty1
+Feb 27 10:04:44 localhost login: pam_unix(login:session): session closed for user root
+Feb 27 10:04:48 localhost login: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Feb 27 10:04:48 localhost login: ROOT LOGIN ON tty1
+Feb 27 10:06:35 localhost runuser: pam_unix(runuser:session): session opened for user qpidd by root(uid=0)
+Feb 27 10:06:35 localhost runuser: pam_unix(runuser:session): session closed for user qpidd
+Feb 27 10:07:05 localhost login: pam_unix(login:session): session closed for user root
+Feb 27 10:07:05 localhost runuser: pam_unix(runuser:session): session opened for user qpidd by (uid=0)
+Feb 27 10:07:05 localhost runuser: pam_unix(runuser:session): session closed for user qpidd
+Feb 27 10:07:05 localhost sshd[25931]: Received signal 15; terminating.
+Feb 27 10:30:23 nagios01 sshd[1451]: Server listening on 0.0.0.0 port 22.
+Feb 27 10:30:23 nagios01 sshd[1451]: Server listening on :: port 22.
+Feb 27 10:30:25 nagios01 runuser: pam_unix(runuser:session): session opened for user qpidd by (uid=0)
+Feb 27 10:30:25 nagios01 runuser: pam_unix(runuser:session): session closed for user qpidd
+Feb 27 10:30:25 nagios01 runuser: pam_unix(runuser:session): session opened for user qpidd by (uid=0)
+Feb 27 10:30:25 nagios01 runuser: pam_unix(runuser:session): session closed for user qpidd
+Feb 27 10:30:25 nagios01 runuser: pam_unix(runuser-l:session): session opened for user qpidd by (uid=0)
+Feb 27 10:30:25 nagios01 runuser: pam_unix(runuser-l:session): session closed for user qpidd
+Feb 27 10:30:43 nagios01 login: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Feb 27 10:30:44 nagios01 login: ROOT LOGIN ON tty1
+Feb 27 10:49:31 nagios01 login: pam_unix(login:session): session closed for user root
+Feb 27 10:56:57 nagios01 sshd[2608]: Accepted password for root from 10.24.23.46 port 50124 ssh2
+Feb 27 10:56:57 nagios01 sshd[2608]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 27 11:58:05 nagios01 runuser: pam_unix(runuser:session): session opened for user qpidd by root(uid=0)
+Feb 27 11:58:05 nagios01 runuser: pam_unix(runuser:session): session closed for user qpidd
+Feb 27 11:58:10 nagios01 runuser: pam_unix(runuser:session): session opened for user qpidd by root(uid=0)
+Feb 27 11:58:10 nagios01 runuser: pam_unix(runuser:session): session closed for user qpidd
+Feb 27 11:58:10 nagios01 runuser: pam_unix(runuser:session): session opened for user qpidd by root(uid=0)
+Feb 27 11:58:10 nagios01 runuser: pam_unix(runuser:session): session closed for user qpidd
+Feb 27 11:58:10 nagios01 runuser: pam_unix(runuser-l:session): session opened for user qpidd by root(uid=0)
+Feb 27 11:58:10 nagios01 runuser: pam_unix(runuser-l:session): session closed for user qpidd
+Feb 27 12:02:13 nagios01 groupadd[11932]: group added to /etc/group: name=slocate, GID=21
+Feb 27 12:02:13 nagios01 groupadd[11932]: group added to /etc/gshadow: name=slocate
+Feb 27 12:02:13 nagios01 groupadd[11932]: new group: name=slocate, GID=21
+Feb 27 12:34:47 nagios01 sshd[20364]: Accepted password for root from 10.24.23.46 port 51892 ssh2
+Feb 27 12:34:47 nagios01 sshd[20364]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 27 12:50:42 nagios01 passwd: pam_unix(passwd:chauthtok): password changed for root
+Feb 27 12:59:37 nagios01 groupadd[27126]: group added to /etc/group: name=rpc, GID=32
+Feb 27 12:59:37 nagios01 groupadd[27126]: group added to /etc/gshadow: name=rpc
+Feb 27 12:59:37 nagios01 groupadd[27126]: new group: name=rpc, GID=32
+Feb 27 12:59:37 nagios01 useradd[27130]: new user: name=rpc, UID=32, GID=32, home=/var/cache/rpcbind, shell=/sbin/nologin
+Feb 27 12:59:38 nagios01 useradd[27141]: new group: name=rpcuser, GID=29
+Feb 27 12:59:38 nagios01 useradd[27141]: new user: name=rpcuser, UID=29, GID=29, home=/var/lib/nfs, shell=/sbin/nologin
+Feb 27 12:59:38 nagios01 groupadd[27150]: group added to /etc/group: name=nfsnobody, GID=65534
+Feb 27 12:59:38 nagios01 groupadd[27150]: group added to /etc/gshadow: name=nfsnobody
+Feb 27 12:59:38 nagios01 groupadd[27150]: new group: name=nfsnobody, GID=65534
+Feb 27 12:59:38 nagios01 useradd[27157]: new user: name=nfsnobody, UID=65534, GID=65534, home=/var/lib/nfs, shell=/sbin/nologin
+Feb 27 13:06:02 nagios01 sshd[29434]: Accepted password for root from 192.168.11.19 port 38982 ssh2
+Feb 27 13:06:02 nagios01 sshd[29434]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 27 13:06:02 nagios01 sshd[29434]: Received disconnect from 192.168.11.19: 11: disconnected by user
+Feb 27 13:06:02 nagios01 sshd[29434]: pam_unix(sshd:session): session closed for user root
+Feb 27 14:13:42 nagios01 sshd[14778]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.24.23.46  user=root
+Feb 27 14:13:44 nagios01 sshd[14778]: Failed password for root from 10.24.23.46 port 53318 ssh2
+Feb 27 14:13:49 nagios01 sshd[14778]: Failed password for root from 10.24.23.46 port 53318 ssh2
+Feb 27 14:13:53 nagios01 sshd[14778]: Accepted password for root from 10.24.23.46 port 53318 ssh2
+Feb 27 14:13:53 nagios01 sshd[14778]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 27 14:15:29 nagios01 sshd[2608]: pam_unix(sshd:session): session closed for user root
+Feb 27 14:22:30 nagios01 su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 27 14:24:16 nagios01 su: pam_unix(su-l:session): session closed for user site01
+Feb 27 14:48:46 nagios01 su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 27 14:53:36 nagios01 su: pam_unix(su-l:session): session closed for user site01
+Feb 27 14:55:37 nagios01 groupadd[25988]: group added to /etc/group: name=ntp, GID=38
+Feb 27 14:55:37 nagios01 groupadd[25988]: group added to /etc/gshadow: name=ntp
+Feb 27 14:55:37 nagios01 groupadd[25988]: new group: name=ntp, GID=38
+Feb 27 14:55:37 nagios01 useradd[25992]: new user: name=ntp, UID=38, GID=38, home=/etc/ntp, shell=/sbin/nologin
+Feb 27 15:10:09 nagios01 usermod[29519]: add 'site01' to group 'smstools'
+Feb 27 15:10:09 nagios01 usermod[29519]: add 'site01' to shadow group 'smstools'
+Feb 27 15:13:53 nagios01 sshd[30673]: Accepted password for root from 192.168.11.19 port 38983 ssh2
+Feb 27 15:13:53 nagios01 sshd[30673]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 27 15:13:53 nagios01 sshd[30673]: Received disconnect from 192.168.11.19: 11: disconnected by user
+Feb 27 15:13:53 nagios01 sshd[30673]: pam_unix(sshd:session): session closed for user root
+Feb 27 15:16:33 nagios01 sshd[31452]: Accepted password for root from 192.168.11.19 port 38984 ssh2
+Feb 27 15:16:33 nagios01 sshd[31452]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 27 15:16:33 nagios01 sshd[31452]: Received disconnect from 192.168.11.19: 11: disconnected by user
+Feb 27 15:16:33 nagios01 sshd[31452]: pam_unix(sshd:session): session closed for user root
+Feb 27 15:48:06 nagios01 sshd[20364]: pam_unix(sshd:session): session closed for user root
+Feb 27 15:57:12 nagios01 usermod[10325]: add 'site01' to group 'dialout'
+Feb 27 15:57:12 nagios01 usermod[10325]: add 'site01' to shadow group 'dialout'
+Feb 27 16:27:27 nagios01 su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 27 16:28:27 nagios01 su: pam_unix(su-l:session): session closed for user site01
+Feb 27 17:04:07 nagios01 su: pam_unix(su:session): session opened for user smstools by root(uid=0)
+Feb 27 17:05:35 nagios01 su: pam_unix(su:session): session closed for user smstools
+Feb 27 17:58:28 nagios01 sshd[14778]: pam_unix(sshd:session): session closed for user root
+Feb 27 23:50:27 nagios01 sshd[4905]: Accepted password for root from 192.168.253.142 port 1504 ssh2
+Feb 27 23:50:27 nagios01 sshd[4905]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 27 23:54:30 nagios01 sshd[4905]: pam_unix(sshd:session): session closed for user root
+Feb 28 09:27:59 nagios01 sshd[11210]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.24.23.46  user=root
+Feb 28 09:28:01 nagios01 sshd[11210]: Failed password for root from 10.24.23.46 port 51314 ssh2
+Feb 28 09:28:07 nagios01 sshd[11210]: Accepted password for root from 10.24.23.46 port 51314 ssh2
+Feb 28 09:28:07 nagios01 sshd[11210]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 28 11:06:58 nagios01 sshd[11210]: pam_unix(sshd:session): session closed for user root
+Feb 28 12:34:13 nagios01 sshd[22628]: Accepted password for root from 10.24.23.46 port 63189 ssh2
+Feb 28 12:34:13 nagios01 sshd[22628]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 28 12:49:23 nagios01 sshd[22628]: pam_unix(sshd:session): session closed for user root
+Feb 28 13:07:14 nagios01 sshd[4059]: Accepted password for root from 10.24.23.46 port 64943 ssh2
+Feb 28 13:07:14 nagios01 sshd[4059]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 28 13:35:07 nagios01 sshd[4059]: pam_unix(sshd:session): session closed for user root
+Feb 28 13:35:49 nagios01 sshd[10769]: Accepted password for root from 10.24.23.46 port 49607 ssh2
+Feb 28 13:35:49 nagios01 sshd[10769]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 28 13:40:54 nagios01 sshd[10769]: pam_unix(sshd:session): session closed for user root
+Feb 28 13:41:21 nagios01 sshd[12182]: Accepted password for root from 10.24.23.46 port 49657 ssh2
+Feb 28 13:41:21 nagios01 sshd[12182]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 28 14:34:07 nagios01 sshd[24445]: Accepted password for root from 10.24.23.46 port 51288 ssh2
+Feb 28 14:34:07 nagios01 sshd[24445]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 28 15:37:19 nagios01 sshd[7096]: Accepted password for root from 10.24.23.239 port 16158 ssh2
+Feb 28 15:37:19 nagios01 sshd[7096]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 28 15:59:44 nagios01 sshd[12182]: pam_unix(sshd:session): session closed for user root
+Feb 28 16:09:26 nagios01 sshd[24445]: pam_unix(sshd:session): session closed for user root
+Feb 28 16:14:04 nagios01 sshd[16143]: Accepted password for root from 10.24.23.46 port 55339 ssh2
+Feb 28 16:14:04 nagios01 sshd[16143]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 28 17:34:02 nagios01 sshd[16143]: pam_unix(sshd:session): session closed for user root
+Feb 28 17:57:02 nagios01 sshd[7096]: pam_unix(sshd:session): session closed for user root
+Feb 28 19:51:04 nagios01 sshd[2138]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.253.153  user=root
+Feb 28 19:51:06 nagios01 sshd[2138]: Failed password for root from 192.168.253.153 port 4522 ssh2
+Feb 28 19:51:10 nagios01 sshd[2138]: Accepted password for root from 192.168.253.153 port 4522 ssh2
+Feb 28 19:51:10 nagios01 sshd[2138]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 28 19:51:35 nagios01 su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Feb 28 20:44:40 nagios01 su: pam_unix(su-l:session): session closed for user site01
+Feb 28 20:55:02 nagios01 sshd[17528]: Accepted password for root from 192.168.11.19 port 39045 ssh2
+Feb 28 20:55:02 nagios01 sshd[17528]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Feb 28 20:55:02 nagios01 sshd[17528]: Received disconnect from 192.168.11.19: 11: disconnected by user
+Feb 28 20:55:02 nagios01 sshd[17528]: pam_unix(sshd:session): session closed for user root
+Feb 28 22:57:42 nagios01 sshd[14126]: Accepted password for root from 192.168.253.153 port 2433 ssh2
+Feb 28 22:57:42 nagios01 sshd[14126]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  1 00:02:15 nagios01 sshd[2138]: pam_unix(sshd:session): session closed for user root
+Mar  1 01:22:14 nagios01 sshd[14126]: pam_unix(sshd:session): session closed for user root
+Mar  1 09:25:24 nagios01 sshd[313]: Accepted password for root from 10.24.23.46 port 65269 ssh2
+Mar  1 09:25:24 nagios01 sshd[313]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  1 11:40:08 nagios01 sshd[313]: pam_unix(sshd:session): session closed for user root
+Mar  1 11:51:22 nagios01 sshd[4404]: Accepted password for root from 10.24.23.46 port 51116 ssh2
+Mar  1 11:51:22 nagios01 sshd[4404]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  1 12:07:55 nagios01 groupadd[8391]: group added to /etc/group: name=ntop, GID=495
+Mar  1 12:07:55 nagios01 groupadd[8391]: group added to /etc/gshadow: name=ntop
+Mar  1 12:07:55 nagios01 groupadd[8391]: new group: name=ntop, GID=495
+Mar  1 12:07:55 nagios01 useradd[8396]: new user: name=ntop, UID=495, GID=495, home=/var/lib/ntop, shell=/sbin/nologin
+Mar  1 13:31:58 nagios01 sshd[28177]: Accepted password for root from 10.24.23.46 port 59197 ssh2
+Mar  1 13:31:58 nagios01 sshd[28177]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  1 13:34:15 nagios01 webmin[29459]: Webmin starting
+Mar  1 13:35:05 nagios01 webmin[29692]: Successful login as root from 10.24.23.46
+Mar  1 13:39:14 nagios01 login: pam_securetty(login:auth): access denied: tty 'pts/2' is not secure !
+Mar  1 13:43:12 nagios01 groupadd[32230]: group added to /etc/group: name=dhcpd, GID=177
+Mar  1 13:43:12 nagios01 groupadd[32230]: group added to /etc/gshadow: name=dhcpd
+Mar  1 13:43:12 nagios01 groupadd[32230]: new group: name=dhcpd, GID=177
+Mar  1 13:43:12 nagios01 useradd[32235]: new user: name=dhcpd, UID=177, GID=177, home=/, shell=/sbin/nologin
+Mar  1 14:08:50 nagios01 sshd[28177]: pam_unix(sshd:session): session closed for user root
+Mar  1 14:21:16 nagios01 sshd[9446]: Accepted password for root from 10.24.23.53 port 60201 ssh2
+Mar  1 14:21:16 nagios01 sshd[9446]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  1 15:05:58 nagios01 sshd[4404]: pam_unix(sshd:session): session closed for user root
+Mar  1 15:16:18 nagios01 sshd[23774]: Accepted password for root from 10.24.23.53 port 60751 ssh2
+Mar  1 15:16:18 nagios01 sshd[23774]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  1 15:59:06 nagios01 sshd[2097]: Accepted password for root from 10.24.23.46 port 61352 ssh2
+Mar  1 15:59:06 nagios01 sshd[2097]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  1 16:36:34 nagios01 sshd[9446]: pam_unix(sshd:session): session closed for user root
+Mar  1 17:27:46 nagios01 sshd[23774]: pam_unix(sshd:session): session closed for user root
+Mar  1 17:38:45 nagios01 sshd[26494]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.254.104  user=root
+Mar  1 17:38:47 nagios01 sshd[26494]: Failed password for root from 192.168.254.104 port 64681 ssh2
+Mar  1 17:38:51 nagios01 sshd[26494]: Accepted password for root from 192.168.254.104 port 64681 ssh2
+Mar  1 17:38:51 nagios01 sshd[26494]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  1 17:38:51 nagios01 sshd[26494]: subsystem request for sftp
+Mar  1 17:39:03 nagios01 sshd[26494]: pam_unix(sshd:session): session closed for user root
+Mar  1 18:30:35 nagios01 sshd[7320]: Accepted password for root from 192.168.254.104 port 52326 ssh2
+Mar  1 18:30:35 nagios01 sshd[7320]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  1 18:30:35 nagios01 sshd[7320]: subsystem request for sftp
+Mar  1 18:30:58 nagios01 sshd[7320]: pam_unix(sshd:session): session closed for user root
+Mar  1 18:31:07 nagios01 sshd[7375]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.24.23.46  user=root
+Mar  1 18:31:09 nagios01 sshd[7375]: Failed password for root from 10.24.23.46 port 52337 ssh2
+Mar  1 18:31:13 nagios01 sshd[7375]: Accepted password for root from 10.24.23.46 port 52337 ssh2
+Mar  1 18:31:13 nagios01 sshd[7375]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  1 18:31:13 nagios01 sshd[7375]: subsystem request for sftp
+Mar  1 18:37:15 nagios01 sshd[7375]: pam_unix(sshd:session): session closed for user root
+Mar  1 21:10:21 nagios01 sshd[2097]: pam_unix(sshd:session): session closed for user root
+Mar  1 23:45:00 nagios01 sshd[20893]: Accepted password for root from 192.168.253.155 port 2059 ssh2
+Mar  1 23:45:00 nagios01 sshd[20893]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  2 00:17:27 nagios01 sshd[4108]: Connection closed by 192.168.11.16
+Mar  2 00:17:41 nagios01 sshd[4220]: Accepted password for root from 192.168.11.16 port 34624 ssh2
+Mar  2 00:17:41 nagios01 sshd[4220]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  2 00:17:41 nagios01 sshd[4220]: Received disconnect from 192.168.11.16: 11: disconnected by user
+Mar  2 00:17:41 nagios01 sshd[4220]: pam_unix(sshd:session): session closed for user root
+Mar  2 00:54:58 nagios01 sshd[23992]: Accepted password for root from 192.168.253.155 port 3603 ssh2
+Mar  2 00:54:58 nagios01 sshd[23992]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  2 01:34:50 nagios01 sshd[23992]: pam_unix(sshd:session): session closed for user root
+Mar  2 02:39:09 nagios01 sshd[15804]: Accepted password for root from 192.168.253.155 port 1571 ssh2
+Mar  2 02:39:09 nagios01 sshd[15804]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  2 04:01:32 nagios01 sshd[20893]: pam_unix(sshd:session): session closed for user root
+Mar  2 05:10:20 nagios01 sshd[15804]: pam_unix(sshd:session): session closed for user root
+Mar  3 01:08:35 nagios01 sshd[9728]: Accepted password for root from 192.168.253.156 port 1057 ssh2
+Mar  3 01:08:35 nagios01 sshd[9728]: pam_unix(sshd:session): session opened for user root by (uid=0)

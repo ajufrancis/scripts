@@ -1,0 +1,28 @@
+192.168.11.0/24 dev em1  proto kernel  scope link  src 192.168.11.9 
+169.254.0.0/16 dev em1  scope link  metric 1002 
+default via 192.168.11.254 dev em1 
+broadcast 127.255.255.255 dev lo  table local  proto kernel  scope link  src 127.0.0.1 
+broadcast 192.168.11.0 dev em1  table local  proto kernel  scope link  src 192.168.11.9 
+local 192.168.11.9 dev em1  table local  proto kernel  scope host  src 192.168.11.9 
+broadcast 192.168.11.255 dev em1  table local  proto kernel  scope link  src 192.168.11.9 
+broadcast 127.0.0.0 dev lo  table local  proto kernel  scope link  src 127.0.0.1 
+local 127.0.0.1 dev lo  table local  proto kernel  scope host  src 127.0.0.1 
+local 127.0.0.0/8 dev lo  table local  proto kernel  scope host  src 127.0.0.1 
+unreachable ::/96 dev lo  metric 1024  error -101 mtu 16436 advmss 16376 hoplimit 4294967295
+unreachable ::ffff:0.0.0.0/96 dev lo  metric 1024  error -101 mtu 16436 advmss 16376 hoplimit 4294967295
+unreachable 2002:a00::/24 dev lo  metric 1024  error -101 mtu 16436 advmss 16376 hoplimit 4294967295
+unreachable 2002:7f00::/24 dev lo  metric 1024  error -101 mtu 16436 advmss 16376 hoplimit 4294967295
+unreachable 2002:a9fe::/32 dev lo  metric 1024  error -101 mtu 16436 advmss 16376 hoplimit 4294967295
+unreachable 2002:ac10::/28 dev lo  metric 1024  error -101 mtu 16436 advmss 16376 hoplimit 4294967295
+unreachable 2002:c0a8::/32 dev lo  metric 1024  error -101 mtu 16436 advmss 16376 hoplimit 4294967295
+unreachable 2002:e000::/19 dev lo  metric 1024  error -101 mtu 16436 advmss 16376 hoplimit 4294967295
+unreachable 3ffe:ffff::/32 dev lo  metric 1024  error -101 mtu 16436 advmss 16376 hoplimit 4294967295
+fe80::/64 dev em1  proto kernel  metric 256  mtu 1500 advmss 1440 hoplimit 4294967295
+unreachable default dev lo  table unspec  proto kernel  metric -1  error -101 hoplimit 255
+local ::1 via :: dev lo  table local  proto none  metric 0  mtu 16436 advmss 16376 hoplimit 4294967295
+local fe80::d6ae:52ff:fe6f:9b99 via :: dev lo  table local  proto none  metric 0  mtu 16436 advmss 16376 hoplimit 4294967295
+ff02::1 via ff02::1 dev em1  metric 0 
+    cache  mtu 1500 advmss 1440 hoplimit 4294967295
+ff00::/8 dev em1  table local  metric 256  mtu 1500 advmss 1440 hoplimit 4294967295
+unreachable default dev lo  table unspec  proto kernel  metric -1  error -101 hoplimit 255
+

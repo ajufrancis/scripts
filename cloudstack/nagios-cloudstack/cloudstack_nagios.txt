@@ -1,0 +1,3 @@
+https://github.com/jasonhancock/nagios-cloudstack
+http://exchange.nagios.org/directory/Plugins/Cloud/nagios-2Dcloudstack-2D2/details
+https://github.com/jasonhancock/nagios-cloudstack

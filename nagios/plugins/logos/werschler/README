@@ -1,0 +1,22 @@
+Assorted Nagios Icons (Updated 11/21/2003)
+
+Sun E250
+IBM AS/400
+Breezecom Wireless Radios and Antennae (BreezeAccess)
+Watchguard Firebox II
+IBM eServer w/RedHat Logo
+IBM eServer w/Novell Logo
+IBM eServer w/Windows Logo
+
+INSTALL
+
+Extract these files to your <nagiosdir>/share/images/logos
+
+Consult the Nagios documentation for information on how to utilize them in your status maps and host information pages.
+
+Enjoy....
+
+
+
+Brad Werschler
+bwerschler@sjsd.net

@@ -1,0 +1,17 @@
+logrotate state -- version 2
+"/var/log/yum.log" 2013-2-21
+"/var/log/smsd/smsd.log" 2013-3-3
+"/var/log/denyhosts" 2013-2-28
+"/var/log/dracut.log" 2013-2-21
+"/var/log/httpd/*log" 2013-2-26
+"/var/log/httpd/error_log" 2013-3-3
+"/var/log/wtmp" 2013-2-21
+"/var/log/spooler" 2013-3-3
+"/var/log/btmp" 2013-3-1
+"/var/log/maillog" 2013-3-3
+"/var/log/smsd/smsd_trouble.log" 2013-3-3
+"/var/log/secure" 2013-3-3
+"/var/log/messages" 2013-3-3
+"/var/log/cron" 2013-3-3
+"/var/log/httpd/access_log" 2013-3-3
+

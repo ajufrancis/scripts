@@ -1,0 +1,13 @@
+2...ipmitool....BMC. IP
+service ipmi start                          //..ipmi..
+ipmitool lan set 1 ipaddr 192.168.2.200        //..BMC .IP..
+ipmitool lan set 1 netmask 255.255.255.0       //..BMC ...
+ipmitool lan set 1 defgw ipaddr 192.168.2.200   //.. BMC ...
+3...BMC
+ipmitool mc reset cold                      //....BMC......
+..
+ipmitool mc reset warm                     //....BMC..........
+snmp
+nagios-monitroing-plugins
+http://www.thomas-krenn.com/de/wiki/IPMI_Sensor_Monitoring_Plugin
+ipmitool -H 192.168.10.18 -U ADMIN -P ADMIN sdr

@@ -1,0 +1,1 @@
+ldapsearch -x -W -D "cn=administrator,cn=users,,dc=hdtr,dc=com" -b "cn=administrator,cn=users,dc=hdtr,dc=com" -h ad.hdtr.com

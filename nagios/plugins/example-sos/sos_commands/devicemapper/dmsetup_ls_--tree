@@ -1,0 +1,7 @@
+VolGroup-lv_swap (253:1)
+ └─ (8:2)
+VolGroup-lv_root (253:0)
+ └─ (8:2)
+VolGroup-lv_home (253:2)
+ └─ (8:2)
+

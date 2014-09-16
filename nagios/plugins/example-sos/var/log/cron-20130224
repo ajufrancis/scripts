@@ -1,0 +1,240 @@
+Feb 21 17:09:40 localhost crond[1247]: (CRON) STARTUP (1.4.4)
+Feb 21 17:09:41 localhost crond[1247]: (CRON) INFO (running with inotify support)
+Feb 21 17:18:23 localhost crond[1101]: (CRON) STARTUP (1.4.4)
+Feb 21 17:18:23 localhost crond[1101]: (CRON) INFO (running with inotify support)
+Feb 21 18:01:01 localhost CROND[1416]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 21 18:01:01 localhost run-parts(/etc/cron.hourly)[1416]: starting 0anacron
+Feb 21 18:01:01 localhost anacron[1425]: Anacron started on 2013-02-21
+Feb 21 18:01:01 localhost anacron[1425]: Will run job `cron.daily' in 16 min.
+Feb 21 18:01:01 localhost anacron[1425]: Will run job `cron.weekly' in 36 min.
+Feb 21 18:01:01 localhost anacron[1425]: Will run job `cron.monthly' in 56 min.
+Feb 21 18:01:01 localhost anacron[1425]: Jobs will be executed sequentially
+Feb 21 18:01:01 localhost run-parts(/etc/cron.hourly)[1427]: finished 0anacron
+Feb 21 18:17:01 localhost anacron[1425]: Job `cron.daily' started
+Feb 21 18:17:01 localhost run-parts(/etc/cron.daily)[1539]: starting logrotate
+Feb 21 18:17:01 localhost run-parts(/etc/cron.daily)[1547]: finished logrotate
+Feb 21 18:17:01 localhost anacron[1425]: Job `cron.daily' terminated
+Feb 21 18:37:01 localhost anacron[1425]: Job `cron.weekly' started
+Feb 21 18:37:01 localhost anacron[1425]: Job `cron.weekly' terminated
+Feb 21 18:57:01 localhost anacron[1425]: Job `cron.monthly' started
+Feb 21 18:57:01 localhost anacron[1425]: Job `cron.monthly' terminated
+Feb 21 18:57:01 localhost anacron[1425]: Normal exit (3 jobs run)
+Feb 21 19:01:01 localhost CROND[1846]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 21 19:01:01 localhost run-parts(/etc/cron.hourly)[1846]: starting 0anacron
+Feb 21 19:01:01 localhost run-parts(/etc/cron.hourly)[1855]: finished 0anacron
+Feb 21 20:01:01 localhost CROND[2269]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 21 20:01:01 localhost run-parts(/etc/cron.hourly)[2269]: starting 0anacron
+Feb 21 20:01:01 localhost run-parts(/etc/cron.hourly)[2278]: finished 0anacron
+Feb 21 21:01:01 localhost CROND[2686]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 21 21:01:01 localhost run-parts(/etc/cron.hourly)[2686]: starting 0anacron
+Feb 21 21:01:01 localhost run-parts(/etc/cron.hourly)[2695]: finished 0anacron
+Feb 21 22:01:01 localhost CROND[3109]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 21 22:01:01 localhost run-parts(/etc/cron.hourly)[3109]: starting 0anacron
+Feb 21 22:01:01 localhost run-parts(/etc/cron.hourly)[3118]: finished 0anacron
+Feb 21 23:01:01 localhost CROND[3526]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 21 23:01:01 localhost run-parts(/etc/cron.hourly)[3526]: starting 0anacron
+Feb 21 23:01:01 localhost run-parts(/etc/cron.hourly)[3535]: finished 0anacron
+Feb 22 00:01:01 localhost CROND[3943]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 00:01:01 localhost run-parts(/etc/cron.hourly)[3943]: starting 0anacron
+Feb 22 00:01:01 localhost anacron[3952]: Anacron started on 2013-02-22
+Feb 22 00:01:01 localhost anacron[3952]: Jobs will be executed sequentially
+Feb 22 00:01:01 localhost anacron[3952]: Normal exit (0 jobs run)
+Feb 22 00:01:01 localhost run-parts(/etc/cron.hourly)[3954]: finished 0anacron
+Feb 22 01:01:01 localhost CROND[4368]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 01:01:01 localhost run-parts(/etc/cron.hourly)[4368]: starting 0anacron
+Feb 22 01:01:01 localhost anacron[4377]: Anacron started on 2013-02-22
+Feb 22 01:01:01 localhost anacron[4377]: Jobs will be executed sequentially
+Feb 22 01:01:01 localhost anacron[4377]: Normal exit (0 jobs run)
+Feb 22 01:01:01 localhost run-parts(/etc/cron.hourly)[4379]: finished 0anacron
+Feb 22 02:01:01 localhost CROND[4787]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 02:01:01 localhost run-parts(/etc/cron.hourly)[4787]: starting 0anacron
+Feb 22 02:01:01 localhost anacron[4796]: Anacron started on 2013-02-22
+Feb 22 02:01:01 localhost anacron[4796]: Jobs will be executed sequentially
+Feb 22 02:01:01 localhost anacron[4796]: Normal exit (0 jobs run)
+Feb 22 02:01:01 localhost run-parts(/etc/cron.hourly)[4798]: finished 0anacron
+Feb 22 03:01:01 localhost CROND[5205]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 03:01:01 localhost run-parts(/etc/cron.hourly)[5205]: starting 0anacron
+Feb 22 03:01:01 localhost anacron[5214]: Anacron started on 2013-02-22
+Feb 22 03:01:01 localhost anacron[5214]: Will run job `cron.daily' in 33 min.
+Feb 22 03:01:01 localhost anacron[5214]: Jobs will be executed sequentially
+Feb 22 03:01:01 localhost run-parts(/etc/cron.hourly)[5216]: finished 0anacron
+Feb 22 03:34:01 localhost anacron[5214]: Job `cron.daily' started
+Feb 22 03:34:01 localhost run-parts(/etc/cron.daily)[5441]: starting logrotate
+Feb 22 03:34:01 localhost run-parts(/etc/cron.daily)[5450]: finished logrotate
+Feb 22 03:34:01 localhost anacron[5214]: Job `cron.daily' terminated
+Feb 22 03:34:01 localhost anacron[5214]: Normal exit (1 job run)
+Feb 22 04:01:01 localhost CROND[5640]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 04:01:01 localhost run-parts(/etc/cron.hourly)[5640]: starting 0anacron
+Feb 22 04:01:01 localhost run-parts(/etc/cron.hourly)[5649]: finished 0anacron
+Feb 22 05:01:01 localhost CROND[6057]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 05:01:01 localhost run-parts(/etc/cron.hourly)[6057]: starting 0anacron
+Feb 22 05:01:01 localhost run-parts(/etc/cron.hourly)[6066]: finished 0anacron
+Feb 22 06:01:01 localhost CROND[6473]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 06:01:01 localhost run-parts(/etc/cron.hourly)[6473]: starting 0anacron
+Feb 22 06:01:01 localhost run-parts(/etc/cron.hourly)[6482]: finished 0anacron
+Feb 22 07:01:01 localhost CROND[6897]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 07:01:01 localhost run-parts(/etc/cron.hourly)[6897]: starting 0anacron
+Feb 22 07:01:01 localhost run-parts(/etc/cron.hourly)[6906]: finished 0anacron
+Feb 22 08:01:01 localhost CROND[7313]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 08:01:01 localhost run-parts(/etc/cron.hourly)[7313]: starting 0anacron
+Feb 22 08:01:01 localhost run-parts(/etc/cron.hourly)[7322]: finished 0anacron
+Feb 22 09:01:01 localhost CROND[7737]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 09:01:01 localhost run-parts(/etc/cron.hourly)[7737]: starting 0anacron
+Feb 22 09:01:01 localhost run-parts(/etc/cron.hourly)[7746]: finished 0anacron
+Feb 22 10:01:01 localhost CROND[8154]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 10:01:01 localhost run-parts(/etc/cron.hourly)[8154]: starting 0anacron
+Feb 22 10:01:01 localhost run-parts(/etc/cron.hourly)[8163]: finished 0anacron
+Feb 22 11:01:01 localhost CROND[8570]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 11:01:01 localhost run-parts(/etc/cron.hourly)[8570]: starting 0anacron
+Feb 22 11:01:01 localhost run-parts(/etc/cron.hourly)[8579]: finished 0anacron
+Feb 22 12:01:01 localhost CROND[8994]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 12:01:01 localhost run-parts(/etc/cron.hourly)[8994]: starting 0anacron
+Feb 22 12:01:01 localhost run-parts(/etc/cron.hourly)[9003]: finished 0anacron
+Feb 22 13:01:01 localhost CROND[9410]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 13:01:01 localhost run-parts(/etc/cron.hourly)[9410]: starting 0anacron
+Feb 22 13:01:01 localhost run-parts(/etc/cron.hourly)[9419]: finished 0anacron
+Feb 22 14:01:01 localhost CROND[9827]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 14:01:01 localhost run-parts(/etc/cron.hourly)[9827]: starting 0anacron
+Feb 22 14:01:01 localhost run-parts(/etc/cron.hourly)[9836]: finished 0anacron
+Feb 22 15:01:01 localhost CROND[10251]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 15:01:01 localhost run-parts(/etc/cron.hourly)[10251]: starting 0anacron
+Feb 22 15:01:01 localhost run-parts(/etc/cron.hourly)[10260]: finished 0anacron
+Feb 22 16:01:01 localhost CROND[10667]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 16:01:01 localhost run-parts(/etc/cron.hourly)[10667]: starting 0anacron
+Feb 22 16:01:01 localhost run-parts(/etc/cron.hourly)[10676]: finished 0anacron
+Feb 22 17:01:01 localhost CROND[11084]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 17:01:01 localhost run-parts(/etc/cron.hourly)[11084]: starting 0anacron
+Feb 22 17:01:01 localhost run-parts(/etc/cron.hourly)[11093]: finished 0anacron
+Feb 22 18:01:01 localhost CROND[11507]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 18:01:01 localhost run-parts(/etc/cron.hourly)[11507]: starting 0anacron
+Feb 22 18:01:01 localhost run-parts(/etc/cron.hourly)[11516]: finished 0anacron
+Feb 22 19:01:01 localhost CROND[11924]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 19:01:01 localhost run-parts(/etc/cron.hourly)[11924]: starting 0anacron
+Feb 22 19:01:01 localhost run-parts(/etc/cron.hourly)[11933]: finished 0anacron
+Feb 22 20:01:01 localhost CROND[12348]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 20:01:01 localhost run-parts(/etc/cron.hourly)[12348]: starting 0anacron
+Feb 22 20:01:01 localhost run-parts(/etc/cron.hourly)[12357]: finished 0anacron
+Feb 22 21:01:01 localhost CROND[12764]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 21:01:01 localhost run-parts(/etc/cron.hourly)[12764]: starting 0anacron
+Feb 22 21:01:01 localhost run-parts(/etc/cron.hourly)[12773]: finished 0anacron
+Feb 22 22:01:01 localhost CROND[13181]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 22:01:01 localhost run-parts(/etc/cron.hourly)[13181]: starting 0anacron
+Feb 22 22:01:01 localhost run-parts(/etc/cron.hourly)[13190]: finished 0anacron
+Feb 22 23:01:01 localhost CROND[13604]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 22 23:01:01 localhost run-parts(/etc/cron.hourly)[13604]: starting 0anacron
+Feb 22 23:01:01 localhost run-parts(/etc/cron.hourly)[13613]: finished 0anacron
+Feb 23 00:01:01 localhost CROND[14021]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 00:01:01 localhost run-parts(/etc/cron.hourly)[14021]: starting 0anacron
+Feb 23 00:01:01 localhost anacron[14030]: Anacron started on 2013-02-23
+Feb 23 00:01:01 localhost anacron[14030]: Jobs will be executed sequentially
+Feb 23 00:01:01 localhost anacron[14030]: Normal exit (0 jobs run)
+Feb 23 00:01:01 localhost run-parts(/etc/cron.hourly)[14032]: finished 0anacron
+Feb 23 01:01:01 localhost CROND[14440]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 01:01:01 localhost run-parts(/etc/cron.hourly)[14440]: starting 0anacron
+Feb 23 01:01:01 localhost anacron[14449]: Anacron started on 2013-02-23
+Feb 23 01:01:01 localhost anacron[14449]: Jobs will be executed sequentially
+Feb 23 01:01:01 localhost anacron[14449]: Normal exit (0 jobs run)
+Feb 23 01:01:01 localhost run-parts(/etc/cron.hourly)[14451]: finished 0anacron
+Feb 23 02:01:01 localhost CROND[14865]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 02:01:01 localhost run-parts(/etc/cron.hourly)[14865]: starting 0anacron
+Feb 23 02:01:01 localhost anacron[14874]: Anacron started on 2013-02-23
+Feb 23 02:01:01 localhost anacron[14874]: Jobs will be executed sequentially
+Feb 23 02:01:01 localhost anacron[14874]: Normal exit (0 jobs run)
+Feb 23 02:01:01 localhost run-parts(/etc/cron.hourly)[14876]: finished 0anacron
+Feb 23 03:01:01 localhost CROND[15284]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 03:01:01 localhost run-parts(/etc/cron.hourly)[15284]: starting 0anacron
+Feb 23 03:01:01 localhost anacron[15293]: Anacron started on 2013-02-23
+Feb 23 03:01:01 localhost anacron[15293]: Will run job `cron.daily' in 39 min.
+Feb 23 03:01:01 localhost anacron[15293]: Jobs will be executed sequentially
+Feb 23 03:01:01 localhost run-parts(/etc/cron.hourly)[15295]: finished 0anacron
+Feb 23 03:40:01 localhost anacron[15293]: Job `cron.daily' started
+Feb 23 03:40:01 localhost run-parts(/etc/cron.daily)[15561]: starting logrotate
+Feb 23 03:40:01 localhost run-parts(/etc/cron.daily)[15569]: finished logrotate
+Feb 23 03:40:01 localhost anacron[15293]: Job `cron.daily' terminated
+Feb 23 03:40:01 localhost anacron[15293]: Normal exit (1 job run)
+Feb 23 04:01:01 localhost CROND[15710]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 04:01:01 localhost run-parts(/etc/cron.hourly)[15710]: starting 0anacron
+Feb 23 04:01:01 localhost run-parts(/etc/cron.hourly)[15719]: finished 0anacron
+Feb 23 05:01:01 localhost CROND[16134]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 05:01:01 localhost run-parts(/etc/cron.hourly)[16134]: starting 0anacron
+Feb 23 05:01:01 localhost run-parts(/etc/cron.hourly)[16143]: finished 0anacron
+Feb 23 06:01:01 localhost CROND[16551]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 06:01:01 localhost run-parts(/etc/cron.hourly)[16551]: starting 0anacron
+Feb 23 06:01:01 localhost run-parts(/etc/cron.hourly)[16560]: finished 0anacron
+Feb 23 07:01:01 localhost CROND[16968]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 07:01:01 localhost run-parts(/etc/cron.hourly)[16968]: starting 0anacron
+Feb 23 07:01:01 localhost run-parts(/etc/cron.hourly)[16977]: finished 0anacron
+Feb 23 08:01:01 localhost CROND[17392]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 08:01:01 localhost run-parts(/etc/cron.hourly)[17392]: starting 0anacron
+Feb 23 08:01:01 localhost run-parts(/etc/cron.hourly)[17401]: finished 0anacron
+Feb 23 09:01:01 localhost CROND[17808]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 09:01:01 localhost run-parts(/etc/cron.hourly)[17808]: starting 0anacron
+Feb 23 09:01:01 localhost run-parts(/etc/cron.hourly)[17817]: finished 0anacron
+Feb 23 10:01:01 localhost CROND[18232]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 10:01:01 localhost run-parts(/etc/cron.hourly)[18232]: starting 0anacron
+Feb 23 10:01:01 localhost run-parts(/etc/cron.hourly)[18241]: finished 0anacron
+Feb 23 11:01:01 localhost CROND[18649]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 11:01:01 localhost run-parts(/etc/cron.hourly)[18649]: starting 0anacron
+Feb 23 11:01:01 localhost run-parts(/etc/cron.hourly)[18658]: finished 0anacron
+Feb 23 12:01:01 localhost CROND[19065]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 12:01:01 localhost run-parts(/etc/cron.hourly)[19065]: starting 0anacron
+Feb 23 12:01:01 localhost run-parts(/etc/cron.hourly)[19074]: finished 0anacron
+Feb 23 13:01:01 localhost CROND[19489]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 13:01:01 localhost run-parts(/etc/cron.hourly)[19489]: starting 0anacron
+Feb 23 13:01:01 localhost run-parts(/etc/cron.hourly)[19498]: finished 0anacron
+Feb 23 14:01:01 localhost CROND[19905]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 14:01:01 localhost run-parts(/etc/cron.hourly)[19905]: starting 0anacron
+Feb 23 14:01:01 localhost run-parts(/etc/cron.hourly)[19914]: finished 0anacron
+Feb 23 15:01:01 localhost CROND[20322]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 15:01:01 localhost run-parts(/etc/cron.hourly)[20322]: starting 0anacron
+Feb 23 15:01:01 localhost run-parts(/etc/cron.hourly)[20331]: finished 0anacron
+Feb 23 16:01:01 localhost CROND[20746]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 16:01:01 localhost run-parts(/etc/cron.hourly)[20746]: starting 0anacron
+Feb 23 16:01:01 localhost run-parts(/etc/cron.hourly)[20755]: finished 0anacron
+Feb 23 17:01:01 localhost CROND[21162]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 17:01:01 localhost run-parts(/etc/cron.hourly)[21162]: starting 0anacron
+Feb 23 17:01:01 localhost run-parts(/etc/cron.hourly)[21171]: finished 0anacron
+Feb 23 18:01:01 localhost CROND[21580]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 18:01:01 localhost run-parts(/etc/cron.hourly)[21580]: starting 0anacron
+Feb 23 18:01:01 localhost run-parts(/etc/cron.hourly)[21589]: finished 0anacron
+Feb 23 19:01:01 localhost CROND[22003]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 19:01:01 localhost run-parts(/etc/cron.hourly)[22003]: starting 0anacron
+Feb 23 19:01:01 localhost run-parts(/etc/cron.hourly)[22012]: finished 0anacron
+Feb 23 20:01:01 localhost CROND[22420]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 20:01:01 localhost run-parts(/etc/cron.hourly)[22420]: starting 0anacron
+Feb 23 20:01:01 localhost run-parts(/etc/cron.hourly)[22429]: finished 0anacron
+Feb 23 21:01:01 localhost CROND[22844]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 21:01:01 localhost run-parts(/etc/cron.hourly)[22844]: starting 0anacron
+Feb 23 21:01:01 localhost run-parts(/etc/cron.hourly)[22853]: finished 0anacron
+Feb 23 22:01:01 localhost CROND[23260]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 22:01:01 localhost run-parts(/etc/cron.hourly)[23260]: starting 0anacron
+Feb 23 22:01:01 localhost run-parts(/etc/cron.hourly)[23269]: finished 0anacron
+Feb 23 23:01:01 localhost CROND[23677]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 23 23:01:01 localhost run-parts(/etc/cron.hourly)[23677]: starting 0anacron
+Feb 23 23:01:01 localhost run-parts(/etc/cron.hourly)[23686]: finished 0anacron
+Feb 24 00:01:01 localhost CROND[24100]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 24 00:01:01 localhost run-parts(/etc/cron.hourly)[24100]: starting 0anacron
+Feb 24 00:01:01 localhost anacron[24109]: Anacron started on 2013-02-24
+Feb 24 00:01:01 localhost anacron[24109]: Jobs will be executed sequentially
+Feb 24 00:01:01 localhost anacron[24109]: Normal exit (0 jobs run)
+Feb 24 00:01:01 localhost run-parts(/etc/cron.hourly)[24111]: finished 0anacron
+Feb 24 01:01:01 localhost CROND[24519]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 24 01:01:01 localhost run-parts(/etc/cron.hourly)[24519]: starting 0anacron
+Feb 24 01:01:01 localhost anacron[24528]: Anacron started on 2013-02-24
+Feb 24 01:01:01 localhost anacron[24528]: Jobs will be executed sequentially
+Feb 24 01:01:01 localhost anacron[24528]: Normal exit (0 jobs run)
+Feb 24 01:01:01 localhost run-parts(/etc/cron.hourly)[24530]: finished 0anacron
+Feb 24 02:01:01 localhost CROND[24938]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 24 02:01:01 localhost run-parts(/etc/cron.hourly)[24938]: starting 0anacron
+Feb 24 02:01:01 localhost anacron[24947]: Anacron started on 2013-02-24
+Feb 24 02:01:01 localhost anacron[24947]: Jobs will be executed sequentially
+Feb 24 02:01:01 localhost anacron[24947]: Normal exit (0 jobs run)
+Feb 24 02:01:01 localhost run-parts(/etc/cron.hourly)[24949]: finished 0anacron
+Feb 24 03:01:01 localhost CROND[25363]: (root) CMD (run-parts /etc/cron.hourly)
+Feb 24 03:01:01 localhost run-parts(/etc/cron.hourly)[25363]: starting 0anacron
+Feb 24 03:01:01 localhost anacron[25372]: Anacron started on 2013-02-24
+Feb 24 03:01:01 localhost anacron[25372]: Will run job `cron.daily' in 44 min.
+Feb 24 03:01:01 localhost anacron[25372]: Jobs will be executed sequentially
+Feb 24 03:01:01 localhost run-parts(/etc/cron.hourly)[25374]: finished 0anacron
+Feb 24 03:45:01 localhost anacron[25372]: Job `cron.daily' started
+Feb 24 03:45:01 localhost run-parts(/etc/cron.daily)[25676]: starting logrotate

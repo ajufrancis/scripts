@@ -1,0 +1,81 @@
+uuid ( RO)                          : 22411c00-6163-0886-2c89-7540b97bf787
+                    name-label ( RW): i-4-76-VM
+              name-description ( RW): Template that allows VM installation from Xen-aware EL-based distros. To use this template from the CLI, install your VM using vm-install, then set other-config-install-repository to the path to your network repository, e.g. http://<server>/<path> or nfs:server:/<path>
+                  user-version ( RW): 1
+                 is-a-template ( RW): false
+                 is-a-snapshot ( RO): false
+                   snapshot-of ( RO): <not in database>
+                     snapshots ( RO): 
+                 snapshot-time ( RO): 19700101T00:00:00Z
+                 snapshot-info ( RO): 
+                        parent ( RO): <not in database>
+                      children ( RO): 
+             is-control-domain ( RO): false
+                   power-state ( RO): running
+                 memory-actual ( RO): 4294967296
+                 memory-target ( RO): 4294967296
+               memory-overhead ( RO): 36700160
+             memory-static-max ( RW): 4294967296
+            memory-dynamic-max ( RW): 4294967296
+            memory-dynamic-min ( RW): 4294967296
+             memory-static-min ( RW): 4294967296
+              suspend-VDI-uuid ( RW): <not in database>
+               suspend-SR-uuid ( RW): <not in database>
+                  VCPUs-params (MRW): weight: 253; cap: 0
+                     VCPUs-max ( RW): 2
+              VCPUs-at-startup ( RW): 2
+        actions-after-shutdown ( RW): Destroy
+          actions-after-reboot ( RW): Restart
+           actions-after-crash ( RW): Destroy
+                 console-uuids (SRO): d432439e-abce-70d7-bf37-2189e9171c06; c52d19b4-bd77-5821-00df-d51a52c73d43
+                      platform (MRW): viridian: true; acpi: true; apic: true; pae: true; nx: false
+            allowed-operations (SRO): changing_dynamic_range; pool_migrate; changing_VCPUs_live; suspend; hard_reboot; hard_shutdown; clean_reboot; clean_shutdown; pause; checkpoint; snapshot
+            current-operations (SRO): 
+            blocked-operations (MRW): 
+           allowed-VBD-devices (SRO): 1; 2; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15
+           allowed-VIF-devices (SRO): 1; 2; 3; 4; 5; 6
+                possible-hosts ( RO): 1930bd72-3a2a-4a67-9752-467f51a56302; 9f3574d5-b38e-472e-929f-e2ee557269d1
+               HVM-boot-policy ( RW): 
+               HVM-boot-params (MRW): 
+         HVM-shadow-multiplier ( RW): 1.000
+                     PV-kernel ( RW): 
+                    PV-ramdisk ( RW): 
+                       PV-args ( RW): graphical utf8
+                PV-legacy-args ( RW): 
+                 PV-bootloader ( RW): pygrub
+            PV-bootloader-args ( RW): 
+           last-boot-CPU-flags ( RO): features: 17bee3ff-bfebfbff-00000001-2c100800; vendor: GenuineIntel
+              last-boot-record ( RO): '('struct' ('uuid' '22411c00-6163-0886-2c89-7540b97bf787') ('allowed_operations' ('array')) ('current_operations' ('struct' ('OpaqueRef:20719c83-7ff0-f81a-8a00-5d0bad0166a9' 'start_on'))) ('power_state' 'Halted') ('name_label' 'i-4-76-VM') ('name_description' 'Template that allows VM installation from Xen-aware EL-based distros. To use this template from the CLI, install your VM using vm-install, then set other-config-install-repository to the path to your network repository, e.g. http://<server>/<path> or nfs:server:/<path>') ('user_version' '1') ('is_a_template' ('boolean' '0')) ('suspend_VDI' 'OpaqueRef:NULL') ('resident_on' 'OpaqueRef:NULL') ('affinity' 'OpaqueRef:7a404921-790e-6412-f69e-45ef5cad1182') ('memory_overhead' '36700160') ('memory_target' '4294967296') ('memory_static_max' '4294967296') ('memory_dynamic_max' '4294967296') ('memory_dynamic_min' '4294967296') ('memory_static_min' '4294967296') ('VCPUs_params' ('struct' ('weight' '253') ('cap' '0'))) ('VCPUs_max' '2') ('VCPUs_at_startup' '2') ('actions_after_shutdown' 'destroy') ('actions_after_reboot' 'restart') ('actions_after_crash' 'destroy') ('consoles' ('array')) ('VIFs' ('array' 'OpaqueRef:3425c757-eb37-e6c3-d0c9-4c6b60c12ca2')) ('VBDs' ('array' 'OpaqueRef:f6fe26ee-7813-e403-d6d7-a710d17f93d0' 'OpaqueRef:d846c590-5252-f686-905f-649c444e0c0b')) ('crash_dumps' ('array')) ('VTPMs' ('array')) ('PV_bootloader' 'pygrub') ('PV_kernel' '') ('PV_ramdisk' '') ('PV_args' 'graphical utf8') ('PV_bootloader_args' '') ('PV_legacy_args' '') ('HVM_boot_policy' '') ('HVM_boot_params' ('struct')) ('HVM_shadow_multiplier' ('double' '1')) ('platform' ('struct' ('viridian' 'true') ('acpi' 'true') ('apic' 'true') ('pae' 'true') ('nx' 'false'))) ('PCI_bus' '') ('other_config' ('struct' ('mac_seed' 'b5b448e8-7254-3ddb-f363-1963328ba40f') ('install-methods' 'cdrom,nfs,http,ftp') ('install-distro' 'rhlike') ('rhel6' 'true') ('linux_template' 'true'))) ('domid' '-1') ('domarch' '') ('last_boot_CPU_flags' ('struct')) ('is_control_domain' ('boolean' '0')) ('metrics' 'OpaqueRef:f89f44df-b3a9-0094-772d-b49749cf4502') ('guest_metrics' 'OpaqueRef:NULL') ('last_booted_record' '') ('recommendations' '<restrictions><restriction field=\"memory-static-max\" max=\"34359738368\" /><restriction field=\"vcpus-max\" max=\"16\" /><restriction property=\"number-of-vbds\" max=\"7\" /><restriction property=\"number-of-vifs\" max=\"7\" /></restrictions>') ('xenstore_data' ('struct')) ('ha_always_run' ('boolean' '0')) ('ha_restart_priority' '') ('is_a_snapshot' ('boolean' '0')) ('snapshot_of' 'OpaqueRef:NULL') ('snapshots' ('array')) ('snapshot_time' ('dateTime.iso8601' '19700101T00:00:00Z')) ('transportable_snapshot_id' '') ('blobs' ('struct')) ('tags' ('array')) ('blocked_operations' ('struct')) ('snapshot_info' ('struct')) ('snapshot_metadata' '') ('parent' 'OpaqueRef:NULL') ('children' ('array')) ('bios_strings' ('struct')) ('protection_policy' 'OpaqueRef:NULL') ('is_snapshot_from_vmpp' ('boolean' '0')) ('appliance' 'OpaqueRef:NULL') ('start_delay' '0') ('shutdown_delay' '0') ('order' '0') ('VGPUs' ('array')) ('attached_PCIs' ('array')) ('suspend_SR' 'OpaqueRef:NULL') ('version' '0'))'
+                   resident-on ( RO): 9f3574d5-b38e-472e-929f-e2ee557269d1
+                      affinity ( RW): 9f3574d5-b38e-472e-929f-e2ee557269d1
+                  other-config (MRW): mac_seed: b5b448e8-7254-3ddb-f363-1963328ba40f; install-methods: cdrom,nfs,http,ftp; install-distro: rhlike; rhel6: true; linux_template: true
+                        dom-id ( RO): 769
+               recommendations ( RO): <restrictions><restriction field="memory-static-max" max="34359738368" /><restriction field="vcpus-max" max="16" /><restriction property="number-of-vbds" max="7" /><restriction property="number-of-vifs" max="7" /></restrictions>
+                 xenstore-data (MRW): 
+    ha-always-run ( RW) [DEPRECATED]: false
+           ha-restart-priority ( RW): 
+                         blobs ( RO): 
+                    start-time ( RO): 20140214T03:28:09Z
+                  install-time ( RO): 19700101T00:00:00Z
+                  VCPUs-number ( RO): 2
+             VCPUs-utilisation (MRO): 0: 0.000; 1: 0.001
+                    os-version (MRO): name: CentOS release 6.3 (Final); uname: 2.6.32-279.el6.x86_64; distro: centos; major: 6; minor: 3
+            PV-drivers-version (MRO): major: 6; minor: 0; micro: 2; build: 54078
+         PV-drivers-up-to-date ( RO): true
+                        memory (MRO): 
+                         disks (MRO): 
+                      networks (MRO): 0/ip: 10.1.1.18
+                         other (MRO): platform-feature-multiprocessor-suspend: 1; feature-balloon: 1
+                          live ( RO): true
+    guest-metrics-last-updated ( RO): 20140214T03:28:37Z
+                   cooperative ( RO): true
+             protection-policy ( RW): <not in database>
+         is-snapshot-from-vmpp ( RO): false
+                          tags (SRW): 
+                     appliance ( RW): <not in database>
+                   start-delay ( RW): 0
+                shutdown-delay ( RW): 0
+                         order ( RW): 0
+                       version ( RO): 0
+
+

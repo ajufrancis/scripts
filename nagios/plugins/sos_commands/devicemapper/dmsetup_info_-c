@@ -1,0 +1,5 @@
+Name             Maj Min Stat Open Targ Event  UUID                                                                
+VolGroup-lv_swap 253   1 L--w    1    1      0 LVM-Bdy6odGMJufB9lMzpdVAFmcXWda8Rb3pCrmAVIGf993aQu1tYRIws0uUdQahTKDG
+VolGroup-lv_root 253   0 L--w    1    1      0 LVM-Bdy6odGMJufB9lMzpdVAFmcXWda8Rb3pNA1LONU4kGpmuhIW8WS1R7YTSUMHYzVI
+VolGroup-lv_home 253   2 L--w    1    1      0 LVM-Bdy6odGMJufB9lMzpdVAFmcXWda8Rb3p3JNyHLVeuRJsfiNktLWnu3LpDLLeoHaP
+

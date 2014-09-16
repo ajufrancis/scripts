@@ -1,0 +1,665 @@
+#! /usr/bin/perl -w
+#
+# check_netapp - nagios plugin 
+#
+# Copyright (C) 2009 Guenther Mair,
+# Derived from check_ifoperstatus by Christoph Kron.
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+#
+#
+# Report bugs to:  guenther.mair@hoslo.ch
+#
+# $Id: check_netapp 19 2009-07-14 19:16:18Z gunny $
+#
+
+use POSIX;
+use strict;
+use lib "/usr/local/nagios/libexec"  ;
+use utils qw($TIMEOUT %ERRORS &print_revision &support);
+use Storable;
+
+use Net::SNMP;
+use Getopt::Long;
+&Getopt::Long::config('bundling');
+
+my $PROGNAME = 'check_netapp';
+my $REVISION = '$Rev: 19 $';
+sub print_help();
+sub usage();
+sub process_arguments();
+sub bailout;
+sub raidPDiskName;
+sub getValue;
+
+my $DEBUG = 0;
+
+my $timeout;
+my $hostname;
+my $session;
+my $error;
+my $response;
+my $sub_response;
+my $opt_h;
+my $opt_V;
+my $short;
+my $checks;
+my $key;
+my $value;
+my $lastc;
+my $name;
+my $status;
+my $answer = '';
+my $snmpkey = 0;
+my $community = "public";
+my $snmp_version = 1;
+my $maxmsgsize = 1472 ; # Net::SNMP default is 1472
+my ($seclevel, $authproto, $secname, $authpass, $privpass, $auth, $priv, $context);
+my $port = 161;
+my $state = 'OK';
+my $length = 0;
+
+my %raidPStates = (
+  '1','active',
+  '2','reconstructionInProgress',
+  '3','parityReconstructionInProgress',
+  '4','parityVerificationInProgress',
+  '5','scrubbingInProgress',
+  '6','failed');
+
+my $productModel = '';
+my $productModelOID = '1.3.6.1.4.1.789.1.1.5.0';
+my $fsOverallStatus = '';
+my $fsOverallStatusOID = '1.3.6.1.4.1.789.1.5.7.1.0';
+my $fsMaxUsedBytesPerCent = '';
+my $fsMaxUsedBytesPerCentOID = '1.3.6.1.4.1.789.1.5.7.3.0';
+my $raidPStatus = '';
+my $raidPStatusOIDTable = '1.3.6.1.4.1.789.1.6.10.1.2';
+my $raidPDiskNameOIDTable = '1.3.6.1.4.1.789.1.6.10.1.10';
+my $enclPowerSuppliesStatus = '';
+my $enclPowerSuppliesFailedOIDTable = '1.3.6.1.4.1.789.1.21.1.2.1.15';
+my $enclFansStatus = '';
+my $enclFansFailedOIDTable = '1.3.6.1.4.1.789.1.21.1.2.1.18';
+my $enclElectronicsStatus = '';
+my $enclElectronicsFailedOIDTable = '1.3.6.1.4.1.789.1.21.1.2.1.33';
+my $enclTempSensorsOverTempStatus = '';
+my $enclTempSensorsOverTempWarnOIDTable = '1.3.6.1.4.1.789.1.21.1.2.1.22';
+my $enclTempSensorsOverTempFailOIDTable = '1.3.6.1.4.1.789.1.21.1.2.1.21';
+
+## qrV2Table
+my $qrV2TableMessageHQ = '';
+my $qrV2TableMessageSQ = '';
+my $qrV2TableMessageTH = '';
+my %qrKBytesUsed;
+my $qrV2HighKBytesUsedOIDTable = '1.3.6.1.4.1.789.1.4.6.1.4';
+my $qrV2LowKBytesUsedOIDTable = '1.3.6.1.4.1.789.1.4.6.1.5';
+
+my %qrKBHardLimit;
+my $qrV2QuotaUnlimitedOIDTable = '1.3.6.1.4.1.789.1.4.6.1.6';
+my $qrV2HighKBytesLimitOIDTable = '1.3.6.1.4.1.789.1.4.6.1.7';
+my $qrV2LowKBytesLimitOIDTable = '1.3.6.1.4.1.789.1.4.6.1.8';
+
+my %qrPathNames;
+my $qrV2PathNameOIDTable = '1.3.6.1.4.1.789.1.4.6.1.12';
+
+my %qrKBThreshold;
+my $qrV2ThresholdUnlimitedOIDTable = '1.3.6.1.4.1.789.1.4.6.1.17';
+my $qrV2HighKBytesThresholdOIDTable = '1.3.6.1.4.1.789.1.4.6.1.18';
+my $qrV2LowKBytesThresholdOIDTable = '1.3.6.1.4.1.789.1.4.6.1.19';
+
+my %qrKBSoftLimit;
+my $qrV2SoftQuotaUnlimitedOIDTable = '1.3.6.1.4.1.789.1.4.6.1.20';
+my $qrV2HighKBytesSoftLimitOIDTable = '1.3.6.1.4.1.789.1.4.6.1.21';
+my $qrV2LowKBytesSoftLimitOIDTable = '1.3.6.1.4.1.789.1.4.6.1.22';
+
+
+## Validate Arguments
+
+process_arguments();
+
+## Just in case of problems, let's not hang Nagios
+
+$SIG{'ALRM'} = sub {
+     print ("ERROR: No snmp response from $hostname (alarm)\n");
+     exit $ERRORS{"UNKNOWN"};
+};
+
+alarm($timeout);
+
+
+
+## Main function
+
+# get product model name
+$response = $session->get_request($productModelOID);
+bailout('unable to get the product model name') unless defined $response->{$productModelOID};
+$productModel = $response->{$productModelOID};
+
+# overall fs space status + filled fs space
+if ( ($checks & 1) > 0 ) {
+
+  # percentage of used fs space
+  $response = $session->get_request($fsMaxUsedBytesPerCentOID);
+  bailout('unable to get fsMaxUsedBytesPerCent') unless defined $response->{$fsMaxUsedBytesPerCentOID};
+  $fsMaxUsedBytesPerCent = $response->{$fsMaxUsedBytesPerCentOID};
+
+  $fsOverallStatus = " fsOverallStatus ";
+
+  # overall fs space status
+  $response = $session->get_request($fsOverallStatusOID);
+  bailout('unable to get fsOverallStatus') unless defined $response->{$fsOverallStatusOID};
+  if ($response->{$fsOverallStatusOID} == 1) {
+    $fsOverallStatus .= "OK";
+  } elsif ($response->{$fsOverallStatusOID} == 2) {
+    $fsOverallStatus .= "nearlyFull";
+    $state = "WARNING" if ($state eq "OK");
+  } elsif ($response->{$fsOverallStatusOID} == 3) {
+    $fsOverallStatus .= "full";
+    $state = "CRITICAL";
+  } else {
+    bailout('got unexpected response for fsOverallStatus: ' . $response->{$fsOverallStatusOID});
+  }
+
+  if ( $short == 0 ) {
+    $fsOverallStatus .= " (" . $fsMaxUsedBytesPerCent . "%)";
+  }
+}
+
+# check RAID states
+if ( ($checks & 2) > 0 ) {
+  undef $response;
+  if (!defined ($response = $session->get_table($raidPStatusOIDTable))) {
+    bailout($session->error);
+  }
+  $length = length($raidPStatusOIDTable) + 1;
+  foreach $key ( keys %{$response}) {
+    $snmpkey = substr($key, $length);
+
+    if ( $response->{$key} == 6 ) {
+      $state = "CRITICAL";
+      $raidPStatus .= " " . raidPDiskName($snmpkey) . " (" . $raidPStates{$response->{$key}} . ")";
+    } elsif ( ($response->{$key} == 2) || ($response->{$key} == 3) ) {
+      $state = "WARNING" if ($state eq "OK");
+      $raidPStatus .= " " . raidPDiskName($snmpkey) . " (" . $raidPStates{$response->{$key}} . ")";
+    }
+  }
+  if ( $raidPStatus eq '' ) {
+    $raidPStatus = " raidPStates OK";
+  }
+}
+
+# check power supply failures
+if ( ($checks & 4) > 0 ) {
+  undef $response;
+  if (!defined ($response = $session->get_table($enclPowerSuppliesFailedOIDTable))) {
+    bailout($session->error);
+  }
+  foreach $key ( keys %{$response}) {
+    if ( $response->{$key} ne '' ) {
+      $enclPowerSuppliesStatus .= ' power supply failure: ' . $response->{$key};
+      $state = "CRITICAL";
+    }
+  }
+  if ( $enclPowerSuppliesStatus eq '' ) {
+    $enclPowerSuppliesStatus = " power supplies OK";
+  }
+}
+
+# check fan failures
+if ( ($checks & 8) > 0 ) {
+  undef $response;
+  if (!defined ($response = $session->get_table($enclFansFailedOIDTable))) {
+    bailout($session->error);
+  }
+  foreach $key ( keys %{$response}) {
+    if ( $response->{$key} ne '' ) {
+      $enclFansStatus .= ' fan failure: ' . $response->{$key};
+      $state = "CRITICAL";
+    }
+  }
+  if ( $enclFansStatus eq '' ) {
+    $enclFansStatus = " fans OK";
+  }
+}
+
+# check electronic failures
+if ( ($checks & 16) > 0 ) {
+  undef $response;
+  if (!defined ($response = $session->get_table($enclElectronicsFailedOIDTable))) {
+    bailout($session->error);
+  }
+  foreach $key ( keys %{$response}) {
+    if ( $response->{$key} ne '' ) {
+      $enclElectronicsStatus .= ' electronic failure: ' . $response->{$key};
+      $state = "CRITICAL";
+    }
+  }
+  if ( $enclElectronicsStatus eq '' ) {
+    $enclElectronicsStatus = " electronics OK";
+  }
+}
+
+# check temperatures
+if ( ($checks & 32) > 0 ) {
+  undef $response;
+  if (!defined ($response = $session->get_table($enclTempSensorsOverTempWarnOIDTable))) {
+    bailout($session->error);
+  }
+  foreach $key ( keys %{$response}) {
+    if ( $response->{$key} ne '' ) {
+      $enclTempSensorsOverTempStatus .= ' temperature warning: ' . $response->{$key};
+      $state = "WARNING" if ($state eq "OK");
+    }
+  }
+  undef $response;
+  if (!defined ($response = $session->get_table($enclTempSensorsOverTempFailOIDTable))) {
+    bailout($session->error);
+  }
+  foreach $key ( keys %{$response}) {
+    if ( $response->{$key} ne '' ) {
+      $enclTempSensorsOverTempStatus .= ' temperature failure: ' . $response->{$key};
+      $state = "CRITICAL";
+    }
+  }
+  if ( $enclTempSensorsOverTempStatus eq '' ) {
+    $enclTempSensorsOverTempStatus = " temperature OK";
+  }
+}
+
+
+
+## Check Disk Usage
+
+# get PathNames
+if (defined ($response = $session->get_table($qrV2PathNameOIDTable))) {
+  $length = length($qrV2PathNameOIDTable) + 1;
+  foreach $key ( keys %{$response}) {
+    $snmpkey = substr($key, $length);
+
+    $qrPathNames{$snmpkey} = $response->{$key};
+  }
+
+  # get KBytesUsed
+  if (!defined ($response = $session->get_table($qrV2HighKBytesUsedOIDTable))) {
+    bailout($session->error);
+  }
+  $length = length($qrV2HighKBytesUsedOIDTable) + 1;
+  foreach $key ( keys %{$response}) {
+    $snmpkey = substr($key, $length);
+
+    $qrKBytesUsed{$snmpkey} = $response->{$key}*4294967296;
+  }
+  if (!defined ($response = $session->get_table($qrV2LowKBytesUsedOIDTable))) {
+    bailout($session->error);
+  }
+  $length = length($qrV2LowKBytesUsedOIDTable) + 1;
+  foreach $key ( keys %{$response}) {
+    $snmpkey = substr($key, $length);
+
+    $qrKBytesUsed{$snmpkey} += $response->{$key};
+  }
+
+  # get hard limit for entries with configured hard quota
+  if ( ($checks & 64) > 0 ) {
+    if (!defined ($response = $session->get_table($qrV2QuotaUnlimitedOIDTable))) {
+      bailout($session->error);
+    }
+    $length = length($qrV2QuotaUnlimitedOIDTable) + 1;
+    foreach $key ( keys %{$response}) {
+      $snmpkey = substr($key, $length);
+
+      if ( $response->{$key} == 1 ) {
+	 $qrKBHardLimit{$snmpkey} = getValue($qrV2HighKBytesLimitOIDTable.".".$snmpkey)*4294967296;
+	 $qrKBHardLimit{$snmpkey} += getValue($qrV2LowKBytesLimitOIDTable.".".$snmpkey);
+      }
+    }
+    while (($key, $value) = each(%qrKBHardLimit)) {
+      print "Quota configured for Volume '" . $qrPathNames{$key} . "' ($key): $value KB.\n" if $DEBUG;
+      print "KB used on this Volume: ".$qrKBytesUsed{$key}."\n" if $DEBUG;
+
+      if ( $qrKBytesUsed{$key} > $value ) {
+        if ( $short == 0 ) {
+	  $qrV2TableMessageHQ .= " hard quota exceeded for Volume '".$qrPathNames{$key}."' (".$qrKBytesUsed{$key}."/".$value.")";
+        } else {
+	  $qrV2TableMessageHQ .= " '".$qrPathNames{$key}."'";
+        }
+	$state = "CRITICAL";
+      }
+    }
+    if ( $qrV2TableMessageHQ eq '' ) {
+      $qrV2TableMessageHQ = " hard quotas OK";
+    } elsif ( $short == 1 ) {
+      $qrV2TableMessageHQ = " HQ: " . $qrV2TableMessageHQ;
+    }
+  }
+
+  # get soft limit for entries with configured soft quota
+  if ( ($checks & 128) > 0 ) {
+    if (!defined ($response = $session->get_table($qrV2SoftQuotaUnlimitedOIDTable))) {
+      bailout($session->error);
+    }
+    $length = length($qrV2SoftQuotaUnlimitedOIDTable) + 1;
+    foreach $key ( keys %{$response}) {
+      $snmpkey = substr($key, $length);
+
+      if ( $response->{$key} == 1 ) {
+	 $qrKBSoftLimit{$snmpkey} = getValue($qrV2HighKBytesSoftLimitOIDTable.".".$snmpkey)*4294967296;
+	 $qrKBSoftLimit{$snmpkey} += getValue($qrV2LowKBytesSoftLimitOIDTable.".".$snmpkey);
+      }
+    }
+    while (($key, $value) = each(%qrKBSoftLimit)) {
+      print "Quota configured for Volume '" . $qrPathNames{$key} . "' ($key): $value KB.\n" if $DEBUG;
+      print "KB used on this Volume: ".$qrKBytesUsed{$key}."\n" if $DEBUG;
+
+      if ( $qrKBytesUsed{$key} > $value ) {
+        if ( $short == 0 ) {
+	  $qrV2TableMessageSQ .= " soft quota exceeded for Volume '".$qrPathNames{$key}."' (".$qrKBytesUsed{$key}."/".$value.")";
+        } else {
+	  $qrV2TableMessageSQ .= " '".$qrPathNames{$key}."'";
+        }
+	$state = "WARNING" if ($state eq "OK");
+      }
+    }
+    if ( $qrV2TableMessageSQ eq '' ) {
+      $qrV2TableMessageSQ = " soft quotas OK";
+    } elsif ( $short == 1 ) {
+      $qrV2TableMessageSQ = " SQ: " . $qrV2TableMessageSQ;
+    }
+  }
+
+  # get KBThreshold for entries with configured quota
+  if ( ($checks & 256) > 0 ) {
+    if (!defined ($response = $session->get_table($qrV2ThresholdUnlimitedOIDTable))) {
+      bailout($session->error);
+    }
+    $length = length($qrV2ThresholdUnlimitedOIDTable) + 1;
+    foreach $key ( keys %{$response}) {
+      $snmpkey = substr($key, $length);
+
+      if ( $response->{$key} == 1 ) {
+	 $qrKBThreshold{$snmpkey} = getValue($qrV2HighKBytesThresholdOIDTable.".".$snmpkey)*4294967296;
+	 $qrKBThreshold{$snmpkey} += getValue($qrV2LowKBytesThresholdOIDTable.".".$snmpkey);
+      }
+    }
+    while (($key, $value) = each(%qrKBThreshold)) {
+      print "Threshold configured for Volume '" . $qrPathNames{$key} . "' ($key): $value KB.\n" if $DEBUG;
+      print "KB used on this Volume: ".$qrKBytesUsed{$key}."\n" if $DEBUG;
+
+      if ( $qrKBytesUsed{$key} > $value ) {
+        if ( $short == 0 ) {
+	  $qrV2TableMessageTH .= " threshold exceeded for Volume '".$qrPathNames{$key}."' (".$qrKBytesUsed{$key}."/".$value.")";
+        } else {
+	  $qrV2TableMessageTH .= " '".$qrPathNames{$key}."'";
+        }
+	$state = "WARNING" if ($state eq "OK");
+      }
+    }
+    if ( $qrV2TableMessageTH eq '' ) {
+      $qrV2TableMessageTH = " thresholds OK";
+    } elsif ( $short == 1 ) {
+      $qrV2TableMessageTH = " TH: " . $qrV2TableMessageTH;
+    }
+  }
+}
+
+
+
+print $productModel . " Status:".$fsOverallStatus.$raidPStatus.$enclPowerSuppliesStatus.$enclFansStatus.$enclElectronicsStatus.$enclTempSensorsOverTempStatus.$qrV2TableMessageHQ.$qrV2TableMessageSQ.$qrV2TableMessageTH."\n";
+$session->close;
+exit $ERRORS{$state};
+
+### subroutines
+
+sub getValue {
+  my $OID = shift;
+  my $result;
+
+  $result = $session->get_request($OID);
+  bailout('unable to get '.$OID) unless defined $result->{$OID};
+  return $result->{$OID};
+}
+
+sub raidPDiskName {
+  my $snmpkey = shift;
+  my $localresponse = $session->get_request($raidPDiskNameOIDTable . "." . $snmpkey);
+  return $localresponse->{$raidPDiskNameOIDTable . "." . $snmpkey};
+}
+
+sub bailout {
+  my $msg = shift;
+  $session->close;
+  print "An unexpected error occurred: " . $msg . "\n";
+  exit $ERRORS{"UNKNOWN"};
+}
+  
+sub usage() {
+  printf "\nMissing arguments!\n";
+  printf "\n";
+  printf "usage: \n";
+  printf "check_netapp -H <HOSTNAME> [-C <community>]\n";
+  printf "Copyright (C) 2009 Guenther Mair\n";
+  printf "\n\n";
+  exit $ERRORS{"UNKNOWN"};
+}
+
+sub print_help() {
+  printf "check_netapp plugin for Nagios\n";
+  printf "\nUsage:\n";
+  printf "   -H (--hostname)      Hostname to query - (required)\n";
+  printf "   -C (--community)     SNMP read community (defaults to public,\n";
+  printf "                        used with SNMP v1 and v2c\n";
+  printf "   -v (--snmp_version)  1 for SNMP v1 (default)\n";
+  printf "                        2 for SNMP v2c\n";
+  printf "                        SNMP v2c will use get_bulk for less\n";
+  printf "                        overhead if monitoring with -d\n";
+  printf "   -i (--include)       Include only a selected subset of all checks available.\n";
+  printf "                        Since this uses as simple bit-field, you will have to\n";
+  printf "                        calculate the SUM of the checks you want to execute:\n";
+  printf "                           1 - check overall file system state\n";
+  printf "                           2 - check raid states\n";
+  printf "                           4 - check power supply states\n";
+  printf "                           8 - check fan states\n";
+  printf "                          16 - check electronics state\n";
+  printf "                          32 - check temperature states\n";
+  printf "                          64 - check quota hard limit settings\n";
+  printf "                         128 - check quota soft limit settings\n";
+  printf "                         256 - check thresholds set on Netapp device\n";
+  printf "   -s (--short)         print messages as short as possible\n";
+  printf "   -L (--seclevel)      choice of \"noAuthNoPriv\", \"authNoPriv\", or \"authPriv\"\n";
+  printf "   -U (--secname)       username for SNMPv3 context\n";
+  printf "   -A (--authpass)      authentication password (cleartext ascii or localized key\n";
+  printf "                        in hex with 0x prefix generated by using \"snmpkey\" utility\n"; 
+  printf "                        auth password and authEngineID\n";
+  printf "   -a (--authproto)     Authentication protocol ( MD5 or SHA1)\n";
+  printf "   -X (--privpass)      privacy password (cleartext ascii or localized key\n";
+  printf "                        in hex with 0x prefix generated by using \"snmpkey\" utility\n"; 
+  printf "                        privacy password and authEngineID\n";
+  printf "   -p (--port)          SNMP port (default 161)\n";
+  printf "   -M (--maxmsgsize)    Max message size - usefull only for v1 or v2c\n";
+  printf "   -t (--timeout)       seconds before the plugin times out (default=$TIMEOUT)\n";
+  printf "   -V (--version)       Plugin version\n";
+  printf "   -h (--help)          usage help \n\n";
+  print_revision($PROGNAME, '$Revision: 19 $');
+}
+
+sub process_arguments() {
+  $status = GetOptions(
+	    "V"   => \$opt_V,        "version"        => \$opt_V,
+	    "h"   => \$opt_h,        "help"           => \$opt_h,
+	    "s"   => \$short,        "short"          => \$short,
+	    "i=i" => \$checks,       "include=i"      => \$checks,
+	    "v=i" => \$snmp_version, "snmp_version=i" => \$snmp_version,
+	    "C=s" => \$community,    "community=s"    => \$community,
+	    "L=s" => \$seclevel,     "seclevel=s"     => \$seclevel,
+	    "a=s" => \$authproto,    "authproto=s"    => \$authproto,
+	    "U=s" => \$secname,      "secname=s"      => \$secname,
+	    "A=s" => \$authpass,     "authpass=s"     => \$authpass,
+	    "X=s" => \$privpass,     "privpass=s"     => \$privpass,
+	    "p=i" => \$port,         "port=i"         => \$port,
+	    "H=s" => \$hostname,     "hostname=s"     => \$hostname,
+	    "M=i" => \$maxmsgsize,   "maxmsgsize=i"   => \$maxmsgsize,
+	    "t=i" => \$timeout,      "timeout=i"      => \$timeout,
+	    );
+
+  if ( $status == 0 ){
+    print_help();
+    exit $ERRORS{'OK'};
+  }
+  
+  if ( $opt_V ) {
+    print_revision($PROGNAME,'$Revision: 19 $');
+    exit $ERRORS{'OK'};
+  }
+
+  if ( $opt_h ) {
+    print_help();
+    exit $ERRORS{'OK'};
+  }
+
+  if ( $short ) {
+    $short = 1;
+  } else {
+    $short = 0;
+  }
+
+  unless ( defined $checks ) {
+    $checks = 1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 + 256;
+  }
+
+  if ( ! utils::is_hostname($hostname) ) {
+    usage();
+    exit $ERRORS{"UNKNOWN"};
+  }
+
+  unless ( defined $timeout ) {
+    $timeout = $TIMEOUT;
+  }
+
+  if ( $snmp_version =~ /3/ ) {
+    # Must define a security level even though default is noAuthNoPriv
+    # v3 requires a security username
+    if (defined $seclevel  && defined $secname) {
+
+      # Must define a security level even though defualt is noAuthNoPriv
+      unless ( grep /^$seclevel$/, qw(noAuthNoPriv authNoPriv authPriv) ) {
+	usage();
+	exit $ERRORS{"UNKNOWN"};
+      }
+
+      # Authentication wanted
+      if ( $seclevel eq 'authNoPriv' || $seclevel eq 'authPriv' ) {
+
+	unless ( $authproto eq 'MD5' || $authproto eq 'SHA1' ) {
+	  usage();
+	  exit $ERRORS{"UNKNOWN"};
+	}
+
+	if ( ! defined $authpass) {
+	  usage();
+	  exit $ERRORS{"UNKNOWN"};
+	} else {
+	  if ( $authpass =~ /^0x/ ) {
+	    $auth = "-authkey => $authpass" ;
+	  } else {
+	    $auth = "-authpassword => $authpass";
+	  }
+	}
+
+      }
+			
+      # Privacy (DES encryption) wanted
+      if ( $seclevel eq  'authPriv' ) {
+	if ( ! defined $privpass ) {
+	  usage();
+	  exit $ERRORS{"UNKNOWN"};
+	} else {
+	  if ( $privpass =~ /^0x/ ){
+	    $priv = "-privkey => $privpass";
+	  } else {
+	    $priv = "-privpassword => $privpass";
+	  }
+	}
+      }
+
+      # Context name defined or default
+      unless ( defined $context ) {
+	$context = '';
+      }
+
+    } else {
+      usage();
+      exit $ERRORS{'UNKNOWN'}; ;
+    }
+  } # end snmpv3
+
+  if ( $snmp_version =~ /[12]/ ) {
+    ($session, $error) = Net::SNMP->session(
+      -hostname   => $hostname,
+      -community  => $community,
+      -port       => $port,
+      -version    => $snmp_version,
+      -maxmsgsize => $maxmsgsize
+      );
+
+    if ( ! defined($session) ) {
+      $state='UNKNOWN';
+      $answer=$error;
+      print ("$state: $answer");
+      exit $ERRORS{$state};
+    }
+  } elsif ( $snmp_version =~ /3/ ) {
+
+    if ($seclevel eq 'noAuthNoPriv') {
+      ($session, $error) = Net::SNMP->session(
+	-hostname => $hostname,
+	-port     => $port,
+	-version  => $snmp_version,
+	-username => $secname,
+	);
+    } elsif ( $seclevel eq 'authNoPriv' ) {
+      ($session, $error) = Net::SNMP->session(
+	-hostname     => $hostname,
+	-port         => $port,
+	-version      => $snmp_version,
+	-username     => $secname,
+	$auth,
+	-authprotocol => $authproto,
+      );	
+    } elsif ($seclevel eq 'authPriv' ) {
+      ($session, $error) = Net::SNMP->session(
+	-hostname     => $hostname,
+	-port         => $port,
+	-version      => $snmp_version,
+	-username     => $secname,
+	$auth,
+	-authprotocol => $authproto,
+	$priv
+      );
+    }
+					
+    if ( ! defined($session) ) {
+      $state='UNKNOWN';
+      $answer=$error;
+      print ("$state: $answer");
+      exit $ERRORS{$state};
+    }
+  } else {
+    $state='UNKNOWN';
+    print ("$state: No support for SNMP v$snmp_version yet\n");
+    exit $ERRORS{$state};
+  }
+}
+
+## End validation

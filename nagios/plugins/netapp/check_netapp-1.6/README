@@ -1,0 +1,31 @@
+This script is made in an all-in-one fashion similar to my HP/Compaq plugins.
+It is made in perl, only uses numeric OIDs (no need for the netapp MIBs) and
+"should" therefor be quite fast.
+
+A single run like "./check_netapp -H HOSTNAME -C COMMUNITY" will check the
+following hardware states:
+
+- fsOverallStatus 
+- all raidPStatus entries 
+- enclPowerSuppliesStatus 
+- enclFansStatus 
+- enclElectronicsStatus 
+- enclTempSensorsOverTempStatus (warnings and failures) 
+
+and the following configuration states:
+
+- quota hard limits (qrV2QuotaUnlimited) 
+- quota soft limits (qrV2SoftQuotaUnlimited) 
+- quota thresholds (qrV2ThresholdUnlimited) 
+
+You can either have all checks executed by just specifying the hostname and
+community string as parameters or you can use the --include switch to state
+which checks you want executed. See --help for more information.
+
+Please update the 'lib' path at the top of check_netapp to fit your
+distribution.  check_netapp needs to locate the utils.pm library that comes
+with nagios-plugins.
+
+==
+
+$Id: README 9 2009-07-04 10:32:23Z gunny $

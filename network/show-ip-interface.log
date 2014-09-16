@@ -1,0 +1,14 @@
+Name,IP,Address,Subnet,Mask,Status,Forward,Device
+HA-to-SW02,192.168.251.252,255.255.255.0,UP,YES,vlan,251
+Loopback,127.0.0.1,255.0.0.0,UP,NO,Loopback
+dhcp-client,0.0.0.0,0.0.0.0,DOWN,NO,vlan,1011
+gdupc,192.168.13.253,255.255.255.0,UP,YES,vlan,13,
+hs-fw1,192.168.9.4,255.255.255.0,UP,YES,vlan,9,
+ipmi,192.168.10.254,255.255.255.0,UP,YES,vlan,10,
+isd,192.168.14.253,255.255.255.0,UP,YES,vlan,14,
+jituan,192.168.32.254,255.255.255.0,UP,YES,vlan,32,
+mgmt,192.168.11.253,255.255.255.0,UP,YES,vlan,11,
+product,192.168.31.254,255.255.255.0,UP,YES,vlan,31,
+publicVlan17,172.17.255.254,255.255.0.0,UP,YES,vlan,17,
+skiron_cluster,192.168.12.253,255.255.255.0,UP,YES,vlan,12,
+z3pod201-test,192.168.201.125,255.255.255.128,UP,YES,vlan,201

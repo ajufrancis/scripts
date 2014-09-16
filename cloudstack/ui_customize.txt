@@ -1,0 +1,2 @@
+http://www.slideshare.net/cloudstack/cloudstack-ui-customization
+https://cwiki.apache.org/confluence/display/CLOUDSTACK/UI+Plugin+Tutorial

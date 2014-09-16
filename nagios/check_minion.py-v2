@@ -1,0 +1,63 @@
+#!/usr/bin/env python
+import salt.cli.caller
+import salt.config
+import argparse
+import sys
+import signal
+ 
+class TimeoutException(Exception):
+    pass
+ 
+def timeout(timeout_time, default):
+    def timeout_function(f):
+        def f2(*args):
+            def timeout_handler(signum, frame):
+                raise TimeoutException()
+ 
+            old_handler = signal.signal(signal.SIGALRM, timeout_handler)
+            signal.alarm(timeout_time) # triger alarm in timeout_time seconds
+            try:
+                retval = f(*args)
+            except TimeoutException:
+                return default
+            finally:
+                signal.signal(signal.SIGALRM, old_handler)
+            signal.alarm(0)
+            return retval
+        return f2
+    return timeout_function
+ 
+@timeout(10, "CRITICAL: an error occurred while trying to ping the minion!\n")
+def salt_ping(hostname):
+    """
+    Generate a dict with the required configuration
+    """
+    opts = salt.config.minion_config("/etc/salt/minion")
+    opts['doc'] = False
+    opts['grains_run'] = False
+    opts['raw_out'] = False
+    opts['json_out'] = True
+    opts['txt_out'] = False
+    opts['yaml_out'] = False
+    opts['color'] = True
+    opts['root_dir'] = None
+    opts['fun'] = "publish.publish"
+    opts['returner'] = None
+    opts['arg'] = (hostname, "test.ping")
+ 
+    # Run the salt command
+    caller = salt.cli.caller.Caller(opts)
+    result = caller.call()
+ 
+    if result.get("return").get(hostname) is True:
+        return "OK: minion %s is online\n" % hostname
+    else:
+        return "CRITICAL: minion %s is not online!\n" % hostname
+ 
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Check if minions are online.')
+    parser.add_argument('hostname', help='The name of the minion to be checked')
+ 
+    args = parser.parse_args()
+ 
+    sys.stdout.write(salt_ping(args.hostname))

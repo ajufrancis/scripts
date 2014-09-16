@@ -1,0 +1,7 @@
+#!/bin/bash
+# notify-by-phonecall
+# delay time for phone call use $NOTIFY_PARAMETER_1
+sleep $NOTIFY_PARAMETER_1
+gnokii --dialvoice $NOTIFY_CONTACTPAGER && sleep $NOTIFY_PARAMETER_2
+# keep call for seconds use $NOTIFY_PARAMETER_2
+gnokii --hangup 0

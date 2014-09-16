@@ -1,0 +1,3 @@
+NETWORKING=yes
+HOSTNAME=nagios01.gdcloud.com
+NETWORKING_IPV6=no

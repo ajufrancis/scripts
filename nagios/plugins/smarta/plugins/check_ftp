@@ -1,0 +1,75 @@
+#! lua
+
+-- check_ftp
+
+require("plugin")
+
+-- do check
+function check(opts) 
+    local socket = require("socket")
+    local ftp = require("socket.ftp")
+    local ltn12 = require("ltn12")
+    local t = {}
+    t1 = socket.gettime()
+    p = {
+        host = opts["H"],
+        port = opts["p"],
+        user = opts["u"],
+        password = opts["P"],
+        command = "QUIT"
+    }
+    p.sink = ltn12.sink.table(t)
+    local r, e = ftp.get(p)
+    t2 = socket.gettime()
+    if e ~= "closed" then
+        print("CRITICAL - "..e.."\r\n")
+        return STATUS_CRITICAL
+    end
+    escaped_time = (t2 - t1) * 1000
+    print(string.format("OK - ftp connected, port = %s, response time = %.2fms\r\n", 
+    opts["port"], escaped_time))
+    print(string.format("metric:time: %.3fms", escaped_time))
+	return STATUS_OK
+end
+
+-- usage
+function usage() 
+  print("Usage: check_ftp -H host -p port -u user -P passwd")
+  os.exit(0)
+end
+
+-- parse arguments
+local long_opts = {
+   help = "h",
+   host = "H",
+   port = "p",
+   user = "u",
+   password = "P"
+}
+local opts,optind = getopts(arg, "hH:p:P:u:", long_opts)
+if opts["h"] then
+  usage()
+end
+
+if not opts["H"] then
+    print("UNKNOWN - miss argument 'host'\n")
+    usage()
+end
+
+if not opts["p"] then
+	opts["p"] = "21"
+end
+
+if not opts["u"] then
+    print("UNKNOWN - miss argument 'user'\n")
+    usage()
+end
+if not opts["P"] then
+    print("UNKNOWN - miss argument 'password'\n")
+    usage()
+end
+
+-- start_check
+status=check(opts)
+
+os.exit(status)

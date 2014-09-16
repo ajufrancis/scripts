@@ -1,0 +1,68 @@
+xsm02:
+  biosreleasedate: 06/20/2012
+  biosversion: 1.1
+  cpu_flags: fpu de tsc msr pae mce cx8 apic sep mtrr mca cmov pat clflush acpi mmx fxsr sse sse2 ss ht nx constant_tsc nonstop_tsc aperfmperf pni pclmulqdq vmx est ssse3 sse4_1 sse4_2 x2apic popcnt aes hypervisor ida arat tpr_shadow vnmi flexpriority ept vpid
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: i686
+  defaultencoding: None
+  defaultlanguage: None
+  domain: 
+  external_ip:
+  fqdn: xenserver-p2
+  fqdn_ip4:
+      58.64.152.142
+  fqdn_ip6:
+  gpus:
+      {'model': 'MGA G200eW WPCM450', 'vendor': 'unknown'}
+  host: xenserver-p2
+  hwaddr_interfaces: {'vif631.1': 'fe:ff:ff:ff:ff:ff', 'bond0': '00:23:20:fe:c7:bd', 'bond1': '00:23:20:d4:f3:a6', 'eth3': '90:e2:ba:20:15:a9', 'vif507.0': 'fe:ff:ff:ff:ff:ff', 'vif4.1': 'fe:ff:ff:ff:ff:ff', 'vif4.0': 'fe:ff:ff:ff:ff:ff', 'vif355.0': 'fe:ff:ff:ff:ff:ff', 'vif5.0': 'fe:ff:ff:ff:ff:ff', 'eth2': '90:e2:ba:20:15:a8', 'eth1': '00:25:90:77:f5:75', 'eth0': '00:25:90:77:f5:74', 'lo': '00:00:00:00:00:00', 'vif633.1': 'fe:ff:ff:ff:ff:ff', 'vif1.0': 'fe:ff:ff:ff:ff:ff', 'vif633.0': 'fe:ff:ff:ff:ff:ff', 'xapi4': '90:e2:ba:24:66:c0', 'vif494.0': 'fe:ff:ff:ff:ff:ff', 'vif634.1': 'fe:ff:ff:ff:ff:ff', 'vif642.0': 'fe:ff:ff:ff:ff:ff', 'vif41.0': 'fe:ff:ff:ff:ff:ff', 'vif383.0': 'fe:ff:ff:ff:ff:ff', 'xapi5': '00:25:90:77:f5:74', 'vif514.0': 'fe:ff:ff:ff:ff:ff', 'xapi1': '90:e2:ba:24:66:c0', 'xapi0': '00:23:20:ba:ed:18', 'xapi3': '00:25:90:77:f5:74', 'xapi2': '90:e2:ba:24:66:c0', 'tap494.0': 'fe:ff:ff:ff:ff:ff', 'vif225.0': 'fe:ff:ff:ff:ff:ff', 'vif635.0': 'fe:ff:ff:ff:ff:ff', 'tap635.0': 'fe:ff:ff:ff:ff:ff', 'vif226.0': 'fe:ff:ff:ff:ff:ff', 'vif647.0': 'fe:ff:ff:ff:ff:ff', 'tap633.1': 'fe:ff:ff:ff:ff:ff', 'tap633.0': 'fe:ff:ff:ff:ff:ff', 'vif512.0': 'fe:ff:ff:ff:ff:ff'}
+  id: xsm02
+  ip_interfaces: {'vif631.1': [], 'bond0': [], 'bond1': [], 'eth3': [], 'vif507.0': [], 'vif4.1': [], 'vif4.0': [], 'vif355.0': [], 'vif5.0': [], 'eth2': [], 'eth1': [], 'eth0': [], 'lo': ['127.0.0.1'], 'vif633.1': [], 'vif1.0': [], 'vif633.0': [], 'xapi4': ['192.168.11.13'], 'vif494.0': [], 'vif634.1': [], 'vif642.0': [], 'vif41.0': [], 'vif383.0': [], 'xapi5': [], 'vif514.0': [], 'xapi1': [], 'xapi0': [], 'xapi3': [], 'xapi2': [], 'tap494.0': [], 'vif225.0': [], 'vif635.0': [], 'tap635.0': [], 'vif226.0': [], 'vif647.0': [], 'tap633.1': [], 'tap633.0': [], 'vif512.0': []}
+  ipv4:
+      127.0.0.1
+      192.168.11.13
+  ipv6:
+  kernel: Linux
+  kernelrelease: 2.6.32.12-0.7.1.xs6.0.2.542.170665xen
+  localhost: xenserver-p2
+  manufacturer: Supermicro
+  master: 192.168.11.9
+  mem_total: 753
+  nodename: xenserver-p2
+  num_cpus: 4
+  num_gpus: 1
+  os: XenServer
+  os_family: RedHat
+  osarch: i686
+  oscodename: xenenterprise
+  osfinger: XenServer-6
+  osfullname: XenServer
+  osmajorrelease:
+      6
+      0.2
+  osrelease: 6.0.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: X9DRT
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib/python26.zip
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.8.final.0
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 0123456789
+  server_id: 1325207547
+  shell: /bin/bash
+  test: None
+  virtual: xen
+  virtual_subtype: Xen Dom0

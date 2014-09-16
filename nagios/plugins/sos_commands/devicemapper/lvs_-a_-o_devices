@@ -1,0 +1,6 @@
+File descriptor 4 (/tmp/nagios01-2013030422111362406315/sos_logs/sos.log) leaked on lvs invocation. Parent PID 2300: /usr/bin/python
+  LV      VG       Attr   LSize   Origin Snap%  Move Log Copy%  Convert Devices          
+  lv_home VolGroup -wi-ao 409.41g                                       /dev/sda2(12800) 
+  lv_root VolGroup -wi-ao  50.00g                                       /dev/sda2(0)     
+  lv_swap VolGroup -wi-ao   5.86g                                       /dev/sda2(117609)
+

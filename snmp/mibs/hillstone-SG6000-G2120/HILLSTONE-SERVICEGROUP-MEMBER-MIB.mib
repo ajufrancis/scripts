@@ -1,0 +1,100 @@
+-- **************************************************************************
+-- HILLSTONE-SERVICEGROUP-MEMBER-MIB 
+--
+-- Copyright (c) 2009 by Hillstone Networks, Inc.
+-- All rights reserved.
+-- 
+-- Version:      V3   
+-- Description:	 Hillstone Networks SERVICEGROUP MEMBER MIB Object Identifier Assignments
+-- **************************************************************************
+--
+
+HILLSTONE-SERVICEGROUP-MEMBER-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+	hillstoneServiceGroupMember
+		FROM HILLSTONE-SMI
+	OBJECT-TYPE
+		FROM RFC-1212	
+	RowStatus		
+		FROM SNMPv2-TC;
+
+hillstoneServiceGroupMemberObjects OBJECT IDENTIFIER ::= { hillstoneServiceGroupMember 1 }
+
+hillstoneServiceGroupMemberTable OBJECT-TYPE
+	SYNTAX SEQUENCE OF hillstoneServiceGroupMemberEntry
+	MAX-ACCESS not-accessible
+	STATUS current
+	DESCRIPTION
+	    "This table contains all the ServiceGroupMember defined in the system."
+::= { hillstoneServiceGroupMemberObjects 1 }
+
+hillstoneServiceGroupMemberEntry OBJECT-TYPE
+	SYNTAX hillstoneServiceGroupMemberEntry
+	MAX-ACCESS not-accessible
+	STATUS current
+	DESCRIPTION
+		"Defined the parameters of ServiceGroupMember."
+INDEX { hillstoneServiceGroupName, hillstoneServiceGroupMemberId }
+::= { hillstoneServiceGroupMemberTable 1 }
+	
+hillstoneServiceGroupMemberEntry ::=
+SEQUENCE { 
+	hillstoneServiceGroupName
+		OCTET STRING,
+	hillstoneServiceGroupMemberId
+		INTEGER,
+	hillstoneServiceBookName
+		OCTET STRING,
+	hillstoneServiceGroupMemberType
+		INTEGER,
+	hillstoneServiceGroupMemberRowStatus
+		RowStatus
+	}
+
+hillstoneServiceGroupName OBJECT-TYPE
+	SYNTAX OCTET STRING (SIZE (1..31))
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "The name of ServiceGroup.
+	    Different ServiceGroup has different name."
+::= { hillstoneServiceGroupMemberEntry 1 }
+
+hillstoneServiceGroupMemberId OBJECT-TYPE
+	SYNTAX INTEGER
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "The id of service or service group"
+::= { hillstoneServiceGroupMemberEntry 2 }
+
+hillstoneServiceBookName OBJECT-TYPE
+	SYNTAX OCTET STRING (SIZE (1..31))
+	MAX-ACCESS read-write
+	STATUS	current
+	DESCRIPTION
+	    "The name of service group member"
+::= { hillstoneServiceGroupMemberEntry 3 }
+
+hillstoneServiceGroupMemberType OBJECT-TYPE
+	SYNTAX INTEGER 
+	{
+		service(1),
+		service-group(2)
+	}
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "The type of service group member."
+::= { hillstoneServiceGroupMemberEntry 4 }
+
+hillstoneServiceGroupMemberRowStatus OBJECT-TYPE
+	SYNTAX RowStatus
+	MAX-ACCESS read-create
+	STATUS current
+	DESCRIPTION
+	 "The status of this service group row. support: active, createandgo, destory"
+::= { hillstoneServiceGroupMemberEntry 5 }
+
+END

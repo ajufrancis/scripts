@@ -1,0 +1,7 @@
+proc
+netstat
+version
+master
+salt-key
+salt-run manage.down
+node_group: xs xsm

@@ -1,0 +1,16 @@
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/mapper/VolGroup-lv_root
+                      51606140   3447496  45537204   8% /
+proc                         0         0         0   -  /proc
+sysfs                        0         0         0   -  /sys
+devpts                       0         0         0   -  /dev/pts
+tmpfs                  1953384         0   1953384   0% /dev/shm
+/dev/sda1               495844     31573    438671   7% /boot
+/dev/mapper/VolGroup-lv_home
+                     422560264    207228 400888156   1% /home
+none                         0         0         0   -  /proc/sys/fs/binfmt_misc
+tmpfs                  1953384      2308   1951076   1% /opt/omd/sites/site01/tmp
+sunrpc                       0         0         0   -  /var/lib/nfs/rpc_pipefs
+nfsd                         0         0         0   -  /proc/fs/nfsd
+/dev/sdb1             96122052   1989052  89250188   3% /mnt/isos
+

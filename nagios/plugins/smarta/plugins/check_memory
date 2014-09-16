@@ -1,0 +1,69 @@
+#! lua
+
+-- check linux memory
+-- author: ery.lee@gmail.com from monit.cn
+
+require("plugin")
+
+version="1.0.0"
+
+-- do check
+function check(opts) 
+  local status = STATUS_OK
+  local phrase = "OK"
+  local warn = opts["W"]
+  local crit = opts["C"]
+
+  local output = os.cmd("free -m o")
+  local headers = {"total", "used", "free", "shared", "buffers", "cached"}
+  local metrics = {string.match(output, "Mem:%s+(%d+)%s+(%d+)%s+(%d+)%s+(%d+)%s+(%d+)%s+(%d+)")}
+  if #metrics < 6 then 
+    print("UNKNOWN - no memory data\n") 
+    return STATUS_UNKNOWN
+  end
+  local metrics = table.map(metrics, function(v) return tonumber(v) end)
+  local memtab = table.zip(headers, metrics)
+  memtab["usage"] = string.format("%.2f%%", (memtab["used"] * 100 / memtab["total"]))
+  memtab["appused"] = memtab["used"] - memtab["buffers"] - memtab["cached"]
+  memtab["appusage"] = string.format("%.2f%%", (memtab["appused"] * 100/ memtab["total"]))
+  usage = memtab["used"] * 100 / memtab["total"]
+  appusage = memtab["appused"] * 100/ memtab["total"]
+  if crit and eval("return "..crit) then
+	status = 3;
+    phrase = "CRITICAL"
+  elseif warn and eval("return "..warn) then
+	status = 2;
+    phrase = "WARNING"
+  end
+  print(string.format("%s - 总内存大小: %s(MB) 内存使用率: %s, 应用程序占用: %s", 
+    phrase, memtab["total"], memtab["usage"], memtab["appusage"]))
+  print("graph:usage(%),appusage(%)")
+  for k,v in pairs(memtab) do
+    print(string.format("metric:%s: %s", k, v))
+  end
+  return status
+end
+
+-- usage
+function usage() 
+  print("Usage: check_memory [ -W warning | -C critical ]")
+  os.exit(0)
+end
+
+-- parse arguments
+local long_opts = {
+   help    = "h",
+   warning = "W",
+   critical = "C"
+}
+
+opts,optind = getopts(arg, "hW:C:", long_opts)
+
+if opts["h"] then
+  usage()
+end
+
+status=check(opts)
+
+os.exit(status);
+

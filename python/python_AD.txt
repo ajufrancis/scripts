@@ -1,0 +1,9 @@
+http://python-ad.googlecode.com/files/python-ad-0.9.tar.gz
+python-ad
+http://marcitland.blogspot.com/2011/02/python-active-directory-linux.html
+python-ladp:http://www.vpsee.com/2012/11/use-python-ldap-to-create-read-delete-upgrade-ldap-entries/
+active_directory: http://timgolden.me.uk/python/active_directory.html
+bpython
+python-ipython-console
+scapy=ipython
+https://blogs.oracle.com/marginNotes/entry/ldap_basics_with_python

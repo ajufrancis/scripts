@@ -1,0 +1,13 @@
+rtc_time	: 14:06:08
+rtc_date	: 2013-03-04
+alrm_time	: 00:00:00
+alrm_date	: ****-**-**
+alarm_IRQ	: no
+alrm_pending	: no
+24hr		: yes
+periodic_IRQ	: no
+update_IRQ	: no
+HPET_emulated	: yes
+DST_enable	: no
+periodic_freq	: 1024
+batt_status	: okay

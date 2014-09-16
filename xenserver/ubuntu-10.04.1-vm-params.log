@@ -1,0 +1,81 @@
+uuid ( RO)                          : 00b5ab8c-ba72-ecdc-8438-6d01a416dd5d
+                    name-label ( RW): i-7-2166-VM
+              name-description ( RW): Template which allows VM installation from install media
+                  user-version ( RW): 1
+                 is-a-template ( RW): false
+                 is-a-snapshot ( RO): false
+                   snapshot-of ( RO): <not in database>
+                     snapshots ( RO): 
+                 snapshot-time ( RO): 19700101T00:00:00Z
+                 snapshot-info ( RO): 
+                        parent ( RO): <not in database>
+                      children ( RO): 
+             is-control-domain ( RO): false
+                   power-state ( RO): running
+                 memory-actual ( RO): 4294967296
+                 memory-target ( RO): 4294967296
+               memory-overhead ( RO): 36700160
+             memory-static-max ( RW): 4294967296
+            memory-dynamic-max ( RW): 4294967296
+            memory-dynamic-min ( RW): 4294967296
+             memory-static-min ( RW): 4294967296
+              suspend-VDI-uuid ( RW): <not in database>
+               suspend-SR-uuid ( RW): <not in database>
+                  VCPUs-params (MRW): weight: 253; cap: 0
+                     VCPUs-max ( RW): 2
+              VCPUs-at-startup ( RW): 2
+        actions-after-shutdown ( RW): Destroy
+          actions-after-reboot ( RW): Restart
+           actions-after-crash ( RW): Destroy
+                 console-uuids (SRO): c1df4885-68c4-c3eb-d4da-af20df670384; 0e7b6a16-a3d9-d014-de65-cf4624f062a7
+                      platform (MRW): timeoffset: -13; viridian: true; acpi: true; apic: true; pae: true; nx: false
+            allowed-operations (SRO): changing_dynamic_range; pool_migrate; changing_VCPUs_live; suspend; hard_reboot; hard_shutdown; clean_reboot; clean_shutdown; pause; checkpoint; snapshot
+            current-operations (SRO): 
+            blocked-operations (MRW): 
+           allowed-VBD-devices (SRO): 1; 2; 4; 5; 6; 7; 8; 9; 10; 11; 12; 13; 14; 15
+           allowed-VIF-devices (SRO): 1; 2; 3; 4; 5; 6
+                possible-hosts ( RO): f776a9aa-b38e-495a-9099-9483e1e2581a; 8c062544-b788-48d0-a7cf-7be69e9ec008; a66096cc-ba8c-4335-85ee-3395c7dcef32; 55dbfcbf-e19a-46b1-be79-d6df46835357; 40003325-62b6-4075-97a5-832dc4052efa; 727b3864-1209-4033-aae2-dbf343d279c4
+               HVM-boot-policy ( RW): 
+               HVM-boot-params (MRW): order: dc
+         HVM-shadow-multiplier ( RW): 1.000
+                     PV-kernel ( RW): 
+                    PV-ramdisk ( RW): 
+                       PV-args ( RW): root=/dev/mapper/beizhen--localpred-root ro quiet console=hvc0 xencons=hvc0
+                PV-legacy-args ( RW): 
+                 PV-bootloader ( RW): pygrub
+            PV-bootloader-args ( RW): --kernel=/vmlinuz-2.6.32-55-server --ramdisk=/initrd.img-2.6.32-55-server
+           last-boot-CPU-flags ( RO): features: 17bee3ff-bfebfbff-00000001-2c100800; vendor: GenuineIntel
+              last-boot-record ( RO): '('struct' ('uuid' '00b5ab8c-ba72-ecdc-8438-6d01a416dd5d') ('allowed_operations' ('array' 'changing_dynamic_range' 'hard_reboot' 'hard_shutdown' 'pause' 'snapshot')) ('current_operations' ('struct')) ('power_state' 'Running') ('name_label' 'i-7-2166-VM') ('name_description' 'Template which allows VM installation from install media') ('user_version' '1') ('is_a_template' ('boolean' '0')) ('suspend_VDI' 'OpaqueRef:NULL') ('resident_on' 'OpaqueRef:3f6f4e70-ec62-20ac-d473-5bb9ee6e736f') ('affinity' 'OpaqueRef:3f6f4e70-ec62-20ac-d473-5bb9ee6e736f') ('memory_overhead' '37748736') ('memory_target' '4294967296') ('memory_static_max' '4294967296') ('memory_dynamic_max' '4294967296') ('memory_dynamic_min' '4294967296') ('memory_static_min' '4294967296') ('VCPUs_params' ('struct' ('weight' '253') ('cap' '0'))) ('VCPUs_max' '2') ('VCPUs_at_startup' '2') ('actions_after_shutdown' 'destroy') ('actions_after_reboot' 'restart') ('actions_after_crash' 'destroy') ('consoles' ('array' 'OpaqueRef:3d63f762-06bd-8ed6-b441-0dc64d5deb0b')) ('VIFs' ('array' 'OpaqueRef:5637a989-81fd-f7fc-3a95-7fda1cab046c')) ('VBDs' ('array' 'OpaqueRef:e619d428-73a8-b969-5a05-3222421fdd11' 'OpaqueRef:c098cb00-dc9c-f7ef-ee91-c2292bb66d63')) ('crash_dumps' ('array')) ('VTPMs' ('array')) ('PV_bootloader' 'pygrub') ('PV_kernel' '') ('PV_ramdisk' '') ('PV_args' 'root=/dev/mapper/beizhen--localpred-root ro quiet console=hvc0 xencons=hvc0') ('PV_bootloader_args' '--kernel=/vmlinuz-2.6.32-55-server --ramdisk=/initrd.img-2.6.32-55-server') ('PV_legacy_args' '') ('HVM_boot_policy' '') ('HVM_boot_params' ('struct' ('order' 'dc'))) ('HVM_shadow_multiplier' ('double' '1')) ('platform' ('struct' ('timeoffset' '-13') ('viridian' 'true') ('acpi' 'true') ('apic' 'true') ('pae' 'true') ('nx' 'false'))) ('PCI_bus' '') ('other_config' ('struct' ('last_shutdown_time' '20140609T02:02:48Z') ('last_shutdown_action' 'Restart') ('last_shutdown_initiator' 'internal') ('last_shutdown_reason' 'rebooted') ('mac_seed' '641950eb-9af6-ae77-2770-d4b42fb8a01a') ('install-methods' 'cdrom'))) ('domid' '17') ('domarch' 'hvm') ('last_boot_CPU_flags' ('struct' ('features' '17bee3ff-bfebfbff-00000001-2c100800') ('vendor' 'GenuineIntel'))) ('is_control_domain' ('boolean' '0')) ('metrics' 'OpaqueRef:dc61f1f6-4180-4124-525e-3783888cc8d2') ('guest_metrics' 'OpaqueRef:NULL') ('last_booted_record' '') ('recommendations' '<restrictions><restriction field=\"memory-static-max\" max=\"137438953472\" /><restriction field=\"vcpus-max\" max=\"16\" /><restriction property=\"number-of-vbds\" max=\"7\" /><restriction property=\"number-of-vifs\" max=\"7\" /></restrictions>') ('xenstore_data' ('struct')) ('ha_always_run' ('boolean' '0')) ('ha_restart_priority' '') ('is_a_snapshot' ('boolean' '0')) ('snapshot_of' 'OpaqueRef:NULL') ('snapshots' ('array')) ('snapshot_time' ('dateTime.iso8601' '19700101T00:00:00Z')) ('transportable_snapshot_id' '') ('blobs' ('struct')) ('tags' ('array')) ('blocked_operations' ('struct')) ('snapshot_info' ('struct')) ('snapshot_metadata' '') ('parent' 'OpaqueRef:NULL') ('children' ('array')) ('bios_strings' ('struct')) ('protection_policy' 'OpaqueRef:NULL') ('is_snapshot_from_vmpp' ('boolean' '0')) ('appliance' 'OpaqueRef:NULL') ('start_delay' '0') ('shutdown_delay' '0') ('order' '0') ('VGPUs' ('array')) ('attached_PCIs' ('array')) ('suspend_SR' 'OpaqueRef:NULL') ('version' '0'))'
+                   resident-on ( RO): 727b3864-1209-4033-aae2-dbf343d279c4
+                      affinity ( RW): 727b3864-1209-4033-aae2-dbf343d279c4
+                  other-config (MRW): last_shutdown_time: 20140609T02:02:48Z; last_shutdown_action: Restart; last_shutdown_initiator: internal; last_shutdown_reason: rebooted; mac_seed: 641950eb-9af6-ae77-2770-d4b42fb8a01a; install-methods: cdrom
+                        dom-id ( RO): 24
+               recommendations ( RO): <restrictions><restriction field="memory-static-max" max="137438953472" /><restriction field="vcpus-max" max="16" /><restriction property="number-of-vbds" max="7" /><restriction property="number-of-vifs" max="7" /></restrictions>
+                 xenstore-data (MRW): 
+    ha-always-run ( RW) [DEPRECATED]: false
+           ha-restart-priority ( RW): 
+                         blobs ( RO): 
+                    start-time ( RO): 20140609T02:03:12Z
+                  install-time ( RO): 19700101T00:00:00Z
+                  VCPUs-number ( RO): 2
+             VCPUs-utilisation (MRO): 0: 0.998; 1: 0.998
+                    os-version (MRO): name: Ubuntu 10.04.1 LTS; uname: 2.6.32-55-server; distro: ubuntu; major: 10; minor: 04
+            PV-drivers-version (MRO): major: 6; minor: 0; micro: 2; build: 62915
+         PV-drivers-up-to-date ( RO): true
+                        memory (MRO): 
+                         disks (MRO): 
+                      networks (MRO): 0/ip: 10.1.1.229
+                         other (MRO): platform-feature-multiprocessor-suspend: 1; feature-balloon: 1
+                          live ( RO): true
+    guest-metrics-last-updated ( RO): 20140618T09:53:32Z
+                   cooperative ( RO): true
+             protection-policy ( RW): <not in database>
+         is-snapshot-from-vmpp ( RO): false
+                          tags (SRW): 
+                     appliance ( RW): <not in database>
+                   start-delay ( RW): 0
+                shutdown-delay ( RW): 0
+                         order ( RW): 0
+                       version ( RO): 0
+
+

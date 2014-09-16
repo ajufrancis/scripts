@@ -1,0 +1,15 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+#::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.9.6	cloud-fw.gdcloud.com	cloud-fw
+192.168.11.9	nagios01.gdcloud.com	nagios01
+192.168.11.19	nagios01-bak.gdcloud.com	nagios01-bak
+192.168.11.10	ntp01.gdcloud.com	ntp01
+192.168.11.11	storage01.gdcloud.com	storage01
+192.168.11.12	xenserver-p1.gdcloud.com	xenserver-p1
+192.168.11.13	xenserver-p2.gdcloud.com	xenserver-p2
+192.168.11.14	xen3.gdcloud.com	xen3
+192.168.11.15	xen4.gdcloud.com	xen4
+192.168.11.16	kvm1.gdcloud.com	kvm1
+192.168.11.17	kvm2.gdcloud.com	kvm2
+192.168.11.253	cloud-sw1.gdcloud.com	cloud-sw1
+192.168.11.254	cloud-sw2.gdcloud.com	cloud-sw2

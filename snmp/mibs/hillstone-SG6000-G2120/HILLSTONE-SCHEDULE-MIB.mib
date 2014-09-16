@@ -1,0 +1,88 @@
+-- **************************************************************************
+-- HILLSTONE-SCHEDULE-MIB 
+--
+-- Copyright (c) 2009 by Hillstone Networks, Inc.
+-- All rights reserved.
+-- 
+-- Version:      V3   
+-- Description:	 Hillstone Networks Schedule MIB Object Identifier Assignments
+-- **************************************************************************
+--
+
+HILLSTONE-SCHEDULE-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+	hillstoneSchedule
+		FROM HILLSTONE-SMI
+	OBJECT-TYPE
+		FROM RFC-1212	
+	TimeStamp
+		FROM SNMPv2-TC
+	RowStatus		
+		FROM SNMPv2-TC;
+
+hillstoneScheduleObjects OBJECT IDENTIFIER ::= { hillstoneSchedule 1 }
+
+hillstoneScheduleTable OBJECT-TYPE
+	SYNTAX SEQUENCE OF hillstoneScheduleEntry
+	MAX-ACCESS not-accessible
+	STATUS current
+	DESCRIPTION
+	    "This table contains all the Schedule defined in the system."
+::= { hillstoneScheduleObjects 1 }
+
+hillstoneScheduleEntry OBJECT-TYPE
+	SYNTAX hillstoneScheduleEntry
+	MAX-ACCESS not-accessible
+	STATUS current
+	DESCRIPTION
+	    "Defined the parameters of Schedule."
+INDEX { hillstoneScheduleName }
+::= { hillstoneScheduleTable 1 }
+	
+hillstoneScheduleEntry ::=
+SEQUENCE { 
+	hillstoneScheduleName
+		OCTET STRING,
+	hillstoneScheduleAbsoluteStartTime
+		TimeStamp,
+	hillstoneScheduleAbsoluteEndTime
+		TimeStamp,
+	hillstoneScheduleRowStatus
+		RowStatus
+	}
+
+hillstoneScheduleName OBJECT-TYPE
+	SYNTAX OCTET STRING (SIZE (1..31))
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "The name of Schedule.
+	    Different Schedule has different name."
+::= { hillstoneScheduleEntry 1 }
+
+hillstoneScheduleAbsoluteStartTime OBJECT-TYPE
+	SYNTAX TimeStamp
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "The absolute schedule start time"
+::= { hillstoneScheduleEntry 2 }
+
+hillstoneScheduleAbsoluteEndTime OBJECT-TYPE
+	SYNTAX TimeStamp
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "The absolute schedule end time"
+::= { hillstoneScheduleEntry 3 }
+
+hillstoneScheduleRowStatus OBJECT-TYPE
+	SYNTAX RowStatus
+	MAX-ACCESS read-create
+	STATUS current
+	DESCRIPTION
+	 "The status of this address book row. support: active, createandgo, destory"
+::= { hillstoneScheduleEntry 4 }
+
+END

@@ -1,0 +1,9 @@
+freeipmi-detected
+http
+nmap
+switch
+dhcp
+ldap
+router
+dns
+auto-install-deploy-config

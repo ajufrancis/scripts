@@ -1,0 +1,4 @@
+glob:
+  - http://mywiki.wooledge.org/glob
+  - http://www.kaiyuanba.cn/html/1/131/137/6619.htm
+  - http://blog.charlee.li/bash-pitfalls/

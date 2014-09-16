@@ -1,0 +1,4 @@
+VolGroup-lv_swap: 0 12288000 linear 
+VolGroup-lv_root: 0 104857600 linear 
+VolGroup-lv_home: 0 858595328 linear 
+

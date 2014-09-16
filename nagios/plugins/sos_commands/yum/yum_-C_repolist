@@ -1,0 +1,6 @@
+repo id                    repo name                                      status
+Webmin                     Webmin Distribution Neutral                      144
+base                       CentOS-6 - Base                                6,346
+epel                       EPEL REPO                                      8,425
+repolist: 14,915
+

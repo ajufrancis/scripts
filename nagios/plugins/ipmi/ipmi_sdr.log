@@ -1,0 +1,94 @@
+Temp             | -64 degrees C     | ok
+Temp             | 50 degrees C      | ok
+Temp             | disabled          | ns
+Temp             | disabled          | ns
+Ambient Temp     | disabled          | ns
+Ambient Temp     | disabled          | ns
+Temp             | 26 degrees C      | ok
+Temp             | disabled          | ns
+Temp             | 51 degrees C      | cr
+Ambient Temp     | 19 degrees C      | ok
+Planar Temp      | 26 degrees C      | ok
+CMOS Battery     | 0x00              | ok
+ROMB Battery     | Not Readable      | ns
+VCORE            | 0x01              | ok
+VCORE            | Not Readable      | ns
+CPU2 0.75VTT PG  | Not Readable      | ns
+CPU1 0.75 VTT PG | 0x01              | ok
+CPU VTT          | 0x01              | ok
+1.5V PG          | 0x01              | ok
+1.8V PG          | 0x01              | ok
+5V PG            | 0x01              | ok
+CPU2 MEM PG      | Not Readable      | ns
+CPU1 MEM PG      | 0x01              | ok
+CPU2 VTT PG      | Not Readable      | ns
+CPU1 VTT PG      | 0x01              | ok
+0.9V PG          | 0x01              | ok
+CPU2 1.8 PLL PG  | Not Readable      | ns
+CPU1 1.8 PLL PG  | 0x01              | ok
+1.1V PG          | 0x01              | ok
+1.0V LOM PG      | 0x01              | ok
+1.0V AUX PG      | 0x01              | ok
+FAN 1 RPM        | 1080 RPM          | ok
+Presence         | 0x01              | ok
+Presence         | 0x02              | ok
+HEATSINK PRES    | 0x01              | ok
+Presence         | 0x02              | ok
+Presence         | 0x02              | ok
+Presence         | 0x02              | ok
+PFault Fail Safe | Not Readable      | ns
+Status           | 0x80              | ok
+Status           | 0x00              | ok
+Status           | Not Readable      | ns
+Status           | Not Readable      | ns
+Status           | 0x01              | ok
+iDRAC6 Ent PRES  | 0x02              | ok
+OS Watchdog      | 0x00              | ok
+SEL              | Not Readable      | ns
+Intrusion        | 0x00              | ok
+PS Redundancy    | Not Readable      | ns
+Fan Redundancy   | Not Readable      | ns
+CPU Temp Interf  | Not Readable      | ns
+Drive            | Not Readable      | ns
+Cable SAS A      | Not Readable      | ns
+Cable SAS B      | Not Readable      | ns
+Current 1        | disabled          | ns
+Current 2        | disabled          | ns
+Voltage 1        | disabled          | ns
+Voltage 2        | disabled          | ns
+System Level     | no reading        | ns
+Power Optimized  | 0x01              | ok
+ECC Corr Err     | Not Readable      | ns
+ECC Uncorr Err   | Not Readable      | ns
+I/O Channel Chk  | Not Readable      | ns
+PCI Parity Err   | Not Readable      | ns
+PCI System Err   | Not Readable      | ns
+SBE Log Disabled | Not Readable      | ns
+Logging Disabled | Not Readable      | ns
+Unknown          | Not Readable      | ns
+CPU Protocol Err | Not Readable      | ns
+CPU Bus PERR     | Not Readable      | ns
+CPU Init Err     | Not Readable      | ns
+CPU Machine Chk  | Not Readable      | ns
+Memory Spared    | Not Readable      | ns
+Memory Mirrored  | Not Readable      | ns
+Memory RAID      | Not Readable      | ns
+Memory Added     | Not Readable      | ns
+Memory Removed   | Not Readable      | ns
+Memory Cfg Err   | Not Readable      | ns
+Mem Redun Gain   | Not Readable      | ns
+PCIE Fatal Err   | Not Readable      | ns
+Chipset Err      | Not Readable      | ns
+Err Reg Pointer  | Not Readable      | ns
+Mem ECC Warning  | Not Readable      | ns
+Mem CRC Err      | Not Readable      | ns
+USB Over-current | Not Readable      | ns
+POST Err         | Not Readable      | ns
+Hdwr version err | Not Readable      | ns
+Mem Overtemp     | Not Readable      | ns
+Mem Fatal SB CRC | Not Readable      | ns
+Mem Fatal NB CRC | Not Readable      | ns
+OS Watchdog Time | Not Readable      | ns
+Non Fatal PCI Er | Not Readable      | ns
+Fatal IO Error   | Not Readable      | ns
+MSR Info Log     | Not Readable      | ns

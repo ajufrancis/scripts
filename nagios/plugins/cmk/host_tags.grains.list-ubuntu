@@ -1,0 +1,71 @@
+root@squid:~# salt-call --local grains.items
+local:
+  biosreleasedate: 01/17/2012
+  biosversion: 4.1.2
+  cpu_flags: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat clflush mmx fxsr sse sse2 syscall rdtscp lm constant_tsc rep_good pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes hypervisor lahf_lm
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: en_US
+  domain:
+  external_ip: 111.205.45.254
+  fqdn: squid
+  fqdn_ip4:
+      58.64.152.142
+  fqdn_ip6:
+  gpus:
+      {'model': 'GD 5446', 'vendor': 'unknown'}
+  host: squid
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth1': 'fe:4a:7b:42:90:8b', 'eth0': 'ea:2d:cc:8a:d1:9d'}
+  id: squid
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth1': ['192.168.31.246'], 'eth0': []}
+  ipv4:
+      127.0.0.1
+      192.168.31.246
+  ipv6:
+      ::1
+      fe80::fc4a:7bff:fe42:908b
+  kernel: Linux
+  kernelrelease: 2.6.32-54-server
+  localhost: squid
+  lsb_distrib_codename: lucid
+  lsb_distrib_description: Ubuntu 10.04 LTS
+  lsb_distrib_id: Ubuntu
+  lsb_distrib_release: 10.04
+  manufacturer: Xen
+  master: salt
+  mem_total: 2003
+  nodename: squid
+  num_cpus: 2
+  num_gpus: 1
+  os: Ubuntu
+  os_family: Debian
+  osarch: amd64
+  oscodename: lucid
+  osfinger: Ubuntu-10.04
+  osfullname: Ubuntu
+  osrelease: 10.04
+  path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+  productname: HVM domU
+  ps: ps -efHww
+  pythonpath:
+      /usr/bin
+      /usr/lib/python2.6
+      /usr/lib/python2.6/plat-linux2
+      /usr/lib/python2.6/lib-tk
+      /usr/lib/python2.6/lib-old
+      /usr/lib/python2.6/lib-dynload
+      /usr/lib/python2.6/dist-packages
+      /usr/lib/pymodules/python2.6
+      /usr/lib/pymodules/python2.6/gtk-2.0
+      /usr/local/lib/python2.6/dist-packages
+  pythonversion: 2.6.5.final.0
+  saltpath: /usr/lib/pymodules/python2.6/salt
+  saltversion: 2014.1.0
+  saltversioninfo: (2014, 1, 0)
+  serialnumber: b6d68717-d03d-585a-790e-5d0c34e4b9da
+  server_id: 1036672395
+  shell: /bin/bash
+  test: None
+  virtual: physical
+

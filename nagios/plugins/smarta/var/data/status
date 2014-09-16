@@ -1,0 +1,5 @@
+Linux nagios01.gdcloud.com top - 21:38:02 up 1 day, 11:05,  1 user,  load average: 0.72, 0.67, 0.35
+Tasks: 180 total,   1 running, 179 sleeping,   0 stopped,   0 zombie
+Cpu(s):  2.4%us,  0.5%sy,  0.0%ni, 96.8%id,  0.2%wa,  0.0%hi,  0.0%si,  0.0%st
+Mem:   3906772k total,  2578388k used,  1328384k free,   150696k buffers
+Swap:  6143992k total,        0k used,  6143992k free,  1897012k cached

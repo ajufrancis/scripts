@@ -1,0 +1,3 @@
+http://www.vojcik.net/automatic-server-audit-for-racktables-project/
+https://github.com/ibettinger/racktables-py-client
+https://github.com/ibettinger/racktables

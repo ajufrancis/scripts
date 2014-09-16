@@ -1,0 +1,22 @@
+[ocs]
+db_host = ocs_db_hostname
+db_name = ocsweb
+db_user = ocs
+db_pass = password
+
+#-- Do not process assets last seen before
+reject_before_date = 2011-08-01
+
+#-- Do not process more than N assets
+#process_max = 10
+
+[rack]
+db_host = rack_db_hostname
+db_name = racktables
+db_user = rackuser
+db_pass = password
+
+import_tag = yes
+import_hw_type = yes
+import_sw_type = yes
+resovle_fqdn = yes

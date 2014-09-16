@@ -1,0 +1,2 @@
+http://liguxk.blog.51cto.com/129038/155491
+sendmail,postfix,qmail compare

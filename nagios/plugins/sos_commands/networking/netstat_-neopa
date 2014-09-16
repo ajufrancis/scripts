@@ -1,0 +1,143 @@
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       User       Inode      PID/Program name    Timer
+tcp        0      0 0.0.0.0:111                 0.0.0.0:*                   LISTEN      0          154116     27594/rpcbind       off (0.00/0/0)
+tcp        0      0 0.0.0.0:10000               0.0.0.0:*                   LISTEN      0          3584162    29464/perl          off (0.00/0/0)
+tcp        0      0 0.0.0.0:53                  0.0.0.0:*                   LISTEN      0          3611128    3019/dnsmasq        off (0.00/0/0)
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      0          10735      1451/sshd           off (0.00/0/0)
+tcp        0      0 192.168.11.9:3000           0.0.0.0:*                   LISTEN      0          3475504    11413/ntop          off (0.00/0/0)
+tcp        0      0 127.0.0.1:3001              0.0.0.0:*                   LISTEN      0          3475506    11413/ntop          off (0.00/0/0)
+tcp        0      0 127.0.0.1:25                0.0.0.0:*                   LISTEN      0          10963      1535/master         off (0.00/0/0)
+tcp        0      0 0.0.0.0:2049                0.0.0.0:*                   LISTEN      0          156660     -                   off (0.00/0/0)
+tcp        0      0 0.0.0.0:46885               0.0.0.0:*                   LISTEN      0          156662     -                   off (0.00/0/0)
+tcp        0      0 0.0.0.0:37766               0.0.0.0:*                   LISTEN      0          156612     28302/rpc.mountd    off (0.00/0/0)
+tcp        0      0 192.168.11.9:5000           0.0.0.0:*                   LISTEN      496        11964167   4080/httpd          off (0.00/0/0)
+tcp        0      0 0.0.0.0:5672                0.0.0.0:*                   LISTEN      498        53509      10748/qpidd         off (0.00/0/0)
+tcp        0      0 192.168.11.9:5000           192.168.253.161:4401        ESTABLISHED 496        13070550   4109/httpd          keepalive (7171.04/0/0)
+tcp        0      0 192.168.11.9:5000           192.168.253.161:4403        ESTABLISHED 496        13070615   4080/httpd          keepalive (7191.05/0/0)
+tcp        0      0 192.168.11.9:2049           192.168.11.13:961           ESTABLISHED 0          163964     -                   off (0.00/0/0)
+tcp        0      0 192.168.11.9:22             192.168.253.161:3672        ESTABLISHED 0          13022563   26940/sshd          keepalive (5518.08/0/0)
+tcp        0      0 192.168.11.9:5000           10.24.23.46:60112           TIME_WAIT   0          0          -                   timewait (13.75/0/0)
+tcp        0      0 192.168.11.9:5000           10.24.23.46:60113           TIME_WAIT   0          0          -                   timewait (13.77/0/0)
+tcp        0      0 :::111                      :::*                        LISTEN      0          154121     27594/rpcbind       off (0.00/0/0)
+tcp        0      0 :::80                       :::*                        LISTEN      0          11061      1547/httpd          off (0.00/0/0)
+tcp        0      0 :::53                       :::*                        LISTEN      0          3611130    3019/dnsmasq        off (0.00/0/0)
+tcp        0      0 :::22                       :::*                        LISTEN      0          10737      1451/sshd           off (0.00/0/0)
+tcp        0      0 :::6556                     :::*                        LISTEN      0          4329020    1459/xinetd         off (0.00/0/0)
+tcp        0      0 :::50214                    :::*                        LISTEN      0          156620     28302/rpc.mountd    off (0.00/0/0)
+udp        0      0 0.0.0.0:10000               0.0.0.0:*                               0          3584163    29464/perl          off (0.00/0/0)
+udp        0      0 0.0.0.0:46117               0.0.0.0:*                               0          156661     -                   off (0.00/0/0)
+udp        0      0 0.0.0.0:53                  0.0.0.0:*                               0          3611127    3019/dnsmasq        off (0.00/0/0)
+udp        0      0 0.0.0.0:44641               0.0.0.0:*                               0          156608     28302/rpc.mountd    off (0.00/0/0)
+udp        0      0 0.0.0.0:111                 0.0.0.0:*                               0          154111     27594/rpcbind       off (0.00/0/0)
+udp        0      0 0.0.0.0:633                 0.0.0.0:*                               0          154115     27594/rpcbind       off (0.00/0/0)
+udp        0      0 0.0.0.0:2049                0.0.0.0:*                               0          156659     -                   off (0.00/0/0)
+udp        0      0 :::34852                    :::*                                    0          156616     28302/rpc.mountd    off (0.00/0/0)
+udp        0      0 :::53                       :::*                                    0          3611129    3019/dnsmasq        off (0.00/0/0)
+udp        0      0 :::111                      :::*                                    0          154118     27594/rpcbind       off (0.00/0/0)
+udp        0      0 :::633                      :::*                                    0          154120     27594/rpcbind       off (0.00/0/0)
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node PID/Program name    Path
+unix  7      [ ]         DGRAM                    7900679 1066/rsyslogd       /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING     12990734 20017/php-cgi       /omd/sites/site01/tmp/apache/fcgid_sock/19961.8
+unix  2      [ ACC ]     STREAM     LISTENING     154109 27594/rpcbind       /var/run/rpcbind.sock
+unix  2      [ ACC ]     STREAM     LISTENING     11964209 19965/rrdcached     /omd/sites/site01/tmp/run/rrdcached.sock
+unix  2      [ ACC ]     STREAM     LISTENING     7307   1/init              @/com/ubuntu/upstart
+unix  2      [ ACC ]     STREAM     LISTENING     12037983 4265/php-cgi        /omd/sites/site01/tmp/apache/fcgid_sock/19961.6
+unix  2      [ ]         DGRAM                    7443   462/udevd           @/org/kernel/udev/udevd
+unix  2      [ ACC ]     STREAM     LISTENING     12688255 18555/nagios        /omd/sites/site01/tmp/run/live
+unix  2      [ ACC ]     STREAM     LISTENING     8631   1078/dbus-daemon    /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     10969  1535/master         public/cleanup
+unix  2      [ ACC ]     STREAM     LISTENING     10976  1535/master         private/tlsmgr
+unix  2      [ ACC ]     STREAM     LISTENING     10980  1535/master         private/rewrite
+unix  2      [ ACC ]     STREAM     LISTENING     10984  1535/master         private/bounce
+unix  2      [ ACC ]     STREAM     LISTENING     10988  1535/master         private/defer
+unix  2      [ ACC ]     STREAM     LISTENING     10992  1535/master         private/trace
+unix  2      [ ACC ]     STREAM     LISTENING     10996  1535/master         private/verify
+unix  2      [ ACC ]     STREAM     LISTENING     11000  1535/master         public/flush
+unix  2      [ ACC ]     STREAM     LISTENING     11004  1535/master         private/proxymap
+unix  2      [ ACC ]     STREAM     LISTENING     11008  1535/master         private/proxywrite
+unix  2      [ ACC ]     STREAM     LISTENING     11012  1535/master         private/smtp
+unix  2      [ ACC ]     STREAM     LISTENING     11016  1535/master         private/relay
+unix  2      [ ACC ]     STREAM     LISTENING     11020  1535/master         public/showq
+unix  2      [ ACC ]     STREAM     LISTENING     11024  1535/master         private/error
+unix  2      [ ACC ]     STREAM     LISTENING     11028  1535/master         private/retry
+unix  2      [ ACC ]     STREAM     LISTENING     11032  1535/master         private/discard
+unix  2      [ ACC ]     STREAM     LISTENING     11036  1535/master         private/local
+unix  2      [ ACC ]     STREAM     LISTENING     11040  1535/master         private/virtual
+unix  2      [ ACC ]     STREAM     LISTENING     11044  1535/master         private/lmtp
+unix  2      [ ACC ]     STREAM     LISTENING     11048  1535/master         private/anvil
+unix  2      [ ACC ]     STREAM     LISTENING     11052  1535/master         private/scache
+unix  2      [ ACC ]     STREAM     LISTENING     12990717 20011/php-cgi       /omd/sites/site01/tmp/apache/fcgid_sock/19961.7
+unix  2      [ ]         DGRAM                    13022652 26940/sshd          
+unix  2      [ ]         DGRAM                    13013196 24992/pickup        
+unix  2      [ ]         DGRAM                    11966246 1596/crond          
+unix  2      [ ]         DGRAM                    11964211 19965/rrdcached     
+unix  2      [ ]         DGRAM                    8931359 1544/qmgr           
+unix  2      [ ]         DGRAM                    4329019 1459/xinetd         
+unix  2      [ ]         DGRAM                    3611138 3019/dnsmasq        
+unix  2      [ ]         DGRAM                    3593434 1078/dbus-daemon    
+unix  2      [ ]         DGRAM                    3584146 29464/perl          
+unix  2      [ ]         DGRAM                    3475464 11413/ntop          
+unix  2      [ ]         DGRAM                    156625 28302/rpc.mountd    
+unix  2      [ ]         DGRAM                    53510  10748/qpidd         
+unix  2      [ ]         DGRAM                    15529  1/init              
+unix  3      [ ]         STREAM     CONNECTED     11600  1078/dbus-daemon    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     11599  1654/console-kit-da 
+unix  3      [ ]         STREAM     CONNECTED     11576  1078/dbus-daemon    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     11575  1654/console-kit-da 
+unix  3      [ ]         STREAM     CONNECTED     11055  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11054  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11051  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11050  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11047  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11046  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11043  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11042  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11039  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11038  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11035  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11034  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11031  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11030  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11027  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11026  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11023  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11022  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11019  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11018  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11015  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11014  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11011  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11010  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11007  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11006  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11003  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     11002  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10999  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10998  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10995  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10994  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10991  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10990  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10987  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10986  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10983  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10982  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10979  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10978  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10975  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10974  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10972  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10971  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10968  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10967  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10965  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     10964  1535/master         
+unix  2      [ ]         DGRAM                    10924  1535/master         
+unix  3      [ ]         STREAM     CONNECTED     8643   1078/dbus-daemon    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     8642   1/init              
+unix  3      [ ]         STREAM     CONNECTED     8636   1078/dbus-daemon    
+unix  3      [ ]         STREAM     CONNECTED     8635   1078/dbus-daemon    
+unix  3      [ ]         DGRAM                    7459   462/udevd           
+unix  3      [ ]         DGRAM                    7458   462/udevd           
+

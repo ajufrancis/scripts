@@ -1,0 +1,1 @@
+/mnt/isos	*(ro,async,wdelay,hide,nocrossmnt,secure,no_root_squash,no_all_squash,no_subtree_check,secure_locks,acl,anonuid=65534,anongid=65534)

@@ -1,0 +1,366 @@
+===20140426_1944===
+ 
+
+
+  
+Welcome to the Alcatel-Lucent OmniSwitch 6000
+Software Version 6.4.5.402.R02 GA, December 24, 2012. 
+
+Copyright(c), 1994-2012 Alcatel-Lucent. All Rights reserved.
+
+OmniSwitch(TM) is a trademark of Alcatel-Lucent registered
+in the United States Patent and Trademark Office.
+  
+===20140426_1945===
+ 
+
+
+  
+Welcome to the Alcatel-Lucent OmniSwitch 6000
+Software Version 6.4.5.402.R02 GA, December 24, 2012. 
+
+Copyright(c), 1994-2012 Alcatel-Lucent. All Rights reserved.
+
+OmniSwitch(TM) is a trademark of Alcatel-Lucent registered
+in the United States Patent and Trademark Office.
+  
+===20140426_1947===
+ 
+  
+Welcome to the Alcatel-Lucent OmniSwitch 6000
+Software Version 6.4.5.402.R02 GA, December 24, 2012. 
+
+Copyright(c), 1994-2012 Alcatel-Lucent. All Rights reserved.
+
+OmniSwitch(TM) is a trademark of Alcatel-Lucent registered
+in the United States Patent and Trademark Office.
+  
+===20140426_1948===   Welcome to the Alcatel-Lucent OmniSwitch 6000Software Version 6.4.5.402.R02 GA, December 24, 2012. Copyright(c), 1994-2012 Alcatel-Lucent. All Rights reserved.OmniSwitch(TM) is a trademark of Alcatel-Lucent registeredin the United States Patent and Trademark Office.  ===20140426_1951===
+ 
+  
+Welcome to the Alcatel-Lucent OmniSwitch 6000
+Software Version 6.4.5.402.R02 GA, December 24, 2012. 
+
+Copyright(c), 1994-2012 Alcatel-Lucent. All Rights reserved.
+
+OmniSwitch(TM) is a trademark of Alcatel-Lucent registered
+in the United States Patent and Trademark Office.
+  
+===20140426_1953======20140426_1955======20140426_2005===IP address         = 192.168.11.10,
+Host mode          = client,
+Peer mode          = server,
+Prefer             = yes,
+Version            = 4,
+Key                = 0,
+Stratum            = 4,
+Minpoll            = 6 (64 seconds),
+Maxpoll            = 10 (1024 seconds),
+Delay              = 0.017 seconds,
+Offset             = 0.024 seconds,
+Dispersion         = 0.030 seconds
+Root distance      = 0.218,
+Precision          = -22,
+Reference IP       = 61.129.42.44,
+Status             = configured : reachable : synchronization peer,
+Uptime count       = 86159 seconds,
+Reachability       = ff,
+Unreachable count  = 0,
+Stats reset count  = 15 seconds,
+Packets sent       = 275,
+Packets received   = 274,
+Duplicate packets  = 0,
+Bogus origin       = 0,
+Bad authentication = 0,
+Bad dispersion     = 0,
+Last Event         = peer changed to reachable,
+
+
+
+===20140426_2007===IP address         = 192.168.11.10,
+Host mode          = client,
+Peer mode          = server,
+Prefer             = yes,
+Version            = 4,
+Key                = 0,
+Stratum            = 4,
+Minpoll            = 6 (64 seconds),
+Maxpoll            = 10 (1024 seconds),
+Delay              = 0.017 seconds,
+Offset             = 0.024 seconds,
+Dispersion         = 0.030 seconds
+Root distance      = 0.218,
+Precision          = -22,
+Reference IP       = 61.129.42.44,
+Status             = configured : reachable : synchronization peer,
+Uptime count       = 86266 seconds,
+Reachability       = ff,
+Unreachable count  = 0,
+Stats reset count  = 15 seconds,
+Packets sent       = 275,
+Packets received   = 274,
+Duplicate packets  = 0,
+Bogus origin       = 0,
+Bad authentication = 0,
+Bad dispersion     = 0,
+Last Event         = peer changed to reachable,
+
+
+
+===20140426_2008===
+ 
+  
+Welcome to the Alcatel-Lucent OmniSwitch 6000
+Software Version 6.4.5.402.R02 GA, December 24, 2012. 
+
+Copyright(c), 1994-2012 Alcatel-Lucent. All Rights reserved.
+
+OmniSwitch(TM) is a trademark of Alcatel-Lucent registered
+in the United States Patent and Trademark Office.
+  
+===20140426_2009===
+ 
+  
+Welcome to the Alcatel-Lucent OmniSwitch 6000
+Software Version 6.4.5.402.R02 GA, December 24, 2012. 
+
+Copyright(c), 1994-2012 Alcatel-Lucent. All Rights reserved.
+
+OmniSwitch(TM) is a trademark of Alcatel-Lucent registered
+in the United States Patent and Trademark Office.
+  
+===20140426_2010===IP address         = 192.168.11.10,
+Host mode          = client,
+Peer mode          = server,
+Prefer             = yes,
+Version            = 4,
+Key                = 0,
+Stratum            = 4,
+Minpoll            = 6 (64 seconds),
+Maxpoll            = 10 (1024 seconds),
+Delay              = 0.017 seconds,
+Offset             = 0.024 seconds,
+Dispersion         = 0.030 seconds
+Root distance      = 0.218,
+Precision          = -22,
+Reference IP       = 61.129.42.44,
+Status             = configured : reachable : synchronization peer,
+Uptime count       = 86486 seconds,
+Reachability       = ff,
+Unreachable count  = 0,
+Stats reset count  = 15 seconds,
+Packets sent       = 275,
+Packets received   = 274,
+Duplicate packets  = 0,
+Bogus origin       = 0,
+Bad authentication = 0,
+Bad dispersion     = 0,
+Last Event         = peer changed to reachable,
+
+
+
+===20140426_2012===
+ 
+  
+Welcome to the Alcatel-Lucent OmniSwitch 6000
+Software Version 6.4.5.402.R02 GA, December 24, 2012. 
+
+Copyright(c), 1994-2012 Alcatel-Lucent. All Rights reserved.
+
+OmniSwitch(TM) is a trademark of Alcatel-Lucent registered
+in the United States Patent and Trademark Office.
+  
+===20140426_2012===
+ 
+  
+Welcome to the Alcatel-Lucent OmniSwitch 6000
+Software Version 6.4.5.402.R02 GA, December 24, 2012. 
+
+Copyright(c), 1994-2012 Alcatel-Lucent. All Rights reserved.
+
+OmniSwitch(TM) is a trademark of Alcatel-Lucent registered
+in the United States Patent and Trademark Office.
+  
+===20140426_2013===IP address         = 192.168.11.10,
+Host mode          = client,
+Peer mode          = server,
+Prefer             = yes,
+Version            = 4,
+Key                = 0,
+Stratum            = 4,
+Minpoll            = 6 (64 seconds),
+Maxpoll            = 10 (1024 seconds),
+Delay              = 0.017 seconds,
+Offset             = 0.024 seconds,
+Dispersion         = 0.030 seconds
+Root distance      = 0.218,
+Precision          = -22,
+Reference IP       = 61.129.42.44,
+Status             = configured : reachable : synchronization peer,
+Uptime count       = 86625 seconds,
+Reachability       = ff,
+Unreachable count  = 0,
+Stats reset count  = 15 seconds,
+Packets sent       = 275,
+Packets received   = 274,
+Duplicate packets  = 0,
+Bogus origin       = 0,
+Bad authentication = 0,
+Bad dispersion     = 0,
+Last Event         = peer changed to reachable,
+
+
+
+===20140426_2013===IP address         = 192.168.11.10,
+Host mode          = client,
+Peer mode          = server,
+Prefer             = yes,
+Version            = 4,
+Key                = 0,
+Stratum            = 4,
+Minpoll            = 6 (64 seconds),
+Maxpoll            = 10 (1024 seconds),
+Delay              = 0.017 seconds,
+Offset             = 0.024 seconds,
+Dispersion         = 0.030 seconds
+Root distance      = 0.218,
+Precision          = -22,
+Reference IP       = 61.129.42.44,
+Status             = configured : reachable : synchronization peer,
+Uptime count       = 86665 seconds,
+Reachability       = ff,
+Unreachable count  = 0,
+Stats reset count  = 15 seconds,
+Packets sent       = 275,
+Packets received   = 274,
+Duplicate packets  = 0,
+Bogus origin       = 0,
+Bad authentication = 0,
+Bad dispersion     = 0,
+Last Event         = peer changed to reachable,
+
+
+
+===20140426_2015===
+IP address         = 192.168.11.10,
+Host mode          = client,
+Peer mode          = server,
+Prefer             = yes,
+Version            = 4,
+Key                = 0,
+Stratum            = 4,
+Minpoll            = 6 (64 seconds),
+Maxpoll            = 10 (1024 seconds),
+Delay              = 0.017 seconds,
+Offset             = 0.033 seconds,
+Dispersion         = 0.030 seconds
+Root distance      = 0.218,
+Precision          = -22,
+Reference IP       = 61.129.42.44,
+Status             = configured : reachable : synchronization peer,
+Uptime count       = 86765 seconds,
+Reachability       = ff,
+Unreachable count  = 0,
+Stats reset count  = 15 seconds,
+Packets sent       = 276,
+Packets received   = 275,
+Duplicate packets  = 0,
+Bogus origin       = 0,
+Bad authentication = 0,
+Bad dispersion     = 0,
+Last Event         = peer changed to reachable,
+
+
+
+===20140426_2017===
+IP address         = 192.168.11.10,
+Host mode          = client,
+Peer mode          = server,
+Prefer             = yes,
+Version            = 4,
+Key                = 0,
+Stratum            = 4,
+Minpoll            = 6 (64 seconds),
+Maxpoll            = 10 (1024 seconds),
+Delay              = 0.017 seconds,
+Offset             = 0.033 seconds,
+Dispersion         = 0.030 seconds
+Root distance      = 0.218,
+Precision          = -22,
+Reference IP       = 61.129.42.44,
+Status             = configured : reachable : synchronization peer,
+Uptime count       = 86850 seconds,
+Reachability       = ff,
+Unreachable count  = 0,
+Stats reset count  = 15 seconds,
+Packets sent       = 276,
+Packets received   = 275,
+Duplicate packets  = 0,
+Bogus origin       = 0,
+Bad authentication = 0,
+Bad dispersion     = 0,
+Last Event         = peer changed to reachable,
+
+
+
+===20140426_2028===
+IP address         = 192.168.11.10,
+Host mode          = client,
+Peer mode          = server,
+Prefer             = yes,
+Version            = 4,
+Key                = 0,
+Stratum            = 4,
+Minpoll            = 6 (64 seconds),
+Maxpoll            = 10 (1024 seconds),
+Delay              = 0.017 seconds,
+Offset             = 0.033 seconds,
+Dispersion         = 0.030 seconds
+Root distance      = 0.218,
+Precision          = -22,
+Reference IP       = 61.129.42.44,
+Status             = configured : reachable : synchronization peer,
+Uptime count       = 87555 seconds,
+Reachability       = ff,
+Unreachable count  = 0,
+Stats reset count  = 15 seconds,
+Packets sent       = 276,
+Packets received   = 275,
+Duplicate packets  = 0,
+Bogus origin       = 0,
+Bad authentication = 0,
+Bad dispersion     = 0,
+Last Event         = peer changed to reachable,
+
+
+
+===20140426_2043===
+IP address         = 192.168.11.10,
+Host mode          = client,
+Peer mode          = server,
+Prefer             = yes,
+Version            = 4,
+Key                = 0,
+Stratum            = 4,
+Minpoll            = 6 (64 seconds),
+Maxpoll            = 10 (1024 seconds),
+Delay              = 0.017 seconds,
+Offset             = 0.047 seconds,
+Dispersion         = 0.030 seconds
+Root distance      = 0.251,
+Precision          = -22,
+Reference IP       = 61.129.42.44,
+Status             = configured : reachable : synchronization peer,
+Uptime count       = 88460 seconds,
+Reachability       = ff,
+Unreachable count  = 0,
+Stats reset count  = 15 seconds,
+Packets sent       = 277,
+Packets received   = 276,
+Duplicate packets  = 0,
+Bogus origin       = 0,
+Bad authentication = 0,
+Bad dispersion     = 0,
+Last Event         = peer changed to reachable,
+
+
+

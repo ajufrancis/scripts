@@ -1,0 +1,62 @@
+Mar  3 04:07:30 nagios01 sshd[9728]: pam_unix(sshd:session): session closed for user root
+Mar  4 09:26:20 nagios01 sshd[13893]: Accepted password for root from 10.24.23.46 port 57589 ssh2
+Mar  4 09:26:20 nagios01 sshd[13893]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 09:32:59 nagios01 sshd[13893]: pam_unix(sshd:session): session closed for user root
+Mar  4 09:33:05 nagios01 sshd[17555]: Accepted password for root from 10.24.23.46 port 57964 ssh2
+Mar  4 09:33:05 nagios01 sshd[17555]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 10:45:04 nagios01 sshd[17579]: Accepted password for root from 10.24.23.46 port 60597 ssh2
+Mar  4 10:45:04 nagios01 sshd[17579]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 10:45:19 nagios01 sshd[17579]: pam_unix(sshd:session): session closed for user root
+Mar  4 10:46:00 nagios01 sshd[18101]: Accepted password for root from 10.24.23.46 port 60611 ssh2
+Mar  4 10:46:00 nagios01 sshd[18101]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 10:46:03 nagios01 sshd[18101]: pam_unix(sshd:session): session closed for user root
+Mar  4 10:46:10 nagios01 sshd[18129]: Accepted password for root from 10.24.23.46 port 60622 ssh2
+Mar  4 10:46:10 nagios01 sshd[18129]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 10:46:51 nagios01 sshd[18129]: pam_unix(sshd:session): session closed for user root
+Mar  4 10:47:05 nagios01 sshd[18650]: Accepted password for root from 10.24.23.46 port 60636 ssh2
+Mar  4 10:47:05 nagios01 sshd[18650]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 10:47:51 nagios01 sshd[18650]: pam_unix(sshd:session): session closed for user root
+Mar  4 10:47:57 nagios01 sshd[19168]: Accepted password for root from 10.24.23.46 port 60650 ssh2
+Mar  4 10:47:57 nagios01 sshd[19168]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 10:50:36 nagios01 sshd[19168]: pam_unix(sshd:session): session closed for user root
+Mar  4 10:51:13 nagios01 sshd[21103]: Accepted password for root from 10.24.23.46 port 60728 ssh2
+Mar  4 10:51:13 nagios01 sshd[21103]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 10:51:38 nagios01 sshd[21103]: pam_unix(sshd:session): session closed for user root
+Mar  4 10:59:39 nagios01 sshd[25575]: Accepted password for root from 10.24.23.46 port 60921 ssh2
+Mar  4 10:59:39 nagios01 sshd[25575]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 10:59:43 nagios01 sshd[25575]: pam_unix(sshd:session): session closed for user root
+Mar  4 11:00:11 nagios01 sshd[25905]: Accepted password for root from 192.168.254.106 port 60922 ssh2
+Mar  4 11:00:11 nagios01 sshd[25905]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 11:44:30 nagios01 sshd[17555]: pam_unix(sshd:session): session closed for user root
+Mar  4 14:11:26 nagios01 sshd[25905]: pam_unix(sshd:session): session closed for user root
+Mar  4 14:22:03 nagios01 sshd[1426]: Accepted password for root from 192.168.254.106 port 50552 ssh2
+Mar  4 14:22:03 nagios01 sshd[1426]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 14:30:03 nagios01 su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Mar  4 15:19:52 nagios01 sshd[31662]: Accepted password for root from 10.24.23.46 port 51110 ssh2
+Mar  4 15:19:52 nagios01 sshd[31662]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 16:09:50 nagios01 sshd[21610]: Accepted password for root from 10.24.23.46 port 54756 ssh2
+Mar  4 16:09:50 nagios01 sshd[21610]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 16:11:25 nagios01 su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Mar  4 16:19:19 nagios01 su: pam_unix(su-l:session): session closed for user site01
+Mar  4 16:31:42 nagios01 su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Mar  4 16:37:41 nagios01 su: pam_unix(su-l:session): session closed for user site01
+Mar  4 16:37:50 nagios01 su: pam_unix(su-l:session): session opened for user site01 by root(uid=0)
+Mar  4 16:47:02 nagios01 sshd[1426]: pam_unix(sshd:session): session closed for user root
+Mar  4 16:47:02 nagios01 su: pam_unix(su-l:session): session closed for user site01
+Mar  4 16:50:45 nagios01 su: pam_unix(su-l:session): session closed for user site01
+Mar  4 16:51:58 nagios01 sshd[30627]: Accepted password for root from 10.24.23.46 port 57284 ssh2
+Mar  4 16:51:58 nagios01 sshd[30627]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 16:51:58 nagios01 sshd[30627]: subsystem request for sftp
+Mar  4 16:52:32 nagios01 sshd[30627]: pam_unix(sshd:session): session closed for user root
+Mar  4 17:04:35 nagios01 sshd[761]: Accepted password for root from 10.24.23.46 port 57864 ssh2
+Mar  4 17:04:35 nagios01 sshd[761]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 17:04:35 nagios01 sshd[761]: subsystem request for sftp
+Mar  4 17:04:56 nagios01 sshd[761]: pam_unix(sshd:session): session closed for user root
+Mar  4 17:41:21 nagios01 sshd[31662]: pam_unix(sshd:session): session closed for user root
+Mar  4 17:51:07 nagios01 sshd[21610]: pam_unix(sshd:session): session closed for user root
+Mar  4 21:44:03 nagios01 sshd[26940]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.253.161  user=root
+Mar  4 21:44:06 nagios01 sshd[26940]: Failed password for root from 192.168.253.161 port 3672 ssh2
+Mar  4 21:44:08 nagios01 sshd[26940]: Accepted password for root from 192.168.253.161 port 3672 ssh2
+Mar  4 21:44:08 nagios01 sshd[26940]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar  4 21:58:19 nagios01 runuser: pam_unix(runuser:session): session opened for user qpidd by root(uid=0)
+Mar  4 21:58:19 nagios01 runuser: pam_unix(runuser:session): session closed for user qpidd

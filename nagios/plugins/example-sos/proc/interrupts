@@ -1,0 +1,33 @@
+            CPU0       CPU1       CPU2       CPU3       
+   0:   55181873          0          0          0  IR-IO-APIC-edge      timer
+   1:          2          0          0          0  IR-IO-APIC-edge      i8042
+   8:        111          0          0          0  IR-IO-APIC-edge      rtc0
+   9:          0          0          0          0  IR-IO-APIC-fasteoi   acpi
+  12:          4          0          0          0  IR-IO-APIC-edge      i8042
+  17:       1199          0          0          0  IR-IO-APIC-fasteoi   uhci_hcd:usb3
+  18:          0          0          0          0  IR-IO-APIC-fasteoi   uhci_hcd:usb4
+  19:         60          0          0          0  IR-IO-APIC-fasteoi   ehci_hcd:usb1
+  20:          0          0          0          0  IR-IO-APIC-fasteoi   uhci_hcd:usb6, uhci_hcd:usb8
+  21:      38879          0          0          0  IR-IO-APIC-fasteoi   ehci_hcd:usb2, uhci_hcd:usb5, uhci_hcd:usb7
+  56:          0          0          0          0  DMAR_MSI-edge      dmar0
+  62:          0          0          0          0  IR-PCI-MSI-edge      pciehp
+  63:    6274881          0          0          0  IR-PCI-MSI-edge      ahci
+  64:    5278151          0          0          0  IR-PCI-MSI-edge      em1-0
+  65:    7938258          0          0          0  IR-PCI-MSI-edge      em1-1
+  66:    6298747          0          0          0  IR-PCI-MSI-edge      em1-2
+  67:    5516142          0          0          0  IR-PCI-MSI-edge      em1-3
+  68:    2615484          0          0          0  IR-PCI-MSI-edge      em1-4
+ NMI:      15491      13020       6655       5158   Non-maskable interrupts
+ LOC:   19231567   41495490   22556398   12478470   Local timer interrupts
+ SPU:          0          0          0          0   Spurious interrupts
+ PMI:      15491      13020       6655       5158   Performance monitoring interrupts
+ PND:          0          0          0          0   Performance pending work
+ RES:      70225     115767     126912     124826   Rescheduling interrupts
+ CAL:     120741     224877     443507     556506   Function call interrupts
+ TLB:     765180    1442526    1411365    1057228   TLB shootdowns
+ TRM:          0          0          0          0   Thermal event interrupts
+ THR:          0          0          0          0   Threshold APIC interrupts
+ MCE:          0          0          0          0   Machine check exceptions
+ MCP:       1580       1580       1580       1580   Machine check polls
+ ERR:          0
+ MIS:          0

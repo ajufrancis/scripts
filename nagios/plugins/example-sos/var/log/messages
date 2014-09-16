@@ -1,0 +1,24 @@
+Mar  3 03:47:01 nagios01 kernel: imklog 4.6.2, log source = /proc/kmsg started.
+Mar  3 03:47:01 nagios01 rsyslogd: [origin software="rsyslogd" swVersion="4.6.2" x-pid="1066" x-info="http://www.rsyslog.com"] (re)start
+Mar  4 10:49:14 nagios01 rrdcached[10072]: caught SIGTERM
+Mar  4 10:49:14 nagios01 rrdcached[10072]: starting shutdown
+Mar  4 10:49:14 nagios01 rrdcached[10072]: expedited shutdown; journals will be used at next startup
+Mar  4 10:49:14 nagios01 rrdcached[10072]: goodbye
+Mar  4 10:49:15 nagios01 rrdcached[19965]: starting up
+Mar  4 10:49:15 nagios01 rrdcached[19965]: checking for journal files
+Mar  4 10:49:15 nagios01 rrdcached[19965]: replaying from journal: /opt/omd/sites/site01/var/rrdcached/rrd.journal.1362352126.450837
+Mar  4 10:49:16 nagios01 rrdcached[19965]: Replayed 350865 entries (0 failures)
+Mar  4 10:49:16 nagios01 rrdcached[19965]: replaying from journal: /opt/omd/sites/site01/var/rrdcached/rrd.journal.1362359326.450845
+Mar  4 10:49:16 nagios01 rrdcached[19965]: Replayed 328287 entries (0 failures)
+Mar  4 10:49:16 nagios01 rrdcached[19965]: journal processing complete
+Mar  4 10:49:16 nagios01 rrdcached[19965]: listening for connections
+Mar  4 16:10:06 nagios01 yum[21630]: Installed: cvs-1.11.23-11.el6_2.1.x86_64
+Mar  4 16:10:09 nagios01 yum[21630]: Installed: gettext-0.17-16.el6.x86_64
+Mar  4 21:50:45 nagios01 yum[28856]: Installed: 1:dmidecode-2.11-2.el6.x86_64
+Mar  4 21:51:06 nagios01 yum[28895]: Installed: libusb1-1.0.9-0.5.rc1.el6.x86_64
+Mar  4 21:51:06 nagios01 yum[28895]: Installed: usbutils-003-4.el6.x86_64
+Mar  4 21:51:31 nagios01 yum[28902]: Installed: pciutils-3.1.4-11.el6.x86_64
+Mar  4 21:54:14 nagios01 yum[29793]: Updated: libxml2-2.7.6-4.el6_2.4.x86_64
+Mar  4 21:54:15 nagios01 yum[29793]: Installed: libxml2-python-2.7.6-4.el6_2.4.x86_64
+Mar  4 21:54:16 nagios01 yum[29793]: Installed: sos-2.2-29.el6.noarch
+Mar  4 21:54:36 nagios01 kernel: process `sosreport' is using deprecated sysctl (syscall) net.ipv6.neigh.default.retrans_time; Use net.ipv6.neigh.default.retrans_time_ms instead.

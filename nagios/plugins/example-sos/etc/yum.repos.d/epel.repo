@@ -1,0 +1,6 @@
+[epel]
+name=EPEL REPO
+baseurl=http://mirrors.sohu.com/fedora-epel/6/x86_64/
+gpgcheck=1
+gpgkey=http://mirrors.sohu.com/fedora-epel/RPM-GPG-KEY-EPEL-6
+enabled=1

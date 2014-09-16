@@ -1,0 +1,22 @@
+Feb 21 17:09:39 localhost sshd[1127]: Server listening on 0.0.0.0 port 22.
+Feb 21 17:09:39 localhost sshd[1127]: Server listening on :: port 22.
+Feb 21 17:09:40 localhost runuser: pam_unix(runuser:session): session opened for user qpidd by (uid=0)
+Feb 21 17:09:40 localhost runuser: pam_unix(runuser:session): session closed for user qpidd
+Feb 21 17:09:40 localhost runuser: pam_unix(runuser:session): session opened for user qpidd by (uid=0)
+Feb 21 17:09:40 localhost runuser: pam_unix(runuser:session): session closed for user qpidd
+Feb 21 17:09:40 localhost runuser: pam_unix(runuser-l:session): session opened for user qpidd by (uid=0)
+Feb 21 17:09:40 localhost runuser: pam_unix(runuser-l:session): session closed for user qpidd
+Feb 21 17:09:49 localhost login: pam_unix(login:session): session opened for user root by LOGIN(uid=0)
+Feb 21 17:09:49 localhost login: ROOT LOGIN ON tty1
+Feb 21 17:16:58 localhost login: pam_unix(login:session): session closed for user root
+Feb 21 17:16:58 localhost runuser: pam_unix(runuser:session): session opened for user qpidd by (uid=0)
+Feb 21 17:16:58 localhost runuser: pam_unix(runuser:session): session closed for user qpidd
+Feb 21 17:16:58 localhost sshd[1127]: Received signal 15; terminating.
+Feb 21 17:18:21 localhost sshd[981]: Server listening on 0.0.0.0 port 22.
+Feb 21 17:18:21 localhost sshd[981]: Server listening on :: port 22.
+Feb 21 17:18:22 localhost runuser: pam_unix(runuser:session): session opened for user qpidd by (uid=0)
+Feb 21 17:18:22 localhost runuser: pam_unix(runuser:session): session closed for user qpidd
+Feb 21 17:18:22 localhost runuser: pam_unix(runuser:session): session opened for user qpidd by (uid=0)
+Feb 21 17:18:22 localhost runuser: pam_unix(runuser:session): session closed for user qpidd
+Feb 21 17:18:23 localhost runuser: pam_unix(runuser-l:session): session opened for user qpidd by (uid=0)
+Feb 21 17:18:23 localhost runuser: pam_unix(runuser-l:session): session closed for user qpidd

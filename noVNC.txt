@@ -1,0 +1,36 @@
+http://www.vpsee.com/2013/07/integrating-novnc-with-our-vm-control-panel/
+http://blog.csdn.net/hongqun/article/details/17098633
+vnc.html?autoconnect=true&host=HOST&port=PORT&password=PASSWORD&encrypt=true
+http://192.168.0.200:8844/vnc_auto.html?path=%3ftoken=abc123
+
+#wxp-1 example:
+[root@xenserver-p2 utils]# ./launch.sh --vnc 127.0.0.1:5919
+Warning: could not find self.pem
+Starting webserver and WebSockets proxy on port 6080
+WARNING: no 'numpy' module, HyBi protocol will be slower
+WARNING: no 'ssl' module, TLS/SSL/wss is disabled
+WARNING: no 'multiprocessing' module, Multi-Processing is disabled
+WebSocket server settings:
+  - Listen on :6080
+  - Flash security policy server
+  - Web server. Web root: /opt/noVNC
+  - No SSL/TLS support (no 'ssl' module)
+  - proxying from :6080 to 127.0.0.1:5919
+
+Navigate to this URL:
+
+# 192.168.11.13
+#    http://192.168.11.13:6080/vnc.html?host=192.168.11.13&port=6080
+
+    http://xenserver-p2:6080/vnc.html?host=xenserver-p2&port=6080
+
+Press Ctrl-C to exit
+
+
+localhost - - [25/Aug/2014 16:00:18] 192.168.254.3: Plain non-SSL (ws://)
+WebSocket connection
+localhost - - [25/Aug/2014 16:00:18] 192.168.254.3: Version hybi-13, base64:
+'False'
+localhost - - [25/Aug/2014 16:00:18] 192.168.254.3: Path: '/websockify'
+localhost - - [25/Aug/2014 16:00:18] connecting to: 127.0.0.1:5919
+

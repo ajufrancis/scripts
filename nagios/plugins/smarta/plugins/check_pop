@@ -1,0 +1,60 @@
+#! lua
+
+-- check_pop
+
+require("plugin")
+
+-- do check
+function check_pop(opts) 
+    local socket = require("socket")
+    t1 = socket.gettime()
+    client = socket.tcp()
+    client:settimeout(6)
+    local ok, errMsg = client:connect(opts["H"], opts["p"])
+    if not ok then
+        print("CRITICAL - ".."connection refused".."\r\n")
+        return STATUS_CRITICAL
+    end   
+    _, _ = client:receive()
+    command= "QUIT" .. "\r\n"
+    client:send(command)   
+    local resp, errMsg=client:receive()
+    t2 = socket.gettime()
+    if not (resp and string.find(resp,"+OK")) then
+        print("CRITICAL - no response\r\n")
+        return STATUS_CRITICAL
+    end
+    client:close()
+    escaped_time = (t2 - t1) * 1000
+    print(string.format("Port %s OK - response time = %.2fms\r\n", 
+		opts["p"], escaped_time))
+    print(string.format("metric:time: %.3fms", escaped_time))
+	return STATUS_OK
+end
+
+-- usage
+function usage() 
+    print("Usage: check_pop -H host -p port")
+	os.exit(0)
+end
+
+-- parse arguments
+local long_opts = {
+   help    = "h",
+   host    = "H",
+   port	   = "p",
+}
+
+local opts,optind = getopts(arg, "hH:p:", long_opts)
+if not opts["H"] then
+  print("UNKNOWN - miss argument 'host'\n")
+  usage()
+end
+if not opts["p"] then
+  print("UNKNOWN - miss argument 'port'\n")
+  usage()
+end
+
+status=check(opts)
+
+os.exit(status)

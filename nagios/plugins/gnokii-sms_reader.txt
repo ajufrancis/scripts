@@ -1,0 +1,1 @@
+gnokii --getsms SM 1 end -f /tmp/`mktemp sms_XXX`

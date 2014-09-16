@@ -1,0 +1,17 @@
+data structures and data analysis tools, Python Data Analysis Library:
+  - http://pandas.pydata.org/
+  - https://github.com/pydata
+  - http://f.dataguru.cn/
+general:
+  - http://pymotw.com/2/contents.html
+
+data print:
+  - yaml
+  - json
+  - xml
+  - pprint
+  - lxml
+  - beautifulsoup
+
+modules:
+  - python-prettytable python-hwdata.noarch

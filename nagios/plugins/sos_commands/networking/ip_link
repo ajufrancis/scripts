@@ -1,0 +1,7 @@
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue state UNKNOWN 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: em1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP qlen 1000
+    link/ether d4:ae:52:6f:9b:99 brd ff:ff:ff:ff:ff:ff
+3: em2: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN qlen 1000
+    link/ether d4:ae:52:6f:9b:9a brd ff:ff:ff:ff:ff:ff
+

@@ -1,0 +1,2 @@
+ssh -L local_port:localhost:localhost_port root@remotehost
+ultra_single_click

@@ -1,0 +1,63 @@
+#! lua
+
+-- check_smtp
+
+require("plugin")
+
+-- do check
+function check(opts) 
+    local socket = require("socket")
+    t1 = socket.gettime()
+    client = socket.tcp()
+    client:settimeout(6)
+    local ok, errMsg = client:connect(opts["H"], opts["p"])
+    if not ok then
+        print("CRITICAL - ".."connection refused".."\r\n")
+        return STATUS_CRITICAL
+    end   
+    _, _ = client:receive()
+    command= "NOOP" .. "\r\n"
+    client:send(command)   
+    local resp, errMsg=client:receive()
+    t2 = socket.gettime()
+    if not string.find(resp,"250[^\n]+[Oo][Kk]") then
+        print("CRITICAL - "..resp.."\r\n")
+        return STATUS_CRITICAL
+    end
+    client:close()
+    escaped_time = (t2 - t1) * 1000
+    print(string.format("OK - smtp port = %s, response time = %.2fms\r\n", 
+    opts["p"], escaped_time))
+    print(string.format("metric:time: %.3fms", escaped_time))
+	return STATUS_OK
+end
+
+-- usage
+function usage() 
+    print("Usage: check_smtp -H host -p port")
+	os.exit(0)
+end
+
+-- parse arguments
+local long_opts = {
+   help    = "h",
+   host    = "H",
+   port	   = "p",
+}
+
+local opts,optind = getopts(arg, "hH:p:", long_opts)
+if opts["h"] then
+  usage()
+end
+
+if not opts["H"] then 
+	print("UNKNOWN - miss argument 'host'\n")
+    usage()
+end
+
+opts["p"] = opts["p"] or "25"
+
+-- start_check
+status = check(opts)
+
+os.exit(status)

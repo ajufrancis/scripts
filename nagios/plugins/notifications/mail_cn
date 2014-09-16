@@ -1,0 +1,4 @@
+#!/bin/bash
+# sendmail-cn
+# send zh_cn content use sendEmail
+printf "主机状态: $LASTHOSTSTATE$ -> $HOSTSTATE$ ($NOTIFICATIONTYPE$)\n检查命令: $HOSTCHECKCOMMAND$\n检查结果: $HOSTOUTPUT$\n监控服务: $SERVICEDESC$\n服务状态: $LASTSERVICESTATE$ -> $SERVICESTATE$ ($NOTIFICATIONTYPE$)\n检查命令: $SERVICECHECKCOMMAND$\n检查结果: $SERVICEOUTPUT$" | sendEmail -f $NOTIFY_OMD_SITE@nagiios01.gdcloud.com -t 'NOTIFY_CONTACTEMAIL' -u '$SUBJECT$' -o message-header=utf-8 -m

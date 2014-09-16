@@ -1,0 +1,1 @@
+./check_snmp_int.pl -H 192.168.11.254 -C public -2 -g -G -n 1/13 --label -k -w 5000,10000 -c 10000,200000 -Y --intspeed

@@ -1,0 +1,520 @@
+<<<check_mk>>>
+Version: 1.2.0p3
+AgentOS: linux
+PluginsDirectory: /usr/lib/check_mk_agent/plugins
+LocalDirectory: /usr/lib/check_mk_agent/local
+AgentDirectory: /etc/check_mk
+<<<df>>>
+/dev/mapper/VolGroup-lv_root ext4 258030980 162979864  81946476      67% /
+/dev/sda1     ext4      495844     31573    438671       7% /boot
+/dev/mapper/VolGroup-lv_home ext4 216135708    202472 204954116       1% /home
+/dev/sdb1     ext4    96122052  42538732  48700508      47% /mnt/isos
+<<<nfsmounts>>>
+<<<mounts>>>
+/dev/mapper/VolGroup-lv_root / ext4 rw,relatime,barrier=1,data=ordered 0 0
+/dev/sda1 /boot ext4 rw,relatime,barrier=1,data=ordered 0 0
+/dev/mapper/VolGroup-lv_home /home ext4 rw,relatime,barrier=1,data=ordered 0 0
+/dev/sdb1 /mnt/isos ext4 rw,relatime,barrier=1,data=ordered 0 0
+/dev/loop0 /media iso9660 ro,relatime 0 0
+/dev/loop1 /mnt/os iso9660 ro,relatime 0 0
+<<<ps>>>
+(root,19356,740,0.0) /sbin/init
+(root,0,0,0.0) [kthreadd]
+(root,0,0,0.0) [migration/0]
+(root,0,0,0.0) [ksoftirqd/0]
+(root,0,0,0.0) [migration/0]
+(root,0,0,0.0) [watchdog/0]
+(root,0,0,0.0) [migration/1]
+(root,0,0,0.0) [migration/1]
+(root,0,0,0.0) [ksoftirqd/1]
+(root,0,0,0.0) [watchdog/1]
+(root,0,0,0.0) [migration/2]
+(root,0,0,0.0) [migration/2]
+(root,0,0,0.0) [ksoftirqd/2]
+(root,0,0,0.0) [watchdog/2]
+(root,0,0,0.0) [migration/3]
+(root,0,0,0.0) [migration/3]
+(root,0,0,0.0) [ksoftirqd/3]
+(root,0,0,0.0) [watchdog/3]
+(root,0,0,0.0) [events/0]
+(root,0,0,0.0) [events/1]
+(root,0,0,0.0) [events/2]
+(root,0,0,0.0) [events/3]
+(root,0,0,0.0) [cpuset]
+(root,0,0,0.0) [khelper]
+(root,0,0,0.0) [netns]
+(root,0,0,0.0) [async/mgr]
+(root,0,0,0.0) [pm]
+(root,0,0,0.0) [sync_supers]
+(root,0,0,0.0) [bdi-default]
+(root,0,0,0.0) [kintegrityd/0]
+(root,0,0,0.0) [kintegrityd/1]
+(root,0,0,0.0) [kintegrityd/2]
+(root,0,0,0.0) [kintegrityd/3]
+(root,0,0,0.0) [kblockd/0]
+(root,0,0,0.0) [kblockd/1]
+(root,0,0,0.0) [kblockd/2]
+(root,0,0,0.0) [kblockd/3]
+(root,0,0,0.0) [kacpid]
+(root,0,0,0.0) [kacpi_notify]
+(root,0,0,0.0) [kacpi_hotplug]
+(root,0,0,0.0) [ata/0]
+(root,0,0,0.0) [ata/1]
+(root,0,0,0.0) [ata/2]
+(root,0,0,0.0) [ata/3]
+(root,0,0,0.0) [ata_aux]
+(root,0,0,0.0) [ksuspend_usbd]
+(root,0,0,0.0) [khubd]
+(root,0,0,0.0) [kseriod]
+(root,0,0,0.0) [md/0]
+(root,0,0,0.0) [md/1]
+(root,0,0,0.0) [md/2]
+(root,0,0,0.0) [md/3]
+(root,0,0,0.0) [md_misc/0]
+(root,0,0,0.0) [md_misc/1]
+(root,0,0,0.0) [md_misc/2]
+(root,0,0,0.0) [md_misc/3]
+(root,0,0,0.0) [khungtaskd]
+(root,0,0,0.0) [kswapd0]
+(root,0,0,0.0) [ksmd]
+(root,0,0,0.0) [khugepaged]
+(root,0,0,0.0) [aio/0]
+(root,0,0,0.0) [aio/1]
+(root,0,0,0.0) [aio/2]
+(root,0,0,0.0) [aio/3]
+(root,0,0,0.0) [crypto/0]
+(root,0,0,0.0) [crypto/1]
+(root,0,0,0.0) [crypto/2]
+(root,0,0,0.0) [crypto/3]
+(root,0,0,0.0) [kthrotld/0]
+(root,0,0,0.0) [kthrotld/1]
+(root,0,0,0.0) [kthrotld/2]
+(root,0,0,0.0) [kthrotld/3]
+(root,0,0,0.0) [pciehpd]
+(root,0,0,0.0) [kpsmoused]
+(root,0,0,0.0) [usbhid_resumer]
+(root,0,0,0.0) [kstriped]
+(root,0,0,0.0) [scsi_eh_0]
+(root,0,0,0.0) [scsi_eh_1]
+(root,0,0,0.0) [scsi_eh_2]
+(root,0,0,0.0) [scsi_eh_3]
+(root,0,0,0.0) [scsi_eh_4]
+(root,0,0,0.0) [scsi_eh_5]
+(root,0,0,0.0) [kdmflush]
+(root,0,0,0.0) [kdmflush]
+(root,0,0,0.0) [jbd2/dm-0-8]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,11136,272,0.0) /sbin/udevd -d
+(root,0,0,0.0) [edac-poller]
+(root,0,0,0.0) [kdmflush]
+(root,0,0,0.0) [jbd2/sda1-8]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [jbd2/dm-2-8]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [jbd2/sdb1-8]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [kauditd]
+(root,0,0,0.0) [flush-253:0]
+(root,93336,684,0.0) auditd
+(root,6296,244,0.0) /sbin/portreserve
+(root,248836,3468,0.1) /sbin/rsyslogd -i /var/run/syslogd.pid -c 4
+(rpc,19112,368,0.0) rpcbind
+(rpcuser,23288,456,0.0) rpc.statd
+(root,0,0,0.0) [rpciod/0]
+(root,0,0,0.0) [rpciod/1]
+(root,0,0,0.0) [rpciod/2]
+(root,0,0,0.0) [rpciod/3]
+(dbus,21520,620,0.0) dbus-daemon --system
+(root,283304,14828,0.0) /usr/sbin/httpd
+(68,25424,1388,0.0) hald
+(root,18244,324,0.0) hald-runner
+(root,20388,328,0.0) hald-addon-input: Listening on /dev/input/event0
+(68,17940,344,0.0) hald-addon-acpi: listening on acpi kernel interface /proc/acpi/event
+(root,0,0,0.1) [kipmi0]
+(root,599000,672,0.0) automount --pid-file /var/run/autofs.pid
+(root,21600,296,0.0) rpc.mountd --no-nfs-version 2
+(root,23236,348,0.0) rpc.idmapd
+(root,0,0,0.0) [lockd]
+(root,0,0,0.0) [nfsd4]
+(root,0,0,0.0) [nfsd4_callbacks]
+(root,0,0,0.0) [nfsd]
+(root,0,0,0.0) [nfsd]
+(root,0,0,0.0) [nfsd]
+(root,0,0,0.0) [nfsd]
+(root,0,0,0.0) [nfsd]
+(root,0,0,0.0) [nfsd]
+(root,0,0,0.0) [nfsd]
+(root,0,0,0.0) [nfsd]
+(root,64172,560,0.0) /usr/sbin/sshd
+(root,84588,812,0.0) sendmail: accepting connections
+(smmsp,76140,588,0.0) sendmail: Queue runner@01:00:00 for /var/spool/clientmqueue
+(qpidd,469912,1476,0.0) /usr/sbin/qpidd --data-dir /var/lib/qpidd --daemon
+(root,219960,1152,0.0) smbd -D
+(root,219960,460,0.0) smbd -D
+(root,95884,3980,0.0) sshd: root@pts/0 
+(root,114276,2040,0.0) -bash
+(root,4204,244,0.0) /sbin/mingetty /dev/tty2
+(root,4204,244,0.0) /sbin/mingetty /dev/tty3
+(root,4204,244,0.0) /sbin/mingetty /dev/tty4
+(root,4204,244,0.0) /sbin/mingetty /dev/tty5
+(root,4204,244,0.0) /sbin/mingetty /dev/tty6
+(apache,231496,5336,0.0) /usr/sbin/httpd
+(apache,285104,10280,0.0) /usr/sbin/httpd
+(apache,285104,10240,0.0) /usr/sbin/httpd
+(apache,285104,10288,0.0) /usr/sbin/httpd
+(apache,285104,10228,0.0) /usr/sbin/httpd
+(apache,285104,10232,0.0) /usr/sbin/httpd
+(apache,285104,10224,0.0) /usr/sbin/httpd
+(apache,285104,10228,0.0) /usr/sbin/httpd
+(apache,285104,10220,0.0) /usr/sbin/httpd
+(gdcloud,97868,10780,0.0) /usr/sbin/httpd -f /omd/sites/gdcloud/etc/apache/apache.conf
+(gdcloud,593400,14844,0.2) /omd/sites/gdcloud/bin/rrdcached -w 3600 -z 1800 -f 7200 -s gdcloud -m 660 -l unix:/omd/sites/gdcloud/tmp/run/rrdcached.sock -p /omd/sites/gdcloud/tmp/rrdcached.pid -j /omd/sites/gdcloud/var/rrdcached
+(gdcloud,160068,852,0.0) /omd/sites/gdcloud/bin/npcd -d -f /omd/sites/gdcloud/etc/pnp4nagios/npcd.cfg
+(gdcloud,1374764,4048,0.1) /omd/sites/gdcloud/bin/nagios -ud /omd/sites/gdcloud/tmp/nagios/nagios.cfg
+(gdcloud,10732,784,0.0) /omd/sites/gdcloud/bin/nsca -c /omd/sites/gdcloud/etc/nsca/nsca.cfg
+(gdcloud,97868,7016,0.0) /usr/sbin/httpd -f /omd/sites/gdcloud/etc/apache/apache.conf
+(gdcloud,97868,8000,0.0) /usr/sbin/httpd -f /omd/sites/gdcloud/etc/apache/apache.conf
+(fengce,104312,11932,0.0) /usr/sbin/httpd -f /omd/sites/fengce/etc/apache/apache.conf
+(fengce,104312,13016,0.0) /usr/sbin/httpd -f /omd/sites/fengce/etc/apache/apache.conf
+(site01,98640,7220,0.0) /usr/sbin/httpd -f /omd/sites/site01/etc/apache/apache.conf
+(site01,224520,41472,0.0) /usr/sbin/httpd -f /omd/sites/site01/etc/apache/apache.conf
+(root,0,0,0.0) [bluetooth]
+(root,11132,252,0.0) /sbin/udevd -d
+(site01,850780,6276,0.1) /omd/sites/site01/bin/nagios -ud /omd/sites/site01/tmp/nagios/nagios.cfg
+(root,95884,3976,0.0) sshd: root@pts/1 
+(root,114276,2100,0.0) -bash
+(gdcloud,97868,8000,0.0) /usr/sbin/httpd -f /omd/sites/gdcloud/etc/apache/apache.conf
+(root,220880,4324,0.0) smbd -D
+(ntp,26068,820,0.0) ntpd -u ntp:ntp -p /var/run/ntpd.pid -g
+(site01,10736,824,0.0) /omd/sites/site01/bin/nsca -c /omd/sites/site01/etc/nsca/nsca.cfg
+(root,2147920,1084,0.0) /usr/sbin/console-kit-daemon --no-daemon
+(site01,224520,41460,0.0) /usr/sbin/httpd -f /omd/sites/site01/etc/apache/apache.conf
+(root,4204,240,0.0) /sbin/mingetty /dev/tty1
+(apache,285104,10228,0.0) /usr/sbin/httpd
+(fengce,104312,15696,0.0) /usr/sbin/httpd -f /omd/sites/fengce/etc/apache/apache.conf
+(fengce,513788,1544,0.0) /omd/sites/fengce/bin/rrdcached -w 3600 -z 1800 -f 7200 -s fengce -m 660 -l unix:/omd/sites/fengce/tmp/run/rrdcached.sock -p /omd/sites/fengce/tmp/rrdcached.pid -j /omd/sites/fengce/var/rrdcached
+(fengce,160068,844,0.0) /omd/sites/fengce/bin/npcd -d -f /omd/sites/fengce/etc/pnp4nagios/npcd.cfg
+(fengce,1372308,3248,0.0) /omd/sites/fengce/bin/nagios -ud /omd/sites/fengce/tmp/nagios/nagios.cfg
+(site01,98640,10788,0.0) /usr/sbin/httpd -f /omd/sites/site01/etc/apache/apache.conf
+(site01,798564,12676,0.1) /omd/sites/site01/bin/rrdcached -w 3600 -z 1800 -f 7200 -s site01 -m 660 -l unix:/omd/sites/site01/tmp/run/rrdcached.sock -p /omd/sites/site01/tmp/rrdcached.pid -j /omd/sites/site01/var/rrdcached
+(site01,160068,836,0.0) /omd/sites/site01/bin/npcd -d -f /omd/sites/site01/etc/pnp4nagios/npcd.cfg
+(root,11132,196,0.0) /sbin/udevd -d
+(apache,285104,10228,0.0) /usr/sbin/httpd
+(root,0,0,0.0) [loop0]
+(root,123064,908,0.0) crond
+(apache,285104,10224,0.0) /usr/sbin/httpd
+(root,22232,484,0.0) xinetd -stayalive -pidfile /var/run/xinetd.pid
+(site01,251044,12564,0.0) /usr/bin/php-cgi -c /omd/sites/site01/etc/apache/php.ini -d session.save_path=/omd/sites/site01/tmp/php/session -d upload_tmp_dir=/omd/sites/site01/tmp/php/upload -d soap.wsdl_cache_dir=/omd/sites/site01/tmp/php/wsdl-cache -d safe_mode=Off -d mysql.default_socket=/omd/sites/site01/tmp/run/mysqld/mysqld.sock
+(nobody,155908,716,0.0) proftpd: (accepting connections)
+(fengce,104312,13016,0.0) /usr/sbin/httpd -f /omd/sites/fengce/etc/apache/apache.conf
+(root,0,0,0.0) [loop1]
+(root,0,0,0.0) [kslowd000]
+(root,0,0,0.0) [kslowd001]
+(root,0,0,0.0) [nfsiod]
+(root,111912,1512,0.0) /bin/bash /usr/bin/check_mk_agent
+(root,13500,1060,1.0) ps ax -o user,vsz,rss,pcpu,command --columns 10000
+(root,8532,864,0.0) sed -e 1d -e s/ *\([^ ]*\) *\([^ ]*\) *\([^ ]*\) *\([^ ]*\) */(\1,\2,\3,\4) /
+<<<mem>>>
+MemTotal:        3906772 kB
+MemFree:          947728 kB
+Buffers:          221524 kB
+Cached:          2246508 kB
+SwapCached:        43692 kB
+Active:          1673552 kB
+Inactive:        1014100 kB
+Active(anon):     159960 kB
+Inactive(anon):    67840 kB
+Active(file):    1513592 kB
+Inactive(file):   946260 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       6143992 kB
+SwapFree:        6090656 kB
+Dirty:              1428 kB
+Writeback:             0 kB
+AnonPages:        176980 kB
+Mapped:            25804 kB
+Shmem:              8180 kB
+Slab:             182716 kB
+SReclaimable:     140780 kB
+SUnreclaim:        41936 kB
+KernelStack:        2856 kB
+PageTables:        14948 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     8097376 kB
+Committed_AS:     850748 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      285032 kB
+VmallocChunk:   34359448908 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:     67584 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:        7652 kB
+DirectMap2M:     4173824 kB
+<<<cpu>>>
+0.26 0.10 0.08 1/355 32162 4
+<<<uptime>>>
+1936155.77 6855255.91
+<<<netif>>>
+em1 1000Mb/s Full on yes
+em2 Unknown! Half on no
+<<<lnx_if:sep(58)>>>
+    lo:24066213200 146658161    0    0    0     0          0         0 24066213200 146658161    0    0    0     0       0          0
+   em1:265661130267 321736276    0    0    0     0          0   1575254 98150785971 159055211    0    0    0     0       0          0
+   em2:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+[lo]
+	Link detected: yes
+[em1]
+	Speed: 1000Mb/s
+	Duplex: Full
+	Auto-negotiation: on
+	Link detected: yes
+[em2]
+	Speed: Unknown!
+	Duplex: Half
+	Auto-negotiation: on
+	Link detected: no
+<<<tcp_conn_stats>>>
+TIME_WAIT 21
+ESTABLISHED 3
+<<<md>>>
+Personalities : 
+unused devices: <none>
+<<<diskstat>>>
+1366773741
+   8      16 sdb 14249 249 2985486 21390 21923 2572939 20758896 9254623 0 113330 9275981
+   8       0 sda 2177818 120806 90324016 22712431 108239588 114268167 1773554076 1194898621 0 321306850 1218486234
+ 253       0 dm-0 2240139 0 89825298 23884316 220347723 0 1762630600 2965686200 0 321286508 2993493417
+ 253       1 dm-1 61243 0 489944 1176854 1362686 0 10901488 1896891183 0 230875 1898313546
+ 253       2 dm-2 204 0 1626 741 2739 0 21896 98331 0 1007 99072
+[dmsetup_info]
+VolGroup-lv_swap 253:1 VolGroup lv_swap
+VolGroup-lv_root 253:0 VolGroup lv_root
+VolGroup-lv_home 253:2 VolGroup lv_home
+<<<kernel>>>
+1366773741
+nr_free_pages 236930
+nr_inactive_anon 16960
+nr_active_anon 39990
+nr_inactive_file 236565
+nr_active_file 378398
+nr_unevictable 0
+nr_mlock 0
+nr_anon_pages 27349
+nr_mapped 6488
+nr_file_pages 627931
+nr_dirty 357
+nr_writeback 0
+nr_slab_reclaimable 35195
+nr_slab_unreclaimable 10484
+nr_page_table_pages 3737
+nr_kernel_stack 357
+nr_unstable 0
+nr_bounce 0
+nr_vmscan_write 2074712
+nr_writeback_temp 0
+nr_isolated_anon 0
+nr_isolated_file 0
+nr_shmem 2045
+numa_hit 12735115270
+numa_miss 0
+numa_foreign 0
+numa_interleave 15304
+numa_local 12735115270
+numa_other 0
+nr_anon_transparent_hugepages 33
+pgpgin 46716427
+pgpgout 897156486
+pswpin 60945
+pswpout 1362686
+pgalloc_dma 1
+pgalloc_dma32 10541054186
+pgalloc_normal 2456824107
+pgalloc_movable 0
+pgfree 13015770815
+pgactivate 29024889
+pgdeactivate 4489920
+pgfault 28859810975
+pgmajfault 1555743
+pgrefill_dma 0
+pgrefill_dma32 2980520
+pgrefill_normal 1385984
+pgrefill_movable 0
+pgsteal_dma 0
+pgsteal_dma32 43794532
+pgsteal_normal 30221103
+pgsteal_movable 0
+pgscan_kswapd_dma 0
+pgscan_kswapd_dma32 42905574
+pgscan_kswapd_normal 35063376
+pgscan_kswapd_movable 0
+pgscan_direct_dma 0
+pgscan_direct_dma32 2017993
+pgscan_direct_normal 482793
+pgscan_direct_movable 0
+zone_reclaim_failed 0
+pginodesteal 222512
+slabs_scanned 5400192
+kswapd_steal 71850135
+kswapd_inodesteal 1599642
+kswapd_low_wmark_hit_quickly 604
+kswapd_high_wmark_hit_quickly 24475
+kswapd_skip_congestion_wait 6029
+pageoutrun 655214
+allocstall 23741
+pgrotated 1396808
+compact_blocks_moved 964248
+compact_pages_moved 16526006
+compact_pagemigrate_failed 0
+compact_stall 26164
+compact_fail 5548
+compact_success 20616
+htlb_buddy_alloc_success 0
+htlb_buddy_alloc_fail 0
+unevictable_pgs_culled 3978
+unevictable_pgs_scanned 0
+unevictable_pgs_rescued 3347
+unevictable_pgs_mlocked 4130
+unevictable_pgs_munlocked 4130
+unevictable_pgs_cleared 0
+unevictable_pgs_stranded 0
+unevictable_pgs_mlockfreed 0
+thp_fault_alloc 390333
+thp_fault_fallback 10889
+thp_collapse_alloc 48286
+thp_collapse_alloc_failed 2118
+thp_split 67361
+cpu  46479256 3135 13492496 685525602 28549491 620 534147 0 0
+cpu0 12805549 1280 3949588 153458250 23020323 620 492199 0 0
+cpu1 13310027 1026 3356244 173221437 3731000 0 20910 0 0
+cpu2 11227198 493 3424703 177583140 1373344 0 13156 0 0
+cpu3 9136481 335 2761960 181262773 424822 0 7880 0 0
+intr 2645459502 910847928 2 0 2 2 0 0 0 124 0 0 0 4 0 0 0 0 0 0 373 3148 309 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 100693901 38274503 55967266 43293060 75187496 39351742 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ctxt 2788773754
+btime 1364837585
+processes 37597785
+procs_running 1
+procs_blocked 0
+softirq 4058951841 0 1549357845 387205 348431848 100679290 0 277 197296914 490223 1862308239
+<<<netctr>>>
+1366773741
+    lo 24066213200 146658161    0    0    0     0          0         0 24066213200 146658161    0    0    0     0       0          0
+   em1 265661130267 321736276    0    0    0     0          0   1575254 98150785971 159055211    0    0    0     0       0          0
+   em2        0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+<<<ipmi>>>
+Ambient_Temp 21.000 degrees_C ok na 3.000 8.000 42.000 47.000 na
+FAN_1_RPM 1080.000 RPM ok na 720.000 na na na na
+<<<ipmi_sensors>>>
+<<<vbox_guest>>>
+<<<ntp>>>
+* ntp01.gdcloud.c 61.129.42.44     9 u  317 1024  377    0.849   15.805   1.293
+% LOCAL(0)        .LOCL.           3 l   51   64  377    0.000    0.000   0.000
+<<<postfix_mailq>>>
+/var/spool/mqueue is empty
+		Total requests: 0
+<<<omd_status>>>
+[fengce]
+apache 0
+rrdcached 0
+npcd 0
+nagios 0
+crontab 0
+OVERALL 0
+[gdcloud]
+apache 0
+rrdcached 0
+npcd 0
+nagios 0
+nsca 0
+crontab 0
+OVERALL 0
+[site01]
+apache 0
+rrdcached 0
+npcd 0
+nagios 0
+nsca 0
+crontab 0
+OVERALL 0
+<<<apache_status>>>
+127.0.0.1 5002 Total Accesses: 10552
+127.0.0.1 5002 Total kBytes: 3885
+127.0.0.1 5002 CPULoad: .000410694
+127.0.0.1 5002 Uptime: 472371
+127.0.0.1 5002 ReqPerSec: .0223384
+127.0.0.1 5002 BytesPerSec: 8.42185
+127.0.0.1 5002 BytesPerReq: 377.013
+127.0.0.1 5002 BusyWorkers: 1
+127.0.0.1 5002 IdleWorkers: 1
+127.0.0.1 5002 Scoreboard: _W..............................................................................................................................
+<<<dmi_sysinfo>>>
+System Information
+	Manufacturer: Dell Inc.
+	Product Name: PowerEdge T410
+	Version: Not Specified
+	Serial Number: 5S7X93X
+	UUID: 4C4C4544-0053-3710-8058-B5C04F393358
+	Wake-up Type: Power Switch
+	SKU Number: Not Specified
+	Family: Not Specified
+
+<<<dmraid>>>
+<<<lmsensors>>>
+coretemp-isa-0000
+Core_0 +35.0 C  high  +87.0 C crit  +97.0 C
+Core_1 +34.0 C  high  +87.0 C crit  +97.0 C
+Core_2 +37.0 C  high  +87.0 C crit  +97.0 C
+Core_3 +35.0 C  high  +87.0 C crit  +97.0 C
+
+<<<cpu_info>>>
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                4
+On-line CPU(s) list:   0-3
+Thread(s) per core:    1
+Core(s) per socket:    4
+CPU socket(s):         1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 26
+Stepping:              5
+CPU MHz:               2128.126
+BogoMIPS:              4255.27
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              4096K
+NUMA node0 CPU(s):     0-3
+<<<jolokia_info>>>
+8080 ERROR
+<<<logwatch>>>
+CANNOT READ CONFIG FILE: [Errno 2] No such file or directory: '/etc/check_mk/logwatch.cfg'
+<<<mysql_ping>>>
+Could not open required defaults file: /etc/check_mk/mysql.cfg
+Fatal error in defaults handling. Program aborted
+mysqladmin: connect to server at 'localhost' failed
+error: 'Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)'
+Check that mysqld is running and that the socket: '/var/lib/mysql/mysql.sock' exists!
+<<<nfsexports>>>
+<<<local>>>

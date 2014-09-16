@@ -1,0 +1,765 @@
+lspci:
+
+00:00.0 Host bridge: Intel Corporation 5500 I/O Hub to ESI Port (rev 13)
+00:01.0 PCI bridge: Intel Corporation 5520/5500/X58 I/O Hub PCI Express Root Port 1 (rev 13)
+00:03.0 PCI bridge: Intel Corporation 5520/5500/X58 I/O Hub PCI Express Root Port 3 (rev 13)
+00:07.0 PCI bridge: Intel Corporation 5520/5500/X58 I/O Hub PCI Express Root Port 7 (rev 13)
+00:09.0 PCI bridge: Intel Corporation 5520/5500/X58 I/O Hub PCI Express Root Port 9 (rev 13)
+00:0a.0 PCI bridge: Intel Corporation 5520/5500/X58 I/O Hub PCI Express Root Port 10 (rev 13)
+00:14.0 PIC: Intel Corporation 5520/5500/X58 I/O Hub System Management Registers (rev 13)
+00:14.1 PIC: Intel Corporation 5520/5500/X58 I/O Hub GPIO and Scratch Pad Registers (rev 13)
+00:14.2 PIC: Intel Corporation 5520/5500/X58 I/O Hub Control Status and RAS Registers (rev 13)
+00:1a.0 USB controller: Intel Corporation 82801JI (ICH10 Family) USB UHCI Controller #4
+00:1a.1 USB controller: Intel Corporation 82801JI (ICH10 Family) USB UHCI Controller #5
+00:1a.7 USB controller: Intel Corporation 82801JI (ICH10 Family) USB2 EHCI Controller #2
+00:1c.0 PCI bridge: Intel Corporation 82801JI (ICH10 Family) PCI Express Root Port 1
+00:1d.0 USB controller: Intel Corporation 82801JI (ICH10 Family) USB UHCI Controller #1
+00:1d.1 USB controller: Intel Corporation 82801JI (ICH10 Family) USB UHCI Controller #2
+00:1d.2 USB controller: Intel Corporation 82801JI (ICH10 Family) USB UHCI Controller #3
+00:1d.3 USB controller: Intel Corporation 82801JI (ICH10 Family) USB UHCI Controller #6
+00:1d.7 USB controller: Intel Corporation 82801JI (ICH10 Family) USB2 EHCI Controller #1
+00:1e.0 PCI bridge: Intel Corporation 82801 PCI Bridge (rev 90)
+00:1f.0 ISA bridge: Intel Corporation 82801JIR (ICH10R) LPC Interface Controller
+00:1f.2 RAID bus controller: Intel Corporation 82801JIR (ICH10R) SATA RAID Controller
+01:00.0 Ethernet controller: Broadcom Corporation NetXtreme II BCM5716 Gigabit Ethernet (rev 20)
+01:00.1 Ethernet controller: Broadcom Corporation NetXtreme II BCM5716 Gigabit Ethernet (rev 20)
+07:03.0 VGA compatible controller: Matrox Graphics, Inc. MGA G200eW WPCM450 (rev 0a)
+
+lspci -nvv:
+
+00:00.0 0600: 8086:3403 (rev 13)
+	Subsystem: 1028:028d
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Interrupt: pin A routed to IRQ 15
+	Capabilities: [60] MSI: Enable- Count=1/2 Maskable+ 64bit-
+		Address: 00000000  Data: 0000
+		Masking: 00000000  Pending: 00000000
+	Capabilities: [90] Express (v2) Root Port (Slot-), MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s <64ns, L1 <1us
+			ExtTag+ RBE+ FLReset-
+		DevCtl:	Report errors: Correctable- Non-Fatal+ Fatal+ Unsupported+
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
+		LnkCap:	Port #0, Speed 2.5GT/s, Width x4, ASPM L0s L1, Latency L0 <512ns, L1 <64us
+			ClockPM- Surprise+ LLActRep+ BwNot+
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- Retrain- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x4, TrErr- Train- SlotClk+ DLActive+ BWMgmt- ABWMgmt-
+		RootCtl: ErrCorrectable- ErrNon-Fatal+ ErrFatal+ PMEIntEna- CRSVisible-
+		RootCap: CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+		DevCap2: Completion Timeout: Range BCD, TimeoutDis+ ARIFwd+
+		DevCtl2: Completion Timeout: 17s to 64s, TimeoutDis- ARIFwd-
+		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -6dB
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100] Advanced Error Reporting
+		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt+ UnxCmplt+ RxOF- MalfTLP- ECRC- UnsupReq- ACSViol+
+		UESvrt:	DLP+ SDES+ TLP+ FCP+ CmpltTO+ CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr-
+		CEMsk:	RxErr+ BadTLP+ BadDLLP+ Rollover+ Timeout+ NonFatalErr+
+		AERCap:	First Error Pointer: 00, GenCap- CGenEn- ChkCap- ChkEn-
+	Capabilities: [150] Access Control Services
+		ACSCap:	SrcValid+ TransBlk+ ReqRedir+ CmpltRedir+ UpstreamFwd+ EgressCtrl- DirectTrans-
+		ACSCtl:	SrcValid- TransBlk- ReqRedir- CmpltRedir- UpstreamFwd- EgressCtrl- DirectTrans-
+	Capabilities: [160] Vendor Specific Information <?>
+
+00:01.0 0604: 8086:3408 (rev 13) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	Memory behind bridge: da000000-ddffffff
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA+ VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Subsystem: 1028:028d
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+		Address: fee002b8  Data: 0000
+		Masking: 00000003  Pending: 00000000
+	Capabilities: [90] Express (v2) Root Port (Slot-), MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0, Latency L0s <64ns, L1 <1us
+			ExtTag+ RBE+ FLReset-
+		DevCtl:	Report errors: Correctable- Non-Fatal+ Fatal+ Unsupported+
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 256 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
+		LnkCap:	Port #1, Speed 5GT/s, Width x4, ASPM L0s L1, Latency L0 <512ns, L1 <64us
+			ClockPM- Surprise+ LLActRep+ BwNot+
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- Retrain- CommClk+
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x4, TrErr- Train- SlotClk+ DLActive+ BWMgmt- ABWMgmt-
+		RootCtl: ErrCorrectable- ErrNon-Fatal+ ErrFatal+ PMEIntEna+ CRSVisible-
+		RootCap: CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+		DevCap2: Completion Timeout: Range BCD, TimeoutDis+ ARIFwd+
+		DevCtl2: Completion Timeout: 1s to 3.5s, TimeoutDis- ARIFwd-
+		LnkCtl2: Target Link Speed: 5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -6dB
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100] Advanced Error Reporting
+		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt+ UnxCmplt+ RxOF- MalfTLP- ECRC- UnsupReq- ACSViol+
+		UESvrt:	DLP+ SDES+ TLP+ FCP+ CmpltTO+ CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr-
+		CEMsk:	RxErr+ BadTLP+ BadDLLP+ Rollover+ Timeout+ NonFatalErr+
+		AERCap:	First Error Pointer: 00, GenCap- CGenEn- ChkCap- ChkEn-
+	Capabilities: [150] Access Control Services
+		ACSCap:	SrcValid+ TransBlk+ ReqRedir+ CmpltRedir+ UpstreamFwd+ EgressCtrl- DirectTrans-
+		ACSCtl:	SrcValid- TransBlk- ReqRedir- CmpltRedir- UpstreamFwd- EgressCtrl- DirectTrans-
+	Capabilities: [160] Vendor Specific Information <?>
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+
+00:03.0 0604: 8086:340a (rev 13) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=05, subordinate=05, sec-latency=0
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA+ VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Subsystem: 1028:028d
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+		Address: fee002d8  Data: 0000
+		Masking: 00000003  Pending: 00000000
+	Capabilities: [90] Express (v2) Root Port (Slot+), MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0, Latency L0s <64ns, L1 <1us
+			ExtTag+ RBE+ FLReset-
+		DevCtl:	Report errors: Correctable- Non-Fatal+ Fatal+ Unsupported+
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
+		LnkCap:	Port #3, Speed 5GT/s, Width x4, ASPM L0s L1, Latency L0 <512ns, L1 <64us
+			ClockPM- Surprise+ LLActRep+ BwNot+
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled+ Retrain- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x0, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surpise-
+			Slot #  4, PowerLimit 25.000000; Interlock- NoCompl-
+		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq- LinkChg-
+			Control: AttnInd Off, PwrInd Off, Power- Interlock-
+		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet- Interlock-
+			Changed: MRL- PresDet+ LinkState-
+		RootCtl: ErrCorrectable- ErrNon-Fatal+ ErrFatal+ PMEIntEna+ CRSVisible-
+		RootCap: CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+		DevCap2: Completion Timeout: Range BCD, TimeoutDis+ ARIFwd+
+		DevCtl2: Completion Timeout: 1s to 3.5s, TimeoutDis- ARIFwd-
+		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -6dB
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100] Advanced Error Reporting
+		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt+ UnxCmplt+ RxOF- MalfTLP- ECRC- UnsupReq- ACSViol+
+		UESvrt:	DLP+ SDES+ TLP+ FCP+ CmpltTO+ CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr-
+		CEMsk:	RxErr+ BadTLP+ BadDLLP+ Rollover+ Timeout+ NonFatalErr+
+		AERCap:	First Error Pointer: 00, GenCap- CGenEn- ChkCap- ChkEn-
+	Capabilities: [150] Access Control Services
+		ACSCap:	SrcValid+ TransBlk+ ReqRedir+ CmpltRedir+ UpstreamFwd+ EgressCtrl- DirectTrans-
+		ACSCtl:	SrcValid- TransBlk- ReqRedir- CmpltRedir- UpstreamFwd- EgressCtrl- DirectTrans-
+	Capabilities: [160] Vendor Specific Information <?>
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+
+00:07.0 0604: 8086:340e (rev 13) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=06, subordinate=06, sec-latency=0
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA+ VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Subsystem: 1028:028d
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+		Address: fee002f8  Data: 0000
+		Masking: 00000003  Pending: 00000000
+	Capabilities: [90] Express (v2) Root Port (Slot+), MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0, Latency L0s <64ns, L1 <1us
+			ExtTag+ RBE+ FLReset-
+		DevCtl:	Report errors: Correctable- Non-Fatal+ Fatal+ Unsupported+
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
+		LnkCap:	Port #7, Speed 5GT/s, Width x8, ASPM L0s L1, Latency L0 <512ns, L1 <64us
+			ClockPM- Surprise+ LLActRep+ BwNot+
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled+ Retrain- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x0, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surpise-
+			Slot #  5, PowerLimit 25.000000; Interlock- NoCompl-
+		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq- LinkChg-
+			Control: AttnInd Off, PwrInd Off, Power- Interlock-
+		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet- Interlock-
+			Changed: MRL- PresDet+ LinkState-
+		RootCtl: ErrCorrectable- ErrNon-Fatal+ ErrFatal+ PMEIntEna+ CRSVisible-
+		RootCap: CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+		DevCap2: Completion Timeout: Range BCD, TimeoutDis+ ARIFwd+
+		DevCtl2: Completion Timeout: 1s to 3.5s, TimeoutDis- ARIFwd-
+		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -6dB
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100] Advanced Error Reporting
+		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt+ UnxCmplt+ RxOF- MalfTLP- ECRC- UnsupReq- ACSViol+
+		UESvrt:	DLP+ SDES+ TLP+ FCP+ CmpltTO+ CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr-
+		CEMsk:	RxErr+ BadTLP+ BadDLLP+ Rollover+ Timeout+ NonFatalErr+
+		AERCap:	First Error Pointer: 00, GenCap- CGenEn- ChkCap- ChkEn-
+	Capabilities: [150] Access Control Services
+		ACSCap:	SrcValid+ TransBlk+ ReqRedir+ CmpltRedir+ UpstreamFwd+ EgressCtrl- DirectTrans-
+		ACSCtl:	SrcValid- TransBlk- ReqRedir- CmpltRedir- UpstreamFwd- EgressCtrl- DirectTrans-
+	Capabilities: [160] Vendor Specific Information <?>
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+
+00:09.0 0604: 8086:3410 (rev 13) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=03, subordinate=03, sec-latency=0
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA+ VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Subsystem: 1028:028d
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+		Address: fee00318  Data: 0000
+		Masking: 00000003  Pending: 00000000
+	Capabilities: [90] Express (v2) Root Port (Slot+), MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0, Latency L0s <64ns, L1 <1us
+			ExtTag+ RBE+ FLReset-
+		DevCtl:	Report errors: Correctable- Non-Fatal+ Fatal+ Unsupported+
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
+		LnkCap:	Port #9, Speed 5GT/s, Width x4, ASPM L0s L1, Latency L0 <512ns, L1 <64us
+			ClockPM- Surprise+ LLActRep+ BwNot+
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled+ Retrain- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x0, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surpise-
+			Slot #  2, PowerLimit 25.000000; Interlock- NoCompl-
+		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq- LinkChg-
+			Control: AttnInd Off, PwrInd Off, Power- Interlock-
+		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet- Interlock-
+			Changed: MRL- PresDet+ LinkState-
+		RootCtl: ErrCorrectable- ErrNon-Fatal+ ErrFatal+ PMEIntEna+ CRSVisible-
+		RootCap: CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+		DevCap2: Completion Timeout: Range BCD, TimeoutDis+ ARIFwd+
+		DevCtl2: Completion Timeout: 1s to 3.5s, TimeoutDis- ARIFwd-
+		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -6dB
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100] Advanced Error Reporting
+		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt+ UnxCmplt+ RxOF- MalfTLP- ECRC- UnsupReq- ACSViol+
+		UESvrt:	DLP+ SDES+ TLP+ FCP+ CmpltTO+ CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr-
+		CEMsk:	RxErr+ BadTLP+ BadDLLP+ Rollover+ Timeout+ NonFatalErr+
+		AERCap:	First Error Pointer: 00, GenCap- CGenEn- ChkCap- ChkEn-
+	Capabilities: [150] Access Control Services
+		ACSCap:	SrcValid+ TransBlk+ ReqRedir+ CmpltRedir+ UpstreamFwd+ EgressCtrl- DirectTrans-
+		ACSCtl:	SrcValid- TransBlk- ReqRedir- CmpltRedir- UpstreamFwd- EgressCtrl- DirectTrans-
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+
+00:0a.0 0604: 8086:3411 (rev 13) (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=0
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA+ VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Subsystem: 1028:028d
+	Capabilities: [60] MSI: Enable+ Count=1/2 Maskable+ 64bit-
+		Address: fee00338  Data: 0000
+		Masking: 00000003  Pending: 00000000
+	Capabilities: [90] Express (v2) Root Port (Slot+), MSI 00
+		DevCap:	MaxPayload 256 bytes, PhantFunc 0, Latency L0s <64ns, L1 <1us
+			ExtTag+ RBE+ FLReset-
+		DevCtl:	Report errors: Correctable- Non-Fatal+ Fatal+ Unsupported+
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
+		LnkCap:	Port #10, Speed 5GT/s, Width x4, ASPM L0s L1, Latency L0 <512ns, L1 <64us
+			ClockPM- Surprise+ LLActRep+ BwNot+
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled+ Retrain- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x0, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug- Surpise-
+			Slot #  1, PowerLimit 25.000000; Interlock- NoCompl-
+		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet- CmdCplt- HPIrq- LinkChg-
+			Control: AttnInd Off, PwrInd Off, Power- Interlock-
+		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet- Interlock-
+			Changed: MRL- PresDet+ LinkState-
+		RootCtl: ErrCorrectable- ErrNon-Fatal+ ErrFatal+ PMEIntEna+ CRSVisible-
+		RootCap: CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+		DevCap2: Completion Timeout: Range BCD, TimeoutDis+ ARIFwd+
+		DevCtl2: Completion Timeout: 1s to 3.5s, TimeoutDis- ARIFwd-
+		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -6dB
+	Capabilities: [e0] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100] Advanced Error Reporting
+		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt+ UnxCmplt+ RxOF- MalfTLP- ECRC- UnsupReq- ACSViol+
+		UESvrt:	DLP+ SDES+ TLP+ FCP+ CmpltTO+ CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC- UnsupReq- ACSViol-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr-
+		CEMsk:	RxErr+ BadTLP+ BadDLLP+ Rollover+ Timeout+ NonFatalErr+
+		AERCap:	First Error Pointer: 00, GenCap- CGenEn- ChkCap- ChkEn-
+	Capabilities: [150] Access Control Services
+		ACSCap:	SrcValid+ TransBlk+ ReqRedir+ CmpltRedir+ UpstreamFwd+ EgressCtrl- DirectTrans-
+		ACSCtl:	SrcValid- TransBlk- ReqRedir- CmpltRedir- UpstreamFwd- EgressCtrl- DirectTrans-
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+
+00:14.0 0800: 8086:342e (rev 13) (prog-if 00 [8259])
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Capabilities: [40] Express (v2) Root Complex Integrated Endpoint, MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s <64ns, L1 <1us
+			ExtTag- RBE+ FLReset-
+		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
+		LnkCap:	Port #0, Speed unknown, Width x0, ASPM L0s, Latency L0 unlimited, L1 unlimited
+			ClockPM- Surprise+ LLActRep+ BwNot+
+		LnkCtl:	ASPM Disabled; Disabled- Retrain- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed unknown, Width x0, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		DevCap2: Completion Timeout: Not Supported, TimeoutDis-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-
+		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -6dB
+	Kernel modules: i7core_edac
+
+00:14.1 0800: 8086:3422 (rev 13) (prog-if 00 [8259])
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Capabilities: [40] Express (v2) Root Complex Integrated Endpoint, MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s <64ns, L1 <1us
+			ExtTag- RBE+ FLReset-
+		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
+		LnkCap:	Port #0, Speed unknown, Width x0, ASPM L0s, Latency L0 unlimited, L1 unlimited
+			ClockPM- Surprise+ LLActRep+ BwNot+
+		LnkCtl:	ASPM Disabled; Disabled- Retrain- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed unknown, Width x0, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		DevCap2: Completion Timeout: Not Supported, TimeoutDis-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-
+		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -6dB
+
+00:14.2 0800: 8086:3423 (rev 13) (prog-if 00 [8259])
+	Control: I/O- Mem- BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Capabilities: [40] Express (v2) Root Complex Integrated Endpoint, MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s <64ns, L1 <1us
+			ExtTag- RBE+ FLReset-
+		DevCtl:	Report errors: Correctable- Non-Fatal- Fatal- Unsupported-
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr- TransPend-
+		LnkCap:	Port #0, Speed unknown, Width x0, ASPM L0s, Latency L0 unlimited, L1 unlimited
+			ClockPM- Surprise+ LLActRep+ BwNot+
+		LnkCtl:	ASPM Disabled; Disabled- Retrain- CommClk-
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed unknown, Width x0, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		DevCap2: Completion Timeout: Not Supported, TimeoutDis-
+		DevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-
+		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -6dB
+
+00:1a.0 0c03: 8086:3a37 (prog-if 00 [UHCI])
+	Subsystem: 1028:028d
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 17
+	Region 4: I/O ports at fc20 [size=32]
+	Capabilities: [50] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: uhci_hcd
+
+00:1a.1 0c03: 8086:3a38 (prog-if 00 [UHCI])
+	Subsystem: 1028:028d
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin B routed to IRQ 18
+	Region 4: I/O ports at fc40 [size=32]
+	Capabilities: [50] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: uhci_hcd
+
+00:1a.7 0c03: 8086:3a3c (prog-if 20 [EHCI])
+	Subsystem: 1028:028d
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin C routed to IRQ 19
+	Region 0: Memory at df0fd000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [58] Debug port: BAR=1 offset=00a0
+	Capabilities: [98] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: ehci_hcd
+
+00:1c.0 0604: 8086:3a40 (prog-if 00 [Normal decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Bus: primary=00, secondary=04, subordinate=04, sec-latency=0
+	I/O behind bridge: 00001000-00001fff
+	Memory behind bridge: d0000000-d01fffff
+	Prefetchable memory behind bridge: 00000000d0200000-00000000d03fffff
+	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA+ VGA- MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [40] Express (v1) Root Port (Slot+), MSI 00
+		DevCap:	MaxPayload 128 bytes, PhantFunc 0, Latency L0s <64ns, L1 <1us
+			ExtTag- RBE+ FLReset-
+		DevCtl:	Report errors: Correctable- Non-Fatal+ Fatal+ Unsupported+
+			RlxdOrd- ExtTag- PhantFunc- AuxPwr- NoSnoop-
+			MaxPayload 128 bytes, MaxReadReq 128 bytes
+		DevSta:	CorrErr- UncorrErr- FatalErr- UnsuppReq- AuxPwr+ TransPend-
+		LnkCap:	Port #1, Speed 2.5GT/s, Width x4, ASPM L0s L1, Latency L0 <256ns, L1 <4us
+			ClockPM- Surprise- LLActRep+ BwNot-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled+ Retrain- CommClk+
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x0, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		SltCap:	AttnBtn- PwrCtrl- MRL- AttnInd- PwrInd- HotPlug+ Surpise+
+			Slot #  3, PowerLimit 25.000000; Interlock- NoCompl-
+		SltCtl:	Enable: AttnBtn- PwrFlt- MRL- PresDet+ CmdCplt+ HPIrq+ LinkChg-
+			Control: AttnInd Unknown, PwrInd Unknown, Power- Interlock-
+		SltSta:	Status: AttnBtn- PowerFlt- MRL- CmdCplt- PresDet- Interlock-
+			Changed: MRL- PresDet- LinkState-
+		RootCtl: ErrCorrectable- ErrNon-Fatal+ ErrFatal+ PMEIntEna- CRSVisible-
+		RootCap: CRSVisible-
+		RootSta: PME ReqID 0000, PMEStatus- PMEPending-
+	Capabilities: [80] MSI: Enable+ Count=1/1 Maskable- 64bit-
+		Address: fee00358  Data: 0000
+	Capabilities: [90] Subsystem: 1028:028d
+	Capabilities: [a0] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [100] Virtual Channel <?>
+	Capabilities: [180] Root Complex Link <?>
+	Kernel driver in use: pcieport
+	Kernel modules: shpchp
+
+00:1d.0 0c03: 8086:3a34 (prog-if 00 [UHCI])
+	Subsystem: 1028:028d
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 21
+	Region 4: I/O ports at fc60 [size=32]
+	Capabilities: [50] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: uhci_hcd
+
+00:1d.1 0c03: 8086:3a35 (prog-if 00 [UHCI])
+	Subsystem: 1028:028d
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin B routed to IRQ 20
+	Region 4: I/O ports at fc80 [size=32]
+	Capabilities: [50] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: uhci_hcd
+
+00:1d.2 0c03: 8086:3a36 (prog-if 00 [UHCI])
+	Subsystem: 1028:028d
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin C routed to IRQ 21
+	Region 4: I/O ports at fca0 [size=32]
+	Capabilities: [50] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: uhci_hcd
+
+00:1d.3 0c03: 8086:3a39 (prog-if 00 [UHCI])
+	Subsystem: 1028:028d
+	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin D routed to IRQ 20
+	Region 4: I/O ports at fcc0 [size=32]
+	Capabilities: [50] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: uhci_hcd
+
+00:1d.7 0c03: 8086:3a3a (prog-if 20 [EHCI])
+	Subsystem: 1028:028d
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin A routed to IRQ 21
+	Region 0: Memory at df0fe000 (32-bit, non-prefetchable) [size=1K]
+	Capabilities: [50] Power Management version 2
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=375mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME+
+	Capabilities: [58] Debug port: BAR=1 offset=00a0
+	Capabilities: [98] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: ehci_hcd
+
+00:1e.0 0604: 8086:244e (rev 90) (prog-if 01 [Subtractive decode])
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Bus: primary=00, secondary=07, subordinate=07, sec-latency=32
+	Memory behind bridge: de000000-deffffff
+	Prefetchable memory behind bridge: 00000000d9800000-00000000d9ffffff
+	Secondary status: 66MHz- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+	BridgeCtl: Parity+ SERR+ NoISA- VGA+ MAbort- >Reset- FastB2B-
+		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+	Capabilities: [50] Subsystem: 1028:028d
+
+00:1f.0 0601: 8086:3a16
+	Subsystem: 1028:028d
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR+ FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Capabilities: [e0] Vendor Specific Information <?>
+	Kernel modules: iTCO_wdt
+
+00:1f.2 0104: 8086:3a25
+	Subsystem: 1028:028d
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr+ Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0
+	Interrupt: pin C routed to IRQ 63
+	Region 0: I/O ports at fc10 [size=8]
+	Region 1: I/O ports at fc08 [size=4]
+	Region 2: I/O ports at fc18 [size=8]
+	Region 3: I/O ports at fc0c [size=4]
+	Region 4: I/O ports at fce0 [size=32]
+	Region 5: Memory at df0ff000 (32-bit, non-prefetchable) [size=2K]
+	Capabilities: [80] MSI: Enable+ Count=1/16 Maskable- 64bit-
+		Address: fee00438  Data: 0000
+	Capabilities: [70] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot+,D3cold-)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-
+	Capabilities: [a8] SATA HBA <?>
+	Capabilities: [b0] PCI Advanced Features
+		AFCap: TP+ FLR+
+		AFCtrl: FLR-
+		AFStatus: TP-
+	Kernel driver in use: ahci
+	Kernel modules: ahci
+
+01:00.0 0200: 14e4:163b (rev 20)
+	Subsystem: 1028:028d
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 36
+	Region 0: Memory at da000000 (64-bit, non-prefetchable) [size=32M]
+	Capabilities: [48] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=1 PME-
+	Capabilities: [50] Vital Product Data
+		Product Name: Broadcom NetXtreme II Ethernet Controller
+		Read-only fields:
+			[PN] Part number: BCM95716C1
+			[EC] Engineering changes: 220197-3
+			[SN] Serial number: 0123456789
+			[MN] Manufacture ID: 31 30 32 38
+			[V0] Vendor specific: 6.2.15
+			[RV] Reserved: checksum good, 22 byte(s) reserved
+		End
+	Capabilities: [58] MSI: Enable- Count=1/16 Maskable- 64bit+
+		Address: 0000000000000000  Data: 0000
+	Capabilities: [a0] MSI-X: Enable+ Count=9 Masked-
+		Vector table: BAR=0 offset=0000c000
+		PBA: BAR=0 offset=0000e000
+	Capabilities: [ac] Express (v2) Endpoint, MSI 00
+		DevCap:	MaxPayload 512 bytes, PhantFunc 0, Latency L0s <4us, L1 <64us
+			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset-
+		DevCtl:	Report errors: Correctable- Non-Fatal+ Fatal+ Unsupported+
+			RlxdOrd+ ExtTag- PhantFunc- AuxPwr+ NoSnoop+
+			MaxPayload 256 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq+ AuxPwr+ TransPend-
+		LnkCap:	Port #0, Speed 2.5GT/s, Width x4, ASPM L0s L1, Latency L0 <2us, L1 <2us
+			ClockPM- Surprise- LLActRep- BwNot-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- Retrain- CommClk+
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		DevCap2: Completion Timeout: Range ABCD, TimeoutDis+
+		DevCtl2: Completion Timeout: 65ms to 210ms, TimeoutDis-
+		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -6dB
+	Capabilities: [100] Device Serial Number d4-ae-52-ff-fe-6f-9b-99
+	Capabilities: [110] Advanced Error Reporting
+		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt+ UnxCmplt+ RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UESvrt:	DLP+ SDES+ TLP+ FCP+ CmpltTO+ CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC+ UnsupReq- ACSViol-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr+
+		CEMsk:	RxErr- BadTLP+ BadDLLP+ Rollover+ Timeout+ NonFatalErr+
+		AERCap:	First Error Pointer: 00, GenCap+ CGenEn- ChkCap+ ChkEn-
+	Capabilities: [150] Power Budgeting <?>
+	Capabilities: [160] Virtual Channel <?>
+	Kernel driver in use: bnx2
+	Kernel modules: bnx2
+
+01:00.1 0200: 14e4:163b (rev 20)
+	Subsystem: 1028:028d
+	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 0, Cache Line Size: 64 bytes
+	Interrupt: pin B routed to IRQ 48
+	Region 0: Memory at dc000000 (64-bit, non-prefetchable) [size=32M]
+	Capabilities: [48] Power Management version 3
+		Flags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0+,D1-,D2-,D3hot+,D3cold+)
+		Status: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=1 PME-
+	Capabilities: [50] Vital Product Data
+		Product Name: Broadcom NetXtreme II Ethernet Controller
+		Read-only fields:
+			[PN] Part number: BCM95716C1
+			[EC] Engineering changes: 220197-3
+			[SN] Serial number: 0123456789
+			[MN] Manufacture ID: 31 30 32 38
+			[V0] Vendor specific: 6.2.15
+			[RV] Reserved: checksum good, 22 byte(s) reserved
+		End
+	Capabilities: [58] MSI: Enable- Count=1/16 Maskable- 64bit+
+		Address: 0000000000000000  Data: 0000
+	Capabilities: [a0] MSI-X: Enable- Count=9 Masked-
+		Vector table: BAR=0 offset=0000c000
+		PBA: BAR=0 offset=0000e000
+	Capabilities: [ac] Express (v2) Endpoint, MSI 00
+		DevCap:	MaxPayload 512 bytes, PhantFunc 0, Latency L0s <4us, L1 <64us
+			ExtTag- AttnBtn- AttnInd- PwrInd- RBE+ FLReset-
+		DevCtl:	Report errors: Correctable- Non-Fatal+ Fatal+ Unsupported+
+			RlxdOrd+ ExtTag- PhantFunc- AuxPwr+ NoSnoop+
+			MaxPayload 256 bytes, MaxReadReq 512 bytes
+		DevSta:	CorrErr+ UncorrErr- FatalErr- UnsuppReq+ AuxPwr+ TransPend-
+		LnkCap:	Port #0, Speed 2.5GT/s, Width x4, ASPM L0s L1, Latency L0 <2us, L1 <2us
+			ClockPM- Surprise- LLActRep- BwNot-
+		LnkCtl:	ASPM Disabled; RCB 64 bytes Disabled- Retrain- CommClk+
+			ExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt-
+		LnkSta:	Speed 2.5GT/s, Width x4, TrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-
+		DevCap2: Completion Timeout: Range ABCD, TimeoutDis+
+		DevCtl2: Completion Timeout: 65ms to 210ms, TimeoutDis-
+		LnkCtl2: Target Link Speed: 2.5GT/s, EnterCompliance- SpeedDis-, Selectable De-emphasis: -6dB
+			 Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-
+			 Compliance De-emphasis: -6dB
+		LnkSta2: Current De-emphasis Level: -6dB
+	Capabilities: [100] Device Serial Number d4-ae-52-ff-fe-6f-9b-9a
+	Capabilities: [110] Advanced Error Reporting
+		UESta:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UEMsk:	DLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt+ UnxCmplt+ RxOF- MalfTLP- ECRC- UnsupReq- ACSViol-
+		UESvrt:	DLP+ SDES+ TLP+ FCP+ CmpltTO+ CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+ ECRC+ UnsupReq- ACSViol-
+		CESta:	RxErr- BadTLP- BadDLLP- Rollover- Timeout- NonFatalErr+
+		CEMsk:	RxErr- BadTLP+ BadDLLP+ Rollover+ Timeout+ NonFatalErr+
+		AERCap:	First Error Pointer: 00, GenCap+ CGenEn- ChkCap+ ChkEn-
+	Capabilities: [150] Power Budgeting <?>
+	Capabilities: [160] Virtual Channel <?>
+	Kernel driver in use: bnx2
+	Kernel modules: bnx2
+
+07:03.0 0300: 102b:0532 (rev 0a) (prog-if 00 [VGA controller])
+	Subsystem: 1028:028d
+	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+	Latency: 32 (4000ns min, 8000ns max), Cache Line Size: 64 bytes
+	Interrupt: pin A routed to IRQ 10
+	Region 0: Memory at d9800000 (32-bit, prefetchable) [size=8M]
+	Region 1: Memory at de7fc000 (32-bit, non-prefetchable) [size=16K]
+	Region 2: Memory at de800000 (32-bit, non-prefetchable) [size=8M]
+	[virtual] Expansion ROM at de000000 [disabled] [size=64K]
+	Capabilities: [dc] Power Management version 1
+		Flags: PMEClk- DSI+ D1- D2- AuxCurrent=0mA PME(D0-,D1-,D2-,D3hot-,D3cold-)
+		Status: D0 NoSoftRst- PME-Enable- DSel=0 DScale=0 PME-
+
+
+lspci -tv:
+
+-[0000:00]-+-00.0  Intel Corporation 5500 I/O Hub to ESI Port
+           +-01.0-[01]--+-00.0  Broadcom Corporation NetXtreme II BCM5716 Gigabit Ethernet
+           |            \-00.1  Broadcom Corporation NetXtreme II BCM5716 Gigabit Ethernet
+           +-03.0-[05]--
+           +-07.0-[06]--
+           +-09.0-[03]--
+           +-0a.0-[02]--
+           +-14.0  Intel Corporation 5520/5500/X58 I/O Hub System Management Registers
+           +-14.1  Intel Corporation 5520/5500/X58 I/O Hub GPIO and Scratch Pad Registers
+           +-14.2  Intel Corporation 5520/5500/X58 I/O Hub Control Status and RAS Registers
+           +-1a.0  Intel Corporation 82801JI (ICH10 Family) USB UHCI Controller #4
+           +-1a.1  Intel Corporation 82801JI (ICH10 Family) USB UHCI Controller #5
+           +-1a.7  Intel Corporation 82801JI (ICH10 Family) USB2 EHCI Controller #2
+           +-1c.0-[04]--
+           +-1d.0  Intel Corporation 82801JI (ICH10 Family) USB UHCI Controller #1
+           +-1d.1  Intel Corporation 82801JI (ICH10 Family) USB UHCI Controller #2
+           +-1d.2  Intel Corporation 82801JI (ICH10 Family) USB UHCI Controller #3
+           +-1d.3  Intel Corporation 82801JI (ICH10 Family) USB UHCI Controller #6
+           +-1d.7  Intel Corporation 82801JI (ICH10 Family) USB2 EHCI Controller #1
+           +-1e.0-[07]----03.0  Matrox Graphics, Inc. MGA G200eW WPCM450
+           +-1f.0  Intel Corporation 82801JIR (ICH10R) LPC Interface Controller
+           \-1f.2  Intel Corporation 82801JIR (ICH10R) SATA RAID Controller
+

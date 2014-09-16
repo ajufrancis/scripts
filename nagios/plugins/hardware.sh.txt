@@ -1,0 +1,13 @@
+#!/bin/bash
+# auto run by check_mk_agent
+ echo "<<<os_distro>>>"
+ cat /etc/issue | head -1 && arch
+ echo "<<<block_id>>>"
+ blkid
+#lspci
+# if which iotop || wget epel.repo dag.repo && yum makecache
+#check_mk_agent cronly check new task: passive/active
+#yum install -y --nogpgcheck iostat iotop
+#sosreport
+# auto refresh/update hardware info /filecheck syslog
+#lscpu

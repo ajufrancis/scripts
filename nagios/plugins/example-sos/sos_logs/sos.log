@@ -1,0 +1,61 @@
+2013-03-04 22:05:46,687 INFO: could not run command: /sbin/lilo -q
+2013-03-04 22:05:46,719 INFO: could not run command: for i in `ls /home/`;        do echo "User :" $i;/usr/bin/crontab -l -u $i;        echo "---------------";done
+2013-03-04 22:05:47,104 INFO: could not run command: /sbin/mdadm -D /dev/md*
+2013-03-04 22:05:47,104 INFO: could not run command: /sbin/multipath -v4 -ll
+2013-03-04 22:05:47,104 INFO: could not run command: /usr/bin/systool -v -c -b scsi
+2013-03-04 22:05:47,137 INFO: could not run command: /usr/bin/udevinfo -ap /sys/block/loop0
+2013-03-04 22:05:47,138 INFO: could not run command: /usr/bin/udevinfo -ap /sys/block/loop1
+2013-03-04 22:05:47,138 INFO: could not run command: /usr/bin/udevinfo -ap /sys/block/loop2
+2013-03-04 22:05:47,138 INFO: could not run command: /usr/bin/udevinfo -ap /sys/block/loop3
+2013-03-04 22:05:47,139 INFO: could not run command: /usr/bin/udevinfo -ap /sys/block/loop4
+2013-03-04 22:05:47,139 INFO: could not run command: /usr/bin/udevinfo -ap /sys/block/loop5
+2013-03-04 22:05:47,139 INFO: could not run command: /usr/bin/udevinfo -ap /sys/block/loop6
+2013-03-04 22:05:47,140 INFO: could not run command: /usr/bin/udevinfo -ap /sys/block/loop7
+2013-03-04 22:05:47,140 INFO: could not run command: /usr/bin/udevinfo -ap /sys/block/sda
+2013-03-04 22:05:47,141 INFO: could not run command: /usr/bin/udevinfo -ap /sys/block/sdb
+2013-03-04 22:05:47,141 INFO: could not run command: /usr/bin/udevinfo -ap /sys/block/sr0
+2013-03-04 22:05:47,141 INFO: could not run command: /usr/bin/udevinfo -ap /sys/block/dm-0
+2013-03-04 22:05:47,142 INFO: could not run command: /usr/bin/udevinfo -ap /sys/block/dm-1
+2013-03-04 22:05:47,142 INFO: could not run command: /usr/bin/udevinfo -ap /sys/block/dm-2
+2013-03-04 22:05:47,142 INFO: could not run command: /sbin/dmraid -V
+2013-03-04 22:05:47,143 INFO: could not run command: /sbin/dmraid -b
+2013-03-04 22:05:47,143 INFO: could not run command: /sbin/dmraid -r
+2013-03-04 22:05:47,143 INFO: could not run command: /sbin/dmraid -s
+2013-03-04 22:05:47,144 INFO: could not run command: /sbin/dmraid -tay
+2013-03-04 22:05:47,144 INFO: could not run command: /sbin/dmraid -rD
+2013-03-04 22:05:47,344 INFO: could not run command: /usr/sbin/gluster peer status
+2013-03-04 22:05:47,632 INFO: error copying file /sys/bus/scsi/uevent (IOError)
+2013-03-04 22:05:47,633 INFO: error copying file /sys/bus/scsi/drivers/sd/uevent (IOError)
+2013-03-04 22:05:47,634 INFO: error copying file /sys/bus/scsi/drivers/sd/unbind (IOError)
+2013-03-04 22:05:47,634 INFO: error copying file /sys/bus/scsi/drivers/sd/bind (IOError)
+2013-03-04 22:05:47,634 INFO: error copying file /sys/bus/scsi/drivers/sr/uevent (IOError)
+2013-03-04 22:05:47,635 INFO: error copying file /sys/bus/scsi/drivers/sr/unbind (IOError)
+2013-03-04 22:05:47,635 INFO: error copying file /sys/bus/scsi/drivers/sr/bind (IOError)
+2013-03-04 22:05:47,635 INFO: error copying file /sys/bus/scsi/drivers_probe (IOError)
+2013-03-04 22:05:47,725 INFO: could not run command: /usr/bin/cpufreq-info
+2013-03-04 22:05:48,024 INFO: could not run command: /usr/bin/lshal
+2013-03-04 22:05:48,025 INFO: could not run command: /usr/bin/systool -c fc_host -v
+2013-03-04 22:05:48,025 INFO: could not run command: /usr/bin/systool -c scsi_host -v
+2013-03-04 22:05:48,066 INFO: error copying file /sys/module/md_mod/parameters/new_array (IOError)
+2013-03-04 22:05:48,207 INFO: could not run command: /usr/sbin/dkms status
+2013-03-04 22:05:48,233 INFO: could not run command: /usr/bin/lsb_release -a
+2013-03-04 22:05:48,233 INFO: could not run command: /usr/bin/lsb_release -d
+2013-03-04 22:05:48,451 INFO: could not run command: /usr/bin/ntpstat
+2013-03-04 22:05:48,452 INFO: could not run command: /usr/sbin/ntptrace -n
+2013-03-04 22:05:48,488 INFO: could not run command: /usr/bin/lpstat -t
+2013-03-04 22:05:48,489 INFO: could not run command: /usr/bin/lpstat -s
+2013-03-04 22:05:48,489 INFO: could not run command: /usr/bin/lpstat -d
+2013-03-04 22:05:48,881 INFO: could not run command: /usr/bin/wbinfo -g
+2013-03-04 22:05:48,881 INFO: could not run command: /usr/bin/wbinfo -u
+2013-03-04 22:05:48,893 INFO: could not run command: /usr/bin/selinuxconfig
+2013-03-04 22:05:48,928 INFO: skipping symlink creation: already exists (/tmp/nagios01-2013030422051362405942/etc/rc.d/rc3.d/../init.d/omd)
+2013-03-04 22:05:48,945 INFO: skipping symlink creation: already exists (/tmp/nagios01-2013030422051362405942/etc/rc.d/rc5.d/../init.d/omd)
+2013-03-04 22:05:48,957 INFO: skipping symlink creation: already exists (/tmp/nagios01-2013030422051362405942/etc/rc.d/rc0.d/../init.d/omd)
+2013-03-04 22:05:48,974 INFO: skipping symlink creation: already exists (/tmp/nagios01-2013030422051362405942/etc/rc.d/rc1.d/../init.d/omd)
+2013-03-04 22:05:48,996 INFO: skipping symlink creation: already exists (/tmp/nagios01-2013030422051362405942/etc/rc.d/rc2.d/../init.d/omd)
+2013-03-04 22:05:49,007 INFO: skipping symlink creation: already exists (/tmp/nagios01-2013030422051362405942/etc/rc.d/init.d/omd)
+2013-03-04 22:05:49,021 INFO: skipping symlink creation: already exists (/tmp/nagios01-2013030422051362405942/etc/rc.d/rc4.d/../init.d/omd)
+2013-03-04 22:05:49,144 INFO: error copying file /proc/sys/vm/compact_memory (IOError)
+2013-03-04 22:05:49,160 INFO: error copying file /proc/sys/fs/binfmt_misc/register (IOError)
+2013-03-04 22:05:49,184 INFO: error copying file /proc/sys/net/ipv4/route/flush (IOError)
+2013-03-04 22:05:49,319 INFO: error copying file /proc/sys/net/ipv6/route/flush (IOError)

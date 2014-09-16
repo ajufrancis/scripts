@@ -1,0 +1,38 @@
+You fuckin' nerds ever heard of a thing called Nagios? You did, you know this is some really good shit - open source monitoring tool, efficient, stable, fucking helpful. Well, there's just this little fucking problem with Nagios - it was written by unaesthetic nerds like you, so it's fucking webGUI look like ancient crap and sucks big balls. Not to mention shitty status map with fucking 4-color HGA icons. It makes your so-called girlfriend with some vista and HD experience wanna yack up on a fucking screen. Well, she's not the one to blame.
+
+Well boy, just don't fucking panic. Here we are, to serve you no-life motherfucker. First of all, download this icon pack for nagios, and place them in appriopriate folder (/usr/local/www/nagios/images/logos in FreeBSD for fucking example). If you don't know how to bind icons to corresponding host on you map - then you're a fucking moron.
+
+Second, you have to download sources for Nagios (if you installed it from APT, PKG or some other shit). The thing is that fucking Nagios draws status map as a one fucking 256-color image. Thus, if you use multiple icons from that fancy package, each one with different indexed pallete - your status map will look even worse than before. So, after download, edit a file called statusmap.c in /cgi directory. Find a line:
+
+	map_image=gdImageCreate(canvas_width, canvas_height);
+
+and fucking replace it with:
+
+	map_image=gdImageCreateTrueColor(canvas_width, canvas_height);
+
+Below that, add the following line:
+
+	gdImageFill(map_image, 0, 0, 0xFFFFFF);
+
+About ten lines below, there should be a line like this:
+
+	gdImageColorTransparent(map_image,color_white);
+
+...be fucking extra sure it says color_white there. Now, replace these two lines:
+
+	color_lightred=gdImageColorAllocate(map_image,215,175,175);
+	color_lightgreen=gdImageColorAllocate(map_image,210,255,215);
+
+...with corresponding:
+
+	color_lightred=gdImageColorAllocate(map_image,255,228,228);
+	color_lightgreen=gdImageColorAllocate(map_image,217,255,224);
+
+After saving changes, go to the root of nagios source dir and type in:
+
+	./configure
+	make cgis
+
+If you encounter any problems with the compile process - fucking solve it. I'm not a fucking babysitter. Be fucking sure you don't type make install - unless of course you don't have Nagios already installed in your system.
+
+After all, copy & overwrite statusmap.cgi in your Nagios /cgi-bin directory. Fucking done!

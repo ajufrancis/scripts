@@ -1,0 +1,15 @@
+192.168.11.12 dev em1 lladdr 90:e2:ba:24:65:a8 STALE
+192.168.11.17 dev em1 lladdr 90:e2:ba:20:d8:34 STALE
+192.168.11.5 dev em1 lladdr 7a:62:c2:86:63:38 STALE
+192.168.11.253 dev em1 lladdr e8:e7:32:4d:e7:74 STALE
+192.168.11.3 dev em1 lladdr d2:e7:5d:53:1c:85 STALE
+192.168.11.254 dev em1 lladdr e8:e7:32:0e:66:29 REACHABLE
+192.168.11.16 dev em1 lladdr 90:e2:ba:24:63:20 STALE
+192.168.11.13 dev em1 lladdr 90:e2:ba:24:66:c0 STALE
+192.168.11.10 dev em1 lladdr 62:cb:fe:9f:bd:7d STALE
+192.168.11.14 dev em1 lladdr 90:e2:ba:24:66:84 STALE
+192.168.11.11 dev em1 lladdr 90:e2:ba:20:d6:24 STALE
+192.168.11.15 dev em1 lladdr 90:e2:ba:24:68:08 STALE
+192.168.11.2 dev em1 lladdr 2e:fd:70:b9:a8:09 STALE
+192.168.11.4 dev em1 lladdr ee:1e:13:89:cc:f7 STALE
+

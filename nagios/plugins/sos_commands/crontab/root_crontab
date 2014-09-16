@@ -1,0 +1,3 @@
+00 12 * * * /sbin/ntpdate -u 192.168.11.10 && hwclock -w &
+0 * * * * /etc/webmin/bandwidth/rotate.pl
+

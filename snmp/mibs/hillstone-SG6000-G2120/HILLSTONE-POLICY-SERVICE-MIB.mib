@@ -1,0 +1,89 @@
+-- **************************************************************************
+-- HILLSTONE-POLICY-SERVICE-MEMBER-MIB 
+--
+-- Copyright (c) 2009 by Hillstone Networks, Inc.
+-- All rights reserved.
+-- 
+-- Version:      V3   
+-- Description:	 Hillstone Networks Policy Service MIB Object Identifier Assignments
+-- **************************************************************************
+--
+
+HILLSTONE-POLICY-SERVICE-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+	hillstonePolicyService
+		FROM HILLSTONE-SMI
+	OBJECT-TYPE
+		FROM RFC-1212	
+	RowStatus		
+		FROM SNMPv2-TC;
+
+hillstonePolicyServiceObjects OBJECT IDENTIFIER ::= { hillstonePolicyService 1 }
+
+hillstonePolicyServiceTable OBJECT-TYPE
+	SYNTAX SEQUENCE OF hillstonePolicyServiceEntry
+	MAX-ACCESS not-accessible
+	STATUS current
+	DESCRIPTION
+	    "This table contains all the ServiceGroupMember defined in the system."
+::= { hillstonePolicyServiceObjects 1 }
+
+hillstonePolicyServiceEntry OBJECT-TYPE
+	SYNTAX hillstonePolicyServiceEntry
+	MAX-ACCESS not-accessible
+	STATUS current
+	DESCRIPTION
+		"Defined the parameters of ServiceGroupMember."
+INDEX { hillstonePolicyId, hillstonePolicyServiceName }
+::= { hillstonePolicyServiceTable 1 }
+	
+hillstonePolicyServiceEntry ::=
+SEQUENCE { 
+	hillstonePolicyId
+		INTEGER,
+	hillstonePolicyServiceName
+		OCTET STRING,
+	hillstonePolicyServiceType
+		INTEGER,
+	hillstonePolicyServiceRowStatus
+		RowStatus
+	}
+
+hillstonePolicyId OBJECT-TYPE
+	SYNTAX INTEGER 
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION
+	    "A policy id of policy table"
+::= { hillstonePolicyServiceEntry 1 }
+
+hillstonePolicyServiceName OBJECT-TYPE
+	SYNTAX OCTET STRING (SIZE (1..31)) 
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "The service or service group id of this rule"
+::= { hillstonePolicyServiceEntry 2 }
+
+hillstonePolicyServiceType OBJECT-TYPE
+	SYNTAX INTEGER 
+	{
+		service(1),
+		servicegroup(2)
+	}
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "The service type, which is a service or servicgroup"
+::= { hillstonePolicyServiceEntry 3 }
+
+hillstonePolicyServiceRowStatus OBJECT-TYPE
+	SYNTAX RowStatus
+	MAX-ACCESS read-create
+	STATUS current
+	DESCRIPTION
+	 "The status of this service group row. support: active, createandgo, destory"
+::= { hillstonePolicyServiceEntry 4 }
+
+END

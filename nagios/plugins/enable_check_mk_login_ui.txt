@@ -1,0 +1,1 @@
+omd config multisit_cookie_auth

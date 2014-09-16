@@ -1,0 +1,167 @@
+-- **************************************************************************
+-- HILLSTONE-SCHEDULE-PERIODIC-MEMBER-MIB 
+--
+-- Copyright (c) 2009 by Hillstone Networks, Inc.
+-- All rights reserved.
+-- 
+-- Version:      V3   
+-- Description:	 Hillstone Networks Schedule MIB Object Identifier Assignments
+-- **************************************************************************
+--
+
+HILLSTONE-SCHEDULE-PERIODIC-MEMBER-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+	hillstoneSchedulePeriodicMember
+		FROM HILLSTONE-SMI
+	TimeStamp
+		FROM RFC1155-SMI
+	OBJECT-TYPE
+		FROM RFC-1212	
+	RowStatus		
+		FROM SNMPv2-TC;
+
+hillstoneSchedulePeriodicMemberObjects OBJECT IDENTIFIER ::= { hillstoneSchedulePeriodicMember 1 }
+
+hillstoneSchedulePeriodicMemberTable OBJECT-TYPE
+	SYNTAX SEQUENCE OF hillstoneSchedulePeriodicMemberEntry
+	MAX-ACCESS not-accessible
+	STATUS current
+	DESCRIPTION
+	    "This table contains all the SchedulePeriodicMember defined in the system."
+::= { hillstoneSchedulePeriodicMemberObjects 1 }
+
+hillstoneSchedulePeriodicMemberEntry OBJECT-TYPE
+	SYNTAX hillstoneSchedulePeriodicMemberEntry
+	MAX-ACCESS not-accessible
+	STATUS current
+	DESCRIPTION
+		"Defined the parameters of SchedulePeriodicMember."
+INDEX { hillstoneSchdName, hillstoneSchedulePeriodicMemberType, 
+	hillstoneSchedulePeriodicDaysMask,
+	hillstoneSchedulePeriodicStartDay, hillstoneSchedulePeriodicEndDay,
+	hillstoneSchedulePeriodicStartTime, hillstoneSchedulePeriodicEndTime}
+::= { hillstoneSchedulePeriodicMemberTable 1 }
+	
+hillstoneSchedulePeriodicMemberEntry ::=
+SEQUENCE { 	
+	hillstoneSchdName
+		OCTET STRING,
+	hillstoneSchedulePeriodicMemberType
+		INTEGER,
+	hillstoneSchedulePeriodicDaysMask
+		INTEGER,
+	hillstoneSchedulePeriodicStartDay
+		INTEGER,
+	hillstoneSchedulePeriodicEndDay
+		INTEGER,
+	hillstoneSchedulePeriodicStartTime
+		TimeStamp,
+	hillstoneSchedulePeriodicEndTime
+		TimeStamp,
+	hillstoneSchedulePeriodicMemberRowStatus
+		INTEGER
+	}
+
+hillstoneSchdName OBJECT-TYPE
+	SYNTAX OCTET STRING (SIZE (1..31))
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "The name of Schedule.
+	    Different Schedule has different name."
+::= { hillstoneSchedulePeriodicMemberEntry 1 }
+
+hillstoneSchedulePeriodicMemberType OBJECT-TYPE
+	SYNTAX INTEGER
+	{
+		daytoday-time(0),
+		somedays-time(1)
+	}
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "The type of schedule periodic member. For example, 
+	    daytoday-time: monday 11:00 to wednesday 11:00,
+	    somedays-time: monday tuesday 11:00 ~ 22:00"
+::= { hillstoneSchedulePeriodicMemberEntry 2 }
+
+hillstoneSchedulePeriodicDaysMask OBJECT-TYPE
+	SYNTAX INTEGER
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "Only for somedays-time:
+		 0x0001: daily
+		 0x0002: weekday
+		 0x0004: weekend
+		 0x0008: Monday
+		 0x0010: Tuesday
+		 0x0020: Wednesday
+		 0x0040: Thursday
+		 0x0080: Friday
+		 0x0100: Saturday
+		 0x0200: Sunday"
+::= { hillstoneSchedulePeriodicMemberEntry 3 }
+
+hillstoneSchedulePeriodicStartDay OBJECT-TYPE
+	SYNTAX INTEGER
+	{
+		Invalid(0),
+		Monday(1),
+		Tuesday(2),
+		Wednesday(3),
+		Thursday(4),
+		Friday(5),
+		Saturday(6),
+		Sunday(7)
+	}
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "Only for daytoday-time: start day"
+::= { hillstoneSchedulePeriodicMemberEntry 4 }
+
+hillstoneSchedulePeriodicEndDay OBJECT-TYPE
+	SYNTAX INTEGER
+	{
+		Invalid(0),
+		Monday(1),
+		Tuesday(2),
+		Wednesday(3),
+		Thursday(4),
+		Friday(5),
+		Saturday(6),
+		Sunday(7)
+	}
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "Only for daytoday-time: end day"
+::= { hillstoneSchedulePeriodicMemberEntry 5 }
+
+hillstoneSchedulePeriodicStartTime OBJECT-TYPE
+	SYNTAX TimeStamp
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "For both type: the start time of periodic schedule"
+::= { hillstoneSchedulePeriodicMemberEntry 6 }
+
+hillstoneSchedulePeriodicEndTime OBJECT-TYPE
+	SYNTAX TimeStamp
+	MAX-ACCESS read-write
+	STATUS current
+	DESCRIPTION
+	    "For both type: the end time of periodic schedule"
+::= { hillstoneSchedulePeriodicMemberEntry 7 }
+
+hillstoneSchedulePeriodicMemberRowStatus OBJECT-TYPE
+	SYNTAX RowStatus
+	MAX-ACCESS read-create
+	STATUS current
+	DESCRIPTION
+	 "The status of this address book member row. support: active, createandgo, destory"
+::= { hillstoneSchedulePeriodicMemberEntry 8 }
+
+END

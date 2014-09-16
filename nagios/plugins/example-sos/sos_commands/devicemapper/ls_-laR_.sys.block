@@ -1,0 +1,35 @@
+/sys/block:
+total 0
+drwxr-xr-x  2 root root 0 Mar  4 21:54 .
+drwxr-xr-x 13 root root 0 Feb 27 10:30 ..
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 dm-0 -> ../devices/virtual/block/dm-0
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 dm-1 -> ../devices/virtual/block/dm-1
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 dm-2 -> ../devices/virtual/block/dm-2
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 loop0 -> ../devices/virtual/block/loop0
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 loop1 -> ../devices/virtual/block/loop1
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 loop2 -> ../devices/virtual/block/loop2
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 loop3 -> ../devices/virtual/block/loop3
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 loop4 -> ../devices/virtual/block/loop4
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 loop5 -> ../devices/virtual/block/loop5
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 loop6 -> ../devices/virtual/block/loop6
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 loop7 -> ../devices/virtual/block/loop7
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram0 -> ../devices/virtual/block/ram0
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram1 -> ../devices/virtual/block/ram1
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram10 -> ../devices/virtual/block/ram10
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram11 -> ../devices/virtual/block/ram11
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram12 -> ../devices/virtual/block/ram12
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram13 -> ../devices/virtual/block/ram13
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram14 -> ../devices/virtual/block/ram14
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram15 -> ../devices/virtual/block/ram15
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram2 -> ../devices/virtual/block/ram2
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram3 -> ../devices/virtual/block/ram3
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram4 -> ../devices/virtual/block/ram4
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram5 -> ../devices/virtual/block/ram5
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram6 -> ../devices/virtual/block/ram6
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram7 -> ../devices/virtual/block/ram7
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram8 -> ../devices/virtual/block/ram8
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 ram9 -> ../devices/virtual/block/ram9
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 sda -> ../devices/pci0000:00/0000:00:1f.2/host0/target0:0:0/0:0:0:0/block/sda
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 sdb -> ../devices/pci0000:00/0000:00:1f.2/host1/target1:0:0/1:0:0:0/block/sdb
+lrwxrwxrwx  1 root root 0 Mar  4 21:54 sr0 -> ../devices/pci0000:00/0000:00:1f.2/host4/target4:0:0/4:0:0:0/block/sr0
+

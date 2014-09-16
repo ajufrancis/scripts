@@ -1,0 +1,1920 @@
+13:12:05.119684 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:12:10.120342 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:12:11.934376 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:12:15.120925 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:12:20.121662 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:12:25.122334 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:12:26.416190 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:12:26.416264 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:12:26.416310 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:12:30.123050 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:12:31.168083 arp who-has 192.168.11.9 tell 192.168.11.254
+13:12:35.123684 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:12:40.124320 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:12:42.315152 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:12:45.125017 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:12:47.858472 arp who-has 192.168.11.10 tell 192.168.11.12
+13:12:50.125669 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:12:52.373626 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:12:52.373648 IP6 (hlim 1, next-header: Options (0), length: 32) 101:80a:1dfb:1d28:1fc7:8c5b:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:12:54.873879 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:12:55.126332 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:12:56.441620 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:12:56.441643 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:12:56.441688 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:12:56.701514 IP (tos 0x0, ttl   1, id 1963, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:12:57.451161 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:13:00.126981 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:13:00.917572 IP (tos 0x0, ttl   1, id 20057, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:13:04.807971 arp who-has 192.168.11.18 tell 192.168.11.253
+13:13:05.127619 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:13:10.128372 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:13:12.674719 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:13:15.128964 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:13:20.129671 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:13:22.332513 arp who-has 192.168.11.253 tell 192.168.11.254
+13:13:25.130370 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:13:26.467912 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:13:26.467937 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:13:26.467975 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:13:28.078415 arp who-has 192.168.11.5 tell 192.168.11.253
+13:13:30.131069 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:13:35.131777 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:13:39.483964 arp who-has 192.168.11.254 tell 192.168.11.254
+13:13:40.132330 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:13:43.054893 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:13:45.133010 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:13:50.133648 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:13:50.235662 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:13:50.235683 IP6 (hlim 1, next-header: Options (0), length: 32) 7258:0:a459:0:a459:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:13:52.500212 IP (tos 0x0, ttl   1, id 308, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:13:55.134407 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:13:55.500946 IP (tos 0x0, ttl   1, id 42610, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:13:56.492750 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:13:56.492769 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:13:56.492824 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:13:56.580681 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:13:57.600745 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:14:00.135084 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:14:05.135735 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:14:10.136394 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:14:13.435064 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:14:15.136958 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:14:15.334658 arp who-has 192.168.11.10 tell 192.168.11.253
+13:14:20.137714 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:14:21.681825 arp who-has 192.168.11.9 tell 192.168.11.6
+13:14:25.138394 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:14:26.517695 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:14:26.517719 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:14:26.517751 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:14:30.139045 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:14:35.139723 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:14:40.140397 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:14:43.815810 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:14:45.141057 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:14:50.141768 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:14:52.877476 arp who-has 192.168.11.10 tell 192.168.11.13
+13:14:55.142386 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:14:56.545100 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:14:56.545123 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:14:56.545157 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:14:57.361413 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:14:57.361437 IP6 (hlim 1, next-header: Options (0), length: 32) 101:80a:1dfd:355d:1fc9:a45d:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:14:59.307326 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:15:00.143019 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:15:02.098214 IP (tos 0x0, ttl   1, id 38574, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:15:05.143724 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:15:05.480971 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:15:05.898211 IP (tos 0x0, ttl   1, id 54343, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:15:10.144432 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:15:14.175294 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:15:15.145045 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:15:20.145692 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:15:25.146410 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:15:26.571051 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:15:26.571069 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:15:26.571101 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:15:30.147086 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:15:35.147735 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:15:40.148401 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:15:41.946819 arp who-has 192.168.11.10 tell 192.168.11.254
+13:15:44.555543 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:15:45.149055 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:15:50.149693 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:15:55.150382 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:15:55.248062 IP6 (hlim 1, next-header: Options (0), length: 32) 9e61:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:15:55.248074 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:15:56.598014 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:15:56.598037 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:15:56.598096 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:15:57.497150 IP (tos 0x0, ttl   1, id 35961, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:15:58.417798 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:16:00.151010 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:16:01.097175 IP (tos 0x0, ttl   1, id 9218, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:16:02.404179 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:16:05.151684 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:16:10.152286 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:16:14.935635 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:16:15.153036 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:16:20.153577 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:16:25.154227 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:16:26.624545 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:16:26.624576 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:16:26.624639 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:16:30.154909 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:16:35.155582 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:16:40.156297 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:16:45.156893 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:16:45.316398 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:16:50.157589 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:16:55.158234 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:16:56.652187 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:16:56.652209 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:16:56.652242 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:17:00.158892 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:17:02.349653 IP6 (hlim 1, next-header: Options (0), length: 32) 8379:0:777a:0:777a:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:17:02.349681 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:17:05.159551 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:17:05.252921 arp who-has 192.168.11.253 tell 192.168.11.254
+13:17:05.895825 IP (tos 0x0, ttl   1, id 43373, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:17:10.160225 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:17:10.467495 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:17:11.664543 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:17:11.695793 IP (tos 0x0, ttl   1, id 36875, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:17:15.160893 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:17:15.675998 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:17:20.161582 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:17:25.162231 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:17:26.676909 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:17:26.676923 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:17:26.676945 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:17:30.162916 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:17:35.163601 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:17:40.164304 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:17:45.164964 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:17:46.056178 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:17:50.165664 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:17:55.166338 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:17:56.699732 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:17:56.699751 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:17:56.699782 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:18:00.166951 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:18:00.260974 IP6 (hlim 1, next-header: Options (0), length: 32) f264:0:1:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:18:00.260998 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:18:01.894736 IP (tos 0x0, ttl   1, id 19481, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:18:03.094624 IP (tos 0x0, ttl   1, id 47990, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:18:05.167612 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:18:05.846451 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:18:08.468741 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:18:10.168269 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:18:15.168834 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:18:16.436349 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:18:20.169605 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:18:25.170256 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:18:26.724275 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:18:26.724296 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:18:26.724378 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:18:30.170913 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:18:35.171555 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:18:37.281732 arp who-has 192.168.11.9 tell 192.168.11.254
+13:18:37.561917 arp who-has 192.168.11.253 tell 192.168.11.10
+13:18:39.585137 arp who-has 192.168.11.254 tell 192.168.11.254
+13:18:40.172211 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:18:45.172851 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:18:46.817110 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:18:50.173566 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:18:55.174247 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:18:56.750154 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:18:56.750260 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:18:56.750263 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:19:00.174896 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:19:04.638828 arp who-has 192.168.11.18 tell 192.168.11.253
+13:19:05.175619 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:19:07.337121 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:19:07.337152 IP6 (hlim 1, next-header: Options (0), length: 32) a37c::1100:0:0:0 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:19:07.853196 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:19:08.493406 IP (tos 0x0, ttl   1, id 30918, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:19:09.271247 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:19:09.893420 IP (tos 0x0, ttl   1, id 1742, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:19:10.176289 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:19:15.176976 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:19:17.176688 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:19:20.177605 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:19:25.178289 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:19:26.777065 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:19:26.777087 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:19:26.777131 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:19:30.178987 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:19:35.179656 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:19:40.180292 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:19:45.180933 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:19:47.556872 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:19:50.181544 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:19:55.182213 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:19:56.802232 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:19:56.802279 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:19:56.802332 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:20:00.182896 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:20:05.183571 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:20:05.261582 arp who-has 192.168.11.253 tell 192.168.11.254
+13:20:05.273387 IP6 (hlim 1, next-header: Options (0), length: 32) 236b:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:20:05.273411 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:20:07.050729 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:20:09.892122 IP (tos 0x0, ttl   1, id 55687, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:20:10.184276 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:20:11.820030 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:20:14.102504 IP (tos 0x0, ttl   1, id 14021, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:20:15.184825 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:20:17.937046 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:20:20.185552 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:20:25.186170 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:20:26.828678 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:20:26.828697 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:20:26.828701 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:20:30.186815 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:20:35.187541 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:20:40.188169 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:20:45.188843 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:20:48.317773 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:20:50.189545 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:20:55.190137 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:20:56.151398 IP (tos 0x0, ttl 128, id 59226, offset 0, flags [none], proto: UDP (17), length: 229) 192.168.11.6.138 > 192.168.11.255.138: [udp sum ok] 
+>>> NBT UDP PACKET(138) Res=0x1102 ID=0x864F IP=192 (0xc0).168 (0xa8).11 (0xb).6 (0x6) Port=138 (0x8a) Length=187 (0xbb) Res2=0x0
+SourceName=WINXP3-11-6     NameType=0x20 (Server)
+DestName=WORKGROUP       NameType=0x1E (Browser Server)
+
+SMB PACKET: SMBtrans (REQUEST)
+SMB Command   =  0x25
+Error class   =  0x0
+Error code    =  0 (0x0)
+Flags1        =  0x0
+Flags2        =  0x0
+Tree ID       =  0 (0x0)
+Proc ID       =  0 (0x0)
+UID           =  0 (0x0)
+MID           =  0 (0x0)
+Word Count    =  17 (0x11)
+TotParamCnt=0 (0x0) 
+TotDataCnt=33 (0x21) 
+MaxParmCnt=0 (0x0) 
+MaxDataCnt=0 (0x0)
+MaxSCnt=0 (0x0) 
+TransFlags=0x0 
+Res1=0x3E8 
+Res2=0x0 
+Res3=0x0
+ParamCnt=0 (0x0) 
+ParamOff=0 (0x0) 
+DataCnt=33 (0x21) 
+DataOff=86 (0x56) 
+SUCnt=3 (0x3)
+Data: (6 bytes)
+[000] 01 00 00 00 02 00                                 \001\000\000\000\002\000 
+smb_bcc=50
+Name=\MAILSLOT\BROWSE
+BROWSE PACKET
+BROWSE PACKET:
+Type=0xF (LocalMasterAnnouncement)
+UpdateCount=0x8000
+Res1=0xFC
+AnnounceInterval=10 (0xa)
+Name=WINXP3-11-6     NameType=0x00 (Workstation)
+MajorVersion=0x5
+MinorVersion=0x1
+ServerType=0x51003
+ElectionVersion=0x10F
+BrowserConstant=0xAA55
+Data: (1 bytes)
+[000] 00                                                \000 
+
+
+
+13:20:56.852850 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:20:56.852869 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:20:56.852900 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:21:00.190823 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:21:05.191456 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:21:06.258270 arp who-has 192.168.11.10 tell 192.168.11.254
+13:21:10.192128 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:21:12.324942 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:21:12.324963 IP6 (hlim 1, next-header: Options (0), length: 32) 2906::620e:0:0:0 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:21:15.192755 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:21:15.658891 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:21:15.690879 IP (tos 0x0, ttl   1, id 37564, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:21:16.293711 IP (tos 0x0, ttl   1, id 57925, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:21:18.473199 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:21:18.677330 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:21:20.193468 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:21:25.194131 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:21:26.878796 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:21:26.878819 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:21:26.878823 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:21:30.194835 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:21:35.195509 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:21:40.196195 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:21:45.196838 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:21:49.057487 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:21:50.197550 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:21:55.198177 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:21:56.906209 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:21:56.906266 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:21:56.906403 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:22:00.198921 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:22:05.199496 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:22:10.200155 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:22:10.286278 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:22:10.286302 IP6 (hlim 1, next-header: Options (0), length: 32) ef6e:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:22:10.914030 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:22:12.393177 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:22:14.289649 IP (tos 0x0, ttl   1, id 28499, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:22:15.200895 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:22:15.325181 arp who-has 192.168.11.10 tell 192.168.11.253
+13:22:18.490056 IP (tos 0x0, ttl   1, id 54643, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:22:19.437704 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:22:20.201580 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:22:25.202240 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:22:26.932681 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:22:26.932702 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:22:26.932743 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:22:30.202891 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:22:31.599608 arp who-has 192.168.11.10 tell 192.168.11.15
+13:22:35.203585 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:22:40.204240 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:22:44.299796 arp who-has 192.168.11.10 tell 192.168.11.18
+13:22:45.204905 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:22:49.818397 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:22:50.205574 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:22:55.206213 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:22:56.958097 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:22:56.958119 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:22:56.958151 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:23:00.206956 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:23:05.207592 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:23:05.281699 arp who-has 192.168.11.253 tell 192.168.11.254
+13:23:10.208300 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:23:15.208957 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:23:17.312816 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:23:17.312828 IP6 (hlim 1, next-header: Options (0), length: 32) ad0a:0:ae0a:0:ae0a:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:23:18.288342 IP (tos 0x0, ttl   1, id 32074, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:23:20.177994 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:23:20.209565 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:23:23.088326 IP (tos 0x0, ttl   1, id 29683, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:23:23.227605 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:23:25.210270 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:23:26.982133 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:23:26.982159 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:23:26.982164 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:23:27.199051 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:23:28.002499 arp who-has 192.168.11.5 tell 192.168.11.253
+13:23:30.210964 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:23:35.211584 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:23:39.703953 arp who-has 192.168.11.254 tell 192.168.11.254
+13:23:40.212250 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:23:45.212960 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:23:50.213658 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:23:50.558161 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:23:55.214277 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:23:57.008365 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:23:57.008417 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:23:57.008466 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:24:00.214970 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:24:02.843215 IP (tos 0x0, ttl  64, id 22275, offset 0, flags [none], proto: UDP (17), length: 230) 192.168.11.31.138 > 192.168.11.255.138: [udp sum ok] 
+>>> NBT UDP PACKET(138) Res=0x110A ID=0x2203 IP=192 (0xc0).168 (0xa8).11 (0xb).31 (0x1f) Port=138 (0x8a) Length=202 (0xca) Res2=0x0
+SourceName=STORAGE02       NameType=0x00 (Workstation)
+DestName=WORKGROUP       NameType=0x1D (Master Browser)
+
+SMB PACKET: SMBtrans (REQUEST)
+SMB Command   =  0x25
+Error class   =  0x0
+Error code    =  0 (0x0)
+Flags1        =  0x0
+Flags2        =  0x0
+Tree ID       =  0 (0x0)
+Proc ID       =  0 (0x0)
+UID           =  0 (0x0)
+MID           =  0 (0x0)
+Word Count    =  17 (0x11)
+TotParamCnt=0 (0x0) 
+TotDataCnt=33 (0x21) 
+MaxParmCnt=0 (0x0) 
+MaxDataCnt=0 (0x0)
+MaxSCnt=0 (0x0) 
+TransFlags=0x0 
+Res1=0x3E8 
+Res2=0x0 
+Res3=0x0
+ParamCnt=0 (0x0) 
+ParamOff=0 (0x0) 
+DataCnt=33 (0x21) 
+DataOff=86 (0x56) 
+SUCnt=3 (0x3)
+Data: (6 bytes)
+[000] 01 00 00 00 02 00                                 \001\000\000\000\002\000 
+smb_bcc=51
+Name=\MAILSLOT\BROWSE
+Data: (1 bytes)
+[000] 01                                                \001 
+BROWSE PACKET
+BROWSE PACKET:
+Type=0x1 (HostAnnouncement)
+UpdateCount=0x8000
+Res1=0xFC
+AnnounceInterval=10 (0xa)
+Name=STORAGE02       NameType=0x20 (Server)
+MajorVersion=0x5
+MinorVersion=0x0
+ServerType=0x1003
+ElectionVersion=0x10F
+BrowserConstant=0xAA55
+Data: (1 bytes)
+[000] 00                                                \000 
+
+
+
+13:24:05.215683 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:24:10.216310 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:24:15.216979 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:24:15.298602 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:24:15.298620 IP6 (hlim 1, next-header: Options (0), length: 32) 9675::5e0e:0:0:0 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:24:15.829442 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:24:17.186614 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:24:20.217582 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:24:20.938325 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:24:22.287107 IP (tos 0x0, ttl   1, id 16272, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:24:23.287100 IP (tos 0x0, ttl   1, id 57560, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:24:25.218304 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:24:25.654641 arp who-has 192.168.11.9 tell 192.168.11.6
+13:24:27.032380 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:24:27.032439 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:24:27.032492 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:24:30.218931 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:24:35.219615 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:24:40.152374 arp who-has 192.168.11.9 tell 192.168.11.254
+13:24:40.220327 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:24:45.221010 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:24:50.221685 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:24:51.319098 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:24:55.222328 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:24:57.058357 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:24:57.058379 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:24:57.058423 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:25:00.222971 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:25:04.758609 arp who-has 192.168.11.18 tell 192.168.11.253
+13:25:05.223638 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:25:10.224351 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:25:15.225047 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:25:20.225673 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:25:20.519372 arp who-has 192.168.11.32 tell 192.168.11.10
+13:25:21.678604 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:25:22.300993 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:25:22.301014 IP6 (hlim 1, next-header: Options (0), length: 32) 101:80a:1e06:19a9:1fd2:88a6:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:25:23.361679 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:25:24.837790 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:25:25.226338 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:25:27.085073 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:25:27.085110 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:25:27.085165 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:25:27.685777 IP (tos 0x0, ttl   1, id 4567, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:25:30.226982 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:25:32.289598 IP (tos 0x0, ttl   1, id 31125, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:25:35.227608 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:25:40.228288 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:25:45.228946 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:25:50.229663 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:25:52.058798 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:25:55.230254 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:25:57.111695 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:25:57.111714 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:25:57.111731 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:26:00.230966 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:26:05.231577 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:26:05.292745 arp who-has 192.168.11.253 tell 192.168.11.254
+13:26:10.232214 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:26:15.232857 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:26:20.233626 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:26:20.311255 IP6 (hlim 1, next-header: Options (0), length: 32) a6a:6974:7561:6e6d:6973:3209:6373:3130 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:26:20.311278 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:26:20.776894 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:26:21.884953 IP (tos 0x0, ttl   1, id 60366, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:26:22.438974 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:26:25.234237 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:26:26.563731 arp who-has 192.168.11.10 tell 192.168.11.254
+13:26:26.747536 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:26:27.139007 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:26:27.139025 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:26:27.139075 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:26:28.284523 IP (tos 0x0, ttl   1, id 16779, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:26:30.234930 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:26:31.788049 arp who-has 192.168.11.10 tell 192.168.11.14
+13:26:35.235550 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:26:40.236269 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:26:44.252470 IP (tos 0x0, ttl 128, id 64263, offset 0, flags [none], proto: UDP (17), length: 240) 192.168.11.6.138 > 192.168.11.255.138: [udp sum ok] 
+>>> NBT UDP PACKET(138) Res=0x1102 ID=0x8651 IP=192 (0xc0).168 (0xa8).11 (0xb).6 (0x6) Port=138 (0x8a) Length=198 (0xc6) Res2=0x0
+SourceName=WINXP3-11-6     NameType=0x00 (Workstation)
+DestName=__MSBROWSE__ NameType=0x01 (Unknown)
+
+SMB PACKET: SMBtrans (REQUEST)
+SMB Command   =  0x25
+Error class   =  0x0
+Error code    =  0 (0x0)
+Flags1        =  0x0
+Flags2        =  0x0
+Tree ID       =  0 (0x0)
+Proc ID       =  0 (0x0)
+UID           =  0 (0x0)
+MID           =  0 (0x0)
+Word Count    =  17 (0x11)
+TotParamCnt=0 (0x0) 
+TotDataCnt=44 (0x2c) 
+MaxParmCnt=0 (0x0) 
+MaxDataCnt=0 (0x0)
+MaxSCnt=0 (0x0) 
+TransFlags=0x0 
+Res1=0x3E8 
+Res2=0x0 
+Res3=0x0
+ParamCnt=0 (0x0) 
+ParamOff=0 (0x0) 
+DataCnt=44 (0x2c) 
+DataOff=86 (0x56) 
+SUCnt=3 (0x3)
+Data: (6 bytes)
+[000] 01 00 01 00 02 00                                 \001\000\001\000\002\000 
+smb_bcc=61
+Name=\MAILSLOT\BROWSE
+BROWSE PACKET
+BROWSE PACKET:
+Type=0xC (WorkgroupAnnouncement)
+UpdateCount=0xA000
+Res1=0xBB
+AnnounceInterval=13 (0xd)
+Name=WORKGROUP       NameType=0x40 (Unknown)
+MajorVersion=0x3
+MinorVersion=0xA
+ServerType=0x80001000
+CommentPointer=0x7FF94000
+ServerName=WINXP3-11-6
+
+
+
+13:26:45.236912 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:26:49.707362 arp who-has 192.168.11.31 tell 192.168.11.10
+13:26:50.237623 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:26:52.819744 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:26:55.238258 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:26:57.163851 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:26:57.163901 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:26:57.163957 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:27:00.238935 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:27:05.239545 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:27:10.240310 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:27:15.240964 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:27:20.241646 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:27:23.179288 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:27:23.551304 arp who-has 192.168.11.253 tell 192.168.11.10
+13:27:25.242258 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:27:27.191783 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:27:27.191804 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:27:27.191808 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:27:27.288481 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:27:27.288499 IP6 (hlim 1, next-header: Options (0), length: 32) 5c15::100:0:0:0 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:27:29.767245 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:27:30.242934 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:27:30.749419 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:27:33.887188 IP (tos 0x0, ttl   1, id 24791, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:27:35.083327 IP (tos 0x0, ttl   1, id 3998, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:27:35.243642 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:27:40.244289 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:27:45.244999 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:27:50.245582 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:27:53.559443 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:27:55.246324 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:27:57.217569 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:27:57.217588 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:27:57.217593 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:28:00.246987 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:28:05.247582 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:28:10.248284 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:28:15.248941 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:28:20.249646 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:28:23.939614 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:28:25.250349 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:28:25.324127 IP6 (hlim 1, next-header: Options (0), length: 32) a6a:6974:7561:6e6d:6973:3209:6373:3130 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:28:25.324149 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:28:27.082336 IP (tos 0x0, ttl   1, id 35707, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:28:27.244751 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:28:27.244769 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:28:27.244773 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:28:27.682169 IP (tos 0x0, ttl   1, id 65352, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:28:30.251007 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:28:32.557068 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:28:34.106113 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:28:35.251673 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:28:36.076156 arp who-has 192.168.11.254 tell 192.168.11.6
+13:28:39.810681 arp who-has 192.168.11.254 tell 192.168.11.254
+13:28:40.252229 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:28:45.252930 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:28:50.253640 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:28:54.320344 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:28:55.254283 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:28:57.268494 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:28:57.268516 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:28:57.268520 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:29:00.254870 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:29:05.255561 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:29:05.301783 arp who-has 192.168.11.253 tell 192.168.11.254
+13:29:10.256279 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:29:15.256912 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:29:20.257562 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:29:24.679951 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:29:25.258239 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:29:27.295912 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:29:27.295935 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:29:27.295940 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:29:30.258958 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:29:32.276301 IP6 (hlim 1, next-header: Options (0), length: 32) 5d1a::3d0e:0:0:0 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:29:32.276327 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:29:35.259544 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:29:37.306945 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:29:40.080924 IP (tos 0x0, ttl   1, id 60264, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:29:40.260202 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:29:40.280802 IP (tos 0x0, ttl   1, id 57598, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:29:41.103278 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:29:45.260866 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:29:50.261549 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:29:53.854755 arp who-has 192.168.11.10 tell 192.168.11.12
+13:29:55.060105 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:29:55.262240 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:29:57.323928 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:29:57.323979 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:29:57.324016 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:30:00.262808 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:30:05.263531 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:30:10.264164 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:30:15.264758 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:30:20.265497 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:30:25.266186 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:30:25.440179 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:30:27.353626 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:30:27.353644 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:30:27.353703 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:30:30.266835 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:30:30.336840 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:30:30.336862 IP6 (hlim 1, next-header: Options (0), length: 32) a6a:6974:7561:6e6d:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:30:32.679927 IP (tos 0x0, ttl   1, id 65164, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:30:33.279765 IP (tos 0x0, ttl   1, id 11498, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:30:34.532228 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:30:35.267468 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:30:38.237556 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:30:40.268196 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:30:40.269537 arp who-has 192.168.11.9 tell 192.168.11.254
+13:30:45.268777 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:30:50.269533 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:30:55.270187 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:30:55.821033 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:30:57.381104 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:30:57.381121 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:30:57.381124 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:31:00.270838 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:31:04.483507 arp who-has 192.168.11.18 tell 192.168.11.253
+13:31:05.271488 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:31:10.272124 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:31:15.272759 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:31:20.273411 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:31:25.274164 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:31:26.180549 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:31:27.406958 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:31:27.407002 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:31:27.407046 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:31:30.274781 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:31:35.275463 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:31:37.264160 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:31:37.264170 IP6 (hlim 1, next-header: Options (0), length: 32) ba1e::620e:0:0:0 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:31:40.276147 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:31:40.420218 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:31:42.278426 IP (tos 0x0, ttl   1, id 18590, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:31:42.278448 IP (tos 0x0, ttl   1, id 30170, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:31:42.612445 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:31:45.276833 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:31:50.277511 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:31:55.278124 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:31:56.560758 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:31:57.433395 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:31:57.433414 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:31:57.433445 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:31:57.877422 arp who-has 192.168.11.10 tell 192.168.11.13
+13:32:00.278851 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:32:05.279516 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:32:05.309637 arp who-has 192.168.11.253 tell 192.168.11.254
+13:32:10.280207 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:32:15.280847 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:32:20.281524 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:32:25.282139 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:32:26.779382 arp who-has 192.168.11.10 tell 192.168.11.253
+13:32:26.940937 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:32:27.458310 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:32:27.458360 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:32:27.458407 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:32:30.282831 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:32:35.283543 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:32:35.349408 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:32:35.349428 IP6 (hlim 1, next-header: Options (0), length: 32) 100:0:600:0:100:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:32:38.300581 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:32:38.323897 IP (tos 0x0, ttl   1, id 22391, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:32:38.864644 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:32:40.284187 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:32:41.477189 IP (tos 0x0, ttl   1, id 8341, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:32:45.284760 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:32:50.285470 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:32:51.927657 arp who-has 192.168.11.10 tell 192.168.11.254
+13:32:53.438660 IP (tos 0x0, ttl 128, id 4668, offset 0, flags [none], proto: UDP (17), length: 229) 192.168.11.6.138 > 192.168.11.255.138: [udp sum ok] 
+>>> NBT UDP PACKET(138) Res=0x1102 ID=0x8652 IP=192 (0xc0).168 (0xa8).11 (0xb).6 (0x6) Port=138 (0x8a) Length=187 (0xbb) Res2=0x0
+SourceName=WINXP3-11-6     NameType=0x20 (Server)
+DestName=WORKGROUP       NameType=0x1E (Browser Server)
+
+SMB PACKET: SMBtrans (REQUEST)
+SMB Command   =  0x25
+Error class   =  0x0
+Error code    =  0 (0x0)
+Flags1        =  0x0
+Flags2        =  0x0
+Tree ID       =  0 (0x0)
+Proc ID       =  0 (0x0)
+UID           =  0 (0x0)
+MID           =  0 (0x0)
+Word Count    =  17 (0x11)
+TotParamCnt=0 (0x0) 
+TotDataCnt=33 (0x21) 
+MaxParmCnt=0 (0x0) 
+MaxDataCnt=0 (0x0)
+MaxSCnt=0 (0x0) 
+TransFlags=0x0 
+Res1=0x3E8 
+Res2=0x0 
+Res3=0x0
+ParamCnt=0 (0x0) 
+ParamOff=0 (0x0) 
+DataCnt=33 (0x21) 
+DataOff=86 (0x56) 
+SUCnt=3 (0x3)
+Data: (6 bytes)
+[000] 01 00 00 00 02 00                                 \001\000\000\000\002\000 
+smb_bcc=50
+Name=\MAILSLOT\BROWSE
+BROWSE PACKET
+BROWSE PACKET:
+Type=0xF (LocalMasterAnnouncement)
+UpdateCount=0x8000
+Res1=0xFC
+AnnounceInterval=10 (0xa)
+Name=WINXP3-11-6     NameType=0x00 (Workstation)
+MajorVersion=0x5
+MinorVersion=0x1
+ServerType=0x51003
+ElectionVersion=0x10F
+BrowserConstant=0xAA55
+Data: (1 bytes)
+[000] 00                                                \000 
+
+
+
+13:32:55.286140 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:32:57.321572 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:32:57.483319 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:32:57.483342 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:32:57.483347 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:33:00.286787 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:33:05.287478 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:33:10.288142 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:33:15.288755 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:33:20.289485 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:33:25.290172 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:33:27.508828 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:33:27.508857 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:33:27.508862 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:33:27.681191 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:33:27.985592 arp who-has 192.168.11.5 tell 192.168.11.253
+13:33:30.290844 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:33:35.291465 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:33:39.969430 arp who-has 192.168.11.254 tell 192.168.11.254
+13:33:40.292132 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:33:42.252311 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:33:42.252351 IP6 (hlim 1, next-header: Options (0), length: 32) 4322::1100:0:0:0 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:33:42.967519 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:33:45.292787 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:33:45.480422 IP (tos 0x0, ttl   1, id 39424, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:33:49.352066 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:33:49.888638 IP (tos 0x0, ttl   1, id 37109, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:33:50.293534 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:33:55.294095 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:33:57.536232 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:33:57.536242 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:33:57.536280 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:33:58.061301 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:34:00.294760 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:34:05.295461 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:34:10.296137 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:34:15.296777 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:34:20.297465 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:34:25.298094 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:34:27.562706 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:34:27.562729 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:34:27.562734 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:34:28.441535 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:34:28.654672 arp who-has 192.168.11.9 tell 192.168.11.6
+13:34:30.298730 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:34:35.299407 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:34:40.300064 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:34:40.361773 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:34:40.361783 IP6 (hlim 1, next-header: Options (0), length: 32) 2014:0:1:0:1100:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:34:42.674884 IP (tos 0x0, ttl   1, id 43906, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:34:44.000019 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:34:44.674768 IP (tos 0x0, ttl   1, id 31352, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:34:45.300637 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:34:45.955286 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:34:50.301405 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:34:55.302033 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:34:57.590746 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:34:57.590767 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:34:57.590783 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:34:58.822322 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:35:00.302648 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:35:05.303335 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:35:05.315403 arp who-has 192.168.11.253 tell 192.168.11.254
+13:35:10.303963 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:35:15.304635 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:35:20.305348 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:35:25.305989 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:35:27.619040 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:35:27.619062 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:35:27.619067 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:35:29.181874 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:35:30.306641 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:35:35.307234 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:35:40.307926 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:35:45.308612 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:35:47.239812 IP6 (hlim 1, next-header: Options (0), length: 32) 2974::ffff:ffff:0:0 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:35:47.239824 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:35:49.756139 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:35:50.073492 IP (tos 0x0, ttl   1, id 28850, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:35:50.309213 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:35:54.673383 IP (tos 0x0, ttl   1, id 32883, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:35:55.284647 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:35:55.309899 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:35:57.646327 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:35:57.646352 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:35:57.646385 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:35:59.562083 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:36:00.310640 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:36:02.850894 IP (tos 0x0, ttl  64, id 22531, offset 0, flags [none], proto: UDP (17), length: 230) 192.168.11.31.138 > 192.168.11.255.138: [udp sum ok] 
+>>> NBT UDP PACKET(138) Res=0x110A ID=0x2303 IP=192 (0xc0).168 (0xa8).11 (0xb).31 (0x1f) Port=138 (0x8a) Length=202 (0xca) Res2=0x0
+SourceName=STORAGE02       NameType=0x00 (Workstation)
+DestName=WORKGROUP       NameType=0x1D (Master Browser)
+
+SMB PACKET: SMBtrans (REQUEST)
+SMB Command   =  0x25
+Error class   =  0x0
+Error code    =  0 (0x0)
+Flags1        =  0x0
+Flags2        =  0x0
+Tree ID       =  0 (0x0)
+Proc ID       =  0 (0x0)
+UID           =  0 (0x0)
+MID           =  0 (0x0)
+Word Count    =  17 (0x11)
+TotParamCnt=0 (0x0) 
+TotDataCnt=33 (0x21) 
+MaxParmCnt=0 (0x0) 
+MaxDataCnt=0 (0x0)
+MaxSCnt=0 (0x0) 
+TransFlags=0x0 
+Res1=0x3E8 
+Res2=0x0 
+Res3=0x0
+ParamCnt=0 (0x0) 
+ParamOff=0 (0x0) 
+DataCnt=33 (0x21) 
+DataOff=86 (0x56) 
+SUCnt=3 (0x3)
+Data: (6 bytes)
+[000] 01 00 00 00 02 00                                 \001\000\000\000\002\000 
+smb_bcc=51
+Name=\MAILSLOT\BROWSE
+Data: (1 bytes)
+[000] 01                                                \001 
+BROWSE PACKET
+BROWSE PACKET:
+Type=0x1 (HostAnnouncement)
+UpdateCount=0x8000
+Res1=0xFC
+AnnounceInterval=10 (0xa)
+Name=STORAGE02       NameType=0x20 (Server)
+MajorVersion=0x5
+MinorVersion=0x0
+ServerType=0x1003
+ElectionVersion=0x10F
+BrowserConstant=0xAA55
+Data: (1 bytes)
+[000] 00                                                \000 
+
+
+
+13:36:03.541740 arp who-has 192.168.11.253 tell 192.168.11.10
+13:36:05.311236 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:36:10.311951 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:36:15.312620 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:36:20.313351 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:36:25.313942 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:36:27.668264 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:36:27.668285 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:36:27.668289 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:36:29.942217 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:36:30.314605 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:36:35.315335 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:36:40.138339 arp who-has 192.168.11.9 tell 192.168.11.254
+13:36:40.315966 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:36:45.316538 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:36:45.374361 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:36:45.374371 IP6 (hlim 1, next-header: Options (0), length: 32) 6aba:15f3:c0a8:20a6:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:36:48.444523 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:36:49.472221 IP (tos 0x0, ttl   1, id 42300, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:36:50.317283 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:36:50.881784 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:36:52.472120 IP (tos 0x0, ttl   1, id 47661, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:36:55.317938 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:36:57.697438 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:36:57.697488 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:36:57.697524 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:37:00.318534 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:37:00.323019 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:37:04.749636 arp who-has 192.168.11.18 tell 192.168.11.253
+13:37:05.319246 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:37:10.319859 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:37:15.320509 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:37:20.321160 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:37:25.321875 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:37:27.725998 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:37:27.726040 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:37:27.726081 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:37:30.322541 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:37:30.682453 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:37:35.323185 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:37:40.323846 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:37:45.324526 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:37:50.325223 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:37:52.227539 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:37:52.227601 IP6 (hlim 1, next-header: Options (0), length: 32) 592c::1f03:0:0:0 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:37:53.276541 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:37:54.881617 IP (tos 0x0, ttl   1, id 43886, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:37:55.325870 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:37:57.754564 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:37:57.754584 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:37:57.754588 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:37:59.685004 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:38:00.326569 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:38:01.062636 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:38:01.470734 IP (tos 0x0, ttl   1, id 46804, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:38:05.321754 arp who-has 192.168.11.253 tell 192.168.11.254
+13:38:05.327261 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:38:10.327863 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:38:14.236846 arp who-has 192.168.11.10 tell 192.168.11.254
+13:38:15.328455 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:38:20.329237 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:38:25.329933 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:38:27.779541 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:38:27.779561 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:38:27.779566 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:38:30.330566 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:38:31.442839 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:38:35.331180 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:38:40.057729 arp who-has 192.168.11.254 tell 192.168.11.254
+13:38:40.331819 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:38:45.332508 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:38:50.333163 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:38:50.386961 IP6 (hlim 1, next-header: Options (0), length: 32) 9d1f::1100:0:0:0 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:38:50.386989 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:38:52.536840 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:38:53.525016 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:38:54.469662 IP (tos 0x0, ttl   1, id 15157, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:38:55.333828 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:38:56.069740 IP (tos 0x0, ttl   1, id 9264, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:38:57.805278 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:38:57.805326 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:38:57.805357 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:39:00.334442 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:39:01.823640 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:39:05.335127 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:39:10.335774 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:39:15.321416 arp who-has 192.168.11.10 tell 192.168.11.253
+13:39:15.336361 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:39:20.337096 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:39:25.337818 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:39:27.833032 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:39:27.833058 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:39:27.833062 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:39:30.338420 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:39:32.183161 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:39:35.339083 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:39:35.604613 arp who-has 192.168.11.10 tell 192.168.11.15
+13:39:40.339763 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:39:45.340370 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:39:49.295937 arp who-has 192.168.11.10 tell 192.168.11.18
+13:39:50.341074 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:39:55.341697 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:39:57.215432 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:39:57.215461 IP6 (hlim 1, next-header: Options (0), length: 32) f40e::100:0:0:0 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:39:57.858914 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:39:57.858934 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:39:57.858938 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:40:00.068452 IP (tos 0x0, ttl   1, id 14438, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:40:00.237094 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:40:00.342330 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:40:02.030204 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:40:02.563336 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:40:04.670071 IP (tos 0x0, ttl   1, id 53324, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:40:05.343013 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:40:10.343759 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:40:15.344376 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:40:20.345007 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:40:25.345701 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:40:27.886420 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:40:27.886442 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:40:27.886446 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:40:30.346471 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:40:32.943500 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:40:35.347130 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:40:40.347794 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:40:45.348437 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:40:50.349164 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:40:55.349758 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:40:55.399592 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:40:55.399632 IP6 (hlim 1, next-header: Options (0), length: 32) b424::620e:0:0:0 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:40:57.913324 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:40:57.913350 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:40:57.913354 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:41:00.350463 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:41:00.867436 IP (tos 0x0, ttl   1, id 30375, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:41:01.867314 IP (tos 0x0, ttl   1, id 16868, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:41:03.324224 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:41:03.360865 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:41:03.668927 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:41:05.351166 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:41:10.351811 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:41:15.352456 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:41:20.353137 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:41:22.368562 arp who-has 192.168.11.253 tell 192.168.11.254
+13:41:25.353788 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:41:27.941413 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:41:27.941432 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:41:27.941464 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:41:30.354462 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:41:33.683873 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:41:35.355035 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:41:40.355753 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:41:44.236401 IP (tos 0x0, ttl 128, id 12303, offset 0, flags [none], proto: UDP (17), length: 240) 192.168.11.6.138 > 192.168.11.255.138: [udp sum ok] 
+>>> NBT UDP PACKET(138) Res=0x1102 ID=0x8654 IP=192 (0xc0).168 (0xa8).11 (0xb).6 (0x6) Port=138 (0x8a) Length=198 (0xc6) Res2=0x0
+SourceName=WINXP3-11-6     NameType=0x00 (Workstation)
+DestName=__MSBROWSE__ NameType=0x01 (Unknown)
+
+SMB PACKET: SMBtrans (REQUEST)
+SMB Command   =  0x25
+Error class   =  0x0
+Error code    =  0 (0x0)
+Flags1        =  0x0
+Flags2        =  0x0
+Tree ID       =  0 (0x0)
+Proc ID       =  0 (0x0)
+UID           =  0 (0x0)
+MID           =  0 (0x0)
+Word Count    =  17 (0x11)
+TotParamCnt=0 (0x0) 
+TotDataCnt=44 (0x2c) 
+MaxParmCnt=0 (0x0) 
+MaxDataCnt=0 (0x0)
+MaxSCnt=0 (0x0) 
+TransFlags=0x0 
+Res1=0x3E8 
+Res2=0x0 
+Res3=0x0
+ParamCnt=0 (0x0) 
+ParamOff=0 (0x0) 
+DataCnt=44 (0x2c) 
+DataOff=86 (0x56) 
+SUCnt=3 (0x3)
+Data: (6 bytes)
+[000] 01 00 01 00 02 00                                 \001\000\001\000\002\000 
+smb_bcc=61
+Name=\MAILSLOT\BROWSE
+BROWSE PACKET
+BROWSE PACKET:
+Type=0xC (WorkgroupAnnouncement)
+UpdateCount=0xA000
+Res1=0xBB
+AnnounceInterval=13 (0xd)
+Name=WORKGROUP       NameType=0x20 (Server)
+MajorVersion=0x3
+MinorVersion=0xA
+ServerType=0x80001000
+CommentPointer=0x7FF92000
+ServerName=WINXP3-11-6
+
+
+
+13:41:45.356417 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:41:50.357115 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:41:55.357775 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:41:57.969538 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:41:57.969558 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:41:57.969591 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:42:00.358439 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:42:02.203261 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:42:02.203286 IP6 (hlim 1, next-header: Options (0), length: 32) 0:0:a00:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:42:04.063958 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:42:05.359105 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:42:06.765698 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:42:09.048383 arp who-has 192.168.11.9 tell 192.168.11.254
+13:42:10.359808 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:42:10.555008 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:42:11.266654 IP (tos 0x0, ttl   1, id 61849, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:42:11.865863 IP (tos 0x0, ttl   1, id 12135, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:42:15.360366 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:42:20.361059 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:42:23.521494 arp who-has 192.168.11.32 tell 192.168.11.10
+13:42:25.361684 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:42:27.997987 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:42:27.998012 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:42:27.998017 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:42:30.362377 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:42:34.444095 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:42:35.363103 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:42:40.363702 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:42:45.364418 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:42:50.365073 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:42:55.365763 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:42:58.027465 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:42:58.027486 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:42:58.027490 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:43:00.366459 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:43:00.412542 IP6 (hlim 1, next-header: Options (0), length: 32) 5129::100:0:0:0 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:43:00.412566 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:43:01.382752 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:43:02.065002 IP (tos 0x0, ttl   1, id 24242, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:43:04.708439 arp who-has 192.168.11.18 tell 192.168.11.253
+13:43:04.824863 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:43:05.367154 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:43:06.925190 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:43:08.465373 IP (tos 0x0, ttl   1, id 14014, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:43:10.367833 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:43:15.368456 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:43:20.369092 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:43:25.369792 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:43:27.874699 arp who-has 192.168.11.5 tell 192.168.11.253
+13:43:28.056254 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:43:28.056273 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:43:28.056278 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:43:30.370444 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:43:34.545189 arp who-has 192.168.11.10 tell 192.168.11.254
+13:43:34.780756 arp who-has 192.168.11.10 tell 192.168.11.14
+13:43:35.184490 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:43:35.371128 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:43:40.150369 arp who-has 192.168.11.254 tell 192.168.11.254
+13:43:40.371839 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:43:45.372499 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:43:50.373109 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:43:52.699800 arp who-has 192.168.11.31 tell 192.168.11.10
+13:43:55.373821 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:43:58.080440 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:43:58.080462 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:43:58.080466 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:44:00.374485 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:44:05.375117 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:44:05.564609 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:44:07.191079 IP6 (hlim 1, next-header: Options (0), length: 32) 101:80a:1e17:7ecd:1fe3:ed73:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:44:07.191115 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:44:07.863535 IP (tos 0x0, ttl   1, id 63686, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:44:08.063565 IP (tos 0x0, ttl   1, id 46614, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:44:08.455865 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:44:09.410969 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:44:10.375790 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:44:15.376366 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:44:20.376994 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:44:25.377736 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:44:26.624610 arp who-has 192.168.11.10 tell 192.168.11.253
+13:44:28.106713 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:44:28.106755 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:44:28.106801 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:44:30.378345 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:44:31.650358 arp who-has 192.168.11.9 tell 192.168.11.6
+13:44:35.379027 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:44:35.944822 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:44:40.379681 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:44:45.380405 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:44:50.381029 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:44:52.150318 IP (tos 0x0, ttl 128, id 14981, offset 0, flags [none], proto: UDP (17), length: 229) 192.168.11.6.138 > 192.168.11.255.138: [udp sum ok] 
+>>> NBT UDP PACKET(138) Res=0x1102 ID=0x8655 IP=192 (0xc0).168 (0xa8).11 (0xb).6 (0x6) Port=138 (0x8a) Length=187 (0xbb) Res2=0x0
+SourceName=WINXP3-11-6     NameType=0x20 (Server)
+DestName=WORKGROUP       NameType=0x1E (Browser Server)
+
+SMB PACKET: SMBtrans (REQUEST)
+SMB Command   =  0x25
+Error class   =  0x0
+Error code    =  0 (0x0)
+Flags1        =  0x0
+Flags2        =  0x0
+Tree ID       =  0 (0x0)
+Proc ID       =  0 (0x0)
+UID           =  0 (0x0)
+MID           =  0 (0x0)
+Word Count    =  17 (0x11)
+TotParamCnt=0 (0x0) 
+TotDataCnt=33 (0x21) 
+MaxParmCnt=0 (0x0) 
+MaxDataCnt=0 (0x0)
+MaxSCnt=0 (0x0) 
+TransFlags=0x0 
+Res1=0x3E8 
+Res2=0x0 
+Res3=0x0
+ParamCnt=0 (0x0) 
+ParamOff=0 (0x0) 
+DataCnt=33 (0x21) 
+DataOff=86 (0x56) 
+SUCnt=3 (0x3)
+Data: (6 bytes)
+[000] 01 00 00 00 02 00                                 \001\000\000\000\002\000 
+smb_bcc=50
+Name=\MAILSLOT\BROWSE
+BROWSE PACKET
+BROWSE PACKET:
+Type=0xF (LocalMasterAnnouncement)
+UpdateCount=0x8000
+Res1=0xFC
+AnnounceInterval=10 (0xa)
+Name=WINXP3-11-6     NameType=0x00 (Workstation)
+MajorVersion=0x5
+MinorVersion=0x1
+ServerType=0x51003
+ElectionVersion=0x10F
+BrowserConstant=0xAA55
+Data: (1 bytes)
+[000] 00                                                \000 
+
+
+
+13:44:55.381690 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:44:58.131201 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:44:58.131226 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:44:58.131263 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:45:00.382306 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:45:05.337458 arp who-has 192.168.11.253 tell 192.168.11.254
+13:45:05.383017 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:45:05.424961 IP6 (hlim 1, next-header: Options (0), length: 32) 4d28::620e:0:0:0 > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:45:05.424983 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:45:06.325587 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:45:10.383724 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:45:10.862503 IP (tos 0x0, ttl   1, id 47913, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:45:12.280427 IP (tos 0x0, ttl   1, id 64379, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:45:14.781049 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:45:15.384338 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:45:15.407992 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:45:20.385020 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:45:25.385723 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:45:28.156618 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:45:28.156640 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:45:28.156644 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:45:30.386428 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:45:35.387077 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:45:36.685149 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:45:40.387689 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:45:45.388389 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:45:50.389049 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:45:55.389746 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:45:58.181480 e8:e7:32:0e:66:34 > 01:80:c2:00:00:0e, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:45:58.181504 e8:e7:32:0e:66:34 > 01:80:c2:00:00:03, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:45:58.181558 e8:e7:32:0e:66:34 > 01:80:c2:00:00:00, ethertype Unknown (0x88cc), length 60: 
+	0x0000:  0207 04e8 e732 0e66 2904 0507 3130 3035  .....2.f)...1005
+	0x0010:  0602 0078 0000 0000 0000 0000 0000 0000  ...x............
+	0x0020:  0000 0000 0000 0000 0000 0000 0000       ..............
+13:46:00.390457 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:46:05.391067 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:46:07.065295 arp reply 192.168.10.9 is-at d4:ae:52:6f:9b:9b
+13:46:10.391763 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:46:12.178945 IP6 (hlim 1, next-header: Options (0), length: 32) 101:80a:1e19:310a:9d2d:85:: > ff02::1: HBH (rtalert: 0x0000) (pad1)(pad1)[icmp6 sum ok] ICMP6, multicast listener query, length 24max resp delay: 1000 addr: ::
+13:46:12.178973 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 0.0.0.0 > 224.0.0.1: igmp query v2
+13:46:13.442331 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 224.0.0.251: igmp v2 report 224.0.0.251
+13:46:13.664004 IP (tos 0x0, ttl   1, id 58693, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.22: igmp v2 report 224.0.0.22
+13:46:15.392403 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:46:20.264447 IP (tos 0x0, ttl   1, id 7157, offset 0, flags [none], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.253 > 224.0.0.2: igmp v2 report 224.0.0.2
+13:46:20.393098 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+13:46:21.412083 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: IGMP (2), length: 32, options ( RA (148) len 4 )) 192.168.11.11 > 229.111.112.12: igmp v2 report 229.111.112.12
+13:46:25.393793 IP (tos 0x0, ttl   1, id 0, offset 0, flags [DF], proto: UDP (17), length: 32) 192.168.11.11.57212 > 229.111.112.12.3071: [udp sum ok] UDP, length 4
+

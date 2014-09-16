@@ -1,0 +1,26 @@
+#!/usr/bin/expect -f
+
+log_user 0
+#set logname hs_cmd.log
+#log_file hs_cmd.log
+
+set ip [lindex $argv 0 ]
+set passwd [lindex $argv 1 ]
+set command [lindex $argv 2]
+
+set timeout 1
+
+spawn ssh hillstone@$ip
+
+expect {
+"yes/no" { send "yes\r";exp_continue }
+"password:" { send "$passwd\r" }
+}
+
+expect "*#*" { send "$command | redirect ftp://cfgadmin:Ftp-9.2@192.168.11.9/hs_cmd.log\r" }
+
+# exit firewall
+expect "SG-6000(M)#"
+send "exit\n"
+
+expect eof

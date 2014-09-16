@@ -1,0 +1,75 @@
+netflow:
+  biosreleasedate: 01/17/2012
+  biosversion: 4.1.2
+  cpu_flags: fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat clflush mmx fxsr sse sse2 syscall lm rep_good unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes hypervisor lahf_lm
+  cpu_model: Intel(R) Xeon(R) CPU E5-2670 0 @ 2.60GHz
+  cpuarch: x86_64
+  defaultencoding: UTF8
+  defaultlanguage: zh_CN
+  domain: 
+  external_ip:
+  fqdn: cacti
+  fqdn_ip4:
+  fqdn_ip6:
+  gpus:
+      {'model': 'GD 5446', 'vendor': 'unknown'}
+  host: cacti
+  hwaddr_interfaces: {'lo': '00:00:00:00:00:00', 'eth0': '5a:f4:eb:9c:90:9c'}
+  id: netflow
+  ip_interfaces: {'lo': ['127.0.0.1'], 'eth0': ['192.168.12.6']}
+  ipv4:
+      127.0.0.1
+      192.168.12.6
+  ipv6:
+      ::1
+      fe80::58f4:ebff:fe9c:909c
+  kernel: Linux
+  kernelrelease: 2.6.32-431.5.1.el6.x86_64
+  localhost: cacti
+  lsb_distrib_codename: Final
+  lsb_distrib_id: CentOS
+  lsb_distrib_release: 6.2
+  manufacturer: Xen
+  master: 192.168.11.9
+  mem_total: 3954
+  nginx: 1.5.5
+  nodename: cacti
+  num_cpus: 4
+  num_gpus: 1
+  os: CentOS
+  os_family: RedHat
+  osarch: x86_64
+  oscodename: Final
+  osfinger: CentOS-6
+  osfullname: CentOS
+  osmajorrelease:
+      6
+      2
+  osrelease: 6.2
+  path: /sbin:/usr/sbin:/bin:/usr/bin
+  productname: HVM domU
+  ps: ps -efH
+  pythonpath:
+      /usr/bin
+      /usr/lib64/python26.zip
+      /usr/lib64/python2.6
+      /usr/lib64/python2.6/plat-linux2
+      /usr/lib64/python2.6/lib-tk
+      /usr/lib64/python2.6/lib-old
+      /usr/lib64/python2.6/lib-dynload
+      /usr/lib64/python2.6/site-packages
+      /usr/lib/python2.6/site-packages
+  pythonversion: 2.6.6.final.0
+  roles: ops-cacti
+  saltpath: /usr/lib/python2.6/site-packages/salt
+  saltversion: 2014.1.0
+  saltversioninfo:
+      2014
+      1
+      0
+  serialnumber: 987c49b2-a489-e286-6bc1-35fb270bc468
+  server_id: 1128735834
+  shell: /bin/sh
+  test: None
+  virtual: xen
+  virtual_subtype: Xen PV DomU

@@ -1,0 +1,25 @@
+File descriptor 4 (/tmp/nagios01-2013030422111362406315/sos_logs/sos.log) leaked on pvs invocation. Parent PID 2300: /usr/bin/python
+  PV                    VG       Fmt  Attr PSize   PFree DevSize PV UUID                               
+  /dev/VolGroup/lv_home               ---       0     0  409.41g                                       
+  /dev/VolGroup/lv_swap               ---       0     0    5.86g                                       
+  /dev/ram0                           ---       0     0   16.00m                                       
+  /dev/ram1                           ---       0     0   16.00m                                       
+  /dev/ram10                          ---       0     0   16.00m                                       
+  /dev/ram11                          ---       0     0   16.00m                                       
+  /dev/ram12                          ---       0     0   16.00m                                       
+  /dev/ram13                          ---       0     0   16.00m                                       
+  /dev/ram14                          ---       0     0   16.00m                                       
+  /dev/ram15                          ---       0     0   16.00m                                       
+  /dev/ram2                           ---       0     0   16.00m                                       
+  /dev/ram3                           ---       0     0   16.00m                                       
+  /dev/ram4                           ---       0     0   16.00m                                       
+  /dev/ram5                           ---       0     0   16.00m                                       
+  /dev/ram6                           ---       0     0   16.00m                                       
+  /dev/ram7                           ---       0     0   16.00m                                       
+  /dev/ram8                           ---       0     0   16.00m                                       
+  /dev/ram9                           ---       0     0   16.00m                                       
+  /dev/root                           ---       0     0   50.00g                                       
+  /dev/sda1                           ---       0     0  500.00m                                       
+  /dev/sda2             VolGroup lvm2 a--  465.27g    0  465.27g Gh6hfk-sT4a-D7fZ-wyBd-ZvF9-lRib-9wdCEE
+  /dev/sdb1                           ---       0     0   93.13g                                       
+

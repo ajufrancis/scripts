@@ -1,0 +1,95 @@
+reading config file /etc/logrotate.conf
+including /etc/logrotate.d
+reading config file denyhosts
+reading config info for /var/log/denyhosts 
+reading config file dracut
+reading config info for /var/log/dracut.log 
+reading config file httpd
+reading config info for /var/log/httpd/*log 
+reading config file samba
+reading config info for /var/log/samba/* 
+olddir is now /var/log/samba/old
+reading config file smstools
+reading config info for /var/log/smsd/smsd_trouble.log 
+reading config info for /var/log/smsd/smsd.log 
+reading config file syslog
+reading config info for /var/log/cron
+/var/log/maillog
+/var/log/messages
+/var/log/secure
+/var/log/spooler
+
+reading config file yum
+reading config info for /var/log/yum.log 
+reading config info for /var/log/wtmp 
+reading config info for /var/log/btmp 
+
+Handling 10 logs
+
+rotating pattern: /var/log/denyhosts  102400 bytes (4 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/denyhosts
+  log /var/log/denyhosts does not exist -- skipping
+not running postrotate script, since no logs were rotated
+
+rotating pattern: /var/log/dracut.log  yearly (4 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/dracut.log
+  log does not need rotating
+
+rotating pattern: /var/log/httpd/*log  weekly (4 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/httpd/access_log
+  log does not need rotating
+considering log /var/log/httpd/error_log
+  log does not need rotating
+not running postrotate script, since no logs were rotated
+
+rotating pattern: /var/log/samba/*  weekly (4 rotations)
+olddir is /var/log/samba/old, empty log files are not rotated, old logs are removed
+
+rotating pattern: /var/log/smsd/smsd_trouble.log  weekly (4 rotations)
+empty log files are rotated, old logs are removed
+considering log /var/log/smsd/smsd_trouble.log
+  log does not need rotating
+
+rotating pattern: /var/log/smsd/smsd.log  weekly (4 rotations)
+empty log files are rotated, old logs are removed
+considering log /var/log/smsd/smsd.log
+  log does not need rotating
+not running postrotate script, since no logs were rotated
+
+rotating pattern: /var/log/cron
+/var/log/maillog
+/var/log/messages
+/var/log/secure
+/var/log/spooler
+ weekly (4 rotations)
+empty log files are rotated, old logs are removed
+considering log /var/log/cron
+  log does not need rotating
+considering log /var/log/maillog
+  log does not need rotating
+considering log /var/log/messages
+  log does not need rotating
+considering log /var/log/secure
+  log does not need rotating
+considering log /var/log/spooler
+  log does not need rotating
+not running postrotate script, since no logs were rotated
+
+rotating pattern: /var/log/yum.log  yearly (4 rotations)
+empty log files are not rotated, old logs are removed
+considering log /var/log/yum.log
+  log does not need rotating
+
+rotating pattern: /var/log/wtmp  monthly (1 rotations)
+empty log files are rotated, only log files >= 1048576 bytes are rotated, old logs are removed
+considering log /var/log/wtmp
+  log does not need rotating
+
+rotating pattern: /var/log/btmp  monthly (1 rotations)
+empty log files are rotated, old logs are removed
+considering log /var/log/btmp
+  log does not need rotating
+

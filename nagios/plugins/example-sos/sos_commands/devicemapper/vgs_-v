@@ -1,0 +1,6 @@
+File descriptor 4 (/tmp/nagios01-2013030422051362405942/sos_logs/sos.log) leaked on vgs invocation. Parent PID 553: /usr/bin/python
+    Finding all volume groups
+    Finding volume group "VolGroup"
+  VG       Attr   Ext   #PV #LV #SN VSize   VFree VG UUID                               
+  VolGroup wz--n- 4.00m   1   3   0 465.27g    0  Bdy6od-GMJu-fB9l-Mzpd-VAFm-cXWd-a8Rb3p
+

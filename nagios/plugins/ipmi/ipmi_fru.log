@@ -1,0 +1,20 @@
+FRU Device Description : Builtin FRU Device (ID 0)
+ Board Mfg Date        : Mon Dec 19 14:43:00 2011
+ Board Mfg             : DELL
+ Board Product         : PowerEdge T410                
+ Board Serial          : CN137401CG00CX
+ Board Part Number     : 0N51GPA05
+ Product Manufacturer  : DELL
+ Product Version       : 02
+ Product Serial        : 5S7X93X
+
+FRU Device Description : PS 1 (ID 2)
+
+FRU Device Description : PS 2 (ID 3)
+
+FRU Device Description : Storage (ID 5)
+ Device not present (Timeout)
+
+FRU Device Description : Storage (ID 4)
+ Device not present (Timeout)
+

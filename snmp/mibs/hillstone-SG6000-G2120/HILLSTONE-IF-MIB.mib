@@ -1,0 +1,106 @@
+-- ***********************************************************************
+-- HILLSTONE-IF-MIB   
+--
+-- Copyright (c) 2009 by Hillstone Networks, Inc.
+-- All rights reserved.
+-- 
+-- Version:      V3    
+-- Description:	 Hillstone Networks IF MIB Object Identifier Assignments
+-- ***********************************************************************
+--
+
+HILLSTONE-IF-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+	hillstoneInterface
+		FROM HILLSTONE-SMI
+	OBJECT-TYPE
+		FROM RFC-1212;	
+
+          -- textual conventions
+
+          DisplayString ::=
+              OCTET STRING
+          -- This data type is used to model textual information taken
+          -- from the NVT ASCII character set.  By convention, objects
+          -- with this syntax are declared as having
+          --
+          --      SIZE (0..255)
+
+hillstoneIfObjects OBJECT IDENTIFIER ::= { hillstoneInterface 1 }
+
+--
+-- If Ext MIB Objects
+--
+hillstoneWanIfNumber OBJECT-TYPE
+    SYNTAX Integer32
+    MAX-ACCESS read-only
+    STATUS current
+    DESCRIPTION
+	"The number of wan interfaces."
+    ::= { hillstoneIfObjects 1 } 
+     
+hillstoneLanIfNumber OBJECT-TYPE
+    SYNTAX Integer32
+    MAX-ACCESS read-only
+    STATUS current
+    DESCRIPTION
+	"The number of lan interfaces."
+    ::= { hillstoneIfObjects 2 } 
+
+hillstoneIfAttriTable OBJECT-TYPE
+	SYNTAX SEQUENCE OF hillstoneIfAttriEntry
+	MAX-ACCESS not-accessible
+	STATUS current
+	DESCRIPTION
+	"The table for representing the interface attribute."
+::= { hillstoneIfObjects 3 }  
+
+hillstoneIfAttriEntry OBJECT-TYPE
+	SYNTAX hillstoneIfAttriEntry
+	MAX-ACCESS not-accessible
+	STATUS current
+	DESCRIPTION ""
+INDEX { hillstoneIfIndex }
+::= { hillstoneIfAttriTable 1 } 
+
+hillstoneIfAttriEntry ::= 
+    SEQUENCE { 
+	hillstoneIfIndex
+	    INTEGER,
+	hillstoneIfName
+	    DisplayString,
+	hillstoneIfAttribute 
+	    INTEGER 
+	     }
+hillstoneIfIndex OBJECT-TYPE
+	SYNTAX INTEGER
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION
+		"ucIfIndex equals to IfIndex of IF-MIB."
+::= { hillstoneIfAttriEntry 1 }  
+
+hillstoneIfName OBJECT-TYPE
+	SYNTAX DisplayString
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION
+		"ifDescr equals to IfIndex of IF-MIB."
+::= { hillstoneIfAttriEntry 2 }
+
+hillstoneIfAttribute OBJECT-TYPE
+	SYNTAX INTEGER
+	{
+		unknown(0),
+		lan(1),
+		wan(2)
+	}
+	MAX-ACCESS read-only
+	STATUS current
+	DESCRIPTION
+		"The Attribute of this interface: 0 for Unknown, 1 for LAN, 2 for WAN."
+::= { hillstoneIfAttriEntry 3 }  
+
+
+END

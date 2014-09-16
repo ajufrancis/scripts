@@ -1,0 +1,940 @@
+<<<check_mk>>>
+Version: 1.2.3i6
+AgentOS: linux
+PluginsDirectory: /usr/lib/check_mk_agent/plugins
+LocalDirectory: /usr/lib/check_mk_agent/local
+AgentDirectory: /etc/check_mk
+<<<df>>>
+/dev/mapper/VolGroup-lv_root ext4  48964432  18070056  28407080      39% /
+/dev/xvda1    ext4      495844     31566    438678       7% /boot
+/dev/mapper/VolGroup-lv_home ext4  47626600   5265720  39941580      12% /home
+<<<nfsmounts>>>
+<<<mounts>>>
+/dev/mapper/VolGroup-lv_root / ext4 rw,seclabel,relatime,barrier=1,data=ordered 0 0
+/dev/xvda1 /boot ext4 rw,seclabel,relatime,barrier=1,data=ordered 0 0
+/dev/mapper/VolGroup-lv_home /home ext4 rw,seclabel,relatime,barrier=1,data=ordered 0 0
+<<<ps>>>
+(root,19272,1584,0.0) /sbin/init
+(root,0,0,0.0) [kthreadd]
+(root,0,0,0.0) [migration/0]
+(root,0,0,0.0) [ksoftirqd/0]
+(root,0,0,0.0) [migration/0]
+(root,0,0,0.0) [watchdog/0]
+(root,0,0,0.0) [migration/1]
+(root,0,0,0.0) [migration/1]
+(root,0,0,0.0) [ksoftirqd/1]
+(root,0,0,0.0) [watchdog/1]
+(root,0,0,0.0) [migration/2]
+(root,0,0,0.0) [migration/2]
+(root,0,0,0.0) [ksoftirqd/2]
+(root,0,0,0.0) [watchdog/2]
+(root,0,0,0.0) [migration/3]
+(root,0,0,0.0) [migration/3]
+(root,0,0,0.0) [ksoftirqd/3]
+(root,0,0,0.0) [watchdog/3]
+(root,0,0,0.0) [events/0]
+(root,0,0,0.0) [events/1]
+(root,0,0,0.0) [events/2]
+(root,0,0,0.0) [events/3]
+(root,0,0,0.0) [cpuset]
+(root,0,0,0.0) [khelper]
+(root,0,0,0.0) [netns]
+(root,0,0,0.0) [async/mgr]
+(root,0,0,0.0) [pm]
+(root,0,0,0.0) [xenwatch]
+(root,0,0,0.0) [xenbus]
+(root,0,0,0.0) [sync_supers]
+(root,0,0,0.0) [bdi-default]
+(root,0,0,0.0) [kintegrityd/0]
+(root,0,0,0.0) [kintegrityd/1]
+(root,0,0,0.0) [kintegrityd/2]
+(root,0,0,0.0) [kintegrityd/3]
+(root,0,0,0.0) [kblockd/0]
+(root,0,0,0.0) [kblockd/1]
+(root,0,0,0.0) [kblockd/2]
+(root,0,0,0.0) [kblockd/3]
+(root,0,0,0.0) [ata/0]
+(root,0,0,0.0) [ata/1]
+(root,0,0,0.0) [ata/2]
+(root,0,0,0.0) [ata/3]
+(root,0,0,0.0) [ata_aux]
+(root,0,0,0.0) [ksuspend_usbd]
+(root,0,0,0.0) [khubd]
+(root,0,0,0.0) [kseriod]
+(root,0,0,0.0) [md/0]
+(root,0,0,0.0) [md/1]
+(root,0,0,0.0) [md/2]
+(root,0,0,0.0) [md/3]
+(root,0,0,0.0) [md_misc/0]
+(root,0,0,0.0) [md_misc/1]
+(root,0,0,0.0) [md_misc/2]
+(root,0,0,0.0) [md_misc/3]
+(root,0,0,0.0) [khungtaskd]
+(root,0,0,0.0) [kswapd0]
+(root,0,0,0.0) [ksmd]
+(root,0,0,0.0) [aio/0]
+(root,0,0,0.0) [aio/1]
+(root,0,0,0.0) [aio/2]
+(root,0,0,0.0) [aio/3]
+(root,0,0,0.0) [crypto/0]
+(root,0,0,0.0) [crypto/1]
+(root,0,0,0.0) [crypto/2]
+(root,0,0,0.0) [crypto/3]
+(root,0,0,0.0) [kthrotld/0]
+(root,0,0,0.0) [kthrotld/1]
+(root,0,0,0.0) [kthrotld/2]
+(root,0,0,0.0) [kthrotld/3]
+(root,0,0,0.0) [khvcd]
+(root,0,0,0.0) [kpsmoused]
+(root,0,0,0.0) [usbhid_resumer]
+(root,0,0,0.0) [kstriped]
+(root,0,0,0.0) [kdmflush]
+(root,0,0,0.0) [kdmflush]
+(root,0,0,0.0) [jbd2/dm-0-8]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,95748,3848,0.0) sshd: root@pts/0 
+(root,108360,1928,0.0) -bash
+(root,158308,5232,0.0) mysql -u root -px xxxxxx
+(root,0,0,0.0) [flush-253:0]
+(root,11404,1348,0.0) /sbin/udevd -d
+(root,0,0,0.0) [kdmflush]
+(root,0,0,0.0) [jbd2/xvda1-8]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [jbd2/dm-2-8]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [ext4-dio-unwrit]
+(root,0,0,0.0) [kauditd]
+(root,93224,868,0.0) auditd
+(root,254944,1720,0.0) /sbin/rsyslogd -i /var/run/syslogd.pid -c 4
+(root,64076,1196,0.0) /usr/sbin/sshd
+(root,22144,1016,0.0) xinetd -stayalive -pidfile /var/run/xinetd.pid
+(root,108220,1592,0.0) /bin/sh /usr/bin/mysqld_safe --datadir=/var/lib/mysql --socket=/var/lib/mysql/mysql.sock --pid-file=/var/run/mysqld/mysqld.pid --basedir=/usr --user=mysql
+(mysql,2242148,63352,2.2) /usr/libexec/mysqld --basedir=/usr --datadir=/var/lib/mysql --user=mysql --log-error=/var/log/mysqld.log --pid-file=/var/run/mysqld/mysqld.pid --socket=/var/lib/mysql/mysql.sock
+(root,78676,3252,0.0) /usr/libexec/postfix/master
+(postfix,78924,3380,0.0) qmgr -l -t fifo -u
+(root,11096,844,0.0) /usr/sbin/hsflowd -u 15841b5a-7461-42ac-aad7-65e4d04da6a7
+(root,117252,1376,0.0) crond
+(root,4116,592,0.0) /sbin/mingetty /dev/tty1
+(root,4116,592,0.0) /sbin/mingetty /dev/tty2
+(root,4116,592,0.0) /sbin/mingetty /dev/tty3
+(root,4116,592,0.0) /sbin/mingetty /dev/tty4
+(root,12324,2540,0.0) /sbin/udevd -d
+(root,12324,2544,0.0) /sbin/udevd -d
+(root,4116,588,0.0) /sbin/mingetty /dev/tty5
+(root,4116,588,0.0) /sbin/mingetty /dev/tty6
+(root,56796,1672,0.0) login -- root  
+(root,108356,1956,0.0) -bash
+(root,160344,7152,0.0) mysql -uroot -px xxxxxx
+(root,95748,3804,0.0) sshd: root@pts/1 
+(root,108360,1976,0.0) -bash
+(root,119364,1836,0.0) vi /tmp/firewall_rules
+(postfix,78756,3260,0.0) pickup -l -t fifo -u
+(root,95756,3840,0.0) sshd: root@pts/2 
+(root,108456,1996,0.0) -bash
+(postfix,78760,3252,0.0) showq -t unix -u
+(root,106120,1480,0.0) /bin/bash /usr/bin/check_mk_agent
+(root,13420,1032,0.0) ps ax -o user,vsz,rss,pcpu,command --columns 10000
+(root,8444,824,0.0) sed -e 1d -e s/ *\([^ ]*\) *\([^ ]*\) *\([^ ]*\) *\([^ ]*\) */(\1,\2,\3,\4) /
+<<<mem>>>
+MemTotal:        3974588 kB
+MemFree:          608972 kB
+Buffers:          151404 kB
+Cached:          2894544 kB
+SwapCached:            0 kB
+Active:          1808816 kB
+Inactive:        1317236 kB
+Active(anon):      80224 kB
+Inactive(anon):       16 kB
+Active(file):    1728592 kB
+Inactive(file):  1317220 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       6209528 kB
+SwapFree:        6209528 kB
+Dirty:                56 kB
+Writeback:             0 kB
+AnonPages:         79856 kB
+Mapped:            13116 kB
+Shmem:               144 kB
+Slab:             175804 kB
+SReclaimable:     126512 kB
+SUnreclaim:        49292 kB
+KernelStack:        1352 kB
+PageTables:         3324 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     8196820 kB
+Committed_AS:     235436 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       18672 kB
+VmallocChunk:   34359710092 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:     4194304 kB
+DirectMap2M:           0 kB
+<<<cpu>>>
+0.17 0.05 0.01 1/168 8206 4
+<<<uptime>>>
+3623251.57 28576680.26
+<<<lnx_if:sep(58)>>>
+    lo: 4329672   86580    0    0    0     0          0         0  4329672   86580    0    0    0     0       0          0
+  eth0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0
+  eth1:58456654495 419943414    0    0    0     0          0         0 135464952756 329333101    0    0    0     0       0          0
+[lo]
+	Link detected: yes
+	Address: 00:00:00:00:00:00
+[eth0]
+	Link detected: yes
+	Address: 26:f9:ed:06:3e:99
+[eth1]
+	Link detected: yes
+	Address: ee:1e:13:89:cc:f7
+<<<tcp_conn_stats>>>
+01 29
+0A 4
+06 1
+<<<md>>>
+Personalities : 
+unused devices: <none>
+<<<diskstat>>>
+1387445782
+ 202       0 xvda 30555 649 1197474 112438 68332879 1556134 559112052 489035961 0 138453541 489103221
+ 253       0 dm-0 27182 0 1167434 107488 69657832 0 557262656 516126589 0 138536647 516233257
+ 253       1 dm-1 297 0 2376 281 0 0 0 0 0 200 281
+ 253       2 dm-2 2591 0 20722 6398 231165 0 1849320 24410808 0 21151 24417205
+[dmsetup_info]
+VolGroup-lv_swap 253:1 VolGroup lv_swap
+VolGroup-lv_root 253:0 VolGroup lv_root
+VolGroup-lv_home 253:2 VolGroup lv_home
+<<<kernel>>>
+1387445782
+nr_free_pages 152264
+nr_inactive_anon 4
+nr_active_anon 20019
+nr_inactive_file 329305
+nr_active_file 432148
+nr_unevictable 0
+nr_mlock 0
+nr_anon_pages 20019
+nr_mapped 3279
+nr_file_pages 761487
+nr_dirty 14
+nr_writeback 0
+nr_slab_reclaimable 31628
+nr_slab_unreclaimable 12323
+nr_page_table_pages 831
+nr_kernel_stack 169
+nr_unstable 0
+nr_bounce 0
+nr_vmscan_write 0
+nr_writeback_temp 0
+nr_isolated_anon 0
+nr_isolated_file 0
+nr_shmem 36
+numa_hit 987397439
+numa_miss 0
+numa_foreign 0
+numa_interleave 15137
+numa_local 987397439
+numa_other 0
+nr_anon_transparent_hugepages 0
+pgpgin 600913
+pgpgout 279556026
+pswpin 0
+pswpout 0
+pgalloc_dma 0
+pgalloc_dma32 989773496
+pgalloc_normal 0
+pgalloc_movable 0
+pgfree 989926122
+pgactivate 666283
+pgdeactivate 0
+pgfault 1105161069
+pgmajfault 533
+pgrefill_dma 0
+pgrefill_dma32 0
+pgrefill_normal 0
+pgrefill_movable 0
+pgsteal_dma 0
+pgsteal_dma32 0
+pgsteal_normal 0
+pgsteal_movable 0
+pgscan_kswapd_dma 0
+pgscan_kswapd_dma32 0
+pgscan_kswapd_normal 0
+pgscan_kswapd_movable 0
+pgscan_direct_dma 0
+pgscan_direct_dma32 0
+pgscan_direct_normal 0
+pgscan_direct_movable 0
+zone_reclaim_failed 0
+pginodesteal 0
+slabs_scanned 0
+kswapd_steal 0
+kswapd_inodesteal 0
+kswapd_low_wmark_hit_quickly 0
+kswapd_high_wmark_hit_quickly 0
+kswapd_skip_congestion_wait 0
+pageoutrun 0
+allocstall 0
+pgrotated 0
+compact_blocks_moved 0
+compact_pages_moved 0
+compact_pagemigrate_failed 0
+compact_stall 0
+compact_fail 0
+compact_success 0
+htlb_buddy_alloc_success 0
+htlb_buddy_alloc_fail 0
+unevictable_pgs_culled 8842
+unevictable_pgs_scanned 0
+unevictable_pgs_rescued 8179
+unevictable_pgs_mlocked 8962
+unevictable_pgs_munlocked 8962
+unevictable_pgs_cleared 0
+unevictable_pgs_stranded 0
+unevictable_pgs_mlockfreed 0
+thp_fault_alloc 0
+thp_fault_fallback 0
+thp_collapse_alloc 0
+thp_collapse_alloc_failed 0
+thp_split 0
+cpu  4142508 2345 2100921 2857668070 18821191 1030 270929 1603684 0
+cpu0 3204347 797 1005541 688837383 18752103 1027 266229 1499007 0
+cpu1 330077 648 360504 722832570 39521 2 1453 43115 0
+cpu2 343918 528 377696 722893669 14365 0 932 31523 0
+cpu3 264163 371 357178 723104447 15200 0 2313 30038 0
+intr 1069158414 165461367 25712637 32567 0 718900 31843169 8860674 34321 0 2431472 26229553 7184531 41026 0 1164569 26582979 5034808 27601 0 1191390 398 1916 31942700 1 682227339 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ctxt 1030890816
+btime 1383822530
+processes 2211641
+procs_running 1
+procs_blocked 0
+softirq 1187291596 0 216532746 300331769 380377741 0 0 1 57980729 2113765 229954845
+<<<vbox_guest>>>
+<<<postfix_mailq>>>
+Mail queue is empty
+<<<fileinfo:sep(124)>>>
+1387445782
+/var/lib/mysql/ib_logfile0|5242880|1387445782
+/var/lib/mysql/ib_logfile1|5242880|1387440056
+/var/lib/mysql/ibdata1|127926272|1387445780
+<<<job>>>
+<<<local>>>
+<<<dmi_sysinfo>>>
+<<<dmraid>>>
+<<<cpu_info>>>
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                4
+On-line CPU(s) list:   0-3
+Thread(s) per core:    1
+Core(s) per socket:    1
+CPU socket(s):         4
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 45
+Stepping:              7
+CPU MHz:               2600.090
+BogoMIPS:              5200.18
+Hypervisor vendor:     Xen
+Virtualization type:   para
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              20480K
+NUMA node0 CPU(s):     0-3
+<<<jolokia_info>>>
+8080 ERROR
+<<<logwatch>>>
+CANNOT READ CONFIG FILE: [Errno 2] No such file or directory: '/etc/check_mk/logwatch.cfg'
+<<<mysql_ping>>>
+mysqld is alive
+<<<mysql>>>
+Aborted_clients	252
+Aborted_connects	43205
+Binlog_cache_disk_use	32
+Binlog_cache_use	3213656
+Bytes_received	36528558532
+Bytes_sent	114350462539
+Com_admin_commands	309
+Com_assign_to_keycache	0
+Com_alter_db	0
+Com_alter_db_upgrade	0
+Com_alter_event	0
+Com_alter_function	0
+Com_alter_procedure	0
+Com_alter_server	0
+Com_alter_table	250
+Com_alter_tablespace	0
+Com_analyze	0
+Com_backup_table	0
+Com_begin	0
+Com_binlog	0
+Com_call_procedure	0
+Com_change_db	7615
+Com_change_master	0
+Com_check	0
+Com_checksum	0
+Com_commit	5417484
+Com_create_db	0
+Com_create_event	0
+Com_create_function	0
+Com_create_index	0
+Com_create_procedure	0
+Com_create_server	0
+Com_create_table	125
+Com_create_trigger	0
+Com_create_udf	0
+Com_create_user	0
+Com_create_view	0
+Com_dealloc_sql	0
+Com_delete	366821
+Com_delete_multi	0
+Com_do	0
+Com_drop_db	0
+Com_drop_event	0
+Com_drop_function	0
+Com_drop_index	0
+Com_drop_procedure	0
+Com_drop_server	0
+Com_drop_table	125
+Com_drop_trigger	0
+Com_drop_user	0
+Com_drop_view	0
+Com_empty_query	0
+Com_execute_sql	0
+Com_flush	1
+Com_grant	0
+Com_ha_close	0
+Com_ha_open	0
+Com_ha_read	0
+Com_help	0
+Com_insert	18831
+Com_insert_select	0
+Com_install_plugin	0
+Com_kill	0
+Com_load	0
+Com_load_master_data	0
+Com_load_master_table	0
+Com_lock_tables	258
+Com_optimize	0
+Com_preload_keys	0
+Com_prepare_sql	0
+Com_purge	0
+Com_purge_before_date	0
+Com_release_savepoint	0
+Com_rename_table	0
+Com_rename_user	0
+Com_repair	0
+Com_replace	0
+Com_replace_select	0
+Com_reset	0
+Com_restore_table	0
+Com_revoke	0
+Com_revoke_all	0
+Com_rollback	2732375
+Com_rollback_to_savepoint	0
+Com_savepoint	0
+Com_select	93602680
+Com_set_option	189270461
+Com_show_authors	0
+Com_show_binlog_events	0
+Com_show_binlogs	0
+Com_show_charsets	0
+Com_show_collations	2530
+Com_show_column_types	0
+Com_show_contributors	0
+Com_show_create_db	168
+Com_show_create_event	0
+Com_show_create_func	0
+Com_show_create_proc	0
+Com_show_create_table	7420
+Com_show_create_trigger	0
+Com_show_databases	54
+Com_show_engine_logs	0
+Com_show_engine_mutex	0
+Com_show_engine_status	0
+Com_show_events	0
+Com_show_errors	0
+Com_show_fields	8270
+Com_show_function_status	0
+Com_show_grants	0
+Com_show_keys	0
+Com_show_master_status	42
+Com_show_new_master	0
+Com_show_open_tables	0
+Com_show_plugins	0
+Com_show_privileges	0
+Com_show_procedure_status	0
+Com_show_processlist	0
+Com_show_profile	0
+Com_show_profiles	0
+Com_show_slave_hosts	0
+Com_show_slave_status	1
+Com_show_status	3
+Com_show_storage_engines	0
+Com_show_table_status	7343
+Com_show_tables	3559
+Com_show_triggers	7343
+Com_show_variables	2551
+Com_show_warnings	0
+Com_slave_start	0
+Com_slave_stop	0
+Com_stmt_close	0
+Com_stmt_execute	0
+Com_stmt_fetch	0
+Com_stmt_prepare	0
+Com_stmt_reprepare	0
+Com_stmt_reset	0
+Com_stmt_send_long_data	0
+Com_truncate	0
+Com_uninstall_plugin	0
+Com_unlock_tables	300
+Com_update	3214070
+Com_update_multi	178
+Com_xa_commit	0
+Com_xa_end	0
+Com_xa_prepare	0
+Com_xa_recover	0
+Com_xa_rollback	0
+Com_xa_start	0
+Compression	OFF
+Connections	45910
+Created_tmp_disk_tables	256307
+Created_tmp_files	62
+Created_tmp_tables	5860249
+Delayed_errors	0
+Delayed_insert_threads	0
+Delayed_writes	0
+Flush_commands	1
+Handler_commit	60952136
+Handler_delete	13938
+Handler_discover	0
+Handler_prepare	12874082
+Handler_read_first	4347493
+Handler_read_key	337428783
+Handler_read_next	4943028485
+Handler_read_prev	10683
+Handler_read_rnd	56807302
+Handler_read_rnd_next	2543539786
+Handler_rollback	336
+Handler_savepoint	0
+Handler_savepoint_rollback	0
+Handler_update	9694847
+Handler_write	21948808
+Innodb_buffer_pool_pages_data	508
+Innodb_buffer_pool_pages_dirty	5
+Innodb_buffer_pool_pages_flushed	3629258
+Innodb_buffer_pool_pages_free	0
+Innodb_buffer_pool_pages_misc	4
+Innodb_buffer_pool_pages_total	512
+Innodb_buffer_pool_read_ahead_rnd	3743143
+Innodb_buffer_pool_read_ahead_seq	3072131
+Innodb_buffer_pool_read_requests	11070799511
+Innodb_buffer_pool_reads	44053459
+Innodb_buffer_pool_wait_free	0
+Innodb_buffer_pool_write_requests	34211728
+Innodb_data_fsyncs	8500243
+Innodb_data_pending_fsyncs	0
+Innodb_data_pending_reads	0
+Innodb_data_pending_writes	0
+Innodb_data_read	2067418025984
+Innodb_data_reads	51177128
+Innodb_data_writes	11107192
+Innodb_data_written	124418403328
+Innodb_dblwr_pages_written	3629258
+Innodb_dblwr_writes	624462
+Innodb_log_waits	1
+Innodb_log_write_requests	3541359
+Innodb_log_writes	6898106
+Innodb_os_log_fsyncs	7264493
+Innodb_os_log_pending_fsyncs	0
+Innodb_os_log_pending_writes	0
+Innodb_os_log_written	5312450560
+Innodb_page_size	16384
+Innodb_pages_created	57830
+Innodb_pages_read	126184921
+Innodb_pages_written	3629258
+Innodb_row_lock_current_waits	0
+Innodb_row_lock_time	192719
+Innodb_row_lock_time_avg	81
+Innodb_row_lock_time_max	1543
+Innodb_row_lock_waits	2365
+Innodb_rows_deleted	13356
+Innodb_rows_inserted	152383
+Innodb_rows_read	7597536617
+Innodb_rows_updated	3212409
+Key_blocks_not_flushed	0
+Key_blocks_unused	6694
+Key_blocks_used	1
+Key_read_requests	1448304
+Key_reads	0
+Key_write_requests	965536
+Key_writes	0
+Last_query_cost	0.000000
+Max_used_connections	35
+Not_flushed_delayed_rows	0
+Open_files	50
+Open_streams	0
+Open_table_definitions	177
+Open_tables	64
+Opened_files	1036414
+Opened_table_definitions	552
+Opened_tables	39760
+Prepared_stmt_count	0
+Qcache_free_blocks	0
+Qcache_free_memory	0
+Qcache_hits	0
+Qcache_inserts	0
+Qcache_lowmem_prunes	0
+Qcache_not_cached	0
+Qcache_queries_in_cache	0
+Qcache_total_blocks	0
+Queries	294673291
+Questions	294673291
+Rpl_status	NULL
+Select_full_join	1102256
+Select_full_range_join	9
+Select_range	6735499
+Select_range_check	0
+Select_scan	3231859
+Slave_open_temp_tables	0
+Slave_retried_transactions	0
+Slave_running	OFF
+Slow_launch_threads	0
+Slow_queries	2
+Sort_merge_passes	28
+Sort_range	44687
+Sort_rows	17775057
+Sort_scan	5616217
+Ssl_accept_renegotiates	0
+Ssl_accepts	0
+Ssl_callback_cache_hits	0
+Ssl_cipher	
+Ssl_cipher_list	
+Ssl_client_connects	0
+Ssl_connect_renegotiates	0
+Ssl_ctx_verify_depth	0
+Ssl_ctx_verify_mode	0
+Ssl_default_timeout	0
+Ssl_finished_accepts	0
+Ssl_finished_connects	0
+Ssl_session_cache_hits	0
+Ssl_session_cache_misses	0
+Ssl_session_cache_mode	NONE
+Ssl_session_cache_overflows	0
+Ssl_session_cache_size	0
+Ssl_session_cache_timeouts	0
+Ssl_sessions_reused	0
+Ssl_used_session_cache_entries	0
+Ssl_verify_depth	0
+Ssl_verify_mode	0
+Ssl_version	
+Table_locks_immediate	66859643
+Table_locks_waited	45
+Tc_log_max_pages_used	0
+Tc_log_page_size	0
+Tc_log_page_waits	0
+Threads_cached	0
+Threads_connected	28
+Threads_created	45909
+Threads_running	2
+Uptime	3623145
+Uptime_since_flush_status	3623145
+auto_increment_increment	1
+auto_increment_offset	1
+autocommit	ON
+automatic_sp_privileges	ON
+back_log	50
+basedir	/usr/
+big_tables	OFF
+binlog_cache_size	32768
+binlog_direct_non_transactional_updates	OFF
+binlog_format	ROW
+bulk_insert_buffer_size	8388608
+character_set_client	latin1
+character_set_connection	latin1
+character_set_database	latin1
+character_set_filesystem	binary
+character_set_results	latin1
+character_set_server	latin1
+character_set_system	utf8
+character_sets_dir	/usr/share/mysql/charsets/
+collation_connection	latin1_swedish_ci
+collation_database	latin1_swedish_ci
+collation_server	latin1_swedish_ci
+completion_type	0
+concurrent_insert	1
+connect_timeout	10
+datadir	/var/lib/mysql/
+date_format	%Y-%m-%d
+datetime_format	%Y-%m-%d %H:%i:%s
+default_week_format	0
+delay_key_write	ON
+delayed_insert_limit	100
+delayed_insert_timeout	300
+delayed_queue_size	1000
+div_precision_increment	4
+engine_condition_pushdown	ON
+error_count	0
+event_scheduler	OFF
+expire_logs_days	0
+flush	OFF
+flush_time	0
+foreign_key_checks	ON
+ft_boolean_syntax	+ -><()~*:""&|
+ft_max_word_len	84
+ft_min_word_len	4
+ft_query_expansion_limit	20
+ft_stopword_file	(built-in)
+general_log	OFF
+general_log_file	/var/run/mysqld/mysqld.log
+group_concat_max_len	1024
+have_community_features	YES
+have_compress	YES
+have_crypt	YES
+have_csv	YES
+have_dynamic_loading	YES
+have_geometry	YES
+have_innodb	YES
+have_ndbcluster	NO
+have_openssl	DISABLED
+have_partitioning	YES
+have_query_cache	YES
+have_rtree_keys	YES
+have_ssl	DISABLED
+have_symlink	DISABLED
+hostname	DB-1.gdcloud.com
+identity	0
+ignore_builtin_innodb	OFF
+init_connect	
+init_file	
+init_slave	
+innodb_adaptive_hash_index	ON
+innodb_additional_mem_pool_size	1048576
+innodb_autoextend_increment	8
+innodb_autoinc_lock_mode	1
+innodb_buffer_pool_size	8388608
+innodb_checksums	ON
+innodb_commit_concurrency	0
+innodb_concurrency_tickets	500
+innodb_data_file_path	ibdata1:10M:autoextend
+innodb_data_home_dir	
+innodb_doublewrite	ON
+innodb_fast_shutdown	1
+innodb_file_io_threads	4
+innodb_file_per_table	OFF
+innodb_flush_log_at_trx_commit	1
+innodb_flush_method	
+innodb_force_recovery	0
+innodb_lock_wait_timeout	600
+innodb_locks_unsafe_for_binlog	OFF
+innodb_log_buffer_size	1048576
+innodb_log_file_size	5242880
+innodb_log_files_in_group	2
+innodb_log_group_home_dir	./
+innodb_max_dirty_pages_pct	90
+innodb_max_purge_lag	0
+innodb_mirrored_log_groups	1
+innodb_open_files	300
+innodb_rollback_on_timeout	ON
+innodb_stats_on_metadata	ON
+innodb_support_xa	ON
+innodb_sync_spin_loops	20
+innodb_table_locks	ON
+innodb_thread_concurrency	8
+innodb_thread_sleep_delay	10000
+innodb_use_legacy_cardinality_algorithm	ON
+insert_id	0
+interactive_timeout	28800
+join_buffer_size	131072
+keep_files_on_create	OFF
+key_buffer_size	8384512
+key_cache_age_threshold	300
+key_cache_block_size	1024
+key_cache_division_limit	100
+language	/usr/share/mysql/english/
+large_files_support	ON
+large_page_size	0
+large_pages	OFF
+last_insert_id	0
+lc_time_names	en_US
+license	GPL
+local_infile	ON
+locked_in_memory	OFF
+log	OFF
+log_bin	ON
+log_bin_trust_function_creators	OFF
+log_bin_trust_routine_creators	OFF
+log_error	/var/log/mysqld.log
+log_output	FILE
+log_queries_not_using_indexes	OFF
+log_slave_updates	OFF
+log_slow_queries	OFF
+log_warnings	1
+long_query_time	10.000000
+low_priority_updates	OFF
+lower_case_file_system	OFF
+lower_case_table_names	0
+max_allowed_packet	1048576
+max_binlog_cache_size	18446744073709547520
+max_binlog_size	1073741824
+max_connect_errors	10
+max_connections	350
+max_delayed_threads	20
+max_error_count	64
+max_heap_table_size	16777216
+max_insert_delayed_threads	20
+max_join_size	18446744073709551615
+max_length_for_sort_data	1024
+max_prepared_stmt_count	16382
+max_relay_log_size	0
+max_seeks_for_key	18446744073709551615
+max_sort_length	1024
+max_sp_recursion_depth	0
+max_tmp_tables	32
+max_user_connections	0
+max_write_lock_count	18446744073709551615
+min_examined_row_limit	0
+multi_range_count	256
+myisam_data_pointer_size	6
+myisam_max_sort_file_size	9223372036853727232
+myisam_mmap_size	18446744073709551615
+myisam_recover_options	OFF
+myisam_repair_threads	1
+myisam_sort_buffer_size	8388608
+myisam_stats_method	nulls_unequal
+myisam_use_mmap	OFF
+net_buffer_length	16384
+net_read_timeout	30
+net_retry_count	10
+net_write_timeout	60
+new	OFF
+old	OFF
+old_alter_table	OFF
+old_passwords	OFF
+open_files_limit	1750
+optimizer_prune_level	1
+optimizer_search_depth	62
+optimizer_switch	index_merge=on,index_merge_union=on,index_merge_sort_union=on,index_merge_intersection=on
+pid_file	/var/run/mysqld/mysqld.pid
+plugin_dir	/usr/lib64/mysql/plugin
+port	3306
+preload_buffer_size	32768
+profiling	OFF
+profiling_history_size	15
+protocol_version	10
+pseudo_thread_id	0
+query_alloc_block_size	8192
+query_cache_limit	1048576
+query_cache_min_res_unit	4096
+query_cache_size	0
+query_cache_type	ON
+query_cache_wlock_invalidate	OFF
+query_prealloc_size	8192
+rand_seed1	
+rand_seed2	
+range_alloc_block_size	4096
+read_buffer_size	131072
+read_only	OFF
+read_rnd_buffer_size	262144
+relay_log	
+relay_log_index	
+relay_log_info_file	relay-log.info
+relay_log_purge	ON
+relay_log_space_limit	0
+report_host	
+report_password	
+report_port	3306
+report_user	
+rpl_recovery_rank	0
+secure_auth	OFF
+secure_file_priv	
+server_id	1
+skip_external_locking	ON
+skip_name_resolve	OFF
+skip_networking	OFF
+skip_show_database	OFF
+slave_compressed_protocol	OFF
+slave_exec_mode	STRICT
+slave_load_tmpdir	/tmp
+slave_net_timeout	3600
+slave_skip_errors	OFF
+slave_transaction_retries	10
+slow_launch_time	2
+slow_query_log	OFF
+slow_query_log_file	/var/run/mysqld/mysqld-slow.log
+socket	/var/lib/mysql/mysql.sock
+sort_buffer_size	2097144
+sql_auto_is_null	ON
+sql_big_selects	ON
+sql_big_tables	OFF
+sql_buffer_result	OFF
+sql_log_bin	ON
+sql_log_off	OFF
+sql_log_update	ON
+sql_low_priority_updates	OFF
+sql_max_join_size	18446744073709551615
+sql_mode	
+sql_notes	ON
+sql_quote_show_create	ON
+sql_safe_updates	OFF
+sql_select_limit	18446744073709551615
+sql_slave_skip_counter	
+sql_warnings	OFF
+ssl_ca	
+ssl_capath	
+ssl_cert	
+ssl_cipher	
+ssl_key	
+storage_engine	MyISAM
+sync_binlog	0
+sync_frm	ON
+system_time_zone	CST
+table_definition_cache	256
+table_lock_wait_timeout	50
+table_open_cache	64
+table_type	MyISAM
+thread_cache_size	0
+thread_handling	one-thread-per-connection
+thread_stack	262144
+time_format	%H:%i:%s
+time_zone	SYSTEM
+timed_mutexes	OFF
+timestamp	1387445782
+tmp_table_size	16777216
+tmpdir	/tmp
+transaction_alloc_block_size	8192
+transaction_prealloc_size	4096
+tx_isolation	REPEATABLE-READ
+unique_checks	ON
+updatable_views_with_limit	YES
+version	5.1.52-log
+version_comment	Source distribution
+version_compile_machine	x86_64
+version_compile_os	unknown-linux-gnu
+wait_timeout	28800
+warning_count	0
+<<<mysql_capacity>>>
+cloud	88889408	3611297077
+cloudbridge	802816	411041792
+cloud_usage	868352	440401920
+information_schema	8192	0
+mysql	648691	84

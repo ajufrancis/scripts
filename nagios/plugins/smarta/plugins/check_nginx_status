@@ -1,0 +1,60 @@
+#! lua
+
+-- check nginx status
+-- author: ery.lee@gmail.com from monit.cn
+
+require("plugin")
+
+-- do check
+function check(opts) 
+  local http = require("socket.http")
+  http.TIMEOUT = 8
+  local b,c,h,s = http.request(opts["url"])
+  if not b then
+    print("CRITICAL - "..c.."\n")
+    return STATUS_CRITICAL
+  end
+  if c ~= 200 then
+    print("WARNING - "..s.."\n")
+    return STATUS_WARNING
+  end
+  connections = string.match(b, "^Active connections:%s+(%d+)")
+  if not connections then
+    print("UNKNOWN - invalid content\n")
+    return STATUS_UNKNOWN
+  end
+  accepted,handled,requests = string.match(b, "(%d+)%s+(%d+)%s+(%d+)")
+  reading,writing,waiting = string.match(b, "Reading:%s*(%d+)%s*Writing:%s*(%d+)%s*Waiting:%s*(%d+)")
+  print("OK - Active connections = "..connections)
+  print("count-metrics: accepted,handled,requests\n")
+  print("metric:connections: "..connections)
+  print("metric:accepted: "..accepted)
+  print("metric:handled: "..handled)
+  print("metric:requests: "..requests)
+  print("metric:reading: "..reading)
+  print("metric:writing: "..writing)
+  print("metric:waiting: "..waiting)
+  return STATUS_OK
+end
+
+-- usage
+function usage() 
+  print("Usage: check_nginx_status -U URL")
+  os.exit(0)
+end
+
+-- parse arguments
+local long_opts = {
+   help    = "h",
+   url    = "U",
+}
+
+local opts,optind = getopts(arg, "hU:", long_opts)
+if (not opts["U"]) or (string.trim(opts["U"]) == "") then
+  print("UNKNOWN - miss argument 'url'\n")
+  usage()
+end
+
+status=check(opts)
+
+os.exit(status)
