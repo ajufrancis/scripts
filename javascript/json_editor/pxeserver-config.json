@@ -1,0 +1,45 @@
+{
+  "pxe-server": {
+    "client": {
+      "mac": "",
+      "ip": ""
+    },
+    "dhcp": {
+      "host": "",
+      "dhcp-range": {
+        "subnet": "",
+        "interface": ""
+      },
+      "dhcp-bootfile": {
+        "server": "",
+        "filename": "",
+        "condition": ""
+      }
+    },
+    "tftp": {
+      "host": "",
+      "directory": ""
+    },
+    "auth": {
+      "ldap": {
+        "host": "",
+        "basedn": "",
+        "password": ""
+      },
+      "basic": {
+        "username": "",
+        "password": ""
+      }
+    },
+    "src_uri": {
+      "protocol": [
+        "http",
+        "ftp",
+        "nfs",
+        "iscsi"
+      ],
+      "host": "",
+      "port": ""
+    }
+  }
+}

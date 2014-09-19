@@ -1,0 +1,137 @@
+{
+  "os": {
+    "label": "kernel",
+    "Linux": {
+      "label": "os_family",
+      "RedHat": {
+        "label": "os",
+        "CentOS": {
+          "label": "os_release",
+          "6.2": {
+            "label": "osarch",
+            "arch": [
+              "x86_64",
+              "i386"
+            ]
+          },
+          "6.3": {
+            "label": "osarch",
+            "arch": [
+              "x86_64",
+              "i386"
+            ]
+          },
+          "6.4": {
+            "label": "osarch",
+            "arch": [
+              "x86_64",
+              "i386"
+            ]
+          }
+        },
+        "RedHat": {
+          "label": "os_release",
+          "6.2": {
+            "label": "osarch",
+            "arch": [
+              "x86_64",
+              "i386"
+            ]
+          },
+          "6.3": {
+            "label": "osarch",
+            "arch": [
+              "x86_64",
+              "i386"
+            ]
+          },
+          "6.4": {
+            "label": "osarch",
+            "arch": [
+              "x86_64",
+              "i386"
+            ]
+          }
+        },
+        "XenServer": {
+          "label": "os_release",
+          "release": [
+            "6.0.201",
+            "6.1.0",
+            "6.2.0"
+          ]
+        }
+      },
+      "Debian": {
+        "Ubuntu": {
+          "lucid": {
+            "10.04.4": [
+              "x86_64",
+              "i386"
+            ]
+          },
+          "precise": {
+            "12.04.2": [
+              "x86_64",
+              "i386"
+            ]
+          },
+          "trusty": {
+            "14.04.1": [
+              "x86_64",
+              "i386"
+            ]
+          }
+        },
+        "Debian": {
+          "squeeze": [
+            "x86_64",
+            "i386"
+          ],
+          "wheezy": [
+            "x86_64",
+            "i386"
+          ]
+        }
+      }
+    },
+    "Windows": {
+      "Windows": {
+        "wxpsp3": {
+          "professional": {
+            "cn": [
+              "i386",
+              "x86_64"
+            ],
+            "en": [
+              "i386",
+              "x86_64"
+            ]
+          }
+        },
+        "w2k3r2sp2": {
+          "enterprise": [
+            "i386",
+            "x86_64"
+          ]
+        },
+        "w2k8r2sp1": {
+          "enterprise": {
+            "cn": [
+              "x86_64",
+              "i386"
+            ],
+            "en": [
+              "x86_64",
+              "i386"
+            ]
+          }
+        }
+      },
+      "DOS": {
+        "1.0": {},
+        "2.0": {}
+      }
+    }
+  }
+}
