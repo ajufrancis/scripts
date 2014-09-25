@@ -2,3 +2,22 @@ hdd tune pro
 attodisk benchmark
 iozone
 iometer
+iotop
+http://www.xaprb.com/blog/2009/08/23/how-to-find-per-process-io-statistics-on-linux/
+ktrace:http://stackoverflow.com/questions/14021810/finding-process-with-heavy-disk-i-o
+blktrace
+sockstat
+trafshow
+btrace
+pidstat
+sort -n -k 10 /proc/diskstats
+ cat /proc/31597/io
+http://www.tecmint.com/command-line-tools-to-monitor-linux-performance/
+iostat
+htop
+NetHogs
+Suricata
+Monitorix
+Nmon
+Collectl
+Arpwatch

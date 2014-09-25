@@ -1,0 +1,10 @@
+var ks = {
+    title: 'partition',
+    type: object,
+    properties: {
+        'disk': 'lvm',
+        'disk': 'ext4',
+        '/boot': 'ext4',
+    }
+}
+

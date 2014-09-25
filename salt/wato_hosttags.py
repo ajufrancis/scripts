@@ -4,21 +4,22 @@
 import salt.grains
 import salt.client
 
-print salt.grains.core.hostname()
+# create a local client object
+client = salt.client.LocalClient()
+ret1 = client.cmd('localpred-01', ['grains.items'],[''])
+#ret2 = client.cmd('localpred-01', ['grains.item', 'grains.item', 'grains.item'], [['kernel'], ['os_family'], ['os']])
+# make compound execution calls with the cmd method
 
-def wato_host():
-  host = {
-#    'name': __grains__['fqdn'],
-    'alias': '',
-#    'ipaddr': __grains__['ipv4'],
-    'parent': []
-  }
-  
+#'test': {'ipaddress': u'10.24.64.14',
+#          'tag_os_fullname': 'centos',
+#          'tag_port_tcp': 'tcp_22',
+#          'tag_state': 'Running'}
 
-def defgw(host):
-  client = salt.client.LocalClient()
-  ret = client.cmd(host, 'cmd.run', ['ip route'])
-  routes = ret.values()[0]
-  routes = routes.split('\n')
-  defgw = routes[-1].split(' ')[2]
-  return defgw
+#"test|lan|no_ttl|centos|no_devtype|no_sla|ping|no_cluster|up|cs_fengce|no_pod|Running|no_zone|no_mttf|linux|tcp_22|prod|no_mttr|wato|/" + FOLDER_PATH + "/",
+
+# Explicit IP addresses
+#ipaddresses.update({'test': u'10.24.64.14'})
+
+for host in ret1.keys():
+  wato_host = ret1[host]['grains.items']
+  print wato_host

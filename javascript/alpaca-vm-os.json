@@ -1,0 +1,45 @@
+$(function() {
+    $("#field1").alpaca({
+        "data": {},
+        "options": {
+            "fields": {
+                "linux": {
+                    "dependencies": {
+                        "choice": "linux"
+                    }
+                },
+                "windows": {
+                    "dependencies": {
+                        "choice": "windows"
+                    }
+                }
+            }
+        },
+        "schema": {
+            "title": "Cloud VM's OS Picker",
+            "description": "Select Your VM's OS",
+            "type": "object",
+            "properties": {
+                "choice": {
+                    "title": "Kernel",
+                    "type": "String",
+                    "description": "Which OS would you like to install for VM?",
+                    "enum": ["linux", "windows"]
+                },
+                "linux": {
+                    "title": "Family",
+                    "type": "String",
+                    "enum": ["RedHat", "Debian"],
+                    "dependencies": "choice"
+                },
+                "windows": {
+                    "title": "Family",
+                    "type": "select",
+                    "enum": ["wxp", "w2k3", "w2k8"],
+                    "dependencies": "choice"
+                }
+            }
+        },
+        "view": "VIEW_JQUERYUI_EDIT_LIST"
+    });
+});

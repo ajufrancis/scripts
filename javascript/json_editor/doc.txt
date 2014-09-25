@@ -5,3 +5,5 @@ http://www.braincast.nl/samples/jsoneditor/
 #https://github.com/jdorn/json-editor
 #http://marianoguerra.github.io/json-edit/
 #http://jeremydorn.com/json-editor/
+#http://json-schema.org/example2.html
+#http://www.ewikisoft.com/js/json2form.min.js
