@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id="Description">Data Binding to JSON data in jqxTreeGrid.</title>
+    <meta name="description" content="This sample demonstrates how we can bind jQWidgets TreeGrid widget to JSON Data by using jQWidgets DataAdapter plugin.">
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxdatatable.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxtreegrid.js"></script>
+    <script type="text/javascript" src="../../scripts/demos.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {          
+                var employees = [
+                    {'instancename': 'i-21-2294-VM', 'hostname': 'xstest2', 'state': 'Running', 'account': 'test'}
+                ];
+
+            // prepare the data
+            var source =
+            {
+                dataType: "json",
+                dataFields: [
+                    { name: 'account', type: 'string' },
+                    { name: 'hostname', type: 'string' },
+                    { name: 'instancename', type: 'string' },
+                    { name: 'publicip', type: 'string' },
+                    { name: 'state', type: 'string' }
+                ],
+                id: 'instancename',
+                localData: employees
+            };
+            var dataAdapter = new $.jqx.dataAdapter(source);
+            // create Tree Grid
+            $("#treeGrid").jqxTreeGrid(
+            {
+                width: 850,
+                source: dataAdapter,
+                sortable: true,
+                columns: [
+                  { text: 'account', dataField: 'account', width: 120 },
+                  { text: 'hostname', dataField: 'hostname', width: 120 },
+                  { text: 'state', dataField: 'state', width: 120 },
+                  { text: 'publicip', dataField: 'publicip'}
+                ]
+            });
+        });
+    </script>
+</head>
+<body class='default'>
+    <div id="treeGrid">
+    </div>
+</body>
+</html>

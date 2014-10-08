@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <title>Page not found | Musings from a high place</title>
+    <meta name="author" content="Designed by Contexture International | http://www.contextureintl.com" />
+	<meta name="iconpath" id="iconpath" content="http://www.tall-paul.co.uk/wp-content/themes/adventure-journal/images/bh" />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="http://www.tall-paul.co.uk/xmlrpc.php" />
+    <link rel="alternate" type="application/rss+xml" title="Musings from a high place &raquo; Feed" href="http://www.tall-paul.co.uk/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Musings from a high place &raquo; Comments Feed" href="http://www.tall-paul.co.uk/comments/feed/" />
+
+            <script type="text/javascript">//<![CDATA[
+            // Google Analytics for WordPress by Yoast v4.3.3 | http://yoast.com/wordpress/google-analytics/
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-16214439-4']);
+				            _gaq.push(['_trackPageview','/404.html?page=' + document.location.pathname + document.location.search + '&from=' + document.referrer]);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            //]]></script>
+			<link rel='stylesheet' id='thickbox-css'  href='http://www.tall-paul.co.uk/wp-includes/js/thickbox/thickbox.css?ver=20121105' type='text/css' media='all' />
+<link rel='stylesheet' id='wpdm-front-css'  href='http://www.tall-paul.co.uk/wp-content/plugins/download-manager/css/front.css?ver=3.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack-widgets-css'  href='http://www.tall-paul.co.uk/wp-content/plugins/jetpack/modules/widgets/widgets.css?ver=20121003' type='text/css' media='all' />
+<link rel='stylesheet' id='theme-css'  href='http://www.tall-paul.co.uk/wp-content/themes/adventure-journal/style.css?ver=3.7.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='style-ie-css'  href='http://www.tall-paul.co.uk/wp-content/themes/adventure-journal/style-ie.css?ver=3.7.1' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='theme_override-css'  href='http://www.tall-paul.co.uk/wp-content/themes/adventure-journal/adventure-theme-overrides.css?ver=3.7.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.tall-paul.co.uk/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://www.tall-paul.co.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://www.tall-paul.co.uk/wp-content/themes/adventure-journal/aj.js?ver=3.7.1'></script>
+<script type='text/javascript' src='http://www.tall-paul.co.uk/wp-content/themes/adventure-journal/bh.js?ver=3.7.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.tall-paul.co.uk/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.tall-paul.co.uk/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.7.1" />
+    <script language="JavaScript">
+    <!--
+      jQuery(function(){
+          
+          jQuery('.wpdm-popup').click(function(){
+              tb_show(jQuery(this).html(),this.href+'&modal=1&width=600&height=400');
+              return false;
+          });
+          
+          jQuery('.haspass').click(function(){
+              var url = jQuery(this).attr('href');
+              var id = jQuery(this).attr('rel');
+              var password = jQuery('#pass_'+id).val();
+              jQuery.post('http://www.tall-paul.co.uk/',{download:id,password:password},function(res){
+                  
+                  if(res=='error') {
+                    
+                      jQuery('#wpdm_file_'+id+' .perror').html('Wrong Password');
+                      setTimeout("jQuery('#wpdm_file_"+id+" .perror').html('');",3000);
+                      return false;
+                  } else {
+                      location.href = 'http://www.tall-paul.co.uk/?wpdmact=process&did='+res;
+                  }
+                  //if(res.url!='undefined') location.href=res.url;
+                                           
+              });
+               
+              return false;
+          });
+      })
+    //-->
+    </script>
+    <script>
+jQuery(document).ready(function(){
+jQuery("html").attr("xmlns:og","http://opengraphprotocol.org/schema/");
+});
+</script>
+			<meta property="og:type" content="blog" />
+		<meta property="og:site_name" content="Musings from a high place" />
+		<meta property='og:url' content="http://www.tall-paul.co.uk" />
+			<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url('http://www.tall-paul.co.uk/wp-content/themes/adventure-journal/images/mp-background-tile.jpg'); background-repeat: repeat; background-position: top left; background-attachment: scroll; }
+</style>
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://www.tall-paul.co.uk/?custom-css=1&#038;csblog=1&#038;cscache=6&#038;csrev=1" />
+		</head>
+<body class="error404 custom-background">
+<div id="browser-helper">
+    <div id="bh-bg">
+        <table id="bh-notice" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+                <td id="bh-icon-td" rowspan="3">
+                    <img id="bh-icon" src="http://s.wordpress.org/images/browsers/ie.png" alt="browser icon" width="87"/>
+                </td>
+                <td id="bh-copy">
+                    <div id="bh-warning">You are using an insecure version of <span id="bh-browsername">your web browser</span>. Please update your browser!</div>
+                    <div id="bh-explain">Using an outdated browser makes your computer unsafe. For a safer, faster, more enjoyable user experience, please update your browser today or try a newer browser.</div>
+                    <div id="bh-links">
+                        <a id="bh-update" href="#">Update Your Browser</a> | <a href="http://www.google.com/chrome/">Try Something New</a> | <a href="#" id="bh-hide">Hide This Warning</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="bh-shadow"></div>
+</div>
+    <div id="ancestor-" class="siteframe page-siteframe ">
+        <div id="container">
+	
+          <div id="container2">
+            <div class="nav-horz nav-main" id="menu">
+              <div class="nav-main-left">
+                <div class="nav-main-right">
+                    <div class="menu"><ul><li class="page_item page-item-5"><a href="http://www.tall-paul.co.uk/contact-m/">Contact Me</a></li><li class="page_item page-item-287"><a href="http://www.tall-paul.co.uk/downloadspage/">Downloads</a></li></ul></div>
+                </div>
+              </div>
+              <div class="nav-main-bottom"></div>
+            </div>
+            <div class="clear"></div>
+            <!-- end header -->
+      <div id="header"><div id="header2"><div id="header3"><div id="header4">
+            		<div id="logo">
+	  <div id="logo-2">
+		<div id="logo-3">
+		  <table><tr><td>
+                            <div id="site-title"><a href="http://www.tall-paul.co.uk/" title="Musings from a high place" rel="home">
+				  Musings from a high place				  </a></div>
+				<div id="site-description">A journey through technology</div>          </td></tr></table>
+		</div>
+	  </div>
+	</div>
+	              <div id="banner">
+                                        <img src="http://www.tall-paul.co.uk/wp-content/uploads/2012/04/cropped-banner.jpg" width="920" height="200" alt="" />
+                
+              </div>
+      </div></div></div></div><div class="content"  id="col-2-right">
+    <div id="col-main">
+      <div id="main-content" >
+      <!-- BEGIN Main Content-->
+		<div id="post-0" class="post error404 not-found">
+				<h1 class="entry-title">Not Found</h1>
+				<div class="entry-content">
+					<p>Apologies, but the page you requested could not be found. Perhaps searching will help.</p>
+					<form role="search" method="get" id="searchform" class="searchform" action="http://www.tall-paul.co.uk/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form>				</div><!-- .entry-content -->
+			</div>
+      <!-- END Main Content-->
+
+      </div>
+    </div>
+	<div class="sidebar" style="width:220px">
+<ul>
+  <li class="widget">
+	<h3>Links</h3>
+	<p><a href="https://github.com/Tall-Paul/">GitHub</a></p>
+	<p><a href="http://uk.linkedin.com/pub/paul-berry/2a/913/112/">Linkedin</a></p>
+  </li>
+</ul>
+</div>
+<div id="col-left" class="sidebar" style="width:220px;"><ul><li id="text-3" class="widget widget_text">			<div class="textwidget">Has something on my blog helped you out?  Then you can show your appreciation and gratitude in the best way possible.  With lovely, lovely money. 
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<table>
+<tr><td><input type="hidden" name="on0" value="Amount of gratitude">Amount of gratitude</td></tr><tr><td><select name="os0">
+	<option value="A little bit">A little bit £1.00 GBP</option>
+	<option value="Some">Some £3.00 GBP</option>
+	<option value="A fair amount">A fair amount £5.00 GBP</option>
+	<option value="Quite a lot">Quite a lot £10.00 GBP</option>
+	<option value="A ridiculous amount">A ridiculous amount £100.00 GBP</option>
+</select> </td></tr>
+<tr><td><input type="hidden" name="on1" value="Why the grati-dude?">Why the grati-dude?</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+</table>
+<input type="hidden" name="currency_code" value="GBP">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div>
+		</li><li id="text-2" class="widget widget_text"><h3>@Deicist</h3>			<div class="textwidget"><a class="twitter-timeline" href="https://twitter.com/Deicist" onclick="javascript:_gaq.push(['_trackEvent','outbound-widget','http://twitter.com']);" data-widget-id="355633699091537920">Tweets by @Deicist</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+		</li><li id="calendar-2" class="widget widget_calendar"><h3>Posts</h3><div id="calendar_wrap"><table id="wp-calendar">
+	<caption>September 2014</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://www.tall-paul.co.uk/2014/03/" title="View posts for March 2014">&laquo; Mar</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+	</tr>
+	<tr>
+		<td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+	</tr>
+	<tr>
+		<td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td>
+	</tr>
+	<tr>
+		<td>22</td><td>23</td><td>24</td><td>25</td><td id="today">26</td><td>27</td><td>28</td>
+	</tr>
+	<tr>
+		<td>29</td><td>30</td>
+		<td class="pad" colspan="5">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></li><li id="categories-2" class="widget widget_categories"><h3>Categories</h3>		<ul>
+	<li class="cat-item cat-item-3"><a href="http://www.tall-paul.co.uk/category/coding/" title="View all posts filed under coding">coding</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="http://www.tall-paul.co.uk/category/fiction/" title="View all posts filed under fiction">fiction</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://www.tall-paul.co.uk/category/fuse-esb/" title="View all posts filed under FUSE ESB">FUSE ESB</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="http://www.tall-paul.co.uk/category/gaming/" title="View all posts filed under gaming">gaming</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://www.tall-paul.co.uk/category/javascript/" title="View all posts filed under Javascript">Javascript</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://www.tall-paul.co.uk/category/jnag/" title="jNag mobile interface for nagios">jNag</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://www.tall-paul.co.uk/category/joomla/" title="View all posts filed under Joomla">Joomla</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://www.tall-paul.co.uk/category/magento/" title="View all posts filed under magento">magento</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="http://www.tall-paul.co.uk/category/node-js/" title="View all posts filed under node.js">node.js</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://www.tall-paul.co.uk/category/none/" title="View all posts filed under None">None</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://www.tall-paul.co.uk/category/phonegap/" title="View all posts filed under phonegap">phonegap</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://www.tall-paul.co.uk/category/php/" title="View all posts filed under PHP">PHP</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://www.tall-paul.co.uk/category/post-a-day/" title="View all posts filed under post a day">post a day</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://www.tall-paul.co.uk/category/python/" title="View all posts filed under python">python</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="http://www.tall-paul.co.uk/category/coding/space-editor/" title="View all posts filed under SpaceEditor">SpaceEditor</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://www.tall-paul.co.uk/category/techy-stuff/" title="View all posts filed under techy stuff">techy stuff</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="http://www.tall-paul.co.uk/category/the-real/" title="View all posts filed under the real">the real</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://www.tall-paul.co.uk/category/uncategorized/" title="View all posts filed under Uncategorized">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="http://www.tall-paul.co.uk/category/website/" title="View all posts filed under website">website</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://www.tall-paul.co.uk/category/wordpress/" title="View all posts filed under wordpress">wordpress</a>
+</li>
+		</ul>
+</li><li id="search-3" class="widget widget_search"><h3>search</h3><form role="search" method="get" id="searchform" class="searchform" action="http://www.tall-paul.co.uk/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></li></ul></div>     <div class="clear"></div>
+</div>
+			<!-- begin footer -->
+			<div class="clear"></div>
+            <div id="footer">
+				<div class="nav-horz nav-footer"><div class="menu"><ul><li class="page_item page-item-5"><a href="http://www.tall-paul.co.uk/contact-m/">Contact Me</a></li><li class="page_item page-item-287"><a href="http://www.tall-paul.co.uk/downloadspage/">Downloads</a></li></ul></div>
+</div>
+					<div style="display:none">
+	</div>
+<script type='text/javascript' src='http://www.tall-paul.co.uk/wp-content/plugins/jetpack/modules/photon/photon.js?ver=20130122'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"http:\/\/www.tall-paul.co.uk\/wp-includes\/js\/thickbox\/loadingAnimation.gif","closeImage":"http:\/\/www.tall-paul.co.uk\/wp-includes\/js\/thickbox\/tb-close.png"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.tall-paul.co.uk/wp-includes/js/thickbox/thickbox.js?ver=3.1-20121105'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201439'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2014Sepaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.tall-paul.co.uk/wp-content/plugins/jetpack/modules/wpgroho.js?ver=3.7.1'></script>
+
+	<script src="http://stats.wordpress.com/e-201439.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:2.5',blog:'33555377',post:'0',tz:'0'});
+	var load_cmc = function(){linktracker_init(33555377,0,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script>				<div class="clear"></div> 
+            </div>
+          </div>
+        </div>
+		<div id="colophon">
+			<a id="ctxophon" href="http://www.contextureintl.com/?sref=aj" title="A WordPress Theme by Contexture International"></a>
+			<a id="wpophon" href="http://www.wordpress.org" title="Powered by WordPress"></a>
+			<div class="clear"></div>
+		</div>
+    </div>
+</body>
+</html>

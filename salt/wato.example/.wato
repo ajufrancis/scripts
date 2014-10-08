@@ -1,0 +1,5 @@
+{'attributes': {'contactgroups': (True, ['test']),
+                'tag_cs_account': 'cs_test',
+                'tag_state': 'Running'},
+ 'num_hosts': 9,
+ 'title': u'test'}

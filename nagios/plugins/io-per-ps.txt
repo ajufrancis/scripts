@@ -1,0 +1,10 @@
+http://www.zarafa.com/wiki/index.php/Monitoring_Disk_IO_per_process
+procstat
+fstat
+vmstat
+iostat
+http://stackoverflow.com/questions/249570/how-can-i-record-what-process-or-kernel-activity-is-using-the-disk-in-gnu-linux
+http://collectl.sourceforge.net/Process.html
+http://www.dbabeta.com/2009/io-performence-03_check-performence-in-linux.html#more-91
+https://fidanov.net/c0d3/nagios-plugins/mio/check_mio
+http://articles.slicehost.com/2010/11/12/using-dstat-to-check-i-o-and-swap
