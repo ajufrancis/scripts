@@ -23,6 +23,21 @@ class cloud:
 
       return accounts
     
+    def listUsersVM(self, name=''):
+        VM = {}
+        request = {'listall': 'true'}
+
+        if name == '':
+            accounts = self.api.listAccounts()
+            for account in accounts:
+                request['account'] = account['name']
+                VM[account['name']] = self.api.listVirtualMachines(request)
+        else:
+            request['account'] = name
+            VM[name] = self.api.listVirtualMachines(request)
+        return VM
+
+
     def listUsers(self):
       domains = self.api.listDomains()
 
@@ -35,10 +50,13 @@ class cloud:
 
       return users
     
-    def listDomains(self):
+    def listDomains(self, name=''):
+        if name == '':
+            name = 'ROOT'
+
         request = {
             'listall': 'true',
-            'name': 'ROOT'
+            'name': name
         }
         domains = self.api.listDomains(request)
         DOMAIN = {}
@@ -396,4 +414,6 @@ class cloud:
     
 
 cloud = cloud()
-print json.dumps(cloud.schema)
+#print cloud.listDomains(name='ROOT')
+#print json.dumps(cloud.schema)
+print cloud.listUsersVM(name='admin')
