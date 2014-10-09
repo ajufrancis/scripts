@@ -13,31 +13,17 @@ class cloud:
         self.schema = self.listDomains()
 
     def listAccounts(self):
-      domains = self.listDomains()
+      domains = self.api.listDomains()
       accounts = [ ]
       for domain in domains:
         request = {
+            'listall': 'true',
             'domainid': domain['id']
         }
         accounts += self.api.listAccounts(request)
 
       return accounts
     
-    def listUsersVM(self, name=''):
-        VM = {}
-        request = {'listall': 'true'}
-
-        if name == '':
-            accounts = self.api.listAccounts()
-            for account in accounts:
-                request['account'] = account['name']
-                VM[account['name']] = self.api.listVirtualMachines(request)
-        else:
-            request['account'] = name
-            VM[name] = self.api.listVirtualMachines(request)
-        return VM
-
-
     def listUsers(self):
       domains = self.api.listDomains()
 
@@ -78,12 +64,8 @@ class cloud:
         }
         return self.api.listResourceLimits(request)
     
-    def listVirtualMachines(self, host):
+    def listVirtualMachines(self, request):
         VM = {}
-        request = {
-             'listall': 'true',
-             'hostid': host['id']
-        }
         vms = self.api.listVirtualMachines(request)
         for vm in vms:
             VM[vm['instancename']] = vm
@@ -258,8 +240,10 @@ class cloud:
             'clusterid': cluster['id']
         }
         hosts = self.api.listHosts(request)
+        request = {'listall': 'true'}
         for host in hosts:
-            host['vms'] = self.listVirtualMachines(host)
+            request['hostid'] = host['id']
+            host['vms'] = self.listVirtualMachines(request)
             HOST[host['name']] = host
         return HOST
     
@@ -412,8 +396,23 @@ class cloud:
         }
         return self.api.listNetworkDevice(request)
     
+def get_vms_record():
+    accounts = cloud.listUsers()
+    for account in accounts:
+        name = account['account']
+        print '{0:#^20}'.format(name)
+        request = {'listall': '', 'account': 'fengce' }
+        vms = cloud.api.listVirtualMachines(request)
+        for vm in vms:
+            if vm['state'] =='Running':
+                try:
+                    ip = vm['publicip']
+                except:
+                    for network in vm['nic']:
+                        if network['type'] == 'Shared':
+                            ip = network['ipaddress']
+
+                print '{0} {1}'.format(ip, vm['instancename'])
 
 cloud = cloud()
-#print cloud.listDomains(name='ROOT')
-#print json.dumps(cloud.schema)
-print cloud.listUsersVM(name='admin')
+get_vms_record()
