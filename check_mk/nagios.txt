@@ -1,0 +1,1 @@
+http://docs.icinga.org/latest/en/index.html

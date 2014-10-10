@@ -3,7 +3,7 @@ import re, sys
 import HTML, json
 
 execfile('./get_dnat_ip.py')
-execfile('./cloudstack_api.py')
+execfile('./cloudstack.py')
 
 def print_vm_table(vms):
   t = HTML.Table(header_row=['state', 'instancename', 'created', 'haenable', 'id', 'name', 'cpunumber', 'cpuspeed', 'memory', 'macaddress', 'ipaddress', 'domainid', 'zoneid', 'account', 'hostname', 'publicip', 'nat_ip', 'serviceofferingname'])
@@ -28,6 +28,6 @@ def print_vm_table(vms):
   htmlcode = str(t)
   print htmlcode
 
-api = api()
+cloud = cloud()
 vms = list_vms()
 print_vm_table(vms)
