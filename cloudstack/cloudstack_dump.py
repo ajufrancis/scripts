@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import json
-execfile('./cloudstack.py')
+execfile('/srv/scripts/cloudstack/cloudstack.py')
 
 def get_vms_record():
     accounts = cloud.listUsers()
@@ -30,6 +30,16 @@ def vms_to_json(account):
     vms = listUsersVM(name)
     print json.dumps(vm)
 
+def dump_vms(cloud):
+    accounts = cloud.listUsers()
+    VM = {}
+    for account in accounts:
+        name = account['account']
+        request = {'listall': '', 'account': name }
+        VM[account['account']] = cloud.api.listVirtualMachines(request)
+    print json.dumps(VM, indent=4)
+
 cloud = cloud()
-accounts = cloud.listUsers()
-print json.dumps(cloud.listDomains(), indent=4)
+dump_vms(cloud)
+#print json.dumps(cloud.listDomains(), indent=4)
+#print json.dumps(listVMs_by_User())
