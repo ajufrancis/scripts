@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="./jquery/jquery-1.11.1.min.js"></script>
+<script>
+$(document).ready(
+    function loadInfo() {
+    $.getJSON("http://10.24.56.7/srv/scripts/cloudstack/vm_tables.txt", function(data) {
+        $("#info").html("");//清空info内容
+        var num = 0;
+        $.each(data.gdupc, function(i, item) {
+            num += 1;
+            $("#info").append(
+                    "<ul>" + 
+                    "<li>" + item.id + "</li>" + 
+                    "<li>" + item.instancename    + "</li>" +
+                    "<li>" + item.displayname + "</li></ul>");
+        });
+        });
+    }
+);
+</script>
+</head>
+<body>
+
+<div id="info"><h2>使用 jQuery AJAX 来改变文本</h2></div>
+<button>获得外部内容</button>
+
+</body>
+</html>
