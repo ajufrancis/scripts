@@ -11,24 +11,63 @@
     <script type="text/javascript" src="./js/jquery.easyui.min.js"></script>
 </head>
 <body>
-<table id="dg"></table>
+<div style="margin:10px 0;">
+    <a href="#" class="easyui-linkbutton" onclick="getSelections()">GetSelections</a>
+</div>
+<table id="dg" title="CloudStack Instances" data-options="
+    rownumbers:true,
+    singleSelect:true,
+    autoRowHeight:false,
+    pagePosition:'both',
+    pagination:true,
+    singleSelect: false,
+    striped: true,
+    showFooter: true,
+    rownumbers:true,
+    pageSize:10">
+</table>
+<!-- codiing start here !-->
 <script>
 $('#dg').datagrid({
     url:'vms.json',
+    loadMsg: '正在加载数据...',
+    idField: 'instancename',
+    sortName: 'state',
+    checkOnselect: true,
+    selectOnCheck: true,
+    sortOrder: 'asc',
+    remoteSort: 'false',
+    rowStyler: function(index,row){
+        if(row.state == 'Stopped'){
+            return 'background-color:white;color:red;';
+        }
+    },
     columns:[[
-        {field:'state',title:'state',width:100},
-        {field:'account',title:'account',width:100},
-        {field:'instancename',title:'instancename',width:100},
-        {field:'displayname',title:'displayname',sortable:true},
-        {field:'name',title:'name',width: 100,sortable:true},
-        {field:'cpunumber',title:'cpunumber',width:100},
-        {field:'memory',title:'memory',width:100},
-        {field:'zonename',title:'zonename',width:100},
-        {field:'publicip',title:'publicip',width:150},
-        {field:'hostname',title:'hostname',width:200},
-        {field:'created',title:'created',width:200},
+        {field:'state',title:'实例状态',width:100,checkbox: true},
+        {field:'account',title:'所属账号',width:100},
+        {field:'instancename',title:'实例名称',width:100},
+        {field:'displayname',title:'显示名称'},
+        {field:'name',title:'名称'},
+        {field:'cpunumber',title:'CPU',width:100},
+        {field:'memory',title:'内存(MB)',width:100},
+        {field:'zonename',title:'区域',width:100},
+        {field:'publicip',title:'PublicIP',width:150},
+        {field:'hostname',title:'所在主机',width:200},
+        {field:'created',title:'创建时间',width:200},
     ]]
 });
 </script>
+<script type="text/javascript">
+    function getSelections(){
+        var ss = [];
+        var rows = $('#dg').datagrid('getSelections');
+        for(var i=0; i<rows.length; i++){
+            var row = rows[i];
+            ss.push('<span>'+row.state+":"+row.instancename+":"+row.created+'</span>');
+        }
+        $.messager.alert('Info', ss.join('<br/>'));
+    }
+</script>
+<!-- codiing ends here !-->
 </body>
 </html>
