@@ -1,2 +1,3 @@
 http://www.zi-han.net/case/easyui/
 http://www.jeasyui.net/
+http://www.easyui.info/
