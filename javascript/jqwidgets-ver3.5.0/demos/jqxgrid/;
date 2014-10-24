@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id='Description'>This example illustrates the Grid filtering feature. Enter some data into the Filter Row.</title>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.filter.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.sort.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.edit.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.selection.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcalendar.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxdatetimeinput.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.pager.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxnumberinput.js"></script>
+    <script type="text/javascript" src="../../scripts/demos.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/globalization/globalize.js"></script>
+    <script type="text/javascript" src="generatedata.js"></script>
+    <script type="text/javascript" src="localization.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var url = "vms.json";
+            var source =
+            {
+                url: url,
+                datatype: "json",
+                datafields:
+                [
+                    { name: 'id', type: 'string' },
+                    { name: 'account', type: 'string' },
+                    { name: 'instancename', type: 'string' },
+                    { name: 'haenable', type: 'bool' },
+                    { name: 'created', type: 'string' },
+                    { name: 'cpunumber', type: 'number' },
+                    { name: 'memory', type: 'number' },
+                    { name: 'publicip', type: 'string' },
+                    { name: 'ip', type: 'string' },
+                    { name: 'mac', type: 'string' },
+                ]
+            };
+
+            var dataAdapter = new $.jqx.dataAdapter(source);
+
+       
+            $("#jqxgrid").jqxGrid(
+            {
+                width: 1280,
+                source: dataAdapter,
+                autorowheight: true,
+                sortable: true,
+                showfilterrow: true,
+                filterable: true,
+                pagesizeoptions: ['10', '20', '50', '100', '200'],
+                pageable: true,
+                pagesize: 20,
+                autoheight: true,
+                altrows: true,
+                columnsresize: false,
+                localization: getLocalization('en'),
+                selectionmode: 'singlecell',
+                columns: [
+                  { text: 'id', columntype: 'textbox', filtertype: 'textbox', datafield: 'id', width: 200 },
+                  { text: 'account', columntype: 'textbox', filtertype: 'textbox', datafield: 'account', width: 100 },
+                  { text: 'instancename', filtertype: 'textbox', datafield: 'instancename', width: 150 },
+                  { text: 'haenable', datafield: 'haenable', columntype: 'textbox', filtertype: 'checkedlist', filteritems: ['true', 'false'], width: 100, cellsalign: 'right' },
+                  { text: 'created', datafield: 'created', columntype: 'textbox', filtertype: 'textbox', width: 200, cellsalign: 'right' },
+                  { text: 'cpunumber', datafield: 'cpunumber', columntype: 'numberinput', filtertype: 'textbox', cellsalign: 'right' },
+                  { text: 'memory(MB)', datafield: 'memory', columntype: 'numberinput', filtertype: 'textbox', cellsalign: 'right', width: 80 },
+                  { text: 'publicip', datafield: 'publicip', columntype: 'textbox', filtertype: 'textbox', cellsalign: 'right', width: 150 },
+                  { text: 'ip', datafield: 'ip', columntype: 'textbox', filtertype: 'textbox', cellsalign: 'right', width: 150 },
+                  { text: 'mac', datafield: 'mac', columntype: 'textbox', filtertype: 'textbox', cellsalign: 'right', width: 150 }
+                ]
+            });
+           // collums switch
+            var listSource = [
+              { label: 'id', value: 'id', checked: false },
+              { label: 'account', value: 'account', checked: true },
+              { label: 'instancename', value: 'instancename', checked: true },
+              { label: 'haenable', value: 'haenable', checked: false },
+              { label: 'created', value: 'created', checked: true },
+              { label: 'cpunumber', value: 'cpunumber', checked: true},
+              { label: 'memory', value: 'memory', checked: true},
+              { label: 'publicip', value: 'publicip', checked: true},
+              { label: 'ip', value: 'ip', checked: true},
+              { label: 'mac', value: 'mac', checked: true}
+            ];
+             $("#jqxlistbox").jqxListBox({ source: listSource, width: 150, checkboxes: true });
+ 
+             $("#jqxlistbox").on('checkChange', function (event) {
+                 $("#jqxgrid").jqxGrid('beginupdate');
+                 if (event.args.checked) {
+                     $("#jqxgrid").jqxGrid('showcolumn', event.args.value);
+                 }
+                 else {
+                     $("#jqxgrid").jqxGrid('hidecolumn', event.args.value);
+                 }
+                 $("#jqxgrid").jqxGrid('endupdate');
+             });
+         });
+    </script>
+</head>
+<body class='default'>
+    <div style="float: left;" id="jqxlistbox"></div>
+    <div id="jqxgrid">
+    </div>
+</body>
+</html>
