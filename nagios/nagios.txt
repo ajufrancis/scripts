@@ -1,0 +1,11 @@
+Top CPU:
+http://yaocoder.blog.51cto.com/2668309/1543352
+top
+top -H -p pid
+strace -T -r -c -p pid
+pstack pid
+
+
+Top IO:
+http://yaocoder.blog.51cto.com/2668309/1542173
+iotop

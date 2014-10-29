@@ -1,0 +1,10 @@
+cloudstack
+racktables
+saltstack
+nagios/wato
+ipxe/pxelinux
+kickstart
+etc
+switch/firewall
+dns/dhcp
+ldap
