@@ -28,9 +28,21 @@ env.passwords = {
     'admin@storage-sw02:22': 'Tianren.254~s84',
 }
 #command = 'show system'
-command = 'show interfaces | grep -B4 Number'
+command = 'show interfaces | grep -B3 Number'
 
 instance = ParallelCommands(hosts=hosts, command=command)
 output = instance.capture()
 
-print output['storage-sw02']
+lines = output['storage-sw02'].split('\n')
+state = {}
+for i, line in enumerate(lines):
+    if line.startswith('Chassis'):
+        port = line.split(' ')[2]
+        count = lines[i+3].split(':')[-1].strip(',\r').strip(' ')
+        lastchanged = lines[i+2].split(' ')[-1]
+        port = port.replace('/', '_')
+        state[port] = count
+
+import pprint
+pp = pprint.PrettyPrinter()
+pp.pprint(state)
