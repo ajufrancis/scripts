@@ -1,244 +1,318 @@
 <html> 
 <head> 
 <title>VM</title>
+<link href="http://cdn.bootcss.com/twitter-bootstrap/2.0.4/css/bootstrap.min.css" rel="stylesheet">
 </head> 
 <body> 
-<div class="container" >
-<div class="content" >
-    <h3>VM</h3>
-  <form action="add_vm.php" method="post">
-    <table>
-        <tr id='form_info'>
-            <td><input type="hidden" name="form_create_date"></td>
-        </tr>
-        <tr id='contact_info'>
-            <td>联系信息</td>
-            <td><label for="contact">联系人</label><input type="text" name="contact"></td>
-            <td><label for="department">部门</label><input type="text" name="department"></td>
-            <td><label for="telephone">电话</label><input type="text" name="telephone"></td>
-            <td><label for="telephone">邮箱</label><input type="email" name="email"></td>
-        </tr>
-        <tr id='project_info'>
-            <td>项目信息</td>
-            <td><label for="project">项目名称</label><input type="text" name="project"></td>
-            <td><label for="vm_name">VM名称</label><input type="text" name="vm_name"></td>
-        </tr>
-        <tr id='request_info'>
-            <td>需求信息</td>
-            <td>
-                <label for="request">需求类型</label>
-                <select name='request_type'>
-                    <option value ="add_vm">申请VM资源</option>
-                    <option value ="delete_vm">回收VM资源</option>
-                    <option value="update_vm">变更VM配置</option>
-                </select>
-            </td>
-            <td>
-                <label for="critical">重要级别</label>
-                <select name='critical'>
-                    <option value ="prod">生产环境</option>
-                    <option value ="test">测试环境</option>
-                    <option value="dev">开发环境</option>
-                </select>
-            </td>
-            <td>
-                <label for="expiry">有效期</label>
-                <select name='expiry'>
-                    <option value ="1d">1天</option>
-                    <option value ="1m">1个月</option>
-                    <option value="1y">1年</option>
-                    <option value="0">永久</option>
-                </select>
-            </td>
-        </tr>
-        <tr id='compute_offering'>
-            <td>计算方案</td>
-            <td>
-                <label for="cpu_number">CPU(2.6GHz)</label>
-                <select name='cpu_number'>
-                    <option value ="1">1</option>
-                    <option value ="2">2</option>
-                    <option value ="4">4</option>
-                    <option value ="8">8</option>
-                    <option value ="16">16</option>
-                    <option value ="32">32</option>
-                </select>
-            </td>
-            <td>
-                <label for="memory">内存大小(GB)</label>
-                <select name='memory'>
-                    <option value ="1">1</option>
-                    <option value ="2">2</option>
-                    <option value ="4">4</option>
-                    <option value ="8">8</option>
-                    <option value ="16">16</option>
-                    <option value ="32">32</option>
-                </select>
-            </td>
-            </tr>
-            <tr id='disk_offering'>
-                <td rolspan=2 >磁盘方案</td>
-                <td>
-                    <label for="root_disk_size">系统盘大小(GB)</label>
-                    <select name='root_disk_size'>
-                        <optgroup label="使用独立分区">
-                            <option value ="50">50</option>
-                            <option value ="100">100</option>
-                            <option value ="150">150</option>
-                            <option value ="200">200</option>
-                            <option value ="300">300</option>
-                            <option value ="500">500</option>
-                            <option value ="1000">1000</option>
-                        </optgroup>
-                        <optgroup label="使用LVM">
-                            <option value ="50">50</option>
-                            <option value ="100">100</option>
-                            <option value ="150">150</option>
-                            <option value ="200">200</option>
-                            <option value ="300">300</option>
-                            <option value ="500">500</option>
-                            <option value ="1000">1000</option>
-                        </optgroup>
-                    </select>
-                </td>
-                <td>
-                    <label for="root_disk_fs">文件系统</label>
-                    <select>
-                        <option value='ext4'>ext4</option>
-                        <option value='ext3'>ext3</option>
-                    </select>
-                </td>
-                <td>
-                    <label for="storage_label">主存标签</label>
-                    <select>
-                        <option value='z2p1c1'>z2p1c1</option>
-                        <option value='z2p1c2'>z2p1c2</option>
-                        <option value='z2p1c3'>z2p1c3</option>
-                    </select>
-                </td>
-            </tr>
-            <tr> 
-                <td></td>
-                <td>
-                    <label for="data_disk_size">数据盘大小(GB)</label>
-                    <select name='data_disk_size'>
-                        <option value ="0">无数据盘</option>
-                        <option value ="50">50</option>
-                        <option value ="100">100</option>
-                        <option value ="150">150</option>
-                        <option value ="200">200</option>
-                        <option value ="300">300</option>
-                        <option value ="500">500</option>
-                        <option value ="1000">1000</option>
-                    </select>
-                </td>
-                <td>
-                </td>
-                <td>
-                </td>
-            </tr>
-            <tr id='system_offering'>
-                <td>系统方案</td>
-                <td>
-                    <label for="os">系统名称</label>
-                    <select name='os'>
-                        <optgroup label="Windows">
-                            <option value ="wxp">Windows XP Professional SP3</option>
-                            <option value ="w2k3">Windows Server 2003 R2 Enterprise SP2</option>
-                            <option value ="win7">Windows 7 Ultimate SP1</option>
-                            <option value ="w2k8">Windows Server 2008 R2 Enterprise SP1</option>
-                        </optgroup>
-                        <optgroup label="Linux">
-                            <option value ="centos_6.0">CentOS 6.0 minimal</option>
-                            <option value ="centos_6.2">CentOS 6.2 minimal</option>
-                            <option value ="centos_6.3">CentOS 6.3 minimal</option>
-                            <option value ="rhel_6.0">RHEL 6.0 minimal</option>
-                            <option value ="rhel_6.2">RHEL 6.2 minimal</option>
-                            <option value ="rhel_6.3">RHEL 6.3 minimal</option>
-                            <option value ="ubuntu_12.04">Ubuntu 12.04 minimal</option>
-                            <option value ="ubuntu_14.04">Ubuntu 14.04 minimal</option>
-                            <option value ="sles_11sp3">SLES 11 SP3 minimal</option>
-                        </optgroup>
-                    </select>
-                </td>
-                <td>
-                    <label for="arch">系统架构</label>
-                    <select name='arch'>
-                        <option value ="i386">i386(32bit)</option>
-                        <option value ="x86_64">x86_64(64bit)</option>
-                    </select>
-                </td>
-                <td>
-                    <label for="server_role">安装类型</label>
-                    <select name='server_role'>
-                        <option value ="minimal-text">最小化安装(无图形界面)</option>
-                        <option value ="minimal-desktop">最小化桌面安装</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td rowspan=4>访问控制</td>
-                <td>TCP</td>
-                <td>
-                    <label for="tcp_start_port">起始端口</label>
-                    <input type='text' name='tcp_start_port'>
-                </td>
-                <td>
-                    <label for="tcp_end_port">结束端口</label>
-                    <input type='text' name='tcp_end_port'>
-                </td>
-            </tr>
-            <tr>
-                <td>UDP</td>
-                <td>
-                    <label for="upd_start_port">起始端口</label>
-                    <input type='text' name='udp_start_port'>
-                </td>
-                <td>
-                    <label for="udp_end_port">结束端口</label>
-                    <input type='text' name='udp_end_port'>
-                </td>
-            </tr>
-            <tr>
-                <td>ICMP</td>
-                <td>
-                    <label for="icmp_start_port">起始端口</label>
-                    <input type='text' name='icmp_start_port'>
-                </td>
-                <td>
-                    <label for="icmp_end_port">结束端口</label>
-                    <input type='text' name='icmp_end_port'>
-                </td>
-            </tr>
-            <tr>
-                <td>公网IP</td>
-                <td>
-                    <label for="cnc">联通</label>
-                    <input type='checkbox' value='cnc' name='cnc'>
-                </td>
-                <td>
-                    <label for="ctc">电信</label>
-                    <input type='checkbox' value='ctc' name='ctc'>
-                </td>
-                <td>
-                    <label for="vpn">VPN</label>
-                    <input type='checkbox' value='vpn' name='vpn'>
-                </td>
-            </tr>
-            <tr>
-                <td>备注</td>
-                <td colspan=4>
-                    <textarea name='comment'></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td colspan=5>
-                    <input type='submit' value='提交'>
-                </td>
-            </tr>
-        </table>
-      </form>
-    </div>
-</div>
+  <form class="form-horizontal" action='./add_vm_record.php' method='post'>
+    <fieldset>
+      <div id="legend" class="">
+        <legend class="">虚拟机申请</legend>
+      </div>
+    
+
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">联系人</label>
+          <div class="controls">
+            <input type="text" placeholder="" class="input-xlarge">
+            <p class="help-block">拼音名称,小写</p>
+          </div>
+        </div>
+
+    
+
+    
+
+    <div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">部门</label>
+          <div class="controls">
+            <input type="text" placeholder="" class="input-xlarge">
+            <p class="help-block">Supporting help text</p>
+          </div>
+        </div><div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">邮箱</label>
+          <div class="controls">
+            <input type="text" placeholder="placeholder" class="input-xlarge">
+            <p class="help-block">Supporting help text</p>
+          </div>
+        </div><div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">电话</label>
+          <div class="controls">
+            <input type="text" placeholder="placeholder" class="input-xlarge">
+            <p class="help-block">座机分机或手机号</p>
+          </div>
+        </div><div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">项目名称</label>
+          <div class="controls">
+            <input type="text" placeholder="placeholder" class="input-xlarge">
+            <p class="help-block">Supporting help text</p>
+          </div>
+        </div><div class="control-group">
+
+          <!-- Text input-->
+          <label class="control-label" for="input01">虚拟机名称</label>
+          <div class="controls">
+            <input type="text" placeholder="placeholder" class="input-xlarge">
+            <p class="help-block">格式：项目名称-角色-ID，一律使用小写</p>
+          </div>
+        </div><div class="control-group">
+          <label class="control-label">用途</label>
+          <div class="controls">
+      <!-- Inline Radios -->
+      <label class="radio inline">
+        <input type="radio" value="prod" name="critical" checked="checked">
+        生产环境
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="test" name="critical">
+        测试环境
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="dev" name="critical">
+        开发环境
+      </label>
+  </div>
+        </div><div class="control-group">
+
+          <!-- Select Basic -->
+          <label class="control-label">租期</label>
+          <div class="controls">
+            <select class="input-xlarge">
+      <option value='1d' >1天</option>
+      <option value='1m' >1个月</option>
+      <option value='6m' >6个月</option>
+      <option value='1y' >1年</option>
+      <option value='0' >永久</option>
+      <option value=''>其他</option></select>
+          </div>
+
+        </div><div class="control-group">
+          <label class="control-label">CPU(2.6GHZ)</label>
+          <div class="controls">
+      <!-- Inline Radios -->
+      <label class="radio inline">
+        <input type="radio" value="1" name="cpu" checked="checked">
+        1
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="2" name="cpu">
+        2
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="4" name="cpu">
+        4
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="8" name="cpu">
+        8
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="16" name="cpu">
+        16
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="32" name="cpu">
+        32
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="64" name="cpu">
+        64
+      </label>
+  </div>
+        </div><div class="control-group">
+          <label class="control-label">内存(GB)</label>
+          <div class="controls">
+      <!-- Inline Radios -->
+      <label class="radio inline">
+        <input type="radio" value="1" name="memory" checked="checked">
+        1
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="2" name="memory">
+        2
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="4" name="memory">
+        4
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="8" name="memory">
+        8
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="16" name="memory">
+        16
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="32" name="memory">
+        32
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="64" name="memory">
+        64
+      </label>
+  </div>
+        </div><div class="control-group">
+          <label class="control-label">公网IP</label>
+
+          <!-- Multiple Checkboxes -->
+          <div class="controls">
+      <!-- Inline Checkboxes -->
+      <label class="checkbox inline">
+        <input type="checkbox" value="cnc">
+        联通
+      </label>
+      <label class="checkbox inline">
+        <input type="checkbox" value="ctc">
+        电信
+      </label>
+  </div>
+
+        </div><div class="control-group">
+
+          <!-- Select Basic -->
+          <label class="control-label">系统方案</label>
+          <div class="controls">
+            <select class="input-xlarge">
+         <optgroup label='Linux'>
+      <option>CentOS 6.3</option>
+      <option>RHEL 6.3</option>
+      <option>SLES 11 SP3</option>
+      <option>Ubuntu 12.04</option>
+      <option>Ubuntu 14.04</option>
+         </optgroup>
+         <optgroup label='Windows'>
+      <option>Windows XP</option>
+      <option>Windows Server 2003</option>
+      <option>Windows Server 2008</option>
+      <option>Windows 7</option>
+         </optgroup>
+          </select>
+          </div>
+
+      </div><div class="control-group">
+          <label class="control-label">系统架构</label>
+          <div class="controls">
+      <!-- Inline Radios -->
+      <label class="radio inline">
+        <input type="radio" value="i386" name="os_arch" checked="checked">
+        i386
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="x86_64" name="os_arch">
+        x86_64
+      </label>
+  </div>
+        </div>
+
+        </div><div class="control-group">
+          <label class="control-label">磁盘方案-系统(GB)</label>
+          <div class="controls">
+      <!-- Inline Radios -->
+      <label class="radio inline">
+        <input type="radio" value="10" name="root_disk_size" checked="checked">
+        10
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="20" name="root_disk_size">
+        20
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="50" name="root_disk_size">
+        50
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="100" name="root_disk_size">
+        100
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="200" name="root_disk_size">
+        200
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="300" name="root_disk_size">
+        300
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="500" name="root_disk_size">
+        500
+      </label>
+  </div>
+        </div>
+      <div class="control-group">
+          <label class="control-label">磁盘方案-数据盘(GB)</label>
+          <div class="controls">
+      <!-- Inline Radios -->
+      <label class="radio inline">
+        <input type="radio" value="50" name="data_disk_size" checked="checked">
+        50
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="100" name="data_disk_size">
+        100
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="200" name="data_disk_size">
+        200
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="300" name="data_disk_size">
+        300
+      </label>
+      <label class="radio inline">
+        <input type="radio" value="500" name="data_disk_size">
+        500
+      </label>
+  </div>
+        </div><div class="control-group">
+          <label class="control-label">其他信息</label>
+          <div class="controls">
+      <!-- Inline Radios -->
+      <label class="checkbox inline">
+        <input type="checkbox" value="lvm" name="root_partition_type" checked="checked">
+        使用LVM分区
+      </label>
+      <label class="checkbox inline">
+        <input type="checkbox" value="minimal-desktop" name="install_type" checked="checked">
+        安装Linux图形界面
+      </label>
+      <label class="checkbox inline">
+        <input type="checkbox" value="0" name="vpn" checked="checked">
+        需要公网登录
+      </label>
+  </div>
+        </div>
+         <div class="control-group">
+          <!-- Textarea -->
+          <label class="control-label">需要开放的端口</label>
+          <div class="controls">
+            <div class="textarea">
+                  <textarea type="" class=""> </textarea>
+            </div>
+          </div>
+        </div>
+
+    <div class="control-group">
+          <label class="control-label"></label>
+
+          <!-- Button -->
+          <div class="controls">
+            <button class="btn btn-default">提交</button>
+          </div>
+        </div>
+
+    </fieldset>
+  </form>
+
 </body> 
 </html> 
