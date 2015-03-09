@@ -1,7 +1,0 @@
-#api_list_url=
-#api_type=asynchronous
-#api_topic=
-#api_object=
-#compute, network, storage, account, settings, Router, Project, Loadbanlancer, VMs, System VM, Host, Snapshot, Storage, NAT, Service Offering, VM Group, Disk Offering, Pool, VPN Swift  Address Configuration, Storage Pool, LDAP, Guest OS, Event, Async job, System Capacity, listAlerts, VLAN, Ext Firewall
-Template User Volumn Iso Usage  Firewall Account
-http://download.cloud.com/releases/3.0.3/api_3.0.3/TOC_Root_Admin.html

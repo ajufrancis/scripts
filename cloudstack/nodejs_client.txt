@@ -1,3 +1,0 @@
-https://nodejsmodules.org/tags/cloudstack
-https://github.com/ragnar-johannsson/csclient
-https://github.com/Chatham/node-cloudstack

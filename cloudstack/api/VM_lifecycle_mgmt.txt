@@ -1,0 +1,3 @@
+https://cwiki.apache.org/confluence/display/CLOUDSTACK/FS+-+VMSync+improvement
+https://cwiki.apache.org/confluence/display/CLOUDSTACK/Better+Vm+Sync
+http://download.cloud.com/releases/3.0.0/CloudStack3.0.0ReleaseNotes.pdf

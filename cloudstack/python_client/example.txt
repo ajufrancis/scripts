@@ -1,1 +1,0 @@
-./admin/listVirtualMachines.py --domainid 9b832394-f254-4f6d-ba67-ed3979ac9fc6 --isrecursive true
