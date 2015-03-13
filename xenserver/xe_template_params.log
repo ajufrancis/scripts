@@ -1,0 +1,81 @@
+uuid ( RO)                          : a4ca357d-c952-a4ed-5399-59c6cc596b48
+                    name-label ( RW): Windows Server 2003 PAE (32-bit)
+              name-description ( RW): Clones of this template will automatically provision their storage when first booted and then reconfigure themselves with the optimal settings for Windows Server 2003 PAE (32-bit).
+                  user-version ( RW): 1
+                 is-a-template ( RW): true
+                 is-a-snapshot ( RO): false
+                   snapshot-of ( RO): <not in database>
+                     snapshots ( RO): 
+                 snapshot-time ( RO): 19700101T00:00:00Z
+                 snapshot-info ( RO): 
+                        parent ( RO): <not in database>
+                      children ( RO): 
+             is-control-domain ( RO): false
+                   power-state ( RO): halted
+                 memory-actual ( RO): 0
+                 memory-target ( RO): <expensive field>
+               memory-overhead ( RO): 7340032
+             memory-static-max ( RW): 536870912
+            memory-dynamic-max ( RW): 536870912
+            memory-dynamic-min ( RW): 536870912
+             memory-static-min ( RW): 268435456
+              suspend-VDI-uuid ( RW): <not in database>
+               suspend-SR-uuid ( RW): <not in database>
+                  VCPUs-params (MRW): 
+                     VCPUs-max ( RW): 1
+              VCPUs-at-startup ( RW): 1
+        actions-after-shutdown ( RW): Destroy
+          actions-after-reboot ( RW): Restart
+           actions-after-crash ( RW): Restart
+                 console-uuids (SRO): 
+                      platform (MRW): nx: true; acpi: true; apic: true; pae: true; viridian: true
+            allowed-operations (SRO): changing_dynamic_range; changing_static_range; provision; export; clone; copy
+            current-operations (SRO): 
+            blocked-operations (MRW): 
+           allowed-VBD-devices (SRO): <expensive field>
+           allowed-VIF-devices (SRO): <expensive field>
+                possible-hosts ( RO): <expensive field>
+               HVM-boot-policy ( RW): BIOS order
+               HVM-boot-params (MRW): order: dc
+         HVM-shadow-multiplier ( RW): 1.000
+                     PV-kernel ( RW): 
+                    PV-ramdisk ( RW): 
+                       PV-args ( RW): 
+                PV-legacy-args ( RW): 
+                 PV-bootloader ( RW): 
+            PV-bootloader-args ( RW): 
+           last-boot-CPU-flags ( RO): 
+              last-boot-record ( RO): <expensive field>
+                   resident-on ( RO): <not in database>
+                      affinity ( RW): <not in database>
+                  other-config (MRW): mac_seed: 61d242d9-5819-2c38-9b5c-6530ae4a696d; default_template: true; disks: <provision><disk device="0" size="17179869184" sr="" bootable="false" type="system"/></provision>; install-methods: cdrom
+                        dom-id ( RO): -1
+               recommendations ( RO): <restrictions><restriction field="memory-static-max" max="68719476736" /><restriction field="vcpus-max" max="16" /><restriction property="number-of-vbds" max="7" /><restriction property="number-of-vifs" max="7" /></restrictions>
+                 xenstore-data (MRW): 
+    ha-always-run ( RW) [DEPRECATED]: false
+           ha-restart-priority ( RW): 
+                         blobs ( RO): 
+                    start-time ( RO): 19700101T00:00:00Z
+                  install-time ( RO): 19700101T00:00:00Z
+                  VCPUs-number ( RO): 0
+             VCPUs-utilisation (MRO): <expensive field>
+                    os-version (MRO): <not in database>
+            PV-drivers-version (MRO): <not in database>
+         PV-drivers-up-to-date ( RO): <not in database>
+                        memory (MRO): <not in database>
+                         disks (MRO): <not in database>
+                      networks (MRO): <not in database>
+                         other (MRO): <not in database>
+                          live ( RO): <not in database>
+    guest-metrics-last-updated ( RO): <not in database>
+                   cooperative ( RO): <expensive field>
+             protection-policy ( RW): <not in database>
+         is-snapshot-from-vmpp ( RO): false
+                          tags (SRW): 
+                     appliance ( RW): <not in database>
+                   start-delay ( RW): 0
+                shutdown-delay ( RW): 0
+                         order ( RW): 0
+                       version ( RO): 0
+
+
