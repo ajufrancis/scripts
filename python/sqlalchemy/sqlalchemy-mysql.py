@@ -5,7 +5,8 @@ from sqlalchemy.orm import mapper, sessionmaker
 from datetime import datetime
 from sqlalchemy import Table, MetaData, Column, ForeignKey, Integer, String, Unicode, DateTime
 #创建到数据库的连接,echo=True 表示用logging输出调试结果
-engine = sqlalchemy.create_engine("sqlite:///tutorial.db", echo=True)
+engine = sqlalchemy.create_engine('mysql+mysqlconnector://root:gdcloud.com@localhost:3306/test')
+
 #跟踪表属性
 metadata = MetaData()
 #创建一个表所需的信息:字段,表名等
