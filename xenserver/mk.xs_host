@@ -1,9 +1,0 @@
-source ./is_xs_host
-
-is_xs_host
-echo "<<<xe host-info>>>"
-xe host-compute-free-memory
-xe host-cpu-info
-xe host-get-cpu-features
-xe host-is-in-emergency-mode
-xe host-param-list

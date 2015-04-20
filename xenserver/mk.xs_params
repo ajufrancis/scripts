@@ -1,7 +1,0 @@
-#!/bin/bash
-#
-# salt 'xs05' cmd.run 'xe vm-list params=HVM-boot-policy,PV-bootloader,PV-bootloader-args,PV-args name-label=i-7-2179-VM' --output text
-# salt 'xs05' cmd.run 'xe vm-list params=HVM-boot-policy,PV-bootloader,PV-bootloader-args,PV-args name-label=$HOSTNAME$' --output text
-# xs05:                PV-args ( RW): root=/dev/mapper/beizhen--localpred-root ro quiet console=hvc0 xencons=hvc0
-# xs05:          PV-bootloader ( RW): pygrub
-# xs05:     PV-bootloader-args ( RW): --kernel=/vmlinuz-2.6.32-55-server --ramdisk=/initrd.img-2.6.32-55-server

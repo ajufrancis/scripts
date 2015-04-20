@@ -1,2 +1,0 @@
-http://docs.vmd.citrix.com/XenServer/4.0.1/sdk/ch04.html#id2538329
-https://github.com/xapi-project/xen-api/tree/master/scripts/examples/python

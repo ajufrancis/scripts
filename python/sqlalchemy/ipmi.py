@@ -14,13 +14,12 @@ table_ipmi = Table(
     'tf_ipmi', metadata,
     Column('uuid', Integer, primary_key=True, nullable=False, default=0),
     Column('minion_id', Unicode(255), unique=True),
-    Column('mac_addr', Unicode(255), unique=True, default=''),
-    Column('ip_src', Unicode(255), unique=False, nullable=False),
-    Column('ip_adr', Unicode(255), unique=True),
+    Column('mac', Unicode(255), unique=True, default=''),
+    Column('ip', Unicode(255), unique=False, nullable=False),
+    Column('src', Unicode(255), unique=True),
     Column('defgw_mac', Unicode(255), unique=False),
     Column('defgw_ip', Unicode(255), unique=False),
-    Column('subnet_mask', Unicode(255), unique=False),
-    Column('snmp_community', Unicode(255), unique=False, default='public'),
+    Column('netmask', Unicode(255), unique=False),
     Column('created', DateTime, default=datetime.now)
 )
 
@@ -38,23 +37,35 @@ Session.configure(bind=engine)
 #创建了一个自定义了的 Session类
 session = Session()
 
-u = IPMI()
-u.minion_id='xstest2'
-u.mac_addr='dongwm@dongwm.com'
-u.defgw_mac='dongwm@dongwm.com'
-u.defgw_ip='dongwm@dongwm.com'
-u.mac_addr='dongwm@dongwm.com'
-u.ip_src='dongwm@dongwm.com'
-u.ip_addr='dongwm@dongwm.com'
-u.subnet_mask='dongwm@dongwm.com'
-#给映射类添加以下必要的属性,因为上面创建表指定这几个字段不能为空
-#在session中添加内容
-session.add(u)
-session.flush() #保存数据
-session.commit() #数据库事务的提交,sisson自动过期而不需要关闭
+def get_ipmi_data():
+    import salt.client
 
-#=========================================
-#query() 简单的理解就是select() 的支持 ORM 的替代方法,可以接受任意组合的 class/column 表达式
-query = session.query(IPMI)
-print list(query) #列出所有user
-print query.get(1) #根据主键显示
+    local = salt.client.LocalClient()
+    ret = local.cmd('os:XenServer', 'grains.item', ['ipmi'], expr_form='grain')
+    return ret
+
+u = IPMI()
+ret = get_ipmi_data()
+
+for output in ret.items():
+    id = output[0]  
+    ipmi = None
+    try:
+        ipmi = output[1]['ipmi']
+    except:
+        continue
+    try:
+       ipmi = output[1]['ipmi']
+
+       u.minion_id = id
+       u.defgw_mac = ipmi['defgw_mac']
+       u.defgw_ip = ipmi['defgw_ip']
+       u.mac = ipmi['mac']
+       u.ip = ipmi['ip']
+       u.src = ipmi['src']
+       u.netmask = ipmi['netmask']
+       session.add(u)
+       session.flush()
+       session.commit()
+    except:
+       continue

@@ -1,2 +1,0 @@
-http://dsonstebo.wordpress.com/2013/11/17/citrix-xenserver-6-2-zero-touch-build-scripts/
-https://github.com/dagsonstebo/Citrix-Xenserver-6.2-zero-touch-build-scripts

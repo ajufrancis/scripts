@@ -1,3 +1,0 @@
-is_xs_host() {
-  test -f /etc/xensource-inventory || exit
-}

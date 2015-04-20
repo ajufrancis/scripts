@@ -1,7 +1,0 @@
-xva
-Xenwebmanager
-Xen orchestra: https://xen-orchestra.com/screenshots/
-npm install -g xo-cli
-http://blogs.citrix.com/2011/02/11/xenserverconsole-examples/
-https://github.com/jonludlam/xac
-novnc: http://inaction.blog.51cto.com/2629206/1310461

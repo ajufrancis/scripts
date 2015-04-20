@@ -1,6 +1,0 @@
-IPMI_BIN="ipmitool"
-IPMI_HOST="192.168.10.1"
-IPMI_PASSWORD="ipmiXSTEST2"
-IPMI_CMD="chassis status"
-
-$IPMI_BIN -I lanplus -H $IPMI_HOST -U ADMIN -P $IPMI_PASSWORD $IPMI_CMD

@@ -1,1 +1,0 @@
-plugin="dmi_sysinfo"
